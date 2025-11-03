@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Climate-Smart Governance Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/newHomeStyle.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+    <script type="text/javascript" src="https://code.highcharts.com/modules/sunburst.js"></script>
+    <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script type="text/javascript" src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script type="text/javascript" src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script type="text/javascript" src="https://code.highcharts.com/modules/sankey.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <script type="text/javascript" src="./assets/lib/d3SvgOverlay.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+    <script type="text/javascript" src="./env.js"></script>
+</head>
+<body>
+    <section class="hero-section1" style="background-image: url('./assets/images/Hero.png');
+        background-position: left; background-size: cover; background-repeat: no-repeat;width: 100%; padding: 0px;">
+        <div class="container pt-5" id="headerContainer">
+            <!-- Dynamic navbar - based on login -->
+        </div>
+        <script type="text/javascript" src="./assets/scripts/header-nav.js"></script>
+
+        <div class="container mt-57px">
+            <div class="row">
+                <div class="col-sm-12 col-md-1 col-lg-1"></div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="form-group countrySelect mb-0">
+                        <select class="form-control w-100" id="filter-country">
+                            <option value="5">Kenya</option>
+                            <option value="7">Senegal</option>
+                            <option value="4">Sri Lanka</option>
+                            <option value="2">Zambia</option>
+                        </select>
+                        <span><img src="./assets/images/location.png" alt=""></span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="form-group countrySelect mb-0">
+                        <select class="form-control w-100">
+                            <option>Country Overview</option>
+                            <option> Climate Outlook</option>
+                            <option selected> Project Tracker</option>
+                        </select>
+                        <span><img src="./assets/images/element-3.png" alt=""></span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <button class="mr-2 btn btn-apply mb-2">Apply</button>
+                    <button class="btn btn-edit mb-2"><img src="./assets/images/edit-2.png" alt=""> Edit</button>
+                </div>
+                <div class="col-sm-12 col-md-2 col-lg-2"></div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="d-flex justify-content-center alin-items-center">
+                        <div class="">
+                            <a href="#" class="btn btn-edit1 mb-2 mr-2"><img src="./assets/images/add.png" alt=""> Add Project</a>
+                            <a href="#" class="btn btn-edit1 mb-2"><img src="./assets/images/eye.png" alt=""> Project Submissions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="informationBoxKey bg-lightBlue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <button class="btn btn-key mb-3"><img src="./assets/images/key1.png" alt="">
+                        Key Features</button>
+                    <h1 class="title-black mb-3 mt-2"> Project Tracker </h1>
+
+                    <p class="font-14px">The project tracker offers a powerful visualization tool to systematically
+                        check the project focus on adaptation, mitigation, and cross cutting. Such analytical
+                        information can directly support public, private sectors and development partners to
+                        meticulously and effortlessly assess initiatives aimed at tackling the repercussions of climate
+                        change across various dimensions and scopes, in an efficient, transparent, and comprehensive
+                        manner. It enables a holistic understanding of the implementation of projects, identify
+                        successful strategies, and pinpoint specific areas where further actions and interventions are
+                        needed.</p>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card border-radius-10px border-0">
+                        <div class="card-body">
+                            <div class="text-end pr-13px d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="mb-3">Distribution of climate investment
+                                        across adaptation, mitigation and cross-cutting projects in <span
+                                            class="label-country"></span> (USD) <span data-toggle="modal"
+                                            data-target="#modalOne" class="pl-2 cursor"><img
+                                                src="./assets/images/info-circle.svg" height="20px"></span></span>
+                                </div>
+                            </div>
+                            <div id="chart-sunburst" class="mx-auto" style="width: 100%; height:50vh;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card border-radius-10px border-0">
+                        <div class="card-body">
+                            <div class="text-end pr-13px d-flex justify-content-between align-items-center">
+                                <div>
+                                    <span class="mb-3 font-22px chart-title">Distribution of climate investment
+                                        based on multi-hazards in <span class="label-country"></span> <span
+                                            data-toggle="modal" data-target="#modalTwo"
+                                            class="pl-2 cursor"><img src="./assets/images/info-circle.svg"
+                                                height="20px"></span></span>
+                                </div>
+                            </div>
+                            <div id="chart-sankey" class="mx-auto mt-2" style="width: 100%; height:53.5vh;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card border-radius-10px border-0">
+                        <div class="card-body">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <span class="mb-3 font-22px chart-title">Total number of projects by status and category</span>
+                                <div class="" id="chart-pie" style="width: 100%;height:500px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-3">
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="card border-radius-10px border-0">
+                        <div class="card-body">
+                            <h6>All projects</h6>
+                            <div
+                                class="d-flex justify-content-start align-items-center mt-4 flex-wrap  flex-column">
+                                <div class="d-flex justify-content-start">
+                                    <div><img src="./assets/images/b1.svg">
+                                    </div>
+                                    <div class="pl-3 main-card">
+                                        <h6 class="mb-0">Number of beneficiaries
+                                        </h6>
+                                        <p class="mt-1 mb-0 w-200px"><span
+                                                id="count-total-beneficiaries"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start">
+                                    <div><img src="./assets/images/b2.svg">
+                                    </div>
+                                    <div class="pl-3 main-card">
+                                        <h6 class="mb-0">Funds allocated </h6>
+                                        <p class="mt-1 mb-0 w-200px"><span id="count-total-funds">
+                                            </span> USD
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start">
+                                    <div><img src="./assets/images/b3.svg">
+                                    </div>
+                                    <div class="pl-3 main-card">
+                                        <h6 class="mb-0">Number of projects</h6>
+                                        <p class="mt-1 mb-0 w-200px"><span id="count-total-projects">
+                                            </span> 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="card border-radius-10px border-0">
+                        <div class="card-body">
+                            <h6>Adaptation</h6>
+                            <div
+                                class="d-flex justify-content-start align-items-center mt-4 flex-wrap  flex-column">
+                                <div class="d-flex justify-content-start">
+                                    <div><img src="./assets/images/b1.svg">
+                                    </div>
+                                    <div class="pl-3 main-card">
+                                        <h6 class="mb-0">Number of beneficiaries
+                                        </h6>
+                                        <p class="mt-1 mb-0 w-200px"><span
+                                                id="count-adaptation-beneficiaries"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start">
+                                    <div><img src="./assets/images/b2.svg">
+                                    </div>
+                                    <div class="pl-3 main-card">
+                                        <h6 class="mb-0">Funds allocated </h6>
+                                        <p class="mt-1 mb-0 w-200px"><span id="count-adaptation-funds">
+                                            </span> 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start">
+                                    <div><img src="./assets/images/b3.svg">
+                                    </div>
+                                    <div class="pl-3 main-card">
+                                        <h6 class="mb-0">Number of projects</h6>
+                                        <p class="mt-1 mb-0 w-200px"><span id="count-adaptation-projects">
+                                            </span> 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="card border-radius-10px border-0">
+                        <div class="card-body">
+                            <h6>Mitigation</h6>
+                            <div
+                                class="d-flex justify-content-start align-items-center mt-4 flex-wrap pl-4 flex-column">
+                                <div class="d-flex justify-content-start w-200px">
+                                    <div><img src="./assets/images/b1.svg">
+                                    </div>
+                                    <div class="pl-3 main-card">
+                                        <h6 class="mb-0">Number of beneficiaries
+                                        </h6>
+                                        <p class="mt-1 mb-0 w-200px"><span
+                                                id="count-mitigation-beneficiaries"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start w-200px">
+                                    <div><img src="./assets/images/b2.svg">
+                                    </div>
+                                    <div class="pl-3 main-card">
+                                        <h6 class="mb-0">Funds allocated </h6>
+                                        <p class="mt-1 mb-0 w-200px"><span id="count-mitigation-funds">
+                                            </span> USD
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start w-200px">
+                                    <div><img src="./assets/images/b3.svg">
+                                    </div>
+                                    <div class="pl-3 main-card">
+                                        <h6 class="mb-0">Number of projects</h6>
+                                        <p class="mt-1 mb-0 w-200px"><span id="count-mitigation-projects">
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="card border-radius-10px border-0">
+                        <div class="card-body">
+                            <h6>Cross-cutting</h6>
+                            <div
+                                class="d-flex justify-content-start align-items-center mt-4 flex-wrap pl-4 flex-column">
+                                <div class="d-flex justify-content-start w-200px">
+                                    <div><img src="./assets/images/b1.svg">
+                                    </div>
+                                    <div class="pl-3 main-card">
+                                        <h6 class="mb-0">Number of beneficiaries
+                                        </h6>
+                                        <p class="mt-1 mb-0 w-200px"><span
+                                                id="count-crosscutting-beneficiaries"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start w-200px">
+                                    <div><img src="./assets/images/b2.svg">
+                                    </div>
+                                    <div class="pl-3 main-card">
+                                        <h6 class="mb-0">Funds allocated </h6>
+                                        <p class="mt-1 mb-0 w-200px"><span id="count-crosscutting-funds">
+                                            </span> USD
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start w-200px">
+                                    <div><img src="./assets/images/b3.svg">
+                                    </div>
+                                    <div class="pl-3 main-card">
+                                        <h6 class="mb-0">Number of projects </h6>
+                                        <p class="mt-1 mb-0 w-200px"><span id="count-crosscutting-projects">
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card border-radius-10px border-0">
+                        <div class="card-body">
+                            <h6>Adaptation</h6>
+                                <p>
+                                    It implies the ability to learn from experiences, make necessary adjustments, and
+                                    respond effectively
+                                    to dynamic and evolving circumstances in order to achieve sustainable development and
+                                    address
+                                    pressing global issues.
+                                </p>
+                            <div id="map-adaptation" style="width: 100%; height: 400px; background-color: transparent;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card border-radius-10px border-0">
+                        <div class="card-body">
+                            <h6>Mitigation</h6>
+                            <p>
+                                It involves proactive measures to address environmental challenges and reduce the
+                                negative
+                                consequences of human activities. It is essential to sustainable development and efforts
+                                to create a more resilient and environmentally friendly future.
+                            </p>
+                            <div id="map-mitigation" style="width: 100%; height: 400px; background-color: transparent;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card border-radius-10px border-0">
+                        <div class="card-body">
+                            <h6>Cross-Cutting</h6>
+                            <p>
+                                It signifies an approach or concept that transcends boundaries and integrates multiple
+                                dimensions or elements.
+                                It emphasizes the interconnected nature of various disciplines, sectors, or issues, and
+                                encourages holistic
+                                and comprehensive approaches to problem-solving and decision-making.
+                            </p>
+                            <div id="map-crosscutting" class="mt-3" style="width: 100%; height: 400px; background-color: transparent;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="">
+        <div class="card footer border-0">
+            <div class="card-body">
+                <div class="row p20px">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div><img src="./assets/images/iwmi-white.png"></div>
+                            <div>
+                                <p class="text-white font-weight-bold" style="white-space: nowrap;">Supported By</p>
+                                <p class="mb-0"><img src="./assets/images/logo_white.webp"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4"></div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
+                        <ul class="list-unstyled pl-0 ms-0 footer_ul">
+                            <li class="d-flex follow-link flex-wrap text-start">
+                                <div class="pr-3">
+                                    <a href="https://www.facebook.com/IWMIonFB" target="_blank" class="facebook-link">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.flickr.com/photos/iwmi" target="_blank" class="facebook-link">
+                                        <i class="fa fa-flickr"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.instagram.com/iwmi_water/" target="_blank"
+                                        class="facebook-link">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.linkedin.com/checkpoint/lg/login?session_redirect=%2Fauthwall&amp;fromSignIn=true&amp;trk=seo-authwall-base_google-one-tap-submit"
+                                        target="_blank" class="facebook-link">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="mailto:iwmi@cgiar.org" target="_blank" class="facebook-link">
+                                        <i class="fa fa-envelope"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.iwmi.cgiar.org/news/rss-feeds/" target="_blank"
+                                        class="facebook-link">
+                                        <i class="fa fa-wifi"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIWMI_"
+                                        target="_blank" class="facebook-link">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.youtube.com/iwmimedia" target="_blank" class="facebook-link">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer subfooter">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water Management
+                        Institute (IWMI) | <a href="">Termsof use</a></p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6 text-right">
+                    <ul class="d-flex justify-content-end list-unstyled align-items-center mb-0 pb-0">
+                        <li><a href="#">Ethics</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Subscribe to our newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <!-- waiting spinner  modal-->
+    <div id="loading-modal" class="modal hide" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3 text-white" style="
+                    background-color: transparent !important;
+                    border: 0px !important;">
+                <div id="loading-modal-container"></div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- Alert Modal -->
+    <div class="modal" id="alertModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered popup-wh" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <div id="icon-alert-modal"></div>
+                        <h5 class="text-center pt-2" id="text-alert-modal"></h5>
+                    </div>
+                    <div class="d-flex justify-content-center mt-40px">
+                        <button class="btn btn-update-edit px-5" data-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page scripts -->
+    <script type="text/javascript" src="./assets/scripts/utils.js"></script>
+    <script type="text/javascript" src="./assets/scripts/project_tracker.js"></script>
+</body>
+</html>

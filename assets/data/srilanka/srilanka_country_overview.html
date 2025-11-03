@@ -1,0 +1,628 @@
+<style>
+    .section-title {
+        color: #000;
+        font-family: Open Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .small-d-card {
+        padding: 30px 10px 10px 10px;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .small-card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        position: relative;
+    }
+
+    .small-d-card .icon-area img {
+        width: 62px;
+        height: 50px;
+        flex-shrink: 0;
+    }
+
+    .small-d-card .content-area {
+        padding-left: 10px;
+    }
+
+    .small-d-card .content-area .title-area {
+        color: #2E5F44;
+        font-family: Open Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .small-d-card .content-area .title-area span {
+        color: #2E5F44;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .small-d-card .content-area .detail-area {
+        color: #000;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        padding: 6px 10px 10px 5px;
+    }
+
+    .small-d-line {
+        opacity: 0.2;
+        background: #000;
+        width: 90%;
+        height: 1px;
+        position: relative;
+    }
+
+    .na-table tr {
+        border-bottom: 1px solid rgba(0, 0, 0, .1) !important;
+    }
+
+    .na-table thead tr th {
+        text-align: left;
+        color: #000;
+        font-family: Open Sans !important;
+        font-size: 16px !important;
+        font-style: normal;
+        font-weight: 700 !important;
+        line-height: 24px;
+        text-transform: capitalize;
+    }
+
+    .na-table tbody {
+        border: none !important;
+    }
+
+    .na-table tbody tr td {
+        text-align: left;
+        color: #000;
+        font-family: Open Sans !important;
+        font-size: 16px !important;
+        font-style: normal;
+        font-weight: 400 !important;
+        line-height: 24px;
+        text-transform: capitalize;
+    }
+
+    .na-table tbody tr td.da {
+        color: #0D8BFF;
+    }
+
+    .pxpse-3rem {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+</style>
+
+<section class="bg-white plr-150 pxpse-3rem pt-4 pb-4">
+    <div class="container-fluid pe-0">
+        <div class="row mb-5 pe-0">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="country-overview-box">
+                    <div class="mb-2">
+                        <h4>&nbsp;</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5 pe-0">
+                <div class="col-sm-5 col-md-5 col-lg-5 text-center">
+                    <div class=""><img src="./assets/images/green-srilanka-map.svg" alt="green-sri-lanka-map"></div>
+                </div>
+                <div class="col-sm-7 col-md-7 col-lg-7">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 small-card-container">
+                            <div class="small-d-card">
+                                <div class="icon-area">
+                                    <img src="./assets/images/noun-3247120 2.svg" alt="noun-3247120 2.svg">
+                                </div>
+                                <div class="content-area">
+                                    <div class="title-area">1.0 <span>(2019)</span></div>
+                                    <div class="detail-area">Poverty headcount ration at $2.15 a day (2017 ppp)
+                                        (% of population)</div>
+                                </div>
+                            </div>
+                            <div class="small-d-line"> &nbsp;</div>
+
+                            <div class="small-d-card">
+                                <div class="icon-area">
+                                    <img src="./assets/images/noun-map-2588623%202.svg" alt="noun-map-2588623%202.svg">
+                                </div>
+                                <div class="content-area">
+                                    <div class="title-area">100.0<span>(2021)</span></div>
+                                    <div class="detail-area">Area of electricity
+                                        (% of population)</div>
+                                </div>
+                            </div>
+                            <div class="small-d-line"> &nbsp;</div>
+                            <div class="small-d-card">
+                                <div class="icon-area">
+                                    <img src="./assets/images/noun-population-6334998%203.svg"
+                                        alt="noun-population-6334998%203.svg">
+                                </div>
+                                <div class="content-area">
+                                    <div class="title-area">22.1% <span>(2020)</span></div>
+                                    <div class="detail-area">population undernourished</div>
+                                </div>
+                            </div>
+                            <div class="small-d-line"> &nbsp;</div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 small-card-container">
+
+                            <div class="small-d-card">
+                                <div class="icon-area">
+                                    <img src="./assets/images/noun-population-6334998%202.svg"
+                                        alt="noun-population-6334998%202.svg">
+                                </div>
+                                <div class="content-area">
+                                    <div class="title-area">22,181,000<span>(2022)</span></div>
+                                    <div class="detail-area">Total Population</div>
+                                </div>
+                            </div>
+                            <div class="small-d-line"> &nbsp;</div>
+
+                            <div class="small-d-card">
+                                <div class="icon-area">
+                                    <img src="./assets/images/noun-climate-5832534%202.svg"
+                                        alt="noun-climate-5832534%202.svg">
+                                </div>
+                                <div class="content-area">
+                                    <div class="title-area"> 34.1<span>(2021)</span></div>
+                                    <div class="detail-area">Forest area (% of land area)</div>
+                                </div>
+                            </div>
+                            <div class="small-d-line"> &nbsp;</div>
+
+                            <div class="small-d-card">
+                                <div class="icon-area">
+                                    <img src="./assets/images/noun-mountain-12574%201.svg"
+                                        alt="noun-mountain-12574%201.svg">
+                                </div>
+                                <div class="content-area">
+                                    <div class="title-area">25<span>(2020)</span></div>
+                                    <div class="detail-area">annual freshwater withdrawals, total (% of internal
+                                        resources)</div>
+                                </div>
+                            </div>
+                            <div class="small-d-line"> &nbsp;</div>
+                            <div class="small-d-card">
+                                <div class="icon-area">
+                                    <img src="./assets/images/noun-shelter-5970784%201.svg"
+                                        alt="noun-shelter-5970784%201.svg">
+                                </div>
+                                <div class="content-area">
+                                    <div class="title-area">41% <span>(2016)</span></div>
+                                    <div class="detail-area">National poverty rate</div>
+                                </div>
+                            </div>
+                            <div class="small-d-line"> &nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3 pe-0">
+                <div class="col-sm-12 col-col-md-12 col-lg-12 px-0">
+                    <div class="card border-radius-0 border-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box-new-data text-center mb-3">
+                                        <div class="country-details-img text-center">
+                                            <img src="./assets/images/hdi.svg" class=mt-3" height="74px">
+                                        </div>
+                                        <div class="bg-light-box pt-0 pb-0">
+                                            <h1 class="">0.782 </h1>
+                                            <p>(2021)</p>
+                                            <p>Human Development Index</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box-new-data text-center mb-3">
+                                        <div class="country-details-img text-center">
+                                            <img src="./assets/images/ate.svg" class=mt-3" height="74px">
+                                        </div>
+                                        <div class="bg-light-box pt-0 pb-0">
+                                            <!-- <h1 class="">45.5% </h1> -->
+                                            <h1 class="">100% </h1>
+                                            <p>(2021)</p>
+                                            <p>Access to electricity</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box-new-data text-center mb-3">
+                                        <div class="country-details-img text-center">
+                                            <img src="./assets/images/iuti.svg" class=mt-3" height="74px">
+                                        </div>
+                                        <div class="bg-light-box pt-0 pb-0">
+                                            <h1 class="">66.7% </h1>
+                                            <p>(2023)</p>
+                                            <p>Individuals using the internet</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-3">
+                                    <div class="box-new-data text-center mb-3">
+                                        <div class="country-details-img text-center">
+                                            <img src="./assets/images/adaptativ.png" class=mt-3" height="74px">
+                                        </div>
+                                        <div class="bg-light-box pt-0 pb-0">
+                                            <h1 class="">48.8%</h1>
+                                            <p>(2023)</p>
+                                            <p>Adaptive Capacity to Disasters
+                                                of the population
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3 pe-0">
+                <div class="col-sm-12 col-col-md-12 col-lg-12 mb-3">
+                    <h4 class="section-title">Climatology</h4>
+                </div>
+                <div class="col-sm-12 col-col-md-12 col-lg-12">
+                    <div class="card horizontal_card mb-3">
+                        <div class="card-body p-32px">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="d-flex">
+                                        <div class=""><img src="./assets/images/temparature-circle.svg"></div>
+                                        <div class="new-risk-box  ps-24px">
+                                            <h4 class="title mt-4">Temperature</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-5 col-lg-5">
+                                            <div class="new-risk-box-1 text-left">
+                                                <h5 class="sub-title">Historic climate&ZeroWidthSpace;</h5>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="ps-105px">
+                                                    <div class="temp-inc-1 mt-3"><span class=""><img
+                                                                src="./assets/images/Isolation_Mode.svg"></span>
+                                                        0.2°C </div>
+                                                </div>
+                                                <div class="ps-3 mt-3">
+                                                    <p><span class="">Increase in mean annual temperature by </span>
+                                                        <br><strong>1961 and 1990</strong>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-1 col-lg-1 text-end">
+                                            <img src="./assets/images/Line-v.svg">
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-6">
+                                            <div class="new-risk-box-1 text-left">
+                                                <h5 class="sub-title">Future climate&ZeroWidthSpace;&ZeroWidthSpace;
+                                                </h5>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="ps-105px">
+                                                    <div class="temp-inc-1 mt-3"><span class=""><img
+                                                                src="./assets/images/Isolation_Mode.svg"></span>
+                                                        0.8°C - 2°C </div>
+                                                </div>
+                                                <div class="ps-3 mt-3">
+                                                    <p><span class="">Increase in mean annual <br> temperature by
+                                                            <strong>2060</strong></span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-col-md-12 col-lg-12">
+                    <div class="card horizontal_card mb-3">
+                        <div class="card-body p-32px">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="d-flex">
+                                        <div class=""><img src="./assets/images/precipitation-new.svg"
+                                                style="height: 79px;"></div>
+                                        <div class="new-risk-box  ps-24px">
+                                            <h4 class="title mt-4">Precipitation</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-5 col-lg-5">
+                                            <div class="new-risk-box-1 text-left">
+                                                <h5 class="sub-title">Historic climate&ZeroWidthSpace;</h5>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="ps-105px">
+                                                    <div class="temp-inc-1 mt-3">
+                                                        <span class=""><img src="./assets/images/cloud-rain.svg"
+                                                                height="63px"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="ps-3 mt-3">
+                                                    <p><span class="">Decrease in island-wide mean annual precipitation
+                                                            of <strong>144 mm</strong> between <strong>1961 and
+                                                                1990</strong>.</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-1 col-lg-1 text-end">
+                                            <img src="./assets/images/Line-v.svg">
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-6">
+                                            <div class="new-risk-box-1 text-left">
+                                                <h5 class="sub-title">Future climate&ZeroWidthSpace;&ZeroWidthSpace;
+                                                </h5>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="ps-105px">
+                                                    <div class="temp-inc-1 mt-3">
+                                                        <span class=""><img src="./assets/images/cloud-rain.svg"
+                                                                height="63px"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="ps-3 mt-3">
+                                                    <p><span class="">Projections of change in precipitation vary, with
+                                                            some predicting decreases and some increases, but generally
+                                                            indicate an increase in variability and extreme
+                                                            events.</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-col-md-12 col-lg-12">
+                    <div class="card horizontal_card mb-3">
+                        <div class="card-body p-32px">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="d-flex">
+                                        <div class=""><img src="./assets/images/sea-level-new.svg"
+                                                style="height: 79px;"></div>
+                                        <div class="new-risk-box  ps-24px">
+                                            <h4 class="title mt-4">Sea level rise</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-5 col-lg-5">
+                                            <div class="new-risk-box-1 text-left">
+                                                <h5 class="sub-title">Historic Climate&ZeroWidthSpace;&ZeroWidthSpace;
+                                                </h5>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="ps-105px">
+                                                    <div class="temp-inc-1 mt-3">
+                                                        <span class=""><img
+                                                                src="./assets/images/sea-level-rise-svgrepo.svg"
+                                                                height="63px"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="ps-3 mt-3">
+                                                    <p><span class="">Uncertain rates of sea level rise around Sri
+                                                            Lanka, specifically, but accelerated rates across Asia with
+                                                            increases of <strong>3.1 mm</strong> per year from
+                                                            <strong>1993 – 2003</strong>.</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-1 col-lg-1 text-end">
+                                            <img src="./assets/images/Line-v.svg">
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-6">
+                                            <div class="new-risk-box-1 text-left">
+                                                <h5 class="sub-title">Future climate&ZeroWidthSpace;&ZeroWidthSpace;
+                                                </h5>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="ps-105px">
+                                                    <div class="temp-inc-1 mt-3">
+                                                        <span class=""><img
+                                                                src="./assets/images/sea-level-rise-svgrepo.svg"
+                                                                height="63px"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="ps-3 mt-3">
+                                                    <p><span class="">Total sea level rise of between
+                                                            <strong>0.2</strong> and <strong>0.6</strong> meters by
+                                                            mid-century.</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3 pe-0">
+                <div class="col-sm-12 col-col-md-12 col-lg-12 mb-3">
+                    <h4 class="section-title">National Adaptation Policies and Strategies</h4>
+                </div>
+                <div class="col-sm-12 col-col-md-12 col-lg-12">
+                    <div class="card horizontal_card mb-3">
+                        <div class="card-body p-32px">
+                            <div class="table-responsive">
+                                <table class="table na-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Policy, Strategy, Plan</th>
+                                            <th>Status</th>
+                                            <th>Document Access​</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>National Adaptation Plan (NAP) for Climate Change Impacts in Sri Lanka
+                                            </td>
+                                            <td>Enacted</td>
+                                            <td class="da">November, 2016</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nationally Determined Contribution</td>
+                                            <td>Submitted</td>
+                                            <td class="da">November, 2016</td>
+                                        </tr>
+                                        <tr>
+                                            <td>National Communications to the UNFCCC</td>
+                                            <td>Two Submitted</td>
+                                            <td class="da">Lates: March 2021</td>
+                                        </tr>
+                                        <tr>
+                                            <td>National Policy on Disaster Management</td>
+                                            <td>Enacted</td>
+                                            <td class="da">December 2010</td>
+                                        </tr>
+                                        <tr>
+                                            <td>National Climate Change Policy of Sri Lanka</td>
+                                            <td>Under Review</td>
+                                            <td class="da">2012</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-5 ps-0">
+                <img src="./assets/images/Sri_Lanka.jpg" class="w-100" height="750px">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-7 pe-100px">
+                <div class="country-overview-box mb-5 mt-2">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="me-4">
+                            <h4>Country Profile</h4>
+                        </div>
+                    </div>
+                    <p>Sri Lanka is an island nation located south of India in the Indian Ocean, separated from
+                        India by a narrow strait known as the Pak Strait. It is home to approximately <span
+                            class="large-text"><strong>22</strong></span> million
+                        people, the nation thrives with a tapestry of cultures and languages. The country
+                        encompasses an area of about <span class="large-text"><strong>65,000</strong></span>
+                        square kilometers, with Colombo serving as its
+                        capital and largest city. Administrative organization consist of <span
+                            class="large-text"><strong>9</strong></span> provinces, <span
+                            class="large-text"><strong>25</strong></span>
+                        districts, and <span class="large-text"><strong>331</strong></span> Divisional
+                        Secretariat Divisions (DSDs).
+                        The heart of the country lies within the central hills, where a network of <span
+                            class="large-text"><strong>103</strong></span> rivers
+                        originates, flowing across the nation and creating a dense river system.
+                        Piduruthalagala, rising at <span class="large-text"><strong>2505</strong></span>m,
+                        claims the highest peak in the central highlands. Sri
+                        Lanka's tropical climate guarantees usually high temperatures, with monthly averages
+                        fluctuating between <span class="large-text"><strong>22°C</strong></span> and <span
+                            class="large-text"><strong>33°C</strong></span>. Notably, the central highlands
+                        experience cooler
+                        temperatures due to their high altitude, ranging from <span
+                            class="large-text"><strong>7°C</strong></span> to <span
+                            class="large-text"><strong>21°C</strong></span>.
+                        Sri Lanka's climatic regions are divided into three major zones, delineated by their
+                        annual average rainfall: the "wet zone" (exceeding <span
+                            class="large-text"><strong>2500mm</strong></span>), the "intermediate zone"
+                        (ranging from 2500mm to 1900mm), and the "dry zone" (below <span
+                            class="large-text"><strong>1900mm</strong></span>). The monsoon winds
+                        across the Indian Ocean, coupled with atmospheric depressions and cyclones in the Bay of
+                        Bengal, predominantly govern the rainfall patterns experienced in Sri Lanka.</p>
+
+                    <p>There are four monsoons i.e. First Inter-monsoon (March to April), the Southwestern
+                        monsoon (May to September), Second Inter-monsoon (October to November) and the
+                        Northeastern monsoon (December to February). Parallel to the monsoon seasons there are
+                        two crop seasons called Yala (May to September and Maha (November to March).
+                    </p>
+                    <p>Floods, drought, landslides, cyclones, and strong winds are the major disasters in the
+                        country, and they have increased in frequency and intensity over the last two decades
+                        and adversely impacted food and water security, energy generation and livelihoods.
+                        Agriculture constitutes <span class="large-text"><strong>7</strong></span> percent of
+                        the GDP (Gross Domestic Product) and consists of
+                        major irrigation, minor irrigation, and rain-feds. </p>
+
+
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+
+<style>
+    @media only screen and (max-width:1024px) {
+        .pxpse-3rem {
+            padding-left: 2rem;
+            padding-right: 1.5rem;
+        }
+
+    }
+
+    @media only screen and (max-width: 700px) {
+        .pxpse-3rem {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .small-d-card {
+            padding: 30px 10px 10px 10px;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+    }
+
+    @media only screen and (max-width: 500px) {
+        .pxpse-3rem {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .small-d-card {
+            padding: 30px 10px 10px 10px;
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+</style>

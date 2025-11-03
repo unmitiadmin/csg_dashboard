@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>3 Dot Menu</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Indicator-Perspective-Copy" transform="translate(-1400.000000, -176.000000)">
+            <g id="3-Dot-Menu" transform="translate(1401.000000, 177.000000)">
+                <circle id="Oval-Copy-3" stroke="#4A4A4A" stroke-width="1.5" fill="#FFFFFF" cx="12" cy="12" r="12"></circle>
+                <g id="Group-13" transform="translate(11.000000, 5.000000)" fill="#4A4A4A">
+                    <circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle>
+                    <circle id="Oval-Copy-4" cx="1.5" cy="7.5" r="1.5"></circle>
+                    <circle id="Oval-Copy-5" cx="1.5" cy="13.5" r="1.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

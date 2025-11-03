@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="45px" viewBox="0 0 44 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Value chain</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dashboard-UI-Design-Tabs" transform="translate(-655.000000, -729.000000)">
+            <g id="Value-chain" transform="translate(655.000000, 730.000000)">
+                <path d="M22,44 C9.8497355,44 0,34.1502645 0,22 C0,9.8497355 9.8497355,0 22,0 C34.1502645,0 44,9.8497355 44,22 C44,34.1502645 34.1502645,44 22,44 Z M22,38 C30.836556,38 38,30.836556 38,22 C38,13.163444 30.836556,6 22,6 C13.163444,6 6,13.163444 6,22 C6,30.836556 13.163444,38 22,38 Z" id="Combined-Shape" fill="#4FA9C9"></path>
+                <g id="Group-17" transform="translate(13.000000, 14.000000)" fill="#4FA9C9">
+                    <rect id="Rectangle" x="3" y="0" width="3" height="14"></rect>
+                    <polygon id="Rectangle-Copy-52" points="8 3 11 3 11 14 8 14"></polygon>
+                    <rect id="Rectangle" x="0" y="13" width="19" height="2"></rect>
+                    <polygon id="Rectangle-Copy-54" points="3 16 6 16 6 18 3 18"></polygon>
+                    <polygon id="Rectangle-Copy-55" points="7.5 16 10.5 16 10.5 18 7.5 18"></polygon>
+                    <polygon id="Rectangle-Copy-56" points="12 16 15 16 15 18 12 18"></polygon>
+                    <polygon id="Rectangle-Copy-53" points="13 6 16 6 16 14 13 14"></polygon>
+                </g>
+                <polyline id="Path-11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="21.3770882 0 19 3 21.3770882 6"></polyline>
+                <polyline id="Path-11-Copy" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(3.616411, 17.000000) rotate(-73.000000) translate(-3.616411, -17.000000) " points="4.80495505 14 2.42786682 17 4.80495505 20"></polyline>
+                <polyline id="Path-11-Copy-2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(39.188544, 14.000000) scale(1, -1) rotate(-73.000000) translate(-39.188544, -14.000000) " points="40.3770882 11 38 14 40.3770882 17"></polyline>
+                <polyline id="Path-11-Copy-3" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(34.188544, 36.611190) scale(1, -1) rotate(-143.000000) translate(-34.188544, -36.611190) " points="35.3770882 33.6111902 33 36.6111902 35.3770882 39.6111902"></polyline>
+                <polyline id="Path-11-Copy-4" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(13.188544, 38.811190) scale(1, -1) rotate(143.000000) translate(-13.188544, -38.811190) " points="14.3770882 35.8111902 12 38.8111902 14.3770882 41.8111902"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

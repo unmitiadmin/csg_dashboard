@@ -1,0 +1,121 @@
+[
+    {
+        "id": "1",
+        "goal": "1. No Poverty",
+        "created_on": "2023-04-14 22:12:05",
+        "updated_on": "2023-04-14 22:12:05",
+        "status": "1"
+    },
+    {
+        "id": "2",
+        "goal": "2. Zero Hunger",
+        "created_on": "2023-04-14 22:12:05",
+        "updated_on": "2023-04-14 22:12:05",
+        "status": "1"
+    },
+    {
+        "id": "3",
+        "goal": "3. Good Health and Well-being",
+        "created_on": "2023-04-14 22:12:05",
+        "updated_on": "2023-04-14 22:12:05",
+        "status": "1"
+    },
+    {
+        "id": "4",
+        "goal": "4. Quality Education",
+        "created_on": "2023-04-14 22:12:05",
+        "updated_on": "2023-04-14 22:12:05",
+        "status": "1"
+    },
+    {
+        "id": "5",
+        "goal": "5. Gender Equality",
+        "created_on": "2023-04-14 22:12:05",
+        "updated_on": "2023-04-14 22:12:05",
+        "status": "1"
+    },
+    {
+        "id": "6",
+        "goal": "6. Clean Water and Sanitation",
+        "created_on": "2023-04-14 22:12:05",
+        "updated_on": "2023-04-14 22:12:05",
+        "status": "1"
+    },
+    {
+        "id": "7",
+        "goal": "7. Affordable and Clean Energy",
+        "created_on": "2023-04-14 22:12:05",
+        "updated_on": "2023-04-14 22:12:05",
+        "status": "1"
+    },
+    {
+        "id": "8",
+        "goal": "8. Decent Work and Economic Growth",
+        "created_on": "2023-04-14 22:12:05",
+        "updated_on": "2023-04-14 22:12:05",
+        "status": "1"
+    },
+    {
+        "id": "9",
+        "goal": "9. Industry, Innovation and Infrastructure",
+        "created_on": "2023-04-14 22:12:05",
+        "updated_on": "2023-04-14 22:12:05",
+        "status": "1"
+    },
+    {
+        "id": "10",
+        "goal": "10. Reduced Inequalities",
+        "created_on": "2023-04-14 22:12:05",
+        "updated_on": "2023-04-14 22:12:05",
+        "status": "1"
+    },
+    {
+        "id": "11",
+        "goal": "11. Sustainable Cities and Communities",
+        "created_on": "2023-04-14 22:12:05",
+        "updated_on": "2023-04-14 22:12:05",
+        "status": "1"
+    },
+    {
+        "id": "12",
+        "goal": "12. Responsible Consumption and Production",
+        "created_on": "2023-04-14 22:12:05",
+        "updated_on": "2023-04-14 22:12:05",
+        "status": "1"
+    },
+    {
+        "id": "13",
+        "goal": "13. Climate Action",
+        "created_on": "2023-04-14 22:12:05",
+        "updated_on": "2023-04-14 22:12:05",
+        "status": "1"
+    },
+    {
+        "id": "14",
+        "goal": "14. Life Below Water",
+        "created_on": "2023-04-14 22:12:05",
+        "updated_on": "2023-04-14 22:12:05",
+        "status": "1"
+    },
+    {
+        "id": "15",
+        "goal": "15. Life On Land",
+        "created_on": "2023-04-14 22:12:05",
+        "updated_on": "2023-04-14 22:12:05",
+        "status": "1"
+    },
+    {
+        "id": "16",
+        "goal": "16. Peace, Justice and Strong Institutions",
+        "created_on": "2023-04-14 22:12:05",
+        "updated_on": "2023-04-14 22:12:05",
+        "status": "1"
+    },
+    {
+        "id": "17",
+        "goal": "17. Partnerships for the Goals",
+        "created_on": "2023-04-14 22:12:05",
+        "updated_on": "2023-04-14 22:12:05",
+        "status": "1"
+    }
+]

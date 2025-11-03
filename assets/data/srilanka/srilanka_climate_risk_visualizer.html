@@ -1,0 +1,685 @@
+<section class="" style="background-color: #F4FAF7;">
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <!-- <h4 class="mt-50px mb-4">Climate variable/Period</h4> -->
+                <p>The climate risk visualizer module provides hazards, exposure, vulnerability and lack of coping capacity to assess the risk index at the national level. The information supports policymakers and managers to prioritize climate adaptation and mitigation strategies for targeted investment to reduce the vulnerability among communities and strengthen resilient infrastructure.</p>
+            </div>
+            <hr>
+        </div>
+        
+        <div class="row mt-50px">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <h4 class="guage-title my-3">Medium</h4>
+                <div class="" id="climate_risk_visualizer"
+                    style="width:100%;height:300px;margin-top: 21px;">
+                </div>
+                <h4 class="guage-title mt-3">Overall Risk</h4>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-8">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+                        <h4 class="guage-title my-3">Low</h4>
+                        <div class="" id="hazard_and_exposure"
+                            style="width:100%;height:200px;margin-top: 111px;"> </div>
+                        <h4 class="guage-title mt-40px">Hazard & Exposure</h4>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+                        <h4 class="guage-title my-3">Medium</h4>
+                        <div class="" id="vulnerability_guage"
+                            style="width:100%;height:200px;margin-top: 111px;"> </div>
+                        <h4 class="guage-title mt-40px">Vulnerability</h4>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+                        <h4 class="guage-title my-3">Medium</h4>
+                        <div class="" id="lack_of_coping_capacity"
+                            style="width:100%;height:200px;margin-top: 111px;"> </div>
+                        <h4 class="guage-title mt-40px">Lack of Coping capacity</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 mb-3">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="d-flex justify-content-start align-items-center">
+                    <div class="mx-3">
+                        <span class="Legend-colorBox" style="background-color: #28a83d;"></span> <span class="ps-2 prt-box">0-2 Very low</span>
+                    </div>
+                    <div class="mx-3">
+                        <span class="Legend-colorBox" style="background-color: #80c32b;"></span> <span class="ps-2 prt-box">2-4 Low</span>
+                    </div>
+                    <div class="mx-3">
+                        <span class="Legend-colorBox" style="background-color: #ffdb0f;"></span> <span class="ps-2 prt-box">4-6 Medium</span>
+                    </div>
+                    <div class="mx-3">
+                        <span class="Legend-colorBox" style="background-color: #ef7e08;"></span> <span class="ps-2 prt-box">6-8 High</span>
+                    </div>
+                    <div class="mx-3">
+                        <span class="Legend-colorBox" style="background-color: #e22d03;"></span> <span class="ps-2 prt-box">8-10 Very High</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-50px">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4  tem-img">
+                        <h4 class="sub-title mt-4 mb-3 text-start">Hazard & Exposure  <span data-toggle="modal" data-target="#exampleModal" class="cursor ps-1"><img src="./assets/images/info-circle.svg" height="20px"></span></h4>
+                        <hr>
+                        <div class="table-responsive border" style="height: 331px;">
+                            <table class="table tbl_border_none">
+                                <tbody>
+                                    <tr>
+                                        <td>Physical exposure to earthquake</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width: 1%;"
+                                                    aria-valuenow="28" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">0.1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Physical exposure to flood</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-4"
+                                                    role="progressbar" style="width: 61%;"
+                                                    aria-valuenow="55" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">6.1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Physical exposure to tsunami</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-5"
+                                                    role="progressbar" style="width: 85%;"
+                                                    aria-valuenow="85" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">8.5</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Physical exposure to tropical cyclone</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-2"
+                                                    role="progressbar" style="width: 36%;"
+                                                    aria-valuenow="0" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">3.6</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>People affected by droughts and Frequency of events
+                                        </td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-5"
+                                                    role="progressbar" style="width: 83%;"
+                                                    aria-valuenow="66" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">8.3</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Frequency of drought events
+                                        </td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-4"
+                                                    role="progressbar" style="width: 67%;"
+                                                    aria-valuenow="66" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">6.7</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Agriculture Droughts probability</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width: 0%;"
+                                                    aria-valuenow="0" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">0.0</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Droughts probability and historical impact</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-2"
+                                                    role="progressbar" style="width: 38%;"
+                                                    aria-valuenow="3.8" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">3.8</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 tem-img">
+                        <h4 class="sub-title mt-4 mb-3 text-start">Vulnerability <span data-toggle="modal" data-target="#exampleModal1" class="cursor ps-1"><img src="./assets/images/info-circle.svg" height="20px"></span></span></h4>
+                        <hr>
+                        <div class="table-responsive border" style="height: 331px;">
+                            <table class="table tbl_border_none">
+                                <tbody>
+                                    <tr>
+                                        <td>Human Development Index</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-2"
+                                                    role="progressbar" style="width: 24%;"
+                                                    aria-valuenow="2.4" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">2.4</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Multidimensional Poverty Index</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-2"
+                                                    role="progressbar" style="width: 39%;"
+                                                    aria-valuenow="3.9" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">3.9</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Development & Deprivation</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-2"
+                                                    role="progressbar" style="width: 32%;"
+                                                    aria-valuenow="3.2" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">3.2</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gender Inequality Index</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-3"
+                                                    role="progressbar" style="width: 53%;"
+                                                    aria-valuenow="5.3" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">5.3</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gini Index</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-2"
+                                                    role="progressbar" style="width: 36%;"
+                                                    aria-valuenow="3.6" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">3.6</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Inequality</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-3"
+                                                    role="progressbar" style="width: 45%;"
+                                                    aria-valuenow="4.5" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">4.5</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Public Aid per capita (US$)</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width: 3%;"
+                                                    aria-valuenow="0.3" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">0.3</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Net ODA received (% of GNI)</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width: 2%;"
+                                                    aria-valuenow="0.2" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">0.2</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Volume of remittances</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-2"
+                                                    role="progressbar" style="width: 29%;"
+                                                    aria-valuenow="2.9" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">2.9</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Economic Dependency Index</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width: 11%;"
+                                                    aria-valuenow="1.1" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">1.1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uprooted people (total population)</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-2"
+                                                    role="progressbar" style="width: 37%;"
+                                                    aria-valuenow="3.7" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">3.7</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Uprooted people (percentage of the total
+                                            population)</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-2"
+                                                    role="progressbar" style="width: 28%;"
+                                                    aria-valuenow="2.8" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">2.8</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Uprooted people</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-2"
+                                                    role="progressbar" style="width: 33%;"
+                                                    aria-valuenow="3.3" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">3.3</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>HIV</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width: 1%;"
+                                                    aria-valuenow="0.1" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">0.1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Incidence of Tuberculosis</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width: 12%;"
+                                                    aria-valuenow="1.2" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">1.2</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Malaria incidence per 1,000 population at risk </td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width: 0%;"
+                                                    aria-valuenow="0" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">0.0</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>People requiring interventions against neglected
+                                            tropical diseases </td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width: 0%;"
+                                                    aria-valuenow="0" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">0.0</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Health Conditions </td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width: 3%;"
+                                                    aria-valuenow="0.3" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">0.3</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Food Availability Score</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-2"
+                                                    role="progressbar" style="width: 35%;"
+                                                    aria-valuenow="3.5" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">3.5</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Food Utilization Score</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width: 0%;"
+                                                    aria-valuenow="0" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">0.0</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Food Security</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width: 18%;"
+                                                    aria-valuenow="1.8" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">1.8</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4  tem-img">
+                        <h4 class="sub-title mt-4 mb-3 text-start">Lack of Coping Capacity <span data-toggle="modal" data-target="#exampleModal2" class="cursor ps-1"><img src="./assets/images/info-circle.svg" height="20px"></span></h4>
+                        <hr>
+                        <div class="table-responsive border" style="height: 331px;">
+                            <table class="table tbl_border_none">
+                                <tbody>
+                                    <tr>
+                                        <td>DRR</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-2"
+                                                    role="progressbar" style="width: 36%;"
+                                                    aria-valuenow="3.6" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">3.6</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Corruption precipitation Index</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-4"
+                                                    role="progressbar" style="width: 63%;"
+                                                    aria-valuenow="6.3" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">6.3</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Government Effectiveness</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-3"
+                                                    role="progressbar" style="width: 51%;"
+                                                    aria-valuenow="5.1" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">5.1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Governance</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-3"
+                                                    role="progressbar" style="width: 57%;"
+                                                    aria-valuenow="5.7" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">5.7</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Adult literacy rate</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width: 16%;"
+                                                    aria-valuenow="1.6" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">1.6</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Access to electricity</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width: 0%;"
+                                                    aria-valuenow="0" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">0.0</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Internet users</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-4"
+                                                    role="progressbar" style="width: 65%;"
+                                                    aria-valuenow="6.5" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">6.5</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mobile cellular subscriptions</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-2"
+                                                    role="progressbar" style="width: 31%;"
+                                                    aria-valuenow="3.1" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">3.1</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Communication</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-2"
+                                                    role="progressbar" style="width: 28%;"
+                                                    aria-valuenow="2.8" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">2.8</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Road density</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-3"
+                                                    role="progressbar" style="width: 59%;"
+                                                    aria-valuenow="5.9" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">5.9</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Sanitation</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width:7%;"
+                                                    aria-valuenow="0.7" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">0.7</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Drinking water</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width: 16%;"
+                                                    aria-valuenow="1.6" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">1.6</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Physical Connectivity</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-2"
+                                                    role="progressbar" style="width: 27%;"
+                                                    aria-valuenow="2.7" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">2.7</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Physicians Density</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-4"
+                                                    role="progressbar" style="width: 76%;"
+                                                    aria-valuenow="7.6" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">7.6</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Immunization coverage</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width: 5%;"
+                                                    aria-valuenow="0.5" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">0.5</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>per capita public and private expenditure on health
+                                            care</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-5"
+                                                    role="progressbar" style="width: 82%;"
+                                                    aria-valuenow="8.2" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">8.2</span></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Maternal Mortality ratio</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-1"
+                                                    role="progressbar" style="width: 4%;"
+                                                    aria-valuenow="0.4" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">0.4</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Access to health care index</td>
+                                        <td class="progress-w-200px">
+                                            <div class="progress progress-line-1">
+                                                <div class="progress-bar progress-active-3"
+                                                    role="progressbar" style="width: 42%;"
+                                                    aria-valuenow="4.2" aria-valuemin="0"
+                                                    aria-valuemax="10"></div>
+                                            </div>
+                                        </td>
+                                        <td><span class="small-bold">4.2</span></td>
+                                    </tr>															
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h5 class="sub-title mt-4">Reference </h5>
+                <a class="p-0 text-primary" href="https://drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk/Country-Risk-Profile" target="_blank">https://drmkc.jrc.ec.europa.eu/inform-index/INFORM-Risk/Country-Risk-Profile</a>
+            </div>
+        </div>
+    </div>
+</section>

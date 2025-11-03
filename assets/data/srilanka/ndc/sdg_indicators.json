@@ -1,0 +1,1598 @@
+[
+    {
+        "id": "1.1.1",
+        "dimension_id": "1",
+        "sub_dimension_id": "1.1",
+        "indicator": "Proportion of population below the international poverty line, by sex, age, employment status and geographical location (urban/rural)",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "1.2.1",
+        "dimension_id": "1",
+        "sub_dimension_id": "1.2",
+        "indicator": "Proportion of population living below the national poverty line, by sex and age",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "1.2.2",
+        "dimension_id": "1",
+        "sub_dimension_id": "1.2",
+        "indicator": "Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "1.3.1",
+        "dimension_id": "1",
+        "sub_dimension_id": "1.3",
+        "indicator": "Proportion of population covered by social protection floors/systems, by sex, distinguishing children, unemployed persons, older persons, persons with disabilities, pregnant women, newborns, work-injury victims and the poor and the vulnerable",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "1.4.1",
+        "dimension_id": "1",
+        "sub_dimension_id": "1.4",
+        "indicator": "Proportion of population living in households with access to basic services",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "1.4.2",
+        "dimension_id": "1",
+        "sub_dimension_id": "1.4",
+        "indicator": "Proportion of total adult population with secure tenure rights to land, with legally recognized documentation and who perceive their rights to land as secure, by sex and by type of tenure",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "1.5.1",
+        "dimension_id": "1",
+        "sub_dimension_id": "1.5",
+        "indicator": "Number of deaths, missing persons and persons affected by disaster per 100,000 people",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "1.5.2",
+        "dimension_id": "1",
+        "sub_dimension_id": "1.5",
+        "indicator": "Direct disaster economic loss in relation to global gross domestic product (GDP) [a]",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "1.5.3",
+        "dimension_id": "1",
+        "sub_dimension_id": "1.5",
+        "indicator": "Number of countries with national and local disaster risk reduction strategies",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "1.a.1",
+        "dimension_id": "1",
+        "sub_dimension_id": "1.a",
+        "indicator": "Proportion of resources allocated by the government directly to poverty reduction programmes",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "1.a.2",
+        "dimension_id": "1",
+        "sub_dimension_id": "1.a",
+        "indicator": "Proportion of total government spending on essential services (education, health and social protection)",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "1.b.1",
+        "dimension_id": "1",
+        "sub_dimension_id": "1.b",
+        "indicator": "Proportion of government recurrent and capital spending to sectors that disproportionately benefit women, the poor and vulnerable groups",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "2.1.1",
+        "dimension_id": "2",
+        "sub_dimension_id": "2.1",
+        "indicator": "Prevalence of undernourishment",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "2.1.2",
+        "dimension_id": "2",
+        "sub_dimension_id": "2.1",
+        "indicator": "Prevalence of moderate or severe food insecurity in the population, based on the Food Insecurity Experience Scale (FIES)",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "2.2.1",
+        "dimension_id": "2",
+        "sub_dimension_id": "2.2",
+        "indicator": "Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "2.2.2",
+        "dimension_id": "2",
+        "sub_dimension_id": "2.2",
+        "indicator": "Prevalence of malnutrition (weight for height >+2 or <-2 standard deviation from the median of the WHO Child Growth Standards) among children under 5 years of age, by type (wasting and overweight)",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "2.3.1",
+        "dimension_id": "2",
+        "sub_dimension_id": "2.3",
+        "indicator": "Volume of production per labour unit by classes of farming/pastoral/forestry enterprise size",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "2.3.2",
+        "dimension_id": "2",
+        "sub_dimension_id": "2.3",
+        "indicator": "Average income of small-scale food producers, by sex and indigenous status",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "2.4.1",
+        "dimension_id": "2",
+        "sub_dimension_id": "2.4",
+        "indicator": "Proportion of agricultural area under productive and sustainable agriculture",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "2.5.1",
+        "dimension_id": "2",
+        "sub_dimension_id": "2.5",
+        "indicator": "Number of plant and animal genetic resources for food and agriculture secured in either medium or long-term conservation facilities",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "2.5.2",
+        "dimension_id": "2",
+        "sub_dimension_id": "2.5",
+        "indicator": "Proportion of local breeds classified as being at risk, not-at-risk or at unknown level of risk of extinction",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "2.a.1",
+        "dimension_id": "2",
+        "sub_dimension_id": "2.a",
+        "indicator": "The agriculture orientation index for government expenditures",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "2.a.2",
+        "dimension_id": "2",
+        "sub_dimension_id": "2.a",
+        "indicator": "Total official flows (official development assistance plus other official flows) to the agriculture sector",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.1.1",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.1",
+        "indicator": "Maternal mortality ratio",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.1.2",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.1",
+        "indicator": "Proportion of births attended by skilled health personnel",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.2.1",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.2",
+        "indicator": "Under-five mortality rate",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.2.2",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.2",
+        "indicator": "Neonatal mortality rate",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.3.1",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.3",
+        "indicator": "Number of new HIV infections per 1,000 uninfected population, by sex, age and key populations",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.3.2",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.3",
+        "indicator": "Tuberculosis incidence per 1,000 population",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.3.3",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.3",
+        "indicator": "Malaria incidence per 1,000 population",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.3.4",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.3",
+        "indicator": "Hepatitis B incidence per 100,000 population",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.3.5",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.3",
+        "indicator": "Number of people requiring interventions against neglected tropical diseases",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.4.1",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.4",
+        "indicator": "Mortality rate attributed to cardiovascular disease, cancer, diabetes or chronic respiratory disease",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.4.2",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.4",
+        "indicator": "Suicide mortality rate",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.5.1",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.5",
+        "indicator": "Coverage of treatment interventions (pharmacological, psychosocial and rehabilitation and aftercare services) for substance use disorders",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.5.2",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.5",
+        "indicator": "Harmful use of alcohol, defined according to the national context as alcohol per capita consumption (aged 15 years and older) within a calendar year in litres of pure alcohol",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.6.1",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.6",
+        "indicator": "Death rate due to road traffic injuries",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.7.1",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.7",
+        "indicator": "Proportion of women of reproductive age (aged 15-49 years) who have their need for family planning satisfied with modern methods",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.7.2",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.7",
+        "indicator": "Adolescent birth rate (aged 10-14 years; aged 15-19 years) per 1,000 women in that age group",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.8.1",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.8",
+        "indicator": "Coverage of essential health services (defined as the average coverage of essential services based on tracer interventions that include reproductive, maternal, newborn and child health, infectious diseases, non-communicable diseases and service capacity and access, among the general and the most disadvantaged population)",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.8.2",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.8",
+        "indicator": "Number of people covered by health insurance or a public health system per 1,000 population",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.9.1",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.9",
+        "indicator": "Mortality rate attributed to household and ambient air pollution",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.9.2",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.9",
+        "indicator": "Mortality rate attributed to unsafe water, unsafe sanitation and lack of hygiene (exposure to unsafe Water, Sanitation and Hygiene for All (WASH) services)",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.9.3",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.9",
+        "indicator": "Mortality rate attributed to unintentional poisoning",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.a.1",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.a",
+        "indicator": "Age-standardized prevalence of current tobacco use among persons aged 15 years and older",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.b.1",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.b",
+        "indicator": "Proportion of the population with access to affordable medicines and vaccines on a sustainable basis",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.b.2",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.b",
+        "indicator": "Total net official development assistance to medical research and basic health sectors",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.c.1",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.c",
+        "indicator": "Health worker density and distribution",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "3.d.1",
+        "dimension_id": "3",
+        "sub_dimension_id": "3.d",
+        "indicator": "International Health Regulations (IHR) capacity and health emergency preparedness",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "4.1.1",
+        "dimension_id": "4",
+        "sub_dimension_id": "4.1",
+        "indicator": "Proportion of children and young people: (a) in grades 2/3; (b) at the end of primary; and (c) at the end of lower secondary achieving at least a minimum proficiency level in (i) reading and (ii) mathematics, by sex",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "4.2.1",
+        "dimension_id": "4",
+        "sub_dimension_id": "4.2",
+        "indicator": "Proportion of children under 5 years of age who are developmentally on track in health, learning and psychosocial well-being, by sex",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "4.2.2",
+        "dimension_id": "4",
+        "sub_dimension_id": "4.2",
+        "indicator": "Participation rate in organized learning (one year before the official primary entry age), by sex",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "4.3.1",
+        "dimension_id": "4",
+        "sub_dimension_id": "4.3",
+        "indicator": "Participation rate of youth and adults in formal and non-formal education and training in the previous 12 months, by sex",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "4.4.1",
+        "dimension_id": "4",
+        "sub_dimension_id": "4.4",
+        "indicator": "Proportion of youth and adults with information and communications technology (ICT) skills, by type of skill",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "4.5.1",
+        "dimension_id": "4",
+        "sub_dimension_id": "4.5",
+        "indicator": "Parity indices (female/male, rural/urban, bottom/top wealth quintile and others such as disability status, indigenous peoples and conflict-affected, as data become available) for all education indicators on this list that can be disaggregated",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "4.6.1",
+        "dimension_id": "4",
+        "sub_dimension_id": "4.6",
+        "indicator": "Percentage of population in a given age group achieving at least a fixed level of proficiency in functional (a) literacy and (b) numeracy skills, by sex",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "4.7.1",
+        "dimension_id": "4",
+        "sub_dimension_id": "4.7",
+        "indicator": "Extent to which (i) global citizenship education and (ii) education for sustainable development, including gender equality and human rights, are mainstreamed at all levels in: (a) national education policies, (b) curricula, (c) teacher education and (d) student assessment",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "4.a.1",
+        "dimension_id": "4",
+        "sub_dimension_id": "4.a",
+        "indicator": "Proportion of schools with access to: (a) electricity; (b) the Internet for pedagogical purposes; (c) computers for pedagogical purposes; (d) adapted infrastructure and materials for students with disabilities; (e) basic drinking water; (f) single-sex basic sanitation facilities; and (g) basic handwashing facilities (as per the WASH indicator definitions)",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "4.b.1",
+        "dimension_id": "4",
+        "sub_dimension_id": "4.b",
+        "indicator": "Volume of official development assistance flows for scholarships by sector and type of study",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "4.c.1",
+        "dimension_id": "4",
+        "sub_dimension_id": "4.c",
+        "indicator": "Proportion of teachers in: (a) pre-primary; (b) primary; (c) lower secondary; and (d) upper secondary education who have received at least the minimum organized teacher training (e.g. pedagogical training) pre-service or in-service required for teaching at the relevant level in a given country",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "5.1.1",
+        "dimension_id": "5",
+        "sub_dimension_id": "5.1",
+        "indicator": "Whether or not legal frameworks are in place to promote, enforce and monitor equality and non‑discrimination on the basis of sex",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "5.2.1",
+        "dimension_id": "5",
+        "sub_dimension_id": "5.2",
+        "indicator": "Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "5.2.2",
+        "dimension_id": "5",
+        "sub_dimension_id": "5.2",
+        "indicator": "Proportion of women and girls aged 15 years and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months, by age and place of occurrence",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "5.3.1",
+        "dimension_id": "5",
+        "sub_dimension_id": "5.3",
+        "indicator": "Proportion of women aged 20-24 years who were married or in a union before age 15 and before age 18",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "5.3.2",
+        "dimension_id": "5",
+        "sub_dimension_id": "5.3",
+        "indicator": "Proportion of girls and women aged 15-49 years who have undergone female genital mutilation/cutting, by age",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "5.4.1",
+        "dimension_id": "5",
+        "sub_dimension_id": "5.4",
+        "indicator": "Proportion of time spent on unpaid domestic and care work, by sex, age and location",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "5.5.1",
+        "dimension_id": "5",
+        "sub_dimension_id": "5.5",
+        "indicator": "Proportion of seats held by women in national parliaments and local governments",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "5.5.2",
+        "dimension_id": "5",
+        "sub_dimension_id": "5.5",
+        "indicator": "Proportion of women in managerial positions",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "5.6.1",
+        "dimension_id": "5",
+        "sub_dimension_id": "5.6",
+        "indicator": "Proportion of women aged 15-49 years who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "5.6.2",
+        "dimension_id": "5",
+        "sub_dimension_id": "5.6",
+        "indicator": "Number of countries with laws and regulations that guarantee women aged 15-49 years access to sexual and reproductive health care, information and education",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "5.a.1",
+        "dimension_id": "5",
+        "sub_dimension_id": "5.a",
+        "indicator": "(a) Proportion of total agricultural population with ownership or secure rights over agricultural land, by sex; and (b) share of women among owners or rights-bearers of agricultural land, by type of tenure",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "5.a.2",
+        "dimension_id": "5",
+        "sub_dimension_id": "5.a",
+        "indicator": "Proportion of countries where the legal framework (including customary law) guarantees women’s equal rights to land ownership and/or control",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "5.b.1",
+        "dimension_id": "5",
+        "sub_dimension_id": "5.b",
+        "indicator": "Proportion of individuals who own a mobile telephone, by sex",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "5.c.1",
+        "dimension_id": "5",
+        "sub_dimension_id": "5.c",
+        "indicator": "Proportion of countries with systems to track and make public allocations for gender equality and women’s empowerment",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "6.1.1",
+        "dimension_id": "6",
+        "sub_dimension_id": "6.1",
+        "indicator": "Proportion of population using safely managed drinking water services",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "6.2.1",
+        "dimension_id": "6",
+        "sub_dimension_id": "6.2",
+        "indicator": "Proportion of population using safely managed sanitation services, including a hand-washing facility with soap and water",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "6.3.1",
+        "dimension_id": "6",
+        "sub_dimension_id": "6.3",
+        "indicator": "Proportion of wastewater safely treated",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "6.3.2",
+        "dimension_id": "6",
+        "sub_dimension_id": "6.3",
+        "indicator": "Proportion of bodies of water with good ambient water quality",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "6.4.1",
+        "dimension_id": "6",
+        "sub_dimension_id": "6.4",
+        "indicator": "Change in water-use efficiency over time",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "6.4.2",
+        "dimension_id": "6",
+        "sub_dimension_id": "6.4",
+        "indicator": "Level of water stress: freshwater withdrawal as a proportion of available freshwater resources",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "6.5.1",
+        "dimension_id": "6",
+        "sub_dimension_id": "6.5",
+        "indicator": "Degree of integrated water resources management implementation (0-100)",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "6.5.2",
+        "dimension_id": "6",
+        "sub_dimension_id": "6.5",
+        "indicator": "Proportion of transboundary basin area with an operational arrangement for water cooperation",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "6.6.1",
+        "dimension_id": "6",
+        "sub_dimension_id": "6.6",
+        "indicator": "Change in the extent of water-related ecosystems over time",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "6.a.1",
+        "dimension_id": "6",
+        "sub_dimension_id": "6.a",
+        "indicator": "Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "6.b.1",
+        "dimension_id": "6",
+        "sub_dimension_id": "6.b",
+        "indicator": "Proportion of local administrative units with established and operational policies and procedures for participation of local communities in water and sanitation management",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "7.1.1",
+        "dimension_id": "7",
+        "sub_dimension_id": "7.1",
+        "indicator": "Proportion of population with access to electricity",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "7.1.2",
+        "dimension_id": "7",
+        "sub_dimension_id": "7.1",
+        "indicator": "Proportion of population with primary reliance on clean fuels and technology",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "7.2.1",
+        "dimension_id": "7",
+        "sub_dimension_id": "7.2",
+        "indicator": "Renewable energy share in the total final energy consumption",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "7.3.1",
+        "dimension_id": "7",
+        "sub_dimension_id": "7.3",
+        "indicator": "Energy intensity measured in terms of primary energy and GDP",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "7.a.1",
+        "dimension_id": "7",
+        "sub_dimension_id": "7.a",
+        "indicator": "Mobilized amount of United States dollars per year starting in 2020 accountable towards the $100 billion commitment",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "7.b.1",
+        "dimension_id": "7",
+        "sub_dimension_id": "7.b",
+        "indicator": "Investments in energy efficiency as a percentage of GDP and the amount of foreign direct investment in financial transfer for infrastructure and technology to sustainable development services",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "8.10.1",
+        "dimension_id": "8",
+        "sub_dimension_id": "8.1",
+        "indicator": "Number of commercial bank branches and automated teller machines (ATMs) per 100,000 adults",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "8.10.2",
+        "dimension_id": "8",
+        "sub_dimension_id": "8.1",
+        "indicator": "Proportion of adults (15 years and older) with an account at a bank or other financial institution or with a mobile-money-service provider",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "8.2.1",
+        "dimension_id": "8",
+        "sub_dimension_id": "8.2",
+        "indicator": "Annual growth rate of real GDP per employed person",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "8.3.1",
+        "dimension_id": "8",
+        "sub_dimension_id": "8.3",
+        "indicator": "Proportion of informal employment in non‑agriculture employment, by sex",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "8.4.1",
+        "dimension_id": "8",
+        "sub_dimension_id": "8.4",
+        "indicator": "Material footprint, material footprint per capita, and material footprint per GDP",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "8.4.2",
+        "dimension_id": "8",
+        "sub_dimension_id": "8.4",
+        "indicator": "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "8.5.1",
+        "dimension_id": "8",
+        "sub_dimension_id": "8.5",
+        "indicator": "Average hourly earnings of female and male employees, by occupation, age and persons with disabilities",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "8.5.2",
+        "dimension_id": "8",
+        "sub_dimension_id": "8.5",
+        "indicator": "Unemployment rate, by sex, age and persons with disabilities",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "8.6.1",
+        "dimension_id": "8",
+        "sub_dimension_id": "8.6",
+        "indicator": "Proportion of youth (aged 15-24 years) not in education, employment or training",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "8.7.1",
+        "dimension_id": "8",
+        "sub_dimension_id": "8.7",
+        "indicator": "Proportion and number of children aged 5‑17 years engaged in child labour, by sex and age",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "8.8.1",
+        "dimension_id": "8",
+        "sub_dimension_id": "8.8",
+        "indicator": "Frequency rates of fatal and non-fatal occupational injuries, by sex and migrant status",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "8.8.2",
+        "dimension_id": "8",
+        "sub_dimension_id": "8.8",
+        "indicator": "Increase in national compliance of labour rights (freedom of association and collective bargaining) based on International Labour Organization (ILO) textual sources and national legislation, by sex and migrant status",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "8.a.1",
+        "dimension_id": "8",
+        "sub_dimension_id": "8.a",
+        "indicator": "Aid for Trade commitments and disbursements",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "8.b.1",
+        "dimension_id": "8",
+        "sub_dimension_id": "8.b",
+        "indicator": "Total government spending in social protection and employment programmes as a proportion of the national budgets and GDP",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "9.1.1",
+        "dimension_id": "9",
+        "sub_dimension_id": "9.1",
+        "indicator": "Proportion of the rural population who live within 2 km of an all-season road",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "9.1.2",
+        "dimension_id": "9",
+        "sub_dimension_id": "9.1",
+        "indicator": "Passenger and freight volumes, by mode of transport",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "9.2.1",
+        "dimension_id": "9",
+        "sub_dimension_id": "9.2",
+        "indicator": "Manufacturing value added as a proportion of GDP and per capita",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "9.2.2",
+        "dimension_id": "9",
+        "sub_dimension_id": "9.2",
+        "indicator": "Manufacturing employment as a proportion of total employment",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "9.3.1",
+        "dimension_id": "9",
+        "sub_dimension_id": "9.3",
+        "indicator": "Proportion of small-scale industries in total industry value added",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "9.3.2",
+        "dimension_id": "9",
+        "sub_dimension_id": "9.3",
+        "indicator": "Proportion of small-scale industries with a loan or line of credit",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "9.4.1",
+        "dimension_id": "9",
+        "sub_dimension_id": "9.4",
+        "indicator": "CO2 emission per unit of value added",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "9.5.1",
+        "dimension_id": "9",
+        "sub_dimension_id": "9.5",
+        "indicator": "Research and development expenditure as a proportion of GDP",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "9.5.2",
+        "dimension_id": "9",
+        "sub_dimension_id": "9.5",
+        "indicator": "Researchers (in full-time equivalent) per million inhabitants",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "9.a.1",
+        "dimension_id": "9",
+        "sub_dimension_id": "9.a",
+        "indicator": "Total official international support (official development assistance plus other official flows) to infrastructure",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "9.b.1",
+        "dimension_id": "9",
+        "sub_dimension_id": "9.b",
+        "indicator": "Proportion of medium and high-tech industry value added in total value added",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "9.c.1",
+        "dimension_id": "9",
+        "sub_dimension_id": "9.c",
+        "indicator": "Proportion of population covered by a mobile network, by technology",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "10.1.1",
+        "dimension_id": "10",
+        "sub_dimension_id": "10.1",
+        "indicator": "Growth rates of household expenditure or income per capita among the bottom 40 per cent of the population and the total population",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "10.2.1",
+        "dimension_id": "10",
+        "sub_dimension_id": "10.2",
+        "indicator": "Proportion of people living below 50 per cent of median income, by age, sex and persons with disabilities",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "10.3.1",
+        "dimension_id": "10",
+        "sub_dimension_id": "10.3",
+        "indicator": "Proportion of the population reporting having personally felt discriminated against or harassed within the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "10.4.1",
+        "dimension_id": "10",
+        "sub_dimension_id": "10.4",
+        "indicator": "Labour share of GDP, comprising wages and social protection transfers",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "10.5.1",
+        "dimension_id": "10",
+        "sub_dimension_id": "10.5",
+        "indicator": "Financial Soundness Indicators",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "10.6.1",
+        "dimension_id": "10",
+        "sub_dimension_id": "10.6",
+        "indicator": "Proportion of members and voting rights of developing countries in international organizations",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "10.7.1",
+        "dimension_id": "10",
+        "sub_dimension_id": "10.7",
+        "indicator": "Recruitment cost borne by employee as a proportion of yearly income earned in country of destination",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "10.7.2",
+        "dimension_id": "10",
+        "sub_dimension_id": "10.7",
+        "indicator": "Number of countries that have implemented well-managed migration policies",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "10.a.1",
+        "dimension_id": "10",
+        "sub_dimension_id": "10.a",
+        "indicator": "Proportion of tariff lines applied to imports from least developed countries and developing countries with zero-tariff",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "10.b.1",
+        "dimension_id": "10",
+        "sub_dimension_id": "10.b",
+        "indicator": "Total resource flows for development, by recipient and donor countries and type of flow (e.g. official development assistance, foreign direct investment and other flows)",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "10.c.1",
+        "dimension_id": "10",
+        "sub_dimension_id": "10.c",
+        "indicator": "Remittance costs as a proportion of the amount remitted",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "11.2.1",
+        "dimension_id": "11",
+        "sub_dimension_id": "11.2",
+        "indicator": "Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "11.5.1",
+        "dimension_id": "11",
+        "sub_dimension_id": "11.5",
+        "indicator": "Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "11.5.2",
+        "dimension_id": "11",
+        "sub_dimension_id": "11.5",
+        "indicator": "Direct economic loss attributed to disasters in relation to global gross domestic product (GDP)",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "11.5.3",
+        "dimension_id": "11",
+        "sub_dimension_id": "11.5",
+        "indicator": "(a) Damage to critical infrastructure and (b) number of disruptions to basic services, attributed to disasters",
+        "measurement_level_id": "40"
+    },  
+    {
+        "id": "11.6.1",
+        "dimension_id": "11",
+        "sub_dimension_id": "11.6",
+        "indicator": "Proportion of municipal solid waste collected and managed in controlled facilities out of total municipal waste generated, by cities",
+        "measurement_level_id": "40"
+    },  
+    {
+        "id": "11.6.2",
+        "dimension_id": "11",
+        "sub_dimension_id": "11.6",
+        "indicator": "Annual mean levels of fine particulate matter (e.g. PM2.5 and PM10) in cities (population weighted)",
+        "measurement_level_id": "40"
+    },  
+    {
+        "id": "11.7.1",
+        "dimension_id": "11",
+        "sub_dimension_id": "11.7",
+        "indicator": "Average share of the built-up area of cities that is open space for public use for all, by sex, age and persons with disabilities",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "11.7.2",
+        "dimension_id": "11",
+        "sub_dimension_id": "11.7",
+        "indicator": "Proportion of persons victim of physical or sexual harassment, by sex, age, disability status and place of occurrence, in the previous 12 months",
+        "measurement_level_id": "40"
+    },     
+    {
+        "id": "11.b.1",
+        "dimension_id": "11",
+        "sub_dimension_id": "11.b",
+        "indicator": "Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015-2030a",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "11.b.2",
+        "dimension_id": "11",
+        "sub_dimension_id": "11.b",
+        "indicator": "Number of countries with national and local disaster risk reduction strategies",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "11.c.1",
+        "dimension_id": "11",
+        "sub_dimension_id": "11.c",
+        "indicator": "Proportion of financial support to the least developed countries that is allocated to the construction and retrofitting of sustainable, resilient and resource-efficient buildings utilizing local materials",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "12.1.1",
+        "dimension_id": "12",
+        "sub_dimension_id": "12.1",
+        "indicator": "Number of countries with sustainable consumption and production (SCP) national action plans or SCP mainstreamed as a priority or a target into national policies",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "12.2.1",
+        "dimension_id": "12",
+        "sub_dimension_id": "12.2",
+        "indicator": "Material footprint, material footprint per capita, and material footprint per GDP",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "12.2.2",
+        "dimension_id": "12",
+        "sub_dimension_id": "12.2",
+        "indicator": "Domestic material consumption, domestic material consumption per capita, and domestic material consumption per GDP",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "12.3.1",
+        "dimension_id": "12",
+        "sub_dimension_id": "12.3",
+        "indicator": "Global food loss index",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "12.4.1",
+        "dimension_id": "12",
+        "sub_dimension_id": "12.4",
+        "indicator": "Number of parties to international multilateral environmental agreements on hazardous waste, and other chemicals that meet their commitments and obligations in transmitting information as required by each relevant agreement",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "12.4.2",
+        "dimension_id": "12",
+        "sub_dimension_id": "12.4",
+        "indicator": "Hazardous waste generated per capita and proportion of hazardous waste treated, by type of treatment",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "12.5.1",
+        "dimension_id": "12",
+        "sub_dimension_id": "12.5",
+        "indicator": "National recycling rate, tons of material recycled",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "12.6.1",
+        "dimension_id": "12",
+        "sub_dimension_id": "12.6",
+        "indicator": "Number of companies publishing sustainability reports",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "12.7.1",
+        "dimension_id": "12",
+        "sub_dimension_id": "12.7",
+        "indicator": "Number of countries implementing sustainable public procurement policies and action plans",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "12.8.1",
+        "dimension_id": "12",
+        "sub_dimension_id": "12.8",
+        "indicator": "Extent to which (i) global citizenship education and (ii) education for sustainable development (including climate change education) are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "12.a.1",
+        "dimension_id": "12",
+        "sub_dimension_id": "12.a",
+        "indicator": "Amount of support to developing countries on research and development for sustainable consumption and production and environmentally sound technologies",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "12.b.1",
+        "dimension_id": "12",
+        "sub_dimension_id": "12.b",
+        "indicator": "Number of sustainable tourism strategies or policies and implemented action plans with agreed monitoring and evaluation tools",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "12.c.1",
+        "dimension_id": "12",
+        "sub_dimension_id": "12.c",
+        "indicator": "Amount of fossil-fuel subsidies per unit of GDP (production and consumption) and as a proportion of total national expenditure on fossil fuels",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "13.1.1",
+        "dimension_id": "13",
+        "sub_dimension_id": "13.1",
+        "indicator": "Number of countries with national and local disaster risk reduction strategies",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "13.2.1",
+        "dimension_id": "13",
+        "sub_dimension_id": "13.2",
+        "indicator": "Number of countries that have communicated the establishment or operationalization of an integrated policy/strategy/plan which increases their ability to adapt to the adverse impacts of climate change, and foster climate resilience and low greenhouse gas emissions development in a manner that does not threaten food production (including a national adaptation plan, nationally determined contribution, national communication, biennial update report or other)",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "13.3.1",
+        "dimension_id": "13",
+        "sub_dimension_id": "13.3",
+        "indicator": "Number of countries that have integrated mitigation, adaptation, impact reduction and early warning into primary, secondary and tertiary curricula",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "13.3.2",
+        "dimension_id": "13",
+        "sub_dimension_id": "13.3",
+        "indicator": "Number of countries that have communicated the strengthening of institutional, systemic and individual capacity-building to implement adaptation, mitigation and technology transfer, and development actions",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "13.a.1",
+        "dimension_id": "13",
+        "sub_dimension_id": "13.a",
+        "indicator": "Mobilized amount of United States dollars per year starting in 2020 accountable towards the $100 billion commitment",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "13.b.1",
+        "dimension_id": "13",
+        "sub_dimension_id": "13.b",
+        "indicator": "Number of least developed countries and small island developing States that are receiving specialized support, and amount of support, including finance, technology and capacity-building, for mechanisms for raising capacities for effective climate change-related planning and management, including focusing on women, youth and local and marginalized communities",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "14.1.1",
+        "dimension_id": "14",
+        "sub_dimension_id": "14.1",
+        "indicator": "Index of coastal eutrophication and floating plastic debris density",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "14.2.1",
+        "dimension_id": "14",
+        "sub_dimension_id": "14.2",
+        "indicator": "Proportion of national exclusive economic zones managed using ecosystem-based approaches",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "14.3.1",
+        "dimension_id": "14",
+        "sub_dimension_id": "14.3",
+        "indicator": "Average marine acidity (pH) measured at agreed suite of representative sampling stations",
+        "measurement_level_id": "47"
+    },
+    {
+        "id": "14.4.1",
+        "dimension_id": "14",
+        "sub_dimension_id": "14.4",
+        "indicator": "Proportion of fish stocks within biologically sustainable levels",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "14.5.1",
+        "dimension_id": "14",
+        "sub_dimension_id": "14.5",
+        "indicator": "Coverage of protected areas in relation to marine areas",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "14.7.1",
+        "dimension_id": "14",
+        "sub_dimension_id": "14.7",
+        "indicator": "Sustainable fisheries as a percentage of GDP in small island developing States, least developed countries and all countries",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "14.a.1",
+        "dimension_id": "14",
+        "sub_dimension_id": "14.a",
+        "indicator": "Proportion of total research budget allocated to research in the field of marine technology",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "14.b.1",
+        "dimension_id": "14",
+        "sub_dimension_id": "14.b",
+        "indicator": "Progress by countries in the degree of application of a legal/regulatory/policy/institutional framework which recognizes and protects access rights for small-scale fisheries",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "14.c.1",
+        "dimension_id": "14",
+        "sub_dimension_id": "14.c",
+        "indicator": "Number of countries making progress in ratifying, accepting and implementing through legal, policy and institutional frameworks, ocean-related instruments that implement international law, as reflected in the United Nation Convention on the Law of the Sea, for the conservation and sustainable use of the oceans and their resources",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "15.1.1",
+        "dimension_id": "15",
+        "sub_dimension_id": "15.1",
+        "indicator": "Forest area as a proportion of total land area",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "15.1.2",
+        "dimension_id": "15",
+        "sub_dimension_id": "15.1",
+        "indicator": "Proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "15.2.1",
+        "dimension_id": "15",
+        "sub_dimension_id": "15.2",
+        "indicator": "Progress towards sustainable forest management",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "15.3.1",
+        "dimension_id": "15",
+        "sub_dimension_id": "15.3",
+        "indicator": "Proportion of land that is degraded over total land area",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "15.4.1",
+        "dimension_id": "15",
+        "sub_dimension_id": "15.4",
+        "indicator": "Coverage by protected areas of important sites for mountain biodiversity",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "15.4.2",
+        "dimension_id": "15",
+        "sub_dimension_id": "15.4",
+        "indicator": "Mountain Green Cover Index",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "15.5.1",
+        "dimension_id": "15",
+        "sub_dimension_id": "15.5",
+        "indicator": "Red List Index",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "15.6.1",
+        "dimension_id": "15",
+        "sub_dimension_id": "15.6",
+        "indicator": "Number of countries that have adopted legislative, administrative and policy frameworks to ensure fair and equitable sharing of benefits",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "15.8.1",
+        "dimension_id": "15",
+        "sub_dimension_id": "15.8",
+        "indicator": "Proportion of countries adopting relevant national legislation and adequately resourcing the prevention or control of invasive alien species",
+        "measurement_level_id": "40"
+    },
+    {
+        "id": "15.9.1",
+        "dimension_id": "15",
+        "sub_dimension_id": "15.9",
+        "indicator": "(a) Number of countries that have established national targets in accordance with or similar to Aichi Biodiversity Target 2 of the Strategic Plan for Biodiversity 2011–2020 in their national biodiversity strategy and action plans and the progress reported towards these targets; and (b) integration of biodiversity into national accounting and reporting systems, defined as implementation of the System of Environmental-Economic Accounting",
+        "measurement_level_id": "40"
+    },    
+    {
+        "id": "15.a.1",
+        "dimension_id": "15",
+        "sub_dimension_id": "15.a",
+        "indicator": "Official development assistance and public expenditure on conservation and sustainable use of biodiversity and ecosystems",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "15.b.1",
+        "dimension_id": "15",
+        "sub_dimension_id": "15.b",
+        "indicator": "Official development assistance and public expenditure on conservation and sustainable use of biodiversity and ecosystems",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "15.c.1",
+        "dimension_id": "15",
+        "sub_dimension_id": "15.c",
+        "indicator": "Proportion of traded wildlife that was poached or illicitly trafficked",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.1.1",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.1",
+        "indicator": "Number of victims of intentional homicide per 100,000 population, by sex and age",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.1.2",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.1",
+        "indicator": "Conflict-related deaths per 100,000 population, by sex, age and cause",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.1.3",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.1",
+        "indicator": "Proportion of population subjected to physical, psychological or sexual violence in the previous 12 months",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.1.4",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.1",
+        "indicator": "Proportion of population that feel safe walking alone around the area they live",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.10.1",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.1",
+        "indicator": "Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 months",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.10.2",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.1",
+        "indicator": "Number of countries that adopt and implement constitutional, statutory and/or policy guarantees for public access to information",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.2.1",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.2",
+        "indicator": "Proportion of children aged 1-17 years who experienced any physical punishment and/or psychological aggression by caregivers in the past month",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.2.2",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.2",
+        "indicator": "Number of victims of human trafficking per 100,000 population, by sex, age and form of exploitation",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.2.3",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.2",
+        "indicator": "Proportion of young women and men aged 18‑29 years who experienced sexual violence by age 18",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.3.1",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.3",
+        "indicator": "Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.3.2",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.3",
+        "indicator": "Unsentenced detainees as a proportion of overall prison population",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.4.1",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.4",
+        "indicator": "Total value of inward and outward illicit financial flows (in current United States dollars)",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.4.2",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.4",
+        "indicator": "Proportion of seized small arms and light weapons that are recorded and traced, in accordance with international standards and legal instruments",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.5.1",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.5",
+        "indicator": "Proportion of persons who had at least one contact with a public official and who paid a bribe to a public official, or were asked for a bribe by those public officials, during the previous 12 months",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.5.2",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.5",
+        "indicator": "Proportion of businesses that had at least one contact with a public official and that paid a bribe to a public official, or were asked for a bribe by those public officials during the previous 12 months",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.6.1",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.6",
+        "indicator": "Primary government expenditures as a proportion of original approved budget, by sector (or by budget codes or similar)",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.6.2",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.6",
+        "indicator": "Proportion of the population satisfied with their last experience of public services",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.7.1",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.7",
+        "indicator": "Proportions of positions (by sex, age, persons with disabilities and population groups) in public institutions (national and local legislatures, public service, and judiciary) compared to national distributions",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.7.2",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.7",
+        "indicator": "Proportion of population who believe decision-making is inclusive and responsive, by sex, age, disability and population group",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.8.1",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.8",
+        "indicator": "Proportion of members and voting rights of developing countries in international organizations",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.9.1",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.9",
+        "indicator": "Proportion of children under 5 years of age whose births have been registered with a civil authority, by age",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.a.1",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.a",
+        "indicator": "Existence of independent national human rights institutions in compliance with the Paris Principles",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "16.b.1",
+        "dimension_id": "16",
+        "sub_dimension_id": "16.b",
+        "indicator": "Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.1.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.1",
+        "indicator": "Total government revenue as a proportion of GDP, by source",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.1.2",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.1",
+        "indicator": "Proportion of domestic budget funded by domestic taxes",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.10.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.1",
+        "indicator": "Worldwide weighted tariff-average",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.11.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.11",
+        "indicator": "Developing countries’ and least developed countries’ share of global exports",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.12.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.12",
+        "indicator": "Average tariffs faced by developing countries, least developed countries and small island developing States",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.13.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.13",
+        "indicator": "Macroeconomic Dashboard",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.14.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.14",
+        "indicator": "Number of countries with mechanisms in place to enhance policy coherence of sustainable development",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.15.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.15",
+        "indicator": "Extent of use of country-owned results frameworks and planning tools by providers of development cooperation",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.16.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.16",
+        "indicator": "Number of countries reporting progress in multi-stakeholder development effectiveness monitoring frameworks that support the achievement of the sustainable development goals",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.17.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.17",
+        "indicator": "Amount of United States dollars committed to public-private and civil society partnerships",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.18.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.18",
+        "indicator": "Proportion of sustainable development indicators produced at the national level with full disaggregation when relevant to the target, in accordance with the Fundamental Principles of Official Statistics",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.18.2",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.18",
+        "indicator": "Number of countries that have national statistical legislation that complies with the Fundamental Principles of Official Statistics",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.18.3",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.18",
+        "indicator": "Number of countries with a national statistical plan that is fully funded and under implementation, by source of funding",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.19.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.19",
+        "indicator": "Dollar value of all resources made available to strengthen statistical capacity in developing countries",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.19.2",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.19",
+        "indicator": "Proportion of countries that (a) have conducted at least one population and housing census in the last 10 years; and (b) have achieved 100 per cent birth registration and 80 per cent death registration",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.2.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.2",
+        "indicator": "Net official development assistance, total and to least developed countries, as a proportion of the Organization for Economic Cooperation and Development (OECD) Development Assistance Committee donors’ gross national income (GNI)",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.3.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.3",
+        "indicator": "Foreign direct investments (FDI), official development assistance and South-South Cooperation as a proportion of total domestic budget",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.3.2",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.3",
+        "indicator": "Volume of remittances (in United States dollars) as a proportion of total GDP",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.4.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.4",
+        "indicator": "Debt service as a proportion of exports of goods and services",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.5.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.5",
+        "indicator": "Number of countries that adopt and implement investment promotion regimes for least developed countries",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.6.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.6",
+        "indicator": "Number of science and/or technology cooperation agreements and programmes between countries, by type of cooperation",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.6.2",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.6",
+        "indicator": "Fixed Internet broadband subscriptions per 100 inhabitants, by speed",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.7.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.7",
+        "indicator": "Total amount of approved funding for developing countries to promote the development, transfer, dissemination and diffusion of environmentally sound technologies",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.8.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.8",
+        "indicator": "Proportion of individuals using the Internet",
+        "measurement_level_id": "42"
+    },
+    {
+        "id": "17.9.1",
+        "dimension_id": "17",
+        "sub_dimension_id": "17.9",
+        "indicator": "Dollar value of financial and technical assistance (including through North-South, South-South and triangular cooperation) committed to developing countries",
+        "measurement_level_id": "42"
+    }
+]

@@ -1,0 +1,142 @@
+{
+  "pageProps": {
+    "profile": {
+      "id": "ZMB",
+      "slug": "zambia",
+      "name": "Zambia",
+      "region": "Sub-Saharan Africa",
+      "type": "country"
+    },
+    "overall": {
+      "id": "TOT",
+      "score": 54.28,
+      "scoreAsText": "54.3",
+      "rankAsText": "145"
+    },
+    "spillover": { "id": "SPI", "score": 98.16, "scoreAsText": "98.2" },
+    "goals": [
+      {
+        "id": "SDG1",
+        "number": 1,
+        "type": "goal",
+        "rating": "red",
+        "trend": "↓"
+      },
+      {
+        "id": "SDG2",
+        "number": 2,
+        "type": "goal",
+        "rating": "red",
+        "trend": "→"
+      },
+      {
+        "id": "SDG3",
+        "number": 3,
+        "type": "goal",
+        "rating": "red",
+        "trend": "➚"
+      },
+      {
+        "id": "SDG4",
+        "number": 4,
+        "type": "goal",
+        "rating": "orange",
+        "trend": "•"
+      },
+      {
+        "id": "SDG5",
+        "number": 5,
+        "type": "goal",
+        "rating": "orange",
+        "trend": "➚"
+      },
+      {
+        "id": "SDG6",
+        "number": 6,
+        "type": "goal",
+        "rating": "red",
+        "trend": "→"
+      },
+      {
+        "id": "SDG7",
+        "number": 7,
+        "type": "goal",
+        "rating": "red",
+        "trend": "→"
+      },
+      {
+        "id": "SDG8",
+        "number": 8,
+        "type": "goal",
+        "rating": "red",
+        "trend": "➚"
+      },
+      {
+        "id": "SDG9",
+        "number": 9,
+        "type": "goal",
+        "rating": "red",
+        "trend": "→"
+      },
+      {
+        "id": "SDG10",
+        "number": 10,
+        "type": "goal",
+        "rating": "red",
+        "trend": "•"
+      },
+      {
+        "id": "SDG11",
+        "number": 11,
+        "type": "goal",
+        "rating": "red",
+        "trend": "→"
+      },
+      {
+        "id": "SDG12",
+        "number": 12,
+        "type": "goal",
+        "rating": "green",
+        "trend": "➚"
+      },
+      {
+        "id": "SDG13",
+        "number": 13,
+        "type": "goal",
+        "rating": "green",
+        "trend": "➚"
+      },
+      {
+        "id": "SDG14",
+        "number": 14,
+        "type": "goal",
+        "rating": "gray",
+        "trend": "•"
+      },
+      {
+        "id": "SDG15",
+        "number": 15,
+        "type": "goal",
+        "rating": "red",
+        "trend": "→"
+      },
+      {
+        "id": "SDG16",
+        "number": 16,
+        "type": "goal",
+        "rating": "red",
+        "trend": "↓"
+      },
+      {
+        "id": "SDG17",
+        "number": 17,
+        "type": "goal",
+        "rating": "orange",
+        "trend": "→"
+      }
+    ],
+    "trendsIndicatorsData": [
+      { "id": "ZMB", "achieved": 18.6, "limited": 47.5, "worsening": 33.9 }
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "pageProps": {
+    "profile": {
+      "id": "SEN",
+      "slug": "senegal",
+      "name": "Senegal",
+      "region": "Sub-Saharan Africa",
+      "type": "country",
+      "hasPolicyEfforts": true
+    },
+    "overall": {
+      "id": "TOT",
+      "score": 61.83,
+      "scoreAsText": "61.8",
+      "rankAsText": "121"
+    },
+    "spillover": { "id": "SPI", "score": 98.41, "scoreAsText": "98.4" },
+    "goals": [
+      {
+        "id": "SDG1",
+        "number": 1,
+        "type": "goal",
+        "rating": "orange",
+        "trend": "➚"
+      },
+      {
+        "id": "SDG2",
+        "number": 2,
+        "type": "goal",
+        "rating": "red",
+        "trend": "→"
+      },
+      {
+        "id": "SDG3",
+        "number": 3,
+        "type": "goal",
+        "rating": "red",
+        "trend": "➚"
+      },
+      {
+        "id": "SDG4",
+        "number": 4,
+        "type": "goal",
+        "rating": "red",
+        "trend": "→"
+      },
+      {
+        "id": "SDG5",
+        "number": 5,
+        "type": "goal",
+        "rating": "red",
+        "trend": "→"
+      },
+      {
+        "id": "SDG6",
+        "number": 6,
+        "type": "goal",
+        "rating": "red",
+        "trend": "➚"
+      },
+      {
+        "id": "SDG7",
+        "number": 7,
+        "type": "goal",
+        "rating": "red",
+        "trend": "→"
+      },
+      {
+        "id": "SDG8",
+        "number": 8,
+        "type": "goal",
+        "rating": "orange",
+        "trend": "➚"
+      },
+      {
+        "id": "SDG9",
+        "number": 9,
+        "type": "goal",
+        "rating": "orange",
+        "trend": "➚"
+      },
+      {
+        "id": "SDG10",
+        "number": 10,
+        "type": "goal",
+        "rating": "orange",
+        "trend": "•"
+      },
+      {
+        "id": "SDG11",
+        "number": 11,
+        "type": "goal",
+        "rating": "red",
+        "trend": "→"
+      },
+      {
+        "id": "SDG12",
+        "number": 12,
+        "type": "goal",
+        "rating": "green",
+        "trend": "➚"
+      },
+      {
+        "id": "SDG13",
+        "number": 13,
+        "type": "goal",
+        "rating": "green",
+        "trend": "→"
+      },
+      {
+        "id": "SDG14",
+        "number": 14,
+        "type": "goal",
+        "rating": "red",
+        "trend": "➚"
+      },
+      {
+        "id": "SDG15",
+        "number": 15,
+        "type": "goal",
+        "rating": "red",
+        "trend": "→"
+      },
+      {
+        "id": "SDG16",
+        "number": 16,
+        "type": "goal",
+        "rating": "orange",
+        "trend": "→"
+      },
+      {
+        "id": "SDG17",
+        "number": 17,
+        "type": "goal",
+        "rating": "orange",
+        "trend": "➚"
+      }
+    ],
+    "trendsIndicatorsData": [
+      { "id": "SEN", "achieved": 31.9, "limited": 43.5, "worsening": 24.6 }
+    ]
+  }
+}

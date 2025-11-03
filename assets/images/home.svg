@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="25px" viewBox="0 0 26 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Home</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Home/-About" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1" transform="translate(-778.000000, -48.000000)" stroke="#073949" stroke-width="1.5">
+            <g id="Header/Pre-login/2" transform="translate(0.000000, -2.000000)">
+                <g id="Icon/Home" transform="translate(779.000000, 51.000000)">
+                    <path d="M21.4693467,8.41669779 L21.4693467,22.0253934 C21.4693467,22.5776782 21.0216314,23.0253934 20.4693467,23.0253934 L4.1836324,23.0253934 C3.63134765,23.0253934 3.1836324,22.5776782 3.1836324,22.0253934 L3.1836324,8.41669779" id="Path"></path>
+                    <path d="M15.755061,13.8 L15.755061,22.8 C15.755061,23.3522847 15.3073457,23.8 14.755061,23.8 L9.89791812,23.8 C9.34563337,23.8 8.89791812,23.3522847 8.89791812,22.8 L8.89791812,13.8" id="Path-Copy" fill="#FFFFFF" transform="translate(12.326490, 18.800000) scale(1, -1) translate(-12.326490, -18.800000) "></path>
+                    <path d="M-1.13686838e-13,11.2284795 L11.6235891,0.615637245 C12.0054833,0.266951237 12.5902336,0.266951237 12.9721278,0.615637245 L23.755061,10.460924" id="Path-6" stroke-linecap="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,819 @@
+{
+    "pageProps": {
+        "profile": {
+            "id": "KEN",
+            "slug": "kenya",
+            "name": "Kenya",
+            "region": "Sub-Saharan Africa",
+            "type": "country",
+            "hasPolicyEfforts": true
+        },
+        "goals": [
+            {
+                "id": "SDG1",
+                "label": "No poverty",
+                "number": 1,
+                "indicators": [
+                    {
+                        "id": "sdg1_wpc",
+                        "label": "Poverty headcount ratio at $2.15/day",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg1_lmicpov",
+                        "label": "Poverty headcount ratio at $3.65/day",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "→"
+                    }
+                ]
+            },
+            {
+                "id": "SDG2",
+                "label": "Zero hunger",
+                "number": 2,
+                "indicators": [
+                    {
+                        "id": "sdg2_undernsh",
+                        "label": "Prevalence of undernourishment",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "↓"
+                    },
+                    {
+                        "id": "sdg2_stunting",
+                        "label": "Prevalence of stunting in children under 5 years of age",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "➚"
+                    },
+                    {
+                        "id": "sdg2_wasting",
+                        "label": "Prevalence of wasting in children under 5 years of age",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "↑"
+                    },
+                    {
+                        "id": "sdg2_obesity",
+                        "label": "Prevalence of obesity, BMI ≥ 30",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg2_trophic",
+                        "label": "Human Trophic Level",
+                        "type": "indicator",
+                        "rating": "yellow",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg2_crlyld",
+                        "label": "Cereal yield",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "↓"
+                    },
+                    {
+                        "id": "sdg2_snmi",
+                        "label": "Sustainable Nitrogen Management Index",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "➚"
+                    },
+                    {
+                        "id": "sdg2_pestexp",
+                        "label": "Exports of hazardous pesticides",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "•"
+                    }
+                ]
+            },
+            {
+                "id": "SDG3",
+                "label": "Good health and well-being",
+                "number": 3,
+                "indicators": [
+                    {
+                        "id": "sdg3_matmort",
+                        "label": "Maternal mortality rate",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "↓"
+                    },
+                    {
+                        "id": "sdg3_neonat",
+                        "label": "Neonatal mortality rate",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "➚"
+                    },
+                    {
+                        "id": "sdg3_u5mort",
+                        "label": "Mortality rate, under-5",
+                        "type": "indicator",
+                        "rating": "yellow",
+                        "trend": "↑"
+                    },
+                    {
+                        "id": "sdg3_tb",
+                        "label": "Incidence of tuberculosis",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "➚"
+                    },
+                    {
+                        "id": "sdg3_hiv",
+                        "label": "New HIV infections",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "↑"
+                    },
+                    {
+                        "id": "sdg3_ncds",
+                        "label": "Age-standardized death rate due to cardiovascular disease, cancer, diabetes, or chronic respiratory disease in adults aged 30–70 years",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg3_pollmort",
+                        "label": "Age-standardized death rate attributable to household air pollution and ambient air pollution",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg3_traffic",
+                        "label": "Traffic deaths",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "↓"
+                    },
+                    {
+                        "id": "sdg3_lifee",
+                        "label": "Life expectancy at birth",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg3_fertility",
+                        "label": "Adolescent fertility rate",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg3_births",
+                        "label": "Births attended by skilled health personnel",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg3_vac",
+                        "label": "Surviving infants who received 2 WHO-recommended vaccines",
+                        "type": "indicator",
+                        "rating": "yellow",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg3_uhc",
+                        "label": "Universal health coverage (UHC) index of service coverage",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "➚"
+                    },
+                    {
+                        "id": "sdg3_swb",
+                        "label": "Subjective well-being",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "→"
+                    }
+                ]
+            },
+            {
+                "id": "SDG4",
+                "label": "Quality education",
+                "number": 4,
+                "indicators": [
+                    {
+                        "id": "sdg4_earlyedu",
+                        "label": "Participation rate in pre-primary organized learning",
+                        "type": "indicator",
+                        "rating": "gray",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg4_primary",
+                        "label": "Net primary enrollment rate",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg4_second",
+                        "label": "Lower secondary completion rate",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg4_literacy",
+                        "label": "Literacy rate",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "➚"
+                    }
+                ]
+            },
+            {
+                "id": "SDG5",
+                "label": "Gender equality",
+                "number": 5,
+                "indicators": [
+                    {
+                        "id": "sdg5_familypl",
+                        "label": "Demand for family planning satisfied by modern methods",
+                        "type": "indicator",
+                        "rating": "yellow",
+                        "trend": "↑"
+                    },
+                    {
+                        "id": "sdg5_edat",
+                        "label": "Ratio of female-to-male mean years of education received",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg5_lfpr",
+                        "label": "Ratio of female-to-male labor force participation rate",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "↑"
+                    },
+                    {
+                        "id": "sdg5_parl",
+                        "label": "Seats held by women in national parliament",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "→"
+                    }
+                ]
+            },
+            {
+                "id": "SDG6",
+                "label": "Clean water and sanitation",
+                "number": 6,
+                "indicators": [
+                    {
+                        "id": "sdg6_water",
+                        "label": "Population using at least basic drinking water services",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg6_sanita",
+                        "label": "Population using at least basic sanitation services",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg6_freshwat",
+                        "label": "Freshwater withdrawal",
+                        "type": "indicator",
+                        "rating": "yellow",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg6_wastewat",
+                        "label": "Anthropogenic wastewater that receives treatment",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg6_scarcew",
+                        "label": "Scarce water consumption embodied in imports",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "•"
+                    }
+                ]
+            },
+            {
+                "id": "SDG7",
+                "label": "Affordable and clean energy",
+                "number": 7,
+                "indicators": [
+                    {
+                        "id": "sdg7_elecac",
+                        "label": "Population with access to electricity",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "↑"
+                    },
+                    {
+                        "id": "sdg7_cleanfuel",
+                        "label": "Population with access to clean fuels and technology for cooking",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg7_co2twh",
+                        "label": "CO₂ emissions from fuel combustion per total electricity output",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "↑"
+                    },
+                    {
+                        "id": "sdg7_renewcon",
+                        "label": "Renewable energy share in total final energy consumption",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "→"
+                    }
+                ]
+            },
+            {
+                "id": "SDG8",
+                "label": "Decent work and economic growth",
+                "number": 8,
+                "indicators": [
+                    {
+                        "id": "sdg8_adjgrowth",
+                        "label": "Adjusted GDP growth",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg8_slavery",
+                        "label": "Victims of modern slavery",
+                        "type": "indicator",
+                        "rating": "yellow",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg8_accounts",
+                        "label": "Adults with an account at a bank or other financial institution or with a mobile-money-service provider",
+                        "type": "indicator",
+                        "rating": "yellow",
+                        "trend": "↑"
+                    },
+                    {
+                        "id": "sdg8_unemp",
+                        "label": "Unemployment rate",
+                        "type": "indicator",
+                        "rating": "yellow",
+                        "trend": "↓"
+                    },
+                    {
+                        "id": "sdg8_rights",
+                        "label": "Fundamental labor rights are effectively guaranteed",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "↓"
+                    },
+                    {
+                        "id": "sdg8_impacc",
+                        "label": "Fatal work-related accidents embodied in imports",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg8_impslav",
+                        "label": "Victims of modern slavery embodied in imports",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "•"
+                    }
+                ]
+            },
+            {
+                "id": "SDG9",
+                "label": "Industry, innovation and infrastructure",
+                "number": 9,
+                "indicators": [
+                    {
+                        "id": "sdg9_roads",
+                        "label": "Rural population with access to all-season roads",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg9_intuse",
+                        "label": "Population using the internet",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg9_mobuse",
+                        "label": "Mobile broadband subscriptions",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "↑"
+                    },
+                    {
+                        "id": "sdg9_lpi",
+                        "label": "Logistics Performance Index: Quality of trade and transport-related infrastructure",
+                        "type": "indicator",
+                        "rating": "yellow",
+                        "trend": "↑"
+                    },
+                    {
+                        "id": "sdg9_uni",
+                        "label": "The Times Higher Education Universities Ranking: Average score of top 3 universities",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg9_articles",
+                        "label": "Articles published in academic journals",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg9_rdex",
+                        "label": "Expenditure on research and development",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "•"
+                    }
+                ]
+            },
+            {
+                "id": "SDG10",
+                "label": "Reduced inequalities",
+                "number": 10,
+                "indicators": [
+                    {
+                        "id": "sdg10_gini",
+                        "label": "Gini coefficient",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg10_palma",
+                        "label": "Palma ratio",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "•"
+                    }
+                ]
+            },
+            {
+                "id": "SDG11",
+                "label": "Sustainable cities and communities",
+                "number": 11,
+                "indicators": [
+                    {
+                        "id": "sdg11_slums",
+                        "label": "Proportion of urban population living in slums",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg11_pm25",
+                        "label": "Annual mean concentration of particulate matter of less than 2.5 microns in diameter (PM2.5)",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "↓"
+                    },
+                    {
+                        "id": "sdg11_pipedwat",
+                        "label": "Access to improved water source, piped",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "↓"
+                    },
+                    {
+                        "id": "sdg11_transport",
+                        "label": "Satisfaction with public transport",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "→"
+                    }
+                ]
+            },
+            {
+                "id": "SDG12",
+                "label": "Responsible consumption and production",
+                "number": 12,
+                "indicators": [
+                    {
+                        "id": "sdg12_msw",
+                        "label": "Municipal solid waste",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg12_ewaste",
+                        "label": "Electronic waste",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg12_so2prod",
+                        "label": "Production-based SO₂ emissions",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg12_so2import",
+                        "label": "SO₂ emissions embodied in imports",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg12_nprod",
+                        "label": "Production-based nitrogen emissions",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "↑"
+                    },
+                    {
+                        "id": "sdg12_nimport",
+                        "label": "Nitrogen emissions embodied in imports",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "↑"
+                    },
+                    {
+                        "id": "sdg12_explastic",
+                        "label": "Exports of plastic waste",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "↑"
+                    }
+                ]
+            },
+            {
+                "id": "SDG13",
+                "label": "Climate action",
+                "number": 13,
+                "indicators": [
+                    {
+                        "id": "sdg13_co2gcp",
+                        "label": "CO₂ emissions from fossil fuel combustion and cement production",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg13_co2import",
+                        "label": "CO₂ emissions embodied in imports",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "↑"
+                    },
+                    {
+                        "id": "sdg13_co2export",
+                        "label": "CO₂ emissions embodied in fossil fuel exports",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "•"
+                    }
+                ]
+            },
+            {
+                "id": "SDG14",
+                "label": "Life below water",
+                "number": 14,
+                "indicators": [
+                    {
+                        "id": "sdg14_cpma",
+                        "label": "Mean area that is protected in marine sites important to biodiversity",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg14_cleanwat",
+                        "label": "Ocean Health Index: Clean Waters score",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "↓"
+                    },
+                    {
+                        "id": "sdg14_fishstocks",
+                        "label": "Fish caught from overexploited or collapsed stocks",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg14_trawl",
+                        "label": "Fish caught by trawling or dredging",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "↑"
+                    },
+                    {
+                        "id": "sdg14_discard",
+                        "label": "Fish caught that are then discarded",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "↑"
+                    },
+                    {
+                        "id": "sdg14_biomar",
+                        "label": "Marine biodiversity threats embodied in imports",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "•"
+                    }
+                ]
+            },
+            {
+                "id": "SDG15",
+                "label": "Life on land",
+                "number": 15,
+                "indicators": [
+                    {
+                        "id": "sdg15_cpta",
+                        "label": "Mean area that is protected in terrestrial sites important to biodiversity",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg15_cpfa",
+                        "label": "Mean area that is protected in freshwater sites important to biodiversity",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg15_redlist",
+                        "label": "Red List Index of species survival",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "↓"
+                    },
+                    {
+                        "id": "sdg15_forchg",
+                        "label": "Permanent deforestation",
+                        "type": "indicator",
+                        "rating": "yellow",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg15_biofrwter",
+                        "label": "Terrestrial and freshwater biodiversity threats embodied in imports",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "•"
+                    }
+                ]
+            },
+            {
+                "id": "SDG16",
+                "label": "Peace, justice and strong institutions",
+                "number": 16,
+                "indicators": [
+                    {
+                        "id": "sdg16_homicides",
+                        "label": "Homicides",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg16_detain",
+                        "label": "Unsentenced detainees",
+                        "type": "indicator",
+                        "rating": "yellow",
+                        "trend": "↓"
+                    },
+                    {
+                        "id": "sdg16_safe",
+                        "label": "Population who feel safe walking alone at night in the city or area where they live",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "↓"
+                    },
+                    {
+                        "id": "sdg16_u5reg",
+                        "label": "Birth registrations with civil authority",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg16_cpi",
+                        "label": "Corruption Perceptions Index",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg16_clabor",
+                        "label": "Children involved in child labor",
+                        "type": "indicator",
+                        "rating": "gray",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg16_weaponsexp",
+                        "label": "Exports of major conventional weapons",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg16_rsf",
+                        "label": "Press Freedom Index",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "↓"
+                    },
+                    {
+                        "id": "sdg16_justice",
+                        "label": "Access to and affordability of justice",
+                        "type": "indicator",
+                        "rating": "red",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg16_admin",
+                        "label": "Timeliness of administrative proceedings",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg16_exprop",
+                        "label": "Expropriations are lawful and adequately compensated",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "↓"
+                    }
+                ]
+            },
+            {
+                "id": "SDG17",
+                "label": "Partnerships for the goals",
+                "number": 17,
+                "indicators": [
+                    {
+                        "id": "sdg17_govex",
+                        "label": "Government spending on health and education",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "→"
+                    },
+                    {
+                        "id": "sdg17_oda",
+                        "label": "For high-income and all OECD DAC countries: International concessional public finance, including official development assistance",
+                        "type": "indicator",
+                        "rating": "gray",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg17_govrev",
+                        "label": "Other countries: Government revenue excluding grants",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "↓"
+                    },
+                    {
+                        "id": "sdg17_cohaven",
+                        "label": "Corporate Tax Haven Score",
+                        "type": "indicator",
+                        "rating": "green",
+                        "trend": "•"
+                    },
+                    {
+                        "id": "sdg17_statperf",
+                        "label": "Statistical Performance Index",
+                        "type": "indicator",
+                        "rating": "orange",
+                        "trend": "➚"
+                    }
+                ]
+            }
+        ]
+    }
+}

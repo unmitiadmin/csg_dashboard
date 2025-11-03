@@ -1,0 +1,37 @@
+<svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="49" fill="#F5F5F5"/>
+<g id="ClimaAdpat-Home- Video zoom-Updated" clip-path="url(#clip0_4_5342)">
+<rect width="1440" height="4980" transform="translate(-279 -3610)" fill="white"/>
+<rect id="Rectangle 34624248" x="-279" y="-816" width="1439" height="973" fill="white"/>
+<g id="Frame 427318959">
+<g id="Group 1000001801">
+<g id="lines">
+<line id="Line 17" x1="21.0249" y1="24" x2="21.0249" y2="248" stroke="#D7D0D0" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 7"/>
+</g>
+<g id="Group 1000001766">
+<g id="Union" filter="url(#filter0_d_4_5342)">
+<path d="M66.75 26.375C66.75 50.8826 46.8826 70.75 22.375 70.75C-2.13264 70.75 -22 50.8826 -22 26.375C-22 1.86736 -2.13264 -18 22.375 -18C46.8826 -18 66.75 1.86736 66.75 26.375Z" fill="#1D8ECA"/>
+</g>
+<g id="mdi:graph-bar">
+<path id="Vector" d="M44.0418 42.3125H4.4585V6.6875H8.41683V38.3542H12.3752V20.5417H20.2918V38.3542H24.2502V12.625H32.1668V38.3542H36.1252V28.4583H44.0418V42.3125Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_4_5342" x="-52" y="-48" width="168.75" height="168.75" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="10" dy="10"/>
+<feGaussianBlur stdDeviation="20"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.882353 0 0 0 0 0.882353 0 0 0 0 0.882353 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_5342"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_5342" result="shape"/>
+</filter>
+<clipPath id="clip0_4_5342">
+<rect width="1440" height="4980" fill="white" transform="translate(-279 -3610)"/>
+</clipPath>
+</defs>
+</svg>

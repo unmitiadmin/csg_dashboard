@@ -1,0 +1,500 @@
+{
+    "Adaptation":
+    {                    
+        "Agriculture": [
+            {
+                "NDC No.": "1",
+                "Activity": "Climate change considerations mainstreamed into Agriculture in Sri Lanka (2022)",
+                "SDG": [2, 7, 12.1, 13]
+            },
+            {
+                "NDC No.": "2",
+                "Activity": "Promote Integrated Pest Management (IPM) and Integrated Plant and Nutrition Systems (IPNS) in agricultural areas of most vulnerable area/districts/crops (2025)",
+                "SDG": [2, 13]
+            },
+            {
+                "NDC No.": "3",
+                "Activity": " Develop/introduce varieties resistant/tolerant to biotic and abiotic stresses targeting most vulnerable agricultural crops to climate change",
+                "SDG": [2, 7, 12, 13]
+            },
+            {
+                "NDC No.": "4",
+                "Activity": "Revisit the Agro Ecological Regions (AERs) maps of Sri Lanka with current and future climate scenarios and recommend appropriate crops for different regions to reduce vulnerability to climate change impacts (2030)",
+                "SDG": [2, 7, 12, 13]
+            },
+            {
+                "NDC No.": "5",
+                "Activity": "  Enhance sustainable land and water management practices in areas where anticipated climate vulnerability is severe (2030e sustainable land and water management practices in areas where anticipated climate vulnerability is severe (2030)",
+                "SDG": [2, 12, 13]
+            },
+            {
+                "NDC No.": "6",
+                "Activity": "Enhanced early warning and risk management mechanisms introduced to reduce climate change vulnerability Enhanced ",
+                "SDG": [2, 12, 13]
+            }
+        ],
+        "Fisheries": [
+            {
+                "NDC No.": "1",
+                "Activity": "Ecosystem-based Approach to Fisheries Management (EAFM) adopted in areas of high climate vulnerability to enhance resilience (2030)",
+                "SDG": [[5.1, 5.2, 5.5, "5.a", "5.c"], [14.2, "14.b", "14.c"]]
+            },
+            {
+                "NDC No.": "2",
+                "Activity": "Expand aquaculture and culture-based fisheries to address food security issues relating to climate change (2025)",
+                "SDG": [2.4, 5.5, [8.1, 8.4], [13.1, "13.b"], [14.2, 14.7]]
+            },
+            {
+                "NDC No.": "3",
+                "Activity": "Breeding of climate change resilient and commercially important aquatic resources (2025)",
+                "SDG": [8.2, 13.1, [14.2, 14.4, 14.7]]
+            },
+            {
+                "NDC No.": "4",
+                "Activity": "Increase the production capabilities of fisheries, aquatic resources in 30 lagoons which are highly vulnerable to climate change (2030)",
+                "SDG": [13.2, [14.1, 14.2, 14.7]]
+            },
+            {
+                "NDC No.": "5",
+                "Activity": "Enhanced safety at sea against climate change influenced extreme conditions (2025)",
+                "SDG": [[8.3, 8.8], 13.1, 14]
+            },
+            {
+                "NDC No.": "6",
+                "Activity": "Diversification of livelihoods of fisherfolk to build resilience to climate change (2030)",
+                "SDG": [ 1.4, [2.3, 2.4], [5.5, "5.a", "5.b"], [8.2, 8.3, 8.5], 9.3, [14.2, 14.3, 14.4, 14.5, "14.b"]]
+            }
+        ],
+        "Livestock": [
+            {
+                "NDC No.": "1",
+                "Activity": "Introduce adaptation measures to address adverse impacts of climate change on ruminant livestock (2025)",
+                "SDG": [[2.3, 2.4], "6.b", 8.2, 12.2, 13.3]
+            },
+            {
+                "NDC No.": "2",
+                "Activity": "Introduce technological innovations and interventions to build resilience in poultry and swine farming  (2025)",
+                "SDG": [[2.3, 2.4], 8.2, 12.2, 13.3]
+            },
+            {
+                "NDC No.": "3",
+                "Activity": "Improve research, education awareness, and capacity building for climate change adaptation (2030)",
+                "SDG": [[2.3, 2.4, 2.5], 4.7, [5.5, "5.a", "5.b"], [12.2, 12.8], [13.1, 13.3, "13.a", "13.b"]]
+            }
+        ],
+        "Water": [
+            {
+                "NDC No.": "1",
+                "Activity": "Integrated River Basin Management (IRBM) approach adopted in 15 prioritized river basins in Sri Lanka",
+                "SDG": [[6.4, 6.5, 6.6], 12.2, [13.1, 13.2], 15.1]
+            },
+            {
+                "NDC No.": "2",
+                "Activity": "Ground and surface water monitoring in the Northern, North Central and North Western provinces and other areas of high drinking water vulnerability to drought  ",
+                "SDG": [[6.1, 6.4, 6.5, 6.6], 13.1]
+            },
+            {
+                "NDC No.": "3",
+                "Activity": "Promote climate-resilient water supply schemes",
+                "SDG": [5.5, [6.1, 6.3, 6.4, "6.a", 6.5, 6.6], 12.2, 13.1, 15.9]
+            },
+            {
+                "NDC No.": "4",
+                "Activity": "Promote the use of wastewater for gardening, sanitary, construction and other purposes to reduce demand for treated water",
+                "SDG": [[6.3, 6.4, "6.a", "6.b"], [12.5, 12.8], 17.2]
+            },
+            {
+                "NDC No.": "5",
+                "Activity": "Establish salinity barriers in 03 rivers where intakes are subjected to climate change influenced saline water intrusion during the drought season  (covering Kelani Ganga, , Kalu Ganga, and Malwathu Oya)",
+                "SDG": [[6.1, 6.5, 6.6, "6.a"], 13.1, 17.2]
+            },
+            {
+                "NDC No.": "6",
+                "Activity": "Capacity building for water sector personnel and public awareness on building resilience to climate change",
+                "SDG": [5.5, [6.1, 6.5," 6.a", "6.b"], [13.1, 13.3]]
+            },
+            {
+                "NDC No.": "7",
+                "Activity": "Restore, rehabilitate and augment 25 major /medium reservoirs and 300 minor irrigation systems and 200 km length of irrigation canals of Sri Lanka for enhancing climate resilience in the agriculture sector ",
+                "SDG": [6.5, 13.1, 17.2]
+            },
+            {
+                "NDC No.": "8",
+                "Activity": "Introduce or promote alternative water resources as a climate change resilience building intervention for domestic and supplementary irrigation",
+                "SDG": [["5.b", 5.5], [6.4, 6.5], [13.1, 13.3], 15.1]
+            },
+            {
+                "NDC No.": "9",
+                "Activity": "Enhance water management in 40 irrigation schemes",
+                "SDG": [2.4, "5.b", [6.5, "6.b"], 12.8]
+            },
+            {
+                "NDC No.": "10",
+                "Activity": "Assess river floods and mitigation measures and early warning systems for possible flash floods for five priority basins (2030) (covering Kelani Ganga, Attanagalu Oya, Kalu Ganga, Kirindi Oya and Malwathu Oya on pilot basis)",
+                "SDG": ["5.b", [6.5, 6.6], [13.1, 13.3]]
+            }        
+        ],
+        "Biodiversity": [
+            {
+                "NDC No.": "1",
+                "Activity": "Management of climate-sensitive areas and restoration of degraded areas inside and outside the protected areas (PAs) network to conserve habitats that are highly vulnerable to climate change (2030)",
+                "SDG": [13.1, [14.2, 14.5], [15.1, 15.4]]
+            },
+            {
+                "NDC No.": "2",
+                "Activity": "Increase connectivity in the zones that will be subjected to climate driven changes according to current predictions through landscape approaches",
+                "SDG": [13, [14.2, 14.5], [15.1,15.2, 15.4]]
+            },
+            {
+                "NDC No.": "3",
+                "Activity": "Expansion of Protected Area (PA) extent to enhance the ability of the PA network to function as a buffer for climate change",
+                "SDG": [13.1, 14.2, [15.1, 15.4, 15.9]]
+            },
+            {
+                "NDC No.": "4",
+                "Activity": "Strengthen ex-situ conservation programmes covering climate vulnerable taxa and regions",
+                "SDG": [[13, 13.1], 14.2, [15.1, 15.4, 15.8]]
+            }
+        ],
+        "Coastal": [
+            {
+                "NDC No.": "1",
+                "Activity": "Establish an accurate sea level rise forecasting system for Sri Lanka",
+                "SDG": [[11.5, "11.b"], 13.1, "14.a"]
+            },
+            {
+                "NDC No.": "2",
+                "Activity": "Prepare updated vulnerability and risk maps for the coastal belt of Sri Lanka",
+                "SDG": [[11.5, "11.b"], [13.1, 13.2], "14.a"]
+            },
+            {
+                "NDC No.": "3",
+                "Activity": "Adopt optimal shoreline management works/measures covering affected length of shoreline using a combination of hard & soft solutions to prevent coastal erosion in areas most vulnerable to sea level rise  ",
+                "SDG": [[13.1, 13.2, 13.3, "13.b"], [14.2, "14.a"]]
+            },
+            {
+                "NDC No.": "4",
+                "Activity": "Identify and declare coastal and marine natural areas of high priority for building resilience for climate change impacts",
+                "SDG": [[13.1, 13.2], [14.5, "14.c"]]
+            }
+        ],
+        "Health": [
+            {
+                "NDC No.": "1",
+                "Activity": "Policy initiatives for enhancing climate resilience of the health sector promoted and integrated to all related sectors (2030)",
+                "SDG": [3.9, 11.7, 13.2]
+            },
+            {
+                "NDC No.": "2",
+                "Activity": "NDC 2 - Improved capacity to manage Non-communicable Diseases (NCD) and health conditions directly attributable to climate change (2024)",
+                "SDG": [[3.2, 3.9, "3.c"], [13.2, "13.b"]]
+            },
+            {
+                "NDC No.": "3",
+                "Activity": "Manage worsening of nutrition  related health impacts due to climate change (2023)",
+                "SDG": [2.1, 3.3, 13.3]
+            },
+            {
+                "NDC No.": "4",
+                "Activity": " Strengthen surveillance and management of climate sensitive vector and rodent borne diseases (Dengue, Malaria, Filaria, Leishmaniasis and Leptospirosis) (2024)",
+                "SDG": [[3.3, "3.d"], [13.2, 13.3]]
+            },
+            {
+                "NDC No.": "5",
+                "Activity": "Reduce morbidity and mortality from extreme weather/climate events (floods, drought, landslides and other climate related emergencies) (2022)",
+                "SDG": [[3.9, "3.c"], 13.3]
+            }
+        ],
+        "Urban": [
+            {
+                "NDC No.": "1",
+                "Activity": "Enhance the resilience of human settlements and infrastructure through mainstreaming climate change adaptation into national, sub-national and local level physical planning (2025)",
+                "SDG": [[11.3, 11.5, 11.6, "11.b"], 13.2]
+            },
+            {
+                "NDC No.": "2",
+                "Activity": "Incorporate Disaster Risk Reduction (DRR) into urban and human settlement planning / implementation in areas of high vulnerability to climate change risks (2025)",
+                "SDG": [[11.3, 11.5, 11.6, "11.b"], 13.2]
+            },
+            {
+                "NDC No.": "3",
+                "Activity": "Establish climate resilient built environment (2030)",
+                "SDG": [[11.3, 11.5, 11.6, "11.b"], 13.2]
+            },
+            {
+                "NDC No.": "4",
+                "Activity": "Minimize the impact of slow onset events (sea level rise) on coastal settlements and infrastructure (2030) reef coastal zone",
+                "SDG": [[11.3, 11.5, "11.a", "11.b"]]
+            }
+        ],
+        "Tourism": [
+            {
+                "NDC No.": "1",
+                "Activity": "Build resilience through sustainable tourism practices and improved risk preparedness in destinations of highest climate change vulnerability (2025)",
+                "SDG": ["11.b", "12.b", [14.1, 14.2, 14.5], 15.9]
+            },
+            {
+                "NDC No.": "2",
+                "Activity": "Introduce risk reduction and risk transfer mechanisms for climate- induced disasters affecting tourism (2025)",
+                "SDG": ["11.b", [13.1, 13.3], [14.1, 14.2, 14.5], 15.9]
+            },
+            {
+                "NDC No.": "3",
+                "Activity": "Promote climate resilience in the tourism sector by introducing green building design to all new constructions and refurbishments",
+                "SDG": [[6.3, 6.4], [7.2, 7.3], "11.b", 12.8]
+            }
+        ]          
+    },
+
+    "Mitigation":
+    {                   
+        "Agriculture": [
+            {
+                "NDC No.": "1",
+                "Activity": "Agriculture Sector NDC Implementation Plan",
+                "SDG": [[2.3, 2.4, "2.a"], 8.2, [12.3, 12.5]]
+            },
+            {
+                "NDC No.": "2",
+                "Activity": "Increase agriculture productivity of crops",
+                "SDG": [[2.3, 2.4, "2.a"], 6.4, 8.2, [12.2, 12.4, 12.5], 14.1]
+            },
+            {
+                "NDC No.": "3",
+                "Activity": "Improve adoption of renewable energy for crop farming/value addition",
+                "SDG": [[7.2, 7.3]]
+            },
+            {
+                "NDC No.": "4",
+                "Activity": "Improve the productivity of dairy sector (Target: 40% increase of milk yield per cattle from 3.2 to 4.5 Ltrs/day by 2030 and further improve up to 5 Ltrs/day (55%) on conditional basis. Increase productive milking cow percentage of the herd up to 60% on conditional basis)",
+                "SDG": [2.3, [8.2, 8.3, 8.4], 12.2]
+            },
+            {
+                "NDC No.": "5",
+                "Activity": "Improve the productivity of Monogastrics (Responsibility: DAPH)",
+                "SDG": [2.3, 8.2]
+            },
+            {
+                "NDC No.": "6",
+                "Activity": "Adoption of renewable energy for livestock applications – (Responsibility: Min of Agriculture & the relevant State ministry)  ",
+                "SDG": [2.3, 7.2, [8.2, 8.3], [12.2, 12.4]]
+            }
+        ],
+        "Electricity": [
+            {
+                "NDC No.": "1",
+                "Activity": "Enhance renewable energy contribution to the national electricity generation mix by increasing Solar PV, Wind, Hydro and Sustainable Biomass based electricity generations (Target: Develop an additional capacity of 3,867 MW renewable energy over the RE capacity considered in Business-As-Usual scenario, out of which approximately 950 MW are on an unconditional basis and 2,917 MW on a conditional basis)",
+                "SDG": [["5.a", "5.b", "5.c"], [7.2, 7.5, "7.b"], [13.1, 13.2]]
+            },
+            {
+                "NDC No.": "2",
+                "Activity": "NDC 2 -Implement Demand Side Management (DSM) measures by promoting energy efficient equipment, technologies, and system improvements in a national energy efficiency improvement and conservation (EEI&C) programme",
+                "SDG": [5, 7.3]
+            },
+            {
+                "NDC No.": "3",
+                "Activity": " Conversion of existing fuel oil-based combined cycle power plants to Natural Gas (NG) and establishment of new NG plants as conditional measures (once the necessary infrastructure is available).",
+                "SDG": [13.1]
+            },
+            {
+                "NDC No.": "4",
+                "Activity": "Transmission and distribution network efficiency improvements (Loss reduction of 0.5% compared with BAU by 2030) as unconditional measures (Target – Approximately 1,848 GWh energy savings between 2021-2030)",
+                "SDG": ["7.b"]
+            },
+            {
+                "NDC No.": "5",
+                "Activity": " Conduct R&D activities to implement pilot scale projects for NCRE sources that have not yet reached commercial maturity and develop other grid supporting infrastructures as conditional measures",
+                "SDG": [["5.a"," 5.b", "5.c"], [7.1, 7.2, 7.3, "7.a"], [ 13.1, 13.2] ]
+            }
+        ],
+        "Transport": [
+            {
+              "NDC No.": 1,
+              "Activity": "Transport Sector System Improvement",
+              "SDG": [[3.6, 3.9], 8.4 ,9.1, [11.2, 11.6, 11.7, "11.a"]]
+            },
+            {
+              "NDC No.": 2,
+              "Activity": "Promote Public Passenger Transport",
+              "SDG": [[3.6, 3.9], 9.1, 11.2]
+            },
+            {
+              "NDC No.": 3,
+              "Activity": "Shift Freight to Efficient Modes",
+              "SDG": [[3.6, 3.9], 9.1, 11.6]
+            },
+            {
+              "NDC No.": 4,
+              "Activity": "Rapid Transport for Passenger Transport",
+              "SDG": [[3.6, 3.9], 9.1, [11.2, 11.6]]
+            },
+            {
+              "NDC No.": 5,
+              "Activity": "Promote non-Motorized Transport Modes",
+              "SDG": [[3.6, 3.9], 9.1, [11.2, 11.6]]
+            },
+            {
+              "NDC No.": 6,
+              "Activity": "Introduce taxes and other instruments to promote public transport",
+              "SDG": [[3.6, 3.9], 9.1, [11.2, 11.6]]
+            },
+            {
+              "NDC No.": 7,
+              "Activity": "Introduce Inland Water Transport Modes",
+              "SDG": [[3.6, 3.9], 11.6]
+            },
+            {
+              "NDC No.": 8,
+              "Activity": "Modernizing & Upgrading of Suburban Railway",
+              "SDG": [[3.6, 3.9], 9.1, 11.2]
+            },
+            {
+              "NDC No.": 9,
+              "Activity": "Promote Electric Mobility & Hybrid Vehicles",
+              "SDG": [3.9, [7.3, "7.a"], 11.6]
+            },
+            {
+              "NDC No.": 10,
+              "Activity": " Improve Vehicle Fleet Efficiency",
+              "SDG": [[3.6, 3.9], [7.3, "7.a"], 8.3, 11.6]
+            },
+            {
+              "NDC No.": 11,
+              "Activity": "Road infrastructure development",
+              "SDG": [3.9, 7.3, 9.1, [11.2, 11.6]]
+            },
+            {
+              "NDC No.": 12,
+              "Activity": "Reduce GHG Emission from the Marine Sector",
+              "SDG": [3.9, [7.3, "7.a"], 11.6, 12.4]
+            },
+            {
+              "NDC No.": 13,
+              "Activity": "Supportive Policy Framework and Activities",
+              "SDG": [3.9, [7.3, "7.a"], 11.6]
+            }
+        ],
+        "Industry": [
+            {
+            "NDC No.": 1,
+            "Activity": "Continue fuel switching to sustainable biomass energy & improve user efficiency in selected industrial subsectors such as tea, rubber, apparel, hotel & tourism, rice processing, etc.",
+            "SDG": [[7.2, 7.3]]
+            },
+            {
+            "NDC No.": 2,
+            "Activity": "Enhance the application of Resource Efficient Cleaner Production (RECP) practices in selected industrial sub sectors",
+            "SDG": [[6.2, 6.3, 6.4], [7.2, 7.3], [8.4, 8.8], 9.4, [12.2, 12.4, 12.5]]
+            },
+            {
+            "NDC No.": 3,
+            "Activity": "Establish eco-industrial parks and eco-industrial villages",
+            "SDG": [9.4]
+            },
+            {
+            "NDC No.": 4,
+            "Activity": "Introduce Circular Economy concept to selected industrial subsectors or selected industrial zones",
+            "SDG": [9.4, [12.4, 12.5, 12.7]]
+            },
+            {
+            "NDC No.": 5,
+            "Activity": "Introduce Tri-generation facilities to selected industrial parks",
+            "SDG": [[7.2 ,7.3, 7.4, 7.5, 7.6, 7.7, 7.8]]
+            },
+            {
+            "NDC No.": 6,
+            "Activity": "GHG reduction of clinker production in the Cement industry",
+            "SDG": [9.4, [12.2, 12.4, 12.5]]
+            },
+            {
+            "NDC No.": 7,
+            "Activity": "Introduce NDC Support Policy Tools and Instruments (Enabling generic activities)",
+            "SDG": [[7.2, 7.3], [8.3, 8.8], [9.3, 9.4], [12.2, 12.4, 12.5, 12.6, 12.7]]
+            }
+        ],
+        "Waste": [
+            {
+            "NDC No.": 1,
+            "Activity": "Improve “CImprove “Circular economy’’ practices in all MSW generation sourcesircular economy’’ practices in all MSW generation sources",
+            "SDG": [3.9, 8.4, [9.4, "9.a"], 11.6, [12.2, 12.3, 12.4, 12.5, 12.6]]
+            },
+            {
+            "NDC No.": 2,
+            "Activity": "Manage Biodegradable waste components through biological  treatments",
+            "SDG": [2.4, 3.9, [6.2, 6.3], 7.2, 8.4, 9.4, [12.2, 12.3, 12.4, 12.5]]
+            },
+            {
+            "NDC No.": 3,
+            "Activity": "Introduce energy recovery using non-compostable non-recyclable waste which cannot be managed by other means",
+            "SDG": [3.9, 6.3, 7.2, 9.4, 12.2]
+            },
+            {
+            "NDC No.": 4,
+            "Activity": "Use of sanitary landfill for the disposal of residues (non-compostable, non- recyclable, non-recoverable, and residues from waste to Energy plants) will be increased from the current level of 5% to 100% on weight basis",
+            "SDG": [3.9, 6.3, 7.2, "9.a", 11.6, 12.5]
+            },
+            {
+            "NDC No.": 5,
+            "Activity": "Generic enabling activities",
+            "SDG": [3.9, 6.3, 7, [9.4, "9.c"], 11.6, [12.4, 12.5], 13.2, [17.1, 17.9, 17.18]]
+            }
+        ],
+        "Forestry": [
+            {
+            "NDC No.": 1,
+            "Activity": "Increase forest cover of Sri Lanka up to 32% by 2030 ",
+            "SDG": [14, [15.1, 15.2]]
+            },
+            {
+            "NDC No.": 2,
+            "Activity": "Improve quality of growing stock of natural forests and plantations",
+            "SDG": [15.2]
+            },
+            {
+            "NDC No.": 3,
+            "Activity": "Strengthen catchment protection of major rivers and cascade systems of Sri Lanka ",
+            "SDG": [6.6, 15.4, 15.5]
+            },
+            {
+            "NDC No.": 4,
+            "Activity": "Improvement and increase of Trees Outside Forests [TROF]",
+            "SDG": [9.4, [11.6, 11.7], [12.4, 12.5], 15.2]
+            },
+            {
+            "NDC No.": 5,
+            "Activity": "Generic enabling activities",
+            "SDG": [15.1]
+            }
+        ]
+    },
+
+    "Cross-cutting": 
+    {
+        "LossAndDamage": [
+            {
+                "NDC No.": "1",
+                "Activity": "Conduct a gap analysis to assess the current status and understanding of L&D",
+                "SDG": [1.5, [3.9, "3.d"], 11.5, [13.1, 13.2, 13.3]]
+            },
+            {
+                "NDC No.": "2",
+                "Activity": "Strengthen the existing weather and climate forecasting system",
+                "SDG": [1.5, [3.9, "3.d"], 11.5, [13.1, 13.2, 13.3]]
+            },
+            {
+                "NDC No.": "3",
+                "Activity": "Improve data management systems to record losses and damages per sector",
+                "SDG": [1.5, [3.9, "3.d"], 11.5, [13.1, 13.2, 13.3]]
+            },
+            {
+                "NDC No.": "4",
+                "Activity": "Establish an overarching, nationally appropriate, functional institutional mechanism for L&D",
+                "SDG": [1.5, [3.9, "3.d"], 11.5, [13.1, 13.2, 13.3]]
+            },
+            {
+                "NDC No.": "5",
+                "Activity": "Develop a Comprehensive Risk Management Framework",
+                "SDG": [1.5, [3.9, "3.d"], 11.5, [13.1, 13.2, 13.3]]
+            }
+        ]  
+    }
+}

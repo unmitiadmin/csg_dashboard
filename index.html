@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Climate-Smart Governance Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/newHomeStyle.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="./env.js"></script>
+</head>
+<body>
+    <section class="hero-section1" style="background-image: url('./assets/images/Hero.png');
+        background-position: left; background-size: cover; background-repeat: no-repeat;width: 100%; padding: 0px;">
+        <div class="container pt-5" id="headerContainer">
+            <!-- Dynamic navbar - based on login -->
+        </div>
+        <script type="text/javascript" src="./assets/scripts/header-nav.js"></script>
+
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-sm-12 col-md-7 col-lg-7">
+                    <div class="heroBox">
+                        <span class="badge-title">🌍 Climate-Smart Governance Dashboard</span>
+                        <h1 class="pt-5">INTEGRATED DECISION-<br />SUPPORT PLATFORM</h1>
+                        <p>
+                            that helps governments, researchers, and citizens monitor, analyze, and
+                            act on climate vulnerability, risk, and adaptation data.
+                        </p>
+                        <div class="pt-4">
+                            <button class="btn btn-dashboard">VIEW DASHBOARD</button>
+                            <button class="btn btn-explore-orange">EXPLORE AI AGENT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-5">
+                    <img src="./assets/images/banner-right.png" class="w-100" alt="">
+                    <!-- <div class="lightBox pt-4 px-4 rounded pb-0">
+                    
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <input id="redirectionLink" type="hidden" />
+        <div class="container-fluid">
+            <div class="process-flow position-relative pt-5">
+                <!-- <div class="process-line"></div> -->
+
+                <div class="d-flex justify-content-center align-items-end flex-wrap">
+                    <!-- Card 1 -->
+                    <div class="process-step">
+                        <!-- <div class="card p-0 border-0 mb-2">
+                        <img src="./assets/images/banner-sdg.png" alt="" class="">
+                    </div> -->
+                        <div class="sdg-card mb-2">
+                            <div class="overlay"></div>
+                            <div class="card-content">
+                                <h1 id="label_count_sdg"><span>SDGs</span></h1>
+                                <p class="mb-0 mt-5 pt-5">Efforts toward building an inclusive, sustainable and
+                                    resilient
+                                    future</p>
+                            </div>
+                        </div>
+                        <div class="process-card ">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p>Countries</p>
+                                </div>
+                                <div><img src="./assets/images/location (1).png" alt=""></div>
+                            </div>
+                            <h2 id="label_count_countries"></h2>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="process-step">
+                        <div class="sdg-card1">
+                            <div class="overlay"></div>
+                            <div class="card-content">
+                                <p class="">Mobilising finance at scale</p>
+                                <h1 id="label_sum_funding"></h1>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="process-step">
+                        <div class="sdg-card2 mb-2">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="process-card three">
+                            <div class="d-flex justify-content-start">
+                                <div>
+                                    <p>Driving transformational change</p>
+                                </div>
+                            </div>
+                            <h3 id="label_sum_beneficiaries"></h3>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="process-step">
+                        <div class="sdg-card3">
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="process-step">
+                        <div class="process-card ">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p>Projects</p>
+                                </div>
+                                <div><img src="./assets/images/document-copy.png" alt=""></div>
+                            </div>
+                            <h2 id="label_count_projects"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="csgConceptBox mt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <button class="btn btn-overview">Overview</button>
+                <h1 class="main-title mt-3">CSG Concept</h1>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="conceptBox d-flex flex-wrap justify-content-between pt-4">
+                    <div class="concept-card">
+                        <div class="iconBox">
+                            <img src="./assets/images/concept-1.png" class="p-2" alt="">
+                        </div>
+                        <h3 class="pt-80px pb-4">Long term adaption planning support</h3>
+                        <p>Support to update/revise/draft long-term adaptation strategies and develop robust analyses
+                            for investable initiatives</p>
+                    </div>
+                    <div class="concept-card">
+                        <div class="iconBox">
+                            <img src="./assets/images/concept-2.png" class="p-2" alt="">
+                        </div>
+                        <h3 class="pt-80px pb-4">Climate and Environment Data Analytics Support</h3>
+                        <p>Support current and future climate hazards, Vulnerability and risks information, and
+                            socio-economic indicators for investment prioritization</p>
+                    </div>
+                    <div class="concept-card">
+                        <div class="iconBox">
+                            <img src="./assets/images/concept-3.png" class="p-2" alt="">
+                        </div>
+                        <h3 class="pt-80px pb-4">Project screening & planning support</h3>
+                        <p>Support current and future climate hazards, Vulnerability and risks information, and
+                            socio-economic indicators for investment prioritization</p>
+                    </div>
+                    <div class="concept-card">
+                        <div class="iconBox">
+                            <img src="./assets/images/concept-4.png" class="p-2" alt="">
+                        </div>
+                        <h3 class="pt-80px pb-4">Project preparation support</h3>
+                        <p>Support to upgrade/revise/draft long-term adaptation strategies and develop robust analyses
+                            for investable initiatives</p>
+                    </div>
+                    <div class="concept-card">
+                        <div class="iconBox">
+                            <img src="./assets/images/concept-5.png" class="p-2" alt="">
+                        </div>
+                        <h3 class="pt-80px pb-4">Adaption catalog & investment portfolio support</h3>
+                        <p>Support to upgrade/revise/draft long-term adaptation strategies and develop robust analyses
+                            for investable initiatives</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="video-section text-center">
+        <div class="container-fluid p-0">
+            <div class="video-wrapper">
+                <!-- Thumbnail -->
+                <img src="./assets/images/video-img.png" alt="Video background" class="video-thumbnail"
+                    id="videoThumbnail" />
+
+                <!-- Play / Pause Button -->
+                <div class="custom-play-button" id="playButton">
+                    <div class="play-icon"></div>
+                </div>
+
+                <!-- Video -->
+                <video id="mainVideo" class="video-player" preload="metadata" muted playsinline>
+                    <source src="./assets/images/Clips Stitched.mp4" type="video/mp4" />
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="countryBox">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h3>Select a Country to get started</h3>
+                <div class="row mt-4">
+                    <div class="col-sm-12 col-md-2 col-lg-2"></div>
+                    <div class="col-sm-12 col-md-7 col-lg-7">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-8 col-lg-8">
+                                <div class="form-group countrySelect mb-0">
+                                    <select class="form-control w-100" id="filter-country">
+                                        <option value="5">Kenya</option>
+                                        <option value="7">Senegal</option>
+                                        <option value="4">Sri Lanka</option>
+                                        <option value="2">Zambia</option>
+                                    </select>
+                                    <span><img src="./assets/images/location.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4">
+                                <div class="">
+                                    <button class="btn btn-search text-center px-5 m-auto w-100">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3"></div>
+                </div>
+
+
+                <div class="row  pt-5">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <ul class="nav nav-pills tblCountry mb-3 d-flex justify-content-center" id="pills-tab"
+                            role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-one-tab" data-toggle="pill"
+                                    data-target="#pills-one" type="button" role="tab" aria-controls="pills-one"
+                                    aria-selected="true">Country Overview</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-two-tab" data-toggle="pill" data-target="#pills-two"
+                                    type="button" role="tab" aria-controls="pills-two" aria-selected="false">Climate
+                                    Outlook</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-three-tab" data-toggle="pill"
+                                    data-target="#pills-three" type="button" role="tab" aria-controls="pills-three"
+                                    aria-selected="false">Project Tracker</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-four-tab" data-toggle="pill"
+                                    data-target="#pills-four" type="button" role="tab" aria-controls="pills-four"
+                                    aria-selected="false">Geo Intelligence Tool</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-five-tab" data-toggle="pill"
+                                    data-target="#pills-five" type="button" role="tab" aria-controls="pills-five"
+                                    aria-selected="false">Monitoring and Evaluation</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-six-tab" data-toggle="pill" data-target="#pills-six"
+                                    type="button" role="tab" aria-controls="pills-six" aria-selected="false">Development
+                                    Indicator</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-seven-tab" data-toggle="pill"
+                                    data-target="#pills-seven" type="button" role="tab" aria-controls="pills-seven"
+                                    aria-selected="false">Adaption Catalog</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-eight-tab" data-toggle="pill"
+                                    data-target="#pills-eight" type="button" role="tab" aria-controls="pills-eight"
+                                    aria-selected="false">Investment Portfolio Planning</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-nine-tab" data-toggle="pill"
+                                    data-target="#pills-nine" type="button" role="tab" aria-controls="pills-nine"
+                                    aria-selected="false">Investment Portfolio Planning</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="tab-content mt-4" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-one" role="tabpanel"
+                                aria-labelledby="pills-one-tab">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <div class="boxCountry">
+                                            <h2 class="mb-0">Country Overview</h2>
+                                            <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
+                                                an overview of key development indicators.</p>
+                                            <button class="btn btn-explore-new mt-4">Explore <img
+                                                    src="./assets/images/icon.png" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8 col-lg-8">
+                                        <div class="lightBox pt-4 pl-5 rounded pr-0 pb-0">
+                                            <img src="./assets/images/country-overview-tab.png" class="w-100" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-two-tab">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <div class="boxCountry">
+                                            <h2 class="mb-0">Climate Outlook</h2>
+                                            <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
+                                                an overview of key development indicators.</p>
+                                            <button class="btn btn-explore-new mt-4">Explore <img
+                                                    src="./assets/images/icon.png" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8 col-lg-8">
+                                        <div class="lightBox pt-4 pl-5 rounded pr-0 pb-0">
+                                            <img src="./assets/images/climate-outlook-tab.png" class="w-100" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-three" role="tabpanel"
+                                aria-labelledby="pills-three-tab">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <div class="boxCountry">
+                                            <h2 class="mb-0">Project Tracker</h2>
+                                            <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
+                                                an overview of key development indicators.</p>
+                                                <a href="project_tracker.html">
+                                            <button class="btn btn-explore-new mt-4">Explore <img
+                                                    src="./assets/images/icon.png" alt=""></button>
+                                                </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8 col-lg-8">
+                                        <div class="lightBox pt-4 pl-5 rounded pr-0 pb-0">
+                                            <img src="./assets/images/climate-outlook-tab.png" class="w-100" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane fade" id="pills-four" role="tabpanel" aria-labelledby="pills-four-tab">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <div class="boxCountry">
+                                            <h2 class="mb-0">Geo Intelligence Tool</h2>
+                                            <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
+                                                an overview of key development indicators.</p>
+                                            <button class="btn btn-explore-new mt-4">Explore <img
+                                                    src="./assets/images/icon.png" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8 col-lg-8">
+                                        <div class="lightBox pt-4 pl-5 rounded pr-0 pb-0">
+                                            <img src="./assets/images/climate-outlook-tab.png" class="w-100" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-five" role="tabpanel" aria-labelledby="pills-five-tab">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <div class="boxCountry">
+                                            <h2 class="mb-0">Monitoring and Evaluation</h2>
+                                            <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
+                                                an overview of key development indicators.</p>
+                                            <button class="btn btn-explore-new mt-4">Explore <img
+                                                    src="./assets/images/icon.png" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8 col-lg-8">
+                                        <div class="lightBox pt-4 pl-5 rounded pr-0 pb-0">
+                                            <img src="./assets/images/climate-outlook-tab.png" class="w-100" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-six" role="tabpanel" aria-labelledby="pills-six-tab">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <div class="boxCountry">
+                                            <h2 class="mb-0">Development Indicator</h2>
+                                            <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
+                                                an overview of key development indicators.</p>
+                                            <button class="btn btn-explore-new mt-4">Explore <img
+                                                    src="./assets/images/icon.png" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8 col-lg-8">
+                                        <div class="lightBox pt-4 pl-5 rounded pr-0 pb-0">
+                                            <img src="./assets/images/climate-outlook-tab.png" class="w-100" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-seven" role="tabpanel"
+                                aria-labelledby="pills-seven-tab">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <div class="boxCountry">
+                                            <h2 class="mb-0">Adaption Catalog</h2>
+                                            <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
+                                                an overview of key development indicators.</p>
+                                            <button class="btn btn-explore-new mt-4">Explore <img
+                                                    src="./assets/images/icon.png" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8 col-lg-8">
+                                        <div class="lightBox pt-4 pl-5 rounded pr-0 pb-0">
+                                            <img src="./assets/images/climate-outlook-tab.png" class="w-100" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-eight" role="tabpanel"
+                                aria-labelledby="pills-eight-tab">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <div class="boxCountry">
+                                            <h2 class="mb-0">Investment Portfolio Planning</h2>
+                                            <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
+                                                an overview of key development indicators.</p>
+                                            <button class="btn btn-explore-new mt-4">Explore <img
+                                                    src="./assets/images/icon.png" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8 col-lg-8">
+                                        <div class="lightBox pt-4 pl-5 rounded pr-0 pb-0">
+                                            <img src="./assets/images/climate-outlook-tab.png" class="w-100" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-nine" role="tabpanel" aria-labelledby="pills-nine-tab">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-4 col-lg-4">
+                                        <div class="boxCountry">
+                                            <h2 class="mb-0">Nationally Determined Contributions</h2>
+                                            <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
+                                                an overview of key development indicators.</p>
+                                            <button class="btn btn-explore-new mt-4">Explore <img
+                                                    src="./assets/images/icon.png" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-8 col-lg-8">
+                                        <div class="lightBox pt-4 pl-5 rounded pr-0 pb-0">
+                                            <img src="./assets/images/climate-outlook-tab.png" class="w-100" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-keyFeatureNew">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <button class="btn btn-keyfeature"><img src="./assets/images/key.png" alt=""> Key Features</button>
+            </div>
+
+            <div class="col-sm-12 col-md-7 col-lg-7 mt-3">
+                <h4>Innovation for Climate Resilience, Social Transformation and Equity</h4>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-5  mt-3">
+                <p>The Climate-Smart Governance Dashboard provides accurate data on climate-related hazards, population
+                    vulnerability, forecast climate scenarios, sector-relevant data (water, health, agriculture,
+                    ecosystem), infrastructure and climate-related projects to support coordinated mid- to long-term
+                    adaptation planning aligned to global development goals. </p>
+
+                <!--  -->
+            </div>
+        </div>
+
+
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="climate-card one mb-2">
+
+                    <h3 class="card-title pt-3">
+                        Track Climate <br />
+                        Risks
+                    </h3>
+
+                    <p class="card-description">
+                        Visualize exposure to floods, droughts, and heat across vulnerable regions.
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="climate-card one mb-2">
+                    <h3 class="card-title pt-3">
+                        Support <br />Planning & <br />Policy
+                    </h3>
+                    <p class="card-description">
+                        Aid national action plans, budget tracking, and risk-informed planning.
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="climate-card one mb-2">
+                    <h3 class="card-title pt-3">
+                        Monitor <br />Projects
+                    </h3>
+                    <p class="card-description">
+                        Assess adaptation and mitigation efforts at district and national levels.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="countryBox">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                <h3>Use AI Agent Navigation</h3>
+                <p>Guided by a chatbot-style assistant</p>
+
+                <button class="btn btn-explore mt-3">Explore AI Agent</button>
+            </div>
+        </div>
+
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col0lg-12">
+                    <img src="./assets/images/ai-chat-boat.png" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="countryBox others text-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <button class="btn btn-resources"> Resources</button>
+                    <h3 class="mt-4">See How It Helped Others</h3>
+                </div>
+            </div>
+            <div id="owl-demo-2" class="owl-carousel owl-theme">
+                <!-- Item 1 -->
+                <article class="thumbnail item">
+                    <img src="./assets/images/carousel-1.png" />
+                    <button class="mt-2 btn btn-border">LAUNCH</button>
+                    <div class="caption">
+                        <h4>IWMI launches the climate smart governance dashboard in Sri Lanka</h4>
+                        <p class="flex-text">The International Water Management Institute (IWMI) introduced new tools to
+                            Sri Lankan decision makers in need of information and data on the local impacts of climate
+                            change. </p>
+                        <a href="#" class="btn btn-explore-new">View More</a>
+                    </div>
+                </article>
+
+                <!-- Item 2 -->
+                <article class="thumbnail item">
+                    <img src="./assets/images/carousel-2.png" />
+                    <button class="mt-2 btn btn-border">technical guide</button>
+                    <div class="caption">
+                        <h4>Climate Smart Governance Dashboard: technical guide</h4>
+                        <p class="flex-text">The Climate-Smart Governance (CSG) Dashboard stands as an innovative
+                            platform, providing data on climate-related hazards...</p>
+                        <a href="#" class="btn btn-explore-new">View More</a>
+                    </div>
+                </article>
+
+                <!-- Item 3 -->
+                <article class="thumbnail item">
+                    <img src="./assets/images/carousel-3.png" />
+                    <button class="mt-2 btn btn-border">Keynote Speech</button>
+                    <div class="caption">
+                        <h4>Keynote Speech delivered by Mr. K M Mahinda Siriwardana</h4>
+                        <p class="flex-text">Secretary to the Treasury, and Ministry of Finance, Economic Stabilisation
+                            and National Policies, at
+                            the National Launch of the CGIAR (Consultative Group on International Agricultural
+                            Research) Climate Resilience – Climate Smart Governance Dashboard (CSG) at Galle
+                            Face Hotel, Colombo, Sri Lanka on 04th April 2024</p>
+                        <a href="#" class="btn btn-explore-new">View More</a>
+                    </div>
+                </article>
+
+                <!-- Item 4 -->
+                <article class="thumbnail item">
+                    <img src="./assets/images/carousel-4.png" />
+                    <button class="mt-2 btn btn-border">training manual</button>
+                    <div class="caption">
+                        <h4>Sri Lanka's Climate Smart Governance Dashboard: training manual</h4>
+                        <p class="flex-text">Sri Lanka’s geographical and climatic conditions expose it to significant
+                            natural disaster risks, including floods, droughts, landslides, and cyclones.</p>
+                        <a href="#" class="btn btn-explore-new">View More</a>
+                    </div>
+                </article>
+
+                <!-- Item 1 -->
+                <article class="thumbnail item">
+                    <img src="./assets/images/carousel-1.png" />
+                    <button class="mt-2 btn btn-border">LAUNCH</button>
+                    <div class="caption">
+                        <h4>IWMI launches the climate smart governance dashboard in Sri Lanka</h4>
+                        <p class="flex-text">The International Water Management Institute (IWMI) introduced new tools to
+                            Sri Lankan decision makers in need of information and data on the local impacts of climate
+                            change. </p>
+                        <a href="#" class="btn btn-explore-new">View More</a>
+                    </div>
+                </article>
+
+                <!-- Item 2 -->
+                <article class="thumbnail item">
+                    <img src="./assets/images/carousel-2.png" />
+                    <button class="mt-2 btn btn-border">technical guide</button>
+                    <div class="caption">
+                        <h4>Climate Smart Governance Dashboard: technical guide</h4>
+                        <p class="flex-text">The Climate-Smart Governance (CSG) Dashboard stands as an innovative
+                            platform, providing data on climate-related hazards...</p>
+                        <a href="#" class="btn btn-explore-new">View More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="card footer border-0">
+            <div class="card-body">
+                <div class="row p20px">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div><img src="./assets/images/iwmi-white.png"></div>
+                            <div>
+                                <p class="text-white font-weight-bold" style="white-space: nowrap;">Supported By</p>
+                                <p class="mb-0"><img src="./assets/images/logo_white.webp"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4"></div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
+                        <ul class="list-unstyled pl-0 ms-0 footer_ul">
+                            <li class="d-flex follow-link flex-wrap text-start">
+                                <div class="pr-3">
+                                    <a href="https://www.facebook.com/IWMIonFB" target="_blank" class="facebook-link">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.flickr.com/photos/iwmi" target="_blank" class="facebook-link">
+                                        <i class="fa fa-flickr"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.instagram.com/iwmi_water/" target="_blank"
+                                        class="facebook-link">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.linkedin.com/checkpoint/lg/login?session_redirect=%2Fauthwall&amp;fromSignIn=true&amp;trk=seo-authwall-base_google-one-tap-submit"
+                                        target="_blank" class="facebook-link">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="mailto:iwmi@cgiar.org" target="_blank" class="facebook-link">
+                                        <i class="fa fa-envelope"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.iwmi.cgiar.org/news/rss-feeds/" target="_blank"
+                                        class="facebook-link">
+                                        <i class="fa fa-wifi"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIWMI_"
+                                        target="_blank" class="facebook-link">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.youtube.com/iwmimedia" target="_blank" class="facebook-link">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer subfooter">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water Management
+                        Institute (IWMI) | <a href="">Termsof use</a></p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6 text-right">
+                    <ul class="d-flex justify-content-end list-unstyled align-items-center mb-0 pb-0">
+                        <li><a href="#">Ethics</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Subscribe to our newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- waiting spinner  modal-->
+    <div id="loading-modal" class="modal hide" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3 text-white" style="
+                    background-color: transparent !important;
+                    border: 0px !important;">
+                <div id="loading-modal-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert Modal -->
+    <div class="modal" id="alertModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered popup-wh" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <div id="icon-alert-modal"></div>
+                        <h5 class="text-center pt-2" id="text-alert-modal"></h5>
+                    </div>
+                    <div class="d-flex justify-content-center mt-40px">
+                        <button class="btn btn-update-edit px-5" data-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page scripts -->
+    <script type="text/javascript" src="./assets/scripts/utils.js"></script>
+    <script type="text/javascript" src="./assets/scripts/index.js"></script>
+    <script>
+        const playButton = document.getElementById("playButton");
+        const video = document.getElementById("mainVideo");
+        const thumbnail = document.getElementById("videoThumbnail");
+        const icon = playButton.querySelector("div");
+        playButton.addEventListener("click", async () => {
+            thumbnail.style.display = "none";
+            video.style.display = "block";
+
+            try {
+                if (video.paused) {
+                    await video.play();
+                    icon.classList.remove("play-icon");
+                    icon.classList.add("pause-icon");
+                } else {
+                    video.pause();
+                    icon.classList.remove("pause-icon");
+                    icon.classList.add("play-icon");
+                }
+            } catch (error) {
+                console.error("Video play failed:", error);
+            }
+        });
+        video.addEventListener("ended", () => {
+            video.currentTime = 0;
+            video.pause();
+            video.style.display = "none";
+            thumbnail.style.display = "block";
+            icon.classList.remove("pause-icon");
+            icon.classList.add("play-icon");
+        });
+    </script>
+</body>
+</html>

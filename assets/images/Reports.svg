@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="14px" viewBox="0 0 11 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Reports</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Version-#1-Copy" transform="translate(-709.000000, -26.000000)">
+            <g id="Header-Nav">
+                <g id="Icon/Reports" transform="translate(706.000000, 25.000000)">
+                    <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                    <g id="Group-3" transform="translate(3.000000, 1.000000)" stroke="#4A4A4A">
+                        <path d="M3.5,1.5 L7.5,1.5" id="Line" stroke-linecap="round"></path>
+                        <path d="M2.5,6.5 L8.5,6.5" id="Line-Copy" stroke-opacity="0.5" stroke-linecap="round"></path>
+                        <path d="M2.5,8.5 L8.5,8.5" id="Line-Copy-2" stroke-opacity="0.5" stroke-linecap="round"></path>
+                        <path d="M2.5,10.5 L8.5,10.5" id="Line-Copy-3" stroke-opacity="0.5" stroke-linecap="round"></path>
+                        <rect id="Rectangle" x="0.5" y="0.5" width="10" height="13" rx="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

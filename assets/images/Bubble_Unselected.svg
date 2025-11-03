@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Icon/Bubble_Unselected</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="view-switcher/Heat-map---Selected" transform="translate(-9.000000, -9.000000)" fill="#006699">
+            <g id="Icon/Bubble_Unselected" transform="translate(9.500000, 9.619048)">
+                <circle id="Oval" cx="3" cy="10" r="3"></circle>
+                <circle id="Oval-Copy" cx="12" cy="5" r="5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
