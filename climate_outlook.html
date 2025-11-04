@@ -12,10 +12,22 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.14/css/bootstrap-select.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="./env.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.14/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="./assets/lib/xlsx.bundle.js"></script>
+    <script type="text/javascript" src="./assets/lib/xlsx.full.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/treemap.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/sankey.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    <script type="text/javascript" src="./assets/scripts/env.js"></script>
     <script type="text/javascript" src="./assets/scripts/header-nav.js"></script>
 </head>
 <body>
@@ -24,8 +36,254 @@
         <div class="container pt-5" id="headerContainer">
             <!-- Dynamic navbar - based on login -->
         </div>
-        <input id="redirectionLink" type="hidden" />
+        
+
+        <div class="container mt-57px">
+            <div class="row">
+                <div class="col-sm-12 col-md-1 col-lg-1"></div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="form-group countrySelect mb-0">
+                        <select class="form-control w-100" id="filter-country">
+                            <option value="5">Kenya</option>
+                            <option value="7">Senegal</option>
+                            <option value="4">Sri Lanka</option>
+                            <option value="2">Zambia</option>
+                        </select>
+                        <span><img src="./assets/images/location.png" alt=""></span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="form-group countrySelect mb-0">
+                        <select class="form-control w-100">
+                            <option>Country Overview</option>
+                            <option selected> Climate Outlook</option>
+                            <option> Project Tracker</option>
+                        </select>
+                        <span><img src="./assets/images/element-3.png" alt=""></span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <button class="mr-2 btn btn-apply mb-2">Apply</button>
+                    <button class="btn btn-edit mb-2"><img src="./assets/images/edit-2.png" alt=""> Edit</button>
+                </div>
+                <div class="col-sm-12 col-md-2 col-lg-2"></div>
+            </div>            
+        </div>
     </section>
+
+    <section class="informationBoxKey bg-lightBlue">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <ul class="nav nav-pills  tblOutlook mb-3 d-flex justify-content-center" id="pills-tab"
+                        role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-one-tab" data-toggle="pill"
+                                data-target="#pills-one" type="button" role="tab" aria-controls="pills-one"
+                                aria-selected="true">Climate Risk Profile</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-two-tab" data-toggle="pill" data-target="#pills-two"
+                                type="button" role="tab" aria-controls="pills-two" aria-selected="false">
+                                Future Climate Risk </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-three-tab" data-toggle="pill" data-target="#pills-three"
+                                type="button" role="tab" aria-controls="pills-three" aria-selected="false">
+                                Climate Risk Visualiser </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-four-tab" data-toggle="pill" data-target="#pills-four"
+                                type="button" role="tab" aria-controls="pills-four" aria-selected="false">
+                                Sectoral Climate Impact</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="tab-content mt-4" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-one" role="tabpanel"
+                            aria-labelledby="pills-one-tab">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12" id="content-climate-risk-profile">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade " id="pills-two" role="tabpanel" aria-labelledby="pills-two-tab">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <button class="btn btn-key mb-3"><img src="./assets/images/key1.png" alt="">
+                                        Key Features</button>
+                                    <h1 class="title-black mb-3"> Future climate Risk </h1>
+
+                                    <p class="font-14px">Future Climate Risk is an indispensable resource for
+                                        anticipating and planning the impacts of climate change. By utilizing the recent
+                                        climate model and its scenario analysis, it offers a glimpse into how
+                                        climate-related risks are likely to evolve in the coming years and decades.
+                                        Decision-makers can use this information to assess potential future challenges,
+                                        such as floods, droughts or heatwaves, and formulate strategies for adaptation
+                                        and resilience to ensure long-term sustainability.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="card border-radius-10 border-0">
+                                        <div class="card-body">
+                                            <h4>Filters</h4>
+
+                                            <div class="form-group">
+                                                <label><span><img src="./assets/images/location-dark.png" alt=""></span>
+                                                    Province</label>
+                                                <select class="form-control circle" id="filter-future-climate-province">
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label><span><img src="./assets/images/variable-dark.png" alt=""></span>
+                                                    Variable</label>
+                                                <select class="form-control circle" id="filter-future-climate-variable">
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label><span><img src="./assets/images/percentage-dark.png"
+                                                            alt=""></span> Percentile</label>
+                                                <select class="form-control circle" id="filter-future-climate-percentile" multiple>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label><span><img src="./assets/images/scenario-dark.png" alt=""></span>
+                                                    Scenario</label>
+                                                <select class="form-control circle" id="filter-future-climate-scenario" multiple>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-8 col-lg-8">
+                                    <div class="card border-radius-10 border-0">
+                                        <div class="card-body">
+                                            <div id="chart-future-climate" class="mt-5"
+                                                    style="height: 45vh; width: 100%;"></div>
+                                            <div id="chart-future-climate-legend" class=" mt-2"
+                                                style="width: 100%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade " id="pills-three" role="tabpanel" aria-labelledby="pills-three-tab">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12" id="content-climate-risk-visualizer">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade " id="pills-four" role="tabpanel" aria-labelledby="pills-fourqa-tab">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12" id="content-sectorial-climate-impact">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="card footer border-0">
+            <div class="card-body">
+                <div class="row p20px">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div><img src="./assets/images/iwmi-white.png"></div>
+                            <div>
+                                <p class="text-white font-weight-bold" style="white-space: nowrap;">Supported By</p>
+                                <p class="mb-0"><img src="./assets/images/logo_white.webp"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4"></div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
+                        <ul class="list-unstyled pl-0 ms-0 footer_ul">
+                            <li class="d-flex follow-link flex-wrap text-start">
+                                <div class="pr-3">
+                                    <a href="https://www.facebook.com/IWMIonFB" target="_blank" class="facebook-link">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.flickr.com/photos/iwmi" target="_blank" class="facebook-link">
+                                        <i class="fa fa-flickr"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.instagram.com/iwmi_water/" target="_blank"
+                                        class="facebook-link">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.linkedin.com/checkpoint/lg/login?session_redirect=%2Fauthwall&amp;fromSignIn=true&amp;trk=seo-authwall-base_google-one-tap-submit"
+                                        target="_blank" class="facebook-link">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="mailto:iwmi@cgiar.org" target="_blank" class="facebook-link">
+                                        <i class="fa fa-envelope"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.iwmi.cgiar.org/news/rss-feeds/" target="_blank"
+                                        class="facebook-link">
+                                        <i class="fa fa-wifi"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIWMI_"
+                                        target="_blank" class="facebook-link">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.youtube.com/iwmimedia" target="_blank" class="facebook-link">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer subfooter">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water
+                        Management
+                        Institute (IWMI) | <a href="">Termsof use</a></p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6 text-right">
+                    <ul class="d-flex justify-content-end list-unstyled align-items-center mb-0 pb-0">
+                        <li><a href="#">Ethics</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Subscribe to our newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- waiting spinner  modal-->
