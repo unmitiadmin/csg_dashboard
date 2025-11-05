@@ -109,11 +109,11 @@ window.addEventListener("load", (event) => {
                         Modules
                     </a>
                     <div class="dropdown-menu modules" aria-labelledby="modulesDropdown">
-                        <a class="dropdown-item" href="index.html"><img class="pr-2" pr-2
+                        <a class="dropdown-item" href="country_overview.html"><img class="pr-2" pr-2
                                 src="./assets/images/element-3.png" alt=""> Country Overview</a>
-                        <a class="dropdown-item" href="#"><img class="pr-2" src="./assets/images/element-3.png"
+                        <a class="dropdown-item" href="climate_outlook.html"><img class="pr-2" src="./assets/images/element-3.png"
                                 alt=""> Climate Outlook</a>
-                        <a class="dropdown-item" href="#"><img class="pr-2" src="./assets/images/element-3.png"
+                        <a class="dropdown-item" href="project_tracker.html"><img class="pr-2" src="./assets/images/element-3.png"
                                 alt=""> Project Tracker</a>
                         <a class="dropdown-item" href="#"><img class="pr-2" src="./assets/images/element-3.png"
                                 alt=""> Geo Intelligence Tool</a>
