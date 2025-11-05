@@ -842,20 +842,14 @@
      line-height: normal;
  }
 
- .informationBox {
-     padding: 60px 100px;
- }
+
 
  .informationCount {
      padding: 60px 100px;
      background: #22AD7A;
  }
 
- .informationBox {
-     position: relative;
-     min-height: 600px;
-     overflow: hidden;
- }
+
 
  .informationCount h1 {
      color: #FFF;
@@ -880,12 +874,22 @@
      min-height: 175px;
  }
 
+ .informationBox {
+     position: relative;
+     min-height: 600px;
+     overflow: hidden;
+ }
+
+ .informationBox {
+     padding: 60px 100px;
+ }
+
  .informationBox::before {
      content: "";
      position: absolute;
      inset: 0;
      /* top, right, bottom, left = 0 */
-     background-image: url("../images/country-overview-kenya.svg");
+     background-image: url("../images/green-kenya-map.svg");
      background-position: right;
      background-repeat: no-repeat;
      background-size: contain;
@@ -901,10 +905,158 @@
  }
 
 
+
+
+ .informationBox.senegal {
+     position: relative;
+     min-height: 600px;
+     overflow: hidden;
+ }
+
+ .informationBox.senegal {
+     padding: 60px 100px;
+ }
+
+ .informationBox.senegal::before {
+     content: "";
+     position: absolute;
+     inset: 0;
+     /* top, right, bottom, left = 0 */
+     background-image: url("../images/green-senegal-map.svg");
+     background-position: right;
+     background-repeat: no-repeat;
+     background-size: contain;
+     opacity: 0.1;
+     /* only background transparent */
+     z-index: 0;
+ }
+
+ .informationBox.senegal .container {
+     position: relative;
+     z-index: 1;
+     /* keep cards above background */
+ }
+
+
+
+ .informationBox.zambia {
+     position: relative;
+     min-height: 600px;
+     overflow: hidden;
+ }
+
+ .informationBox.zambia {
+     padding: 60px 100px;
+ }
+
+ .informationBox.zambia::before {
+     content: "";
+     position: absolute;
+     inset: 0;
+     /* top, right, bottom, left = 0 */
+     background-image: url("../images/zambia-country.svg");
+     background-position: right;
+     background-repeat: no-repeat;
+     background-size: contain;
+     opacity: 0.1;
+     /* only background transparent */
+     z-index: 0;
+ }
+
+ .informationBox.zambia .container {
+     position: relative;
+     z-index: 1;
+     /* keep cards above background */
+ }
+
+ .btn.btn-newsletter {
+     border-radius: 100px;
+     border: 1px solid #F8FAFB;
+     color: #F8FAFB;
+     text-align: center;
+     font-family: Poppins;
+     font-size: 20px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+ }
+
+ .bootstrap-select>.dropdown-toggle {
+     border-radius: 100px !important;
+     border: 1px solid rgba(0, 0, 0, 0.10) !important;
+     position: relative;
+     width: 100%;
+     text-align: right;
+     white-space: nowrap;
+     color: #000;
+     font-family: Poppins;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     padding: 13px 16px;
+ }
+
+
+ .informationBox {
+     position: relative;
+     min-height: 600px;
+     overflow: hidden;
+ }
+
+ .informationBox {
+     padding: 60px 100px;
+ }
+
+ .informationBox::before {
+     content: "";
+     position: absolute;
+     inset: 0;
+     /* top, right, bottom, left = 0 */
+     background-image: url("../images/green-kenya-map.svg");
+     background-position: right;
+     background-repeat: no-repeat;
+     background-size: contain;
+     opacity: 0.1;
+     /* only background transparent */
+     z-index: 0;
+ }
+
+ .informationBox .container {
+     position: relative;
+     z-index: 1;
+     /* keep cards above background */
+ }
+
+
+ .detailBox h5 span {
+     color: var(--Dark-blue, #28537D);
+     font-family: Poppins;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+ }
+
+ .section-title {
+     color: #000;
+     font-family: 'Poppins';
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+ }
+
+
+ .table.na-table tbody tr td {
+     font-size: 14px;
+ }
+
  .card.detailBox {
      border-radius: 6px;
      background: #EFF6FA;
      margin-bottom: 10px;
+     min-height: 190px;
  }
 
  .detailBox h5 {
@@ -1509,6 +1661,19 @@
  .detailBoxFeature {
      border-radius: 20px;
      background: #F0F0F0;
+     min-height: 525px;
+ }
+
+ .textImg span img {
+    position: absolute;
+    top: 29px;
+    left: 55px;
+ }
+
+ .flex-item span img {
+    position: relative;
+    right: 76px;
+    top: -5px;
  }
 
  .detailBoxFeature h6 {
@@ -1542,15 +1707,16 @@
  }
 
  .detailBoxFeature h4 {
-     color: #000;
-     font-family: Poppins;
-     font-size: 34px;
-     font-style: normal;
-     font-weight: 600;
-     line-height: 60px;
-     /* 150% */
-     text-transform: uppercase;
- }
+    color: #000;
+    font-family: Poppins;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 15px;
+} 
 
  .mh170px {
      min-height: 170px;
@@ -2794,47 +2960,48 @@
  .register-step.active {
      display: block;
  }
-.btn-secondary:hover {
-    border-color: #545b62;
-    border: 1px solid #FFF;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
-    padding: 13px 48px;
-}
 
-.btn-secondary {
-    border-color: #545b62;
-    border: 1px solid #FFF;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    color: #fff;
-    background-color: #6c757d;
-    border-color: #6c757d;
-    padding: 13px 48px;
-}
+ .btn-secondary:hover {
+     border-color: #545b62;
+     border: 1px solid #FFF;
+     text-align: center;
+     font-family: Poppins;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 500;
+     color: #fff;
+     background-color: #6c757d;
+     border-color: #6c757d;
+     padding: 13px 48px;
+ }
 
-.form-control.logInInput1 {
-    border-radius: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.10);
-    background: #F6F6F6;
-    padding: 10px 20px;
-    height: 48px;
-    color: #495057;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
+ .btn-secondary {
+     border-color: #545b62;
+     border: 1px solid #FFF;
+     text-align: center;
+     font-family: Poppins;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 500;
+     color: #fff;
+     background-color: #6c757d;
+     border-color: #6c757d;
+     padding: 13px 48px;
+ }
+
+ .form-control.logInInput1 {
+     border-radius: 8px;
+     border: 1px solid rgba(0, 0, 0, 0.10);
+     background: #F6F6F6;
+     padding: 10px 20px;
+     height: 48px;
+     color: #495057;
+     font-family: Poppins;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+ }
 
  .nav-tabs.login_tabs .nav-item.show .nav-link,
  .nav-tabs.login_tabs .nav-link.active {
