@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Climate-Smart Governance Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/newHomeStyle.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -31,6 +37,7 @@
     <script type="text/javascript" src="./assets/scripts/env.js"></script>
     <script type="text/javascript" src="./assets/scripts/header-nav.js"></script>
 </head>
+
 <body>
     <section class="hero-section1" style="background-image: url('./assets/images/Hero.png');
         background-position: left; background-size: cover; background-repeat: no-repeat;width: 100%; padding: 0px;">
@@ -68,7 +75,8 @@
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <div class="d-flex justify-content-center alin-items-center">
                         <div class="">
-                            <a href="add_project.html?page=project_tracker" class="btn btn-edit1 mb-2 mr-2"><img src="./assets/images/add.png" alt=""> Add Project</a>
+                            <a href="add_project.html?page=project_tracker" class="btn btn-edit1 mb-2 mr-2"><img
+                                    src="./assets/images/add.png" alt=""> Add Project</a>
                             <!-- <a href="#" class="btn btn-edit1 mb-2"><img src="./assets/images/eye.png" alt=""> Project Submissions</a> -->
                         </div>
                     </div>
@@ -93,6 +101,13 @@
                         manner. It enables a holistic understanding of the implementation of projects, identify
                         successful strategies, and pinpoint specific areas where further actions and interventions are
                         needed.</p>
+
+                    <h3 class="text-summary">Project Summary</h3>
+                    <p class="font-14px">This module of the CSG monitor and track the progress of projects related to
+                        climate change
+                        adaptation, mitigation and crosscutting. It enables governments, NGOs, and businesses and
+                        individuals to track efforts in addressing the impacts of climate change at different scales and
+                        levels and identify areas where additional action is needed.</p>
                 </div>
             </div>
 
@@ -101,7 +116,7 @@
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="card border-radius-10px border-0">
                         <div class="card-body">
-                            <div class="text-end pr-13px d-flex justify-content-between align-items-center">
+                            <div class="text-end pr-13px">
                                 <div>
                                     <span class="mb-3">Distribution of climate investment
                                         across adaptation, mitigation and cross-cutting projects in <span
@@ -110,7 +125,7 @@
                                                 src="./assets/images/info-circle.svg" height="20px"></span></span>
                                 </div>
                             </div>
-                            <div id="chart-sunburst" class="mx-auto" style="width: 100%; height:50vh;"></div>
+                            <div id="chart-sunburst" class="mx-auto" style="width: 100%; height:300px;"></div>
                         </div>
                     </div>
                 </div>
@@ -121,12 +136,11 @@
                                 <div>
                                     <span class="mb-3 font-22px chart-title">Distribution of climate investment
                                         based on multi-hazards in <span class="label-country"></span> <span
-                                            data-toggle="modal" data-target="#modalTwo"
-                                            class="pl-2 cursor"><img src="./assets/images/info-circle.svg"
-                                                height="20px"></span></span>
+                                            data-toggle="modal" data-target="#modalTwo" class="pl-2 cursor"><img
+                                                src="./assets/images/info-circle.svg" height="20px"></span></span>
                                 </div>
                             </div>
-                            <div id="chart-sankey" class="mx-auto mt-2" style="width: 100%; height:53.5vh;"></div>
+                            <div id="chart-sankey" class="mx-auto mt-2" style="width: 100%; height:316px;"></div>
                         </div>
                     </div>
                 </div>
@@ -134,8 +148,9 @@
                     <div class="card border-radius-10px border-0">
                         <div class="card-body">
                             <div class="col-sm-12 col-md-12 col-lg-12">
-                                <span class="mb-3 font-22px chart-title">Total number of projects by status and category</span>
-                                <div class="" id="chart-pie" style="width: 100%;height:500px;"></div>
+                                <span class="mb-3 font-22px chart-title">Total number of projects by status and
+                                    category</span>
+                                <div class="" id="chart-pie" style="width: 100%;height:324px;"></div>
                             </div>
                         </div>
                     </div>
@@ -145,164 +160,163 @@
 
             <div class="row mt-3">
                 <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card border-radius-10px border-0">
-                        <div class="card-body">
-                            <h6>All projects</h6>
-                            <div
-                                class="d-flex justify-content-start align-items-center mt-4 flex-wrap  flex-column">
-                                <div class="d-flex justify-content-start">
-                                    <div><img src="./assets/images/b1.svg">
-                                    </div>
-                                    <div class="pl-3 main-card">
+                    <div class="card border-radius-10px border-0 allProjects">
+                        <div class="card-body p-3">
+                            <h5>All projects</h5>
+                            <div class="">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="main-card">
                                         <h6 class="mb-0">Number of beneficiaries
                                         </h6>
-                                        <p class="mt-1 mb-0 w-200px"><span
-                                                id="count-total-beneficiaries"></span>
+                                        <p class="mt-1 mb-0 w-200px"><span id="count-total-beneficiaries"></span>
                                         </p>
                                     </div>
-                                </div>
-                                <div class="d-flex justify-content-start">
-                                    <div><img src="./assets/images/b2.svg">
+                                    <div><img src="./assets/images/b1.svg">
                                     </div>
-                                    <div class="pl-3 main-card">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="main-card">
                                         <h6 class="mb-0">Funds allocated </h6>
                                         <p class="mt-1 mb-0 w-200px"><span id="count-total-funds">
                                             </span> USD
                                         </p>
                                     </div>
-                                </div>
-                                <div class="d-flex justify-content-start">
-                                    <div><img src="./assets/images/b3.svg">
+                                    <div><img src="./assets/images/b2.svg">
                                     </div>
-                                    <div class="pl-3 main-card">
+
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="main-card">
                                         <h6 class="mb-0">Number of projects</h6>
                                         <p class="mt-1 mb-0 w-200px"><span id="count-total-projects">
-                                            </span> 
+                                            </span>
                                         </p>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card border-radius-10px border-0">
-                        <div class="card-body">
-                            <h6>Adaptation</h6>
-                            <div
-                                class="d-flex justify-content-start align-items-center mt-4 flex-wrap  flex-column">
-                                <div class="d-flex justify-content-start">
-                                    <div><img src="./assets/images/b1.svg">
-                                    </div>
-                                    <div class="pl-3 main-card">
-                                        <h6 class="mb-0">Number of beneficiaries
-                                        </h6>
-                                        <p class="mt-1 mb-0 w-200px"><span
-                                                id="count-adaptation-beneficiaries"></span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-start">
-                                    <div><img src="./assets/images/b2.svg">
-                                    </div>
-                                    <div class="pl-3 main-card">
-                                        <h6 class="mb-0">Funds allocated </h6>
-                                        <p class="mt-1 mb-0 w-200px"><span id="count-adaptation-funds">
-                                            </span> 
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-start">
                                     <div><img src="./assets/images/b3.svg">
                                     </div>
-                                    <div class="pl-3 main-card">
-                                        <h6 class="mb-0">Number of projects</h6>
-                                        <p class="mt-1 mb-0 w-200px"><span id="count-adaptation-projects">
-                                            </span> 
-                                        </p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card border-radius-10px border-0">
-                        <div class="card-body">
-                            <h6>Mitigation</h6>
-                            <div
-                                class="d-flex justify-content-start align-items-center mt-4 flex-wrap pl-4 flex-column">
-                                <div class="d-flex justify-content-start w-200px">
-                                    <div><img src="./assets/images/b1.svg">
-                                    </div>
-                                    <div class="pl-3 main-card">
+                    <div class="card border-radius-10px border-0 allProjects">
+                        <div class="card-body p-3">
+                            <h5>Adaptation</h5>
+                            <div class="">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                     <div class="main-card">
                                         <h6 class="mb-0">Number of beneficiaries
                                         </h6>
-                                        <p class="mt-1 mb-0 w-200px"><span
-                                                id="count-mitigation-beneficiaries"></span>
+                                        <p class="mt-1 mb-0 w-200px"><span id="count-adaptation-beneficiaries"></span>
                                         </p>
                                     </div>
+                                    <div><img src="./assets/images/b1.svg">
+                                    </div>
                                 </div>
-                                <div class="d-flex justify-content-start w-200px">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="main-card">
+                                        <h6 class="mb-0">Funds allocated </h6>
+                                        <p class="mt-1 mb-0 w-200px"><span id="count-adaptation-funds">
+                                            </span>
+                                        </p>
+                                    </div>
                                     <div><img src="./assets/images/b2.svg">
                                     </div>
-                                    <div class="pl-3 main-card">
+                                    
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                     <div class="main-card">
+                                        <h6 class="mb-0">Number of projects</h6>
+                                        <p class="mt-1 mb-0 w-200px"><span id="count-adaptation-projects">
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div><img src="./assets/images/b3.svg">
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="card border-radius-10px border-0 allProjects">
+                        <div class="card-body p-3">
+                            <h5>Mitigation</h5>
+                            <div
+                                class="">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="main-card">
+                                        <h6 class="mb-0">Number of beneficiaries
+                                        </h6>
+                                        <p class="mt-1 mb-0 w-200px"><span id="count-mitigation-beneficiaries"></span>
+                                        </p>
+                                    </div>
+                                    <div><img src="./assets/images/b1.svg">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                     <div class="main-card">
                                         <h6 class="mb-0">Funds allocated </h6>
                                         <p class="mt-1 mb-0 w-200px"><span id="count-mitigation-funds">
                                             </span> USD
                                         </p>
                                     </div>
-                                </div>
-                                <div class="d-flex justify-content-start w-200px">
-                                    <div><img src="./assets/images/b3.svg">
+                                    <div><img src="./assets/images/b2.svg">
                                     </div>
-                                    <div class="pl-3 main-card">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="main-card">
                                         <h6 class="mb-0">Number of projects</h6>
                                         <p class="mt-1 mb-0 w-200px"><span id="count-mitigation-projects">
                                             </span>
                                         </p>
                                     </div>
+                                    <div><img src="./assets/images/b3.svg">
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3">
-                    <div class="card border-radius-10px border-0">
-                        <div class="card-body">
-                            <h6>Cross-cutting</h6>
+                    <div class="card border-radius-10px border-0 allProjects">
+                        <div class="card-body p-3">
+                            <h5>Cross-cutting</h5>
                             <div
-                                class="d-flex justify-content-start align-items-center mt-4 flex-wrap pl-4 flex-column">
-                                <div class="d-flex justify-content-start w-200px">
-                                    <div><img src="./assets/images/b1.svg">
-                                    </div>
-                                    <div class="pl-3 main-card">
+                                class="">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="main-card">
                                         <h6 class="mb-0">Number of beneficiaries
                                         </h6>
-                                        <p class="mt-1 mb-0 w-200px"><span
-                                                id="count-crosscutting-beneficiaries"></span>
+                                        <p class="mt-1 mb-0 w-200px"><span id="count-crosscutting-beneficiaries"></span>
                                         </p>
                                     </div>
-                                </div>
-                                <div class="d-flex justify-content-start w-200px">
-                                    <div><img src="./assets/images/b2.svg">
+                                    <div><img src="./assets/images/b1.svg">
                                     </div>
-                                    <div class="pl-3 main-card">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                     <div class="main-card">
                                         <h6 class="mb-0">Funds allocated </h6>
                                         <p class="mt-1 mb-0 w-200px"><span id="count-crosscutting-funds">
                                             </span> USD
                                         </p>
                                     </div>
-                                </div>
-                                <div class="d-flex justify-content-start w-200px">
-                                    <div><img src="./assets/images/b3.svg">
+                                    <div><img src="./assets/images/b2.svg">
                                     </div>
-                                    <div class="pl-3 main-card">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <div class="main-card">
                                         <h6 class="mb-0">Number of projects </h6>
                                         <p class="mt-1 mb-0 w-200px"><span id="count-crosscutting-projects">
                                             </span>
                                         </p>
                                     </div>
+                                    <div><img src="./assets/images/b3.svg">
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -312,48 +326,51 @@
 
             <div class="row mt-3">
                 <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div class="card border-radius-10px border-0">
+                    <div class="card border-radius-10px border-0 allProjectsHeight">
                         <div class="card-body">
                             <h6>Adaptation</h6>
-                                <p style="height: 120px; overflow: hidden; display: block; align-items: center;">
-                                    It implies the ability to learn from experiences, make necessary adjustments, and
-                                    respond effectively
-                                    to dynamic and evolving circumstances in order to achieve sustainable development and
-                                    address
-                                    pressing global issues.
-                                </p>
-                            <div id="map-adaptation" style="width: 100%; height: 400px; background-color: transparent;"></div>
-                            <a class="btn btn-explore-new" href="catalog_adaptation.html">View All </a>
+                            <p class="font-12px">
+                                It implies the ability to learn from experiences, make necessary adjustments, and
+                                respond effectively
+                                to dynamic and evolving circumstances in order to achieve sustainable development and
+                                address
+                                pressing global issues.
+                            </p>
+                            <div id="map-adaptation" style="width: 100%; height: 400px; background-color: transparent;">
+                            </div>
+                            <a class="btn btn-explore-new" href="catalog_adaptation.html" style="margin-top: 41px;">View All </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div class="card border-radius-10px border-0">
+                    <div class="card border-radius-10px border-0 allProjectsHeight">
                         <div class="card-body">
                             <h6>Mitigation</h6>
-                            <p style="height: 120px; overflow: hidden; display: block; align-items: center;">
+                            <p class="font-12px">
                                 It involves proactive measures to address environmental challenges and reduce the
                                 negative
                                 consequences of human activities. It is essential to sustainable development and efforts
                                 to create a more resilient and environmentally friendly future.
                             </p>
-                            <div id="map-mitigation" style="width: 100%; height: 400px; background-color: transparent;"></div>
-                            <a class="btn btn-explore-new" href="catalog_mitigation.html">View All </a>
+                            <div id="map-mitigation" style="width: 100%; height: 400px; background-color: transparent;">
+                            </div>
+                            <a class="btn btn-explore-new" href="catalog_mitigation.html" style="margin-top: 41px;">View All </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div class="card border-radius-10px border-0">
+                    <div class="card border-radius-10px border-0 allProjectsHeight">
                         <div class="card-body">
-                            <h6>Cross-Cutting</h6>
-                            <p style="height: 120px; overflow-x: scroll; display: block; align-items: center;">
+                            <h5>Cross-Cutting</h5>
+                            <p class="font-12px">
                                 It signifies an approach or concept that transcends boundaries and integrates multiple
                                 dimensions or elements.
                                 It emphasizes the interconnected nature of various disciplines, sectors, or issues, and
                                 encourages holistic
                                 and comprehensive approaches to problem-solving and decision-making.
                             </p>
-                            <div id="map-crosscutting" class="mt-3" style="width: 100%; height: 400px; background-color: transparent;"></div>
+                            <div id="map-crosscutting" class="mt-3"
+                                style="width: 100%; height: 400px; background-color: transparent;"></div>
                             <a class="btn btn-explore-new" href="catalog_crosscutting.html">View All </a>
                         </div>
                     </div>
@@ -443,7 +460,8 @@
         <div class="card-footer subfooter">
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water Management
+                    <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water
+                        Management
                         Institute (IWMI) | <a href="">Termsof use</a></p>
                 </div>
 
@@ -459,7 +477,7 @@
     </section>
 
 
-    
+
 
     <!-- waiting spinner  modal-->
     <div id="loading-modal" class="modal hide" data-backdrop="static" data-keyboard="false">
@@ -470,7 +488,7 @@
                 <div id="loading-modal-container"></div>
             </div>
         </div>
-    </div> 
+    </div>
 
     <!-- Alert Modal -->
     <div class="modal" id="alertModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -493,10 +511,11 @@
     <script type="text/javascript" src="./assets/scripts/utils.js"></script>
     <script type="text/javascript" src="./assets/scripts/project_tracker.js"></script>
     <script>
-        $('#pageSelect').on('change', function() {
-          const url = $(this).val();
-          if (url) window.location.href = url;
+        $('#pageSelect').on('change', function () {
+            const url = $(this).val();
+            if (url) window.location.href = url;
         });
     </script>
 </body>
+
 </html>

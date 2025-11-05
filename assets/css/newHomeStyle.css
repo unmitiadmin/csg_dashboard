@@ -1665,15 +1665,121 @@
  }
 
  .textImg span img {
-    position: absolute;
-    top: 29px;
-    left: 55px;
+     position: absolute;
+     top: 29px;
+     left: 55px;
+ }
+
+ #label_sum_beneficiaries {
+     color: #fff;
+     font-family: Poppins;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: normal;
  }
 
  .flex-item span img {
-    position: relative;
-    right: 76px;
-    top: -5px;
+     position: relative;
+     right: 80px;
+     top: -5px;
+     height: 50px;
+ }
+
+ .text-summary {
+     color: #000;
+     font-family: Poppins;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 35px;
+ }
+
+ .text-end span {
+     color: #000;
+     font-family: Poppins;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     margin-bottom: 10px;
+     min-height: 100px;
+ }
+
+ .chart-title {
+     color: #000;
+     font-family: Poppins;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     margin-bottom: 10px;
+     min-height: 100px;
+ }
+
+ .allProjects h5 {
+     color: #000;
+     font-family: Poppins;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+ }
+
+ .main-card h6 {
+     color: #000;
+     font-family: Poppins;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+ }
+
+ .main-card p {
+     color: var(--Orange, #E86933);
+     font-family: Poppins;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+ }
+
+ /* .allProjects h6 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+ } */
+
+ /* .allProjects p {
+    color: #000;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ } */
+
+  .font-12px  {
+    color: #000;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+
+  .allProjectsHeight {
+    min-height: 670px;
+  }
+
+ .textImg1 span img {
+     position: absolute;
+     top: 29px;
+     left: 84px;
+     height: 40px;
  }
 
  .detailBoxFeature h6 {
@@ -1707,16 +1813,16 @@
  }
 
  .detailBoxFeature h4 {
-    color: #000;
-    font-family: Poppins;
-    font-size: 34px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 60px;
-    text-transform: uppercase;
-    position: absolute;
-    bottom: 15px;
-} 
+     color: #000;
+     font-family: Poppins;
+     font-size: 34px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 60px;
+     text-transform: uppercase;
+     position: absolute;
+     bottom: 15px;
+ }
 
  .mh170px {
      min-height: 170px;
