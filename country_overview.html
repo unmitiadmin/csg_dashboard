@@ -42,17 +42,19 @@
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="form-group countrySelect mb-0">
-                        <select class="form-control w-100">
-                            <option selected>Country Overview</option>
-                            <option> Climate Outlook</option>
-                            <option> Project Tracker</option>
+                        <select class="form-control w-100" id="pageSelect">
+                            <option value="country_overview.html" selected>Country Overview</option>
+                            <option value="climate_outlook.html">Climate Outlook</option>
+                            <option value="project_tracker.html">Project Tracker</option>
                         </select>
                         <span><img src="./assets/images/element-3.png" alt=""></span>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-3 col-lg-3">
-                    <button class="mr-2 btn btn-apply mb-2">Apply</button>
-                    <button class="btn btn-edit mb-2"><img src="./assets/images/edit-2.png" alt=""> Edit</button>
+                    <div id="edit-page-shortcut-holder">
+
+                    </div>
+                    
                 </div>
                 <div class="col-sm-12 col-md-2 col-lg-2"></div>
             </div>
@@ -172,5 +174,11 @@
     <!-- Page scripts -->
     <script type="text/javascript" src="./assets/scripts/utils.js"></script>
     <script type="text/javascript" src="./assets/scripts/country_overview.js"></script>
+    <script>
+        $('#pageSelect').on('change', function() {
+          const url = $(this).val();
+          if (url) window.location.href = url;
+        });
+    </script>
 </body>
 </html>

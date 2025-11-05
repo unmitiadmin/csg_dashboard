@@ -33,6 +33,7 @@ window.addEventListener("load", (event) => {
 
     const checkAuthPage = () => {
         const loginRequiredPages = [
+            "edit_country_info.html",
             "project_tracker.html",
             "catalog_adaptation.html",
             "catalog_mitigation.html",
@@ -141,7 +142,7 @@ window.addEventListener("load", (event) => {
         </div>
     </nav>
     <!-- login/register modal -->
-    <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="login-modal-label" aria-hidden="true">
+    <div class="modal fade" id="login-modal" ${isAuthPage && !cookies.jwt ? 'data-backdrop="static"' : ''} tabindex="-1" aria-labelledby="login-modal-label" aria-hidden="true" >
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-body p-2">

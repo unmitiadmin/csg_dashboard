@@ -53,10 +53,10 @@
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <div class="form-group countrySelect mb-0">
-                        <select class="form-control w-100">
-                            <option>Country Overview</option>
-                            <option> Climate Outlook</option>
-                            <option selected> Project Tracker</option>
+                        <select class="form-control w-100" id="pageSelect">
+                            <option value="country_overview.html">Country Overview</option>
+                            <option value="climate_outlook.html">Climate Outlook</option>
+                            <option value="project_tracker.html" selected>Project Tracker</option>
                         </select>
                         <span><img src="./assets/images/element-3.png" alt=""></span>
                     </div>
@@ -494,5 +494,11 @@
     <!-- Page scripts -->
     <script type="text/javascript" src="./assets/scripts/utils.js"></script>
     <script type="text/javascript" src="./assets/scripts/project_tracker.js"></script>
+    <script>
+        $('#pageSelect').on('change', function() {
+          const url = $(this).val();
+          if (url) window.location.href = url;
+        });
+    </script>
 </body>
 </html>

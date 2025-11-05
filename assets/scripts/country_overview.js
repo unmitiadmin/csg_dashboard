@@ -49,12 +49,11 @@ class CountryOverview {
         this.userRoleId = this.cookieObject.userRoleId;
         this.initialCountryId = this.cookieObject.initialCountryId;
         this.authHeader = { "Authorization": this.jwt };
-        
-        // 
+
         this.editPageShortcut = `<a href="edit_country_info.html?from=country-overview"
-            class="btn btn-rounded-1 p-3" id="shortcut_edit">
-            Edit Details 
-            <img class="ps-2" src="./assets/images/edit.svg">
+            <button class="btn btn-edit mb-2">
+                <img src="./assets/images/edit-2.png" alt=""> Edit
+            </button>
         </a>`;
         this.editPageShortcutHolder = $("div#edit-page-shortcut-holder");
 

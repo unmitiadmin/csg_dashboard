@@ -315,14 +315,14 @@ class ProjectTracker{
             let mapData = response.data.map_data.length ? response.data.map_data : null;
             this.loadTopojson(mapData);
         })
-        // .then(() => this.enableScreenshot())
-        // .catch(err => {
-        //     console.error(err);
-        //     this.pageAlert(err.responseJSON.message, 0);
-        //     if(err.status == 401) {
-        //         this.onLogoutClick();
-        //     }
-        // })
+        .then(() => this.enableScreenshot())
+        .catch(err => {
+            console.error(err);
+            this.pageAlert(err.responseJSON.message, 0);
+            if(err.status == 401) {
+                this.onLogoutClick();
+            }
+        })
         .finally(() => this.stopWaiting());
     }
 
