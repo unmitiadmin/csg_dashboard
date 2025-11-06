@@ -1237,5 +1237,11 @@
     <!-- Page scripts -->
     <script type="text/javascript" src="./assets/scripts/utils.js"></script>
     <script type="text/javascript" src="./assets/scripts/geospatial.js"></script>
+    <script>
+        $('#pageSelect').on('change', function () {
+            const url = $(this).val();
+            if (url) window.location.href = url;
+        });
+    </script>
 </body>
 </html>
