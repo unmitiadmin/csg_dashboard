@@ -115,9 +115,9 @@ window.addEventListener("load", (event) => {
                                 alt=""> Climate Outlook</a>
                         <a class="dropdown-item" href="project_tracker.html"><img class="pr-2" src="./assets/images/element-3.png"
                                 alt=""> Project Tracker</a>
-                        <a class="dropdown-item" href="#"><img class="pr-2" src="./assets/images/element-3.png"
+                        <a class="dropdown-item" href="geospatial.html"><img class="pr-2" src="./assets/images/element-3.png"
                                 alt=""> Geo Intelligence Tool</a>
-                        <a class="dropdown-item" href="#"><img class="pr-2" src="./assets/images/element-3.png"
+                        <a class="dropdown-item" href="mande_tool.html"><img class="pr-2" src="./assets/images/element-3.png"
                                 alt=""> Monitoring and Evaluation</a>
                         <a class="dropdown-item" href="#"><img class="pr-2" src="./assets/images/element-3.png"
                                 alt=""> Development Indicator</a>

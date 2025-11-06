@@ -35,7 +35,10 @@
                             act on climate vulnerability, risk, and adaptation data.
                         </p>
                         <div class="pt-4">
-                            <button class="btn btn-dashboard">VIEW DASHBOARD</button>
+                            <button class="btn btn-dashboard" 
+                                onclick="document.getElementById('dashboard-entry-point').scrollIntoView({ behavior: 'smooth' });">
+                                VIEW DASHBOARD
+                            </button>
                             <button class="btn btn-explore-orange">EXPLORE AI AGENT</button>
                         </div>
                     </div>
@@ -206,7 +209,7 @@
         </div>
     </section>
 
-    <section class="countryBox">
+    <section class="countryBox" id="dashboard-entry-point">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <h3>Select a Country to get started</h3>
@@ -299,8 +302,12 @@
                                             <h2 class="mb-0">Country Overview</h2>
                                             <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
                                                 an overview of key development indicators.</p>
-                                            <button class="btn btn-explore-new mt-4">Explore <img
-                                                    src="./assets/images/icon.png" alt=""></button>
+                                            <button 
+                                                class="btn btn-explore-new mt-4"
+                                                onclick="window.location.href='country_overview.html'"
+                                                >
+                                                Explore <img src="./assets/images/icon.png" alt="">
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-8 col-lg-8">
@@ -317,8 +324,12 @@
                                             <h2 class="mb-0">Climate Outlook</h2>
                                             <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
                                                 an overview of key development indicators.</p>
-                                            <button class="btn btn-explore-new mt-4">Explore <img
-                                                    src="./assets/images/icon.png" alt=""></button>
+                                            <button 
+                                                class="btn btn-explore-new mt-4"
+                                                onclick="window.location.href='climate_outlook.html'"
+                                                >
+                                                Explore <img src="./assets/images/icon.png" alt="">
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-8 col-lg-8">
@@ -336,10 +347,12 @@
                                             <h2 class="mb-0">Project Tracker</h2>
                                             <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
                                                 an overview of key development indicators.</p>
-                                                <a href="project_tracker.html">
-                                            <button class="btn btn-explore-new mt-4">Explore <img
-                                                    src="./assets/images/icon.png" alt=""></button>
-                                                </a>
+                                            <button 
+                                                class="btn btn-explore-new mt-4"
+                                                onclick="window.location.href='project_tracker.html'"
+                                                >
+                                                Explore <img src="./assets/images/icon.png" alt="">
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-8 col-lg-8">
@@ -358,8 +371,12 @@
                                             <h2 class="mb-0">Geo Intelligence Tool</h2>
                                             <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
                                                 an overview of key development indicators.</p>
-                                            <button class="btn btn-explore-new mt-4">Explore <img
-                                                    src="./assets/images/icon.png" alt=""></button>
+                                            <button 
+                                                class="btn btn-explore-new mt-4"
+                                                onclick="window.location.href='geospatial.html'"
+                                                >
+                                                Explore <img src="./assets/images/icon.png" alt="">
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-8 col-lg-8">
@@ -376,8 +393,12 @@
                                             <h2 class="mb-0">Monitoring and Evaluation</h2>
                                             <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
                                                 an overview of key development indicators.</p>
-                                            <button class="btn btn-explore-new mt-4">Explore <img
-                                                    src="./assets/images/icon.png" alt=""></button>
+                                            <button 
+                                                class="btn btn-explore-new mt-4"
+                                                onclick="window.location.href='mande_tool.html'"
+                                                >
+                                                Explore <img src="./assets/images/icon.png" alt="">
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 col-md-8 col-lg-8">
