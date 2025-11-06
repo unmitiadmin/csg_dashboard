@@ -1762,18 +1762,246 @@ font-weight: 400;
 line-height: normal;
  } */
 
-  .font-12px  {
-    color: #000;
-font-family: Poppins;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-  }
+ .font-12px {
+     color: #000;
+     font-family: Poppins;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+ }
 
-  .allProjectsHeight {
-    min-height: 670px;
-  }
+ .allProjectsHeight {
+     min-height: 670px;
+ }
+
+ .allProjectsHeight h6 {
+     color: #000;
+     font-family: Poppins;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+ }
+
+ .card-number h5 {
+     color: var(--Yellow, #DD9103);
+     font-family: Poppins;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+ }
+
+ .search-box span img {
+     position: relative;
+     left: 189px;
+     bottom: 32px;
+ }
+
+ .search-box {
+     margin-top: 26px;
+ }
+
+ .btn.btn-adaptation {
+     border-radius: 100px;
+     border: 1px solid rgba(0, 0, 0, 0.10);
+     background: #FFF;
+     color: var(--Dark-blue, #28537D) !important;
+     font-family: Poppins;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     margin-bottom: 12px;
+     padding: 7px 21px;
+
+ }
+
+ .btn.btn-mitigation {
+     border-radius: 100px;
+     border: 1px solid rgba(0, 0, 0, 0.10);
+     background: #FFF;
+     color: var(--Dark-blue, #28537D) !important;
+     font-family: Poppins;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     margin-bottom: 12px;
+     padding: 7px 21px;
+
+ }
+
+ .btn.btn-crosscutting {
+     border-radius: 100px;
+     border: 1px solid rgba(0, 0, 0, 0.10);
+     background: #FFF;
+     color: var(--Dark-blue, #28537D) !important;
+     font-family: Poppins;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     margin-bottom: 12px;
+     padding: 7px 21px;
+ }
+
+ .filter-cards h5 {
+     color: #000;
+     font-family: Poppins;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: normal;
+ }
+
+ .form-control.input-add-project {
+     border-radius: 8px;
+     border: 1px solid rgba(0, 0, 0, 0.10);
+     background: var(--white, #FFF);
+     height: 48px;
+     padding: 8px 10px;
+     color: #000;
+     text-align: left;
+     font-family: Poppins;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+ }
+
+ .bootstrap-select>.dropdown-toggle.bs-placeholder,
+ .bootstrap-select>.dropdown-toggle.bs-placeholder:active,
+ .bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
+ .bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+     border-radius: 8px !important;
+     border: 1px solid rgba(0, 0, 0, 0.10) !important;
+     background: var(--white, #FFF);
+     height: 48px;
+     padding: 14px 21px;
+     color: #8a9198;
+     text-align: left;
+     font-family: Poppins;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+ }
+
+ .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+     width: 100%;
+ }
+
+ .btn.btn-active {
+     background: #52a97d1a;
+     border-radius: 4px;
+     font-size: 14px;
+ }
+
+ .bootstrap-select.show-tick .dropdown-menu li a span.text {
+     margin-right: 34px;
+     font-size: 12px;
+ }
+
+ .bootstrap-select .dropdown-menu li a span.text {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.line-after {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.line-after span {
+  white-space: nowrap; /* prevents text from breaking */
+}
+
+.line-after::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: #E86933;
+    margin-left: 10px;
+    opacity: 0.5;
+}
+
+ .bs-actionsbox .btn-group button {
+     width: 50%;
+     font-size: 12px;
+ }
+ .datepicker .datepicker-switch {
+    width: 145px;
+    font-size: 12px;
+}
+
+.datepicker table tr td span {
+    display: block;
+    width: 23%;
+    height: 54px;
+    line-height: 54px;
+    float: left;
+    font-size: 12px !important;
+    margin: 1%;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+ .bootstrap-select>.dropdown-toggle {
+     border: 1px solid rgba(0, 0, 0, 0.10) !important;
+     position: relative;
+     width: 100%;
+     white-space: nowrap;
+     border-radius: 8px !important;
+     background: var(--white, #FFF);
+     height: 48px;
+     padding: 12px 14px;
+     color: #000;
+     text-align: left;
+     font-family: Poppins;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+ }
+
+ .btn.btn-viewmore {
+     border-radius: 100px;
+     background: var(--blue-gradient, linear-gradient(90deg, #2A547A 0%, #1797A5 100%));
+     font-size: 14px;
+     text-transform: capitalize;
+     margin-top: 13px;
+     color: #fff;
+     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+     margin-top: 40px;
+ }
+
+ .tab_card_bg {
+     filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15));
+     border-radius: 6px;
+     border: 0px !important;
+     margin-bottom: 15px !important;
+     min-height: 580px;
+ }
+
+ .search-box .form-control {
+     border-radius: 100px;
+ }
+
+ .card-number p {
+     color: #000;
+     font-family: Poppins;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+ }
 
  .textImg1 span img {
      position: absolute;
@@ -3068,17 +3296,41 @@ line-height: normal;
  }
 
  .btn-secondary:hover {
-     border-color: #545b62;
-     border: 1px solid #FFF;
+     border: 1px solid #FFF !important;
      text-align: center;
      font-family: Poppins;
      font-size: 14px;
      font-style: normal;
      font-weight: 500;
      color: #fff;
-     background-color: #6c757d;
+     background-color: transparent;
      border-color: #6c757d;
-     padding: 13px 48px;
+ }
+
+ .btn-cancel-report {
+     font-style: normal;
+     font-weight: 600;
+     font-size: 14px !important;
+     line-height: 27px;
+     width: 153px;
+     height: 46px;
+     padding: 0 12px;
+     color: #000 !important;
+     border-radius: 100px;
+     border: 1px solid var(--Orange, #E86933);
+ }
+
+ .btn-save-report {
+     font-style: normal;
+     font-weight: 600;
+     font-size: 14px !important;
+     line-height: 27px;
+     width: 153px;
+     height: 46px;
+     border-radius: 100px;
+     padding: 0 12px;
+     color: #FFFFFF !important;
+     background: var(--blue-gradient, linear-gradient(90deg, #2A547A 0%, #1797A5 100%)) !important;
  }
 
  .btn-secondary {
@@ -3107,6 +3359,44 @@ line-height: normal;
      font-style: normal;
      font-weight: 400;
      line-height: normal;
+ }
+
+ .breadcrumb-item a {
+     padding-left: .5rem;
+     color: #000;
+     font-family: Poppins;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+ }
+
+ .breadcrumb-item.active {
+     color: #000;
+     font-family: Poppins;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+ }
+
+ .line-after span {
+     color: var(--Orange, #E86933);
+     font-family: Poppins;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     text-transform: uppercase;
+ }
+
+ .add-report-form h4 {
+        color: #000;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
  }
 
  .nav-tabs.login_tabs .nav-item.show .nav-link,
