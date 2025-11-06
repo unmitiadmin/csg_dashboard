@@ -24,6 +24,24 @@
         <div class="container pt-5" id="headerContainer">
             <!-- Dynamic navbar - based on login -->
         </div>
+
+        <div class="container mt-57px">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3"></div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-group countrySelect mb-0">
+                        <select class="form-control w-100" id="filter-country">
+                            <option value="5">Kenya</option>
+                            <option value="7">Senegal</option>
+                            <option value="4">Sri Lanka</option>
+                            <option value="2">Zambia</option>
+                        </select>
+                        <span><img src="./assets/images/location.png" alt=""></span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3"></div>
+            </div>
+        </div>
     </section>
 
     <!-- OLD CODE -->
@@ -57,7 +75,7 @@
                                             </div>
                                         </a>
                                     </li>
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                         <a class="nav-link cursor" data-toggle="tooltip"
                                             title="Page not available for editing!" data-placement="bottom"
                                             style="background: #e7e7e7!important;">
@@ -73,7 +91,6 @@
     
                                         </a>
                                     </li>
-    
                                     <li class="nav-item">
                                         <a class="nav-link cursor" data-toggle="tooltip"
                                             title="Page not available for editing!" data-placement="bottom"
@@ -89,16 +106,8 @@
                                             </div>
     
                                         </a>
-                                    </li>
+                                    </li> -->
                                 </ul>
-                                <div>
-                                    <select class="form-control w-300px filter-box-radius" id="filter-country">
-                                        <option value="5">Kenya</option>
-                                        <option value="7">Senegal</option>
-                                        <option value="4">Sri Lanka</option>
-                                        <option value="2">Zambia</option>
-                                    </select>
-                                </div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-12">
@@ -308,6 +317,6 @@
 
     <!-- Page scripts -->
     <script type="text/javascript" src="./assets/scripts/utils.js"></script>
-    <script type="text/javascript" src="./assets/scripts/country_overview.js"></script>
+    <script type="text/javascript" src="./assets/scripts/edit_country_info.js"></script>
 </body>
 </html>
