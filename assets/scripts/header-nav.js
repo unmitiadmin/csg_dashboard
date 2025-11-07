@@ -56,7 +56,7 @@ window.addEventListener("load", (event) => {
     const userProfileArea = ` <li class="nav-item">
         <div class="dropdown">
             <button class="btn btn-login btn-secondary dropdown-toggle" type="button"
-                id="dropdownMenuButton1" data-toggle="dropdown" data-toggle="dropdown" aria-expanded="false">
+                id="dropdownMenuButton1" data-toggle="dropdown" data-toggle="dropdown" aria-expanded="false" style="padding:4px 20px">
                 <img src="./assets/images/login-user.svg">
             </button>
             <ul class="dropdown-menu login-user mt-3" aria-labelledby="dropdownMenuButton1">

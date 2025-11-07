@@ -187,7 +187,7 @@ class CrossCutting {
                     ? a.targeted_sdg_ids.map(b => {
                         return `<div class="sdgGoals-box-3">
                             <div class="sdgGoalImgBox">
-                                <img src="./assets/images/E_${this.zfill(b, 2)}.png" alt="1" class="sdgGoal-img mt-1" style="height: 60px; width: 60px;">
+                                <img src="./assets/images/E_${b}.png" alt="1" class="sdgGoal-img mt-1" style="height: 60px; width: 60px;">
                             </div>
                             <!-- div class="sdgGoalIconBox">
                                 <i class="fa fa-arrow-down text-danger"></i>
@@ -200,11 +200,11 @@ class CrossCutting {
                     : `./assets/images/status-unavailable.svg`;
                 return `
                 <div class="col-sm-12 col-md-6 col-lg-3">
-                    <div class="card tab_card_bg">
+                    <div class="card tab_card_bg border-0 mb-2">
                         <div class="card-body">
                             <div class="filter-cards">
                                 <button class="btn btn-crosscutting text-white">Cross-cutting</button>
-                                <p style="min-height:90px;">${a.project_name.replace(/�/g, "")}</p>
+                                <p class="font-14px" style="min-height:90px;">${a.project_name.replace(/�/g, "")}</p>
                                 <div class="d-flex align-items-center justify-content-between flex-wrap">
                                     <div>
                                         <h5 class="mt-4">Current Status</h5>
@@ -216,7 +216,7 @@ class CrossCutting {
                                     </div>
                                 </div>
                             </div>
-                            <a href="project_details.html?projectId=${a.id}" class="btn btn-viewmore w-100 mt-3">View More</a>
+                            <a href="project_details.html?projectId=${a.id}" class="btn btn-viewmore mt-3">View More</a>
                         </div>
                     </div>
                 </div>
