@@ -28,13 +28,12 @@
     </section>
 
     <!-- OLD CODE -->
-    <div class="wrapper mt-4 pt-5">
-        <section class="content-height plr-100px">
+     <section class="content-height plr-100px" style="background-color: #F8FAFB;">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-0 mt-4 pl-0">
-                            <ol class="breadcrumb text-black bg-white mb-0 pl-0">
+                            <ol class="breadcrumb text-black bg-transparent mb-0 pl-0">
                                 <li class="breadcrumb-item text-black mb-0"><a href="index.html">Home </a></li>
                                 <li class="breadcrumb-item text-black mb-0"><a href="mande_tool.html"> Monitoring and Evaluation Tools </a></li>
                                 <li class="breadcrumb-item active text-black mb-0" aria-current="page" id="breadcrumb-project-name"></li>
@@ -72,7 +71,7 @@
                                 <div class="col-sm-6 col-md-3 col-lg-3">
                                     <div class="form-group">
                                         <label for="current_status">Project Status<sup>*</sup></label>
-                                        <select class="form-control input-add-project" name="current_status" id="input_current_status" ></select>
+                                        <select class="" name="current_status" id="input_current_status" ></select>
                                     </div>
                                 </div>
                             </div>
@@ -309,24 +308,37 @@
                 </div>
             </div>
         </section>
-    </div>
     <!-- OLD CODE -->
 
 
+   <section class="" style="background-image: url('./assets/images/Vector 1.svg');    background-size: cover;
+    width: 100%;
+    padding: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <button class="mt-5 btn btn-newsletter">Subscribe to the IWMI newsletter</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="">
         <div class="card footer border-0">
             <div class="card-body">
                 <div class="row p20px">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <div class="d-flex justify-content-start align-items-center">
-                            <div><img src="./assets/images/iwmi-white.png"></div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
+                            <div><img src="./assets/images/iwmi-white.png" class="w-100"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
                             <div>
-                                <p class="text-white font-weight-bold" style="white-space: nowrap;">Supported By</p>
-                                <p class="mb-0"><img src="./assets/images/logo_white.webp"></p>
+                                <p class="mb-0"><span class="pr-3">Supported By</span> <img src="./assets/images/logo_white.webp"></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4"></div>
+                    <div class="col-sm-12 col-md-2 col-lg-2"></div>
                     <div class="col-sm-12 col-md-4 col-lg-4">
                         <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
                         <ul class="list-unstyled pl-0 ms-0 footer_ul">
@@ -392,7 +404,8 @@
         <div class="card-footer subfooter">
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water Management
+                    <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water
+                        Management
                         Institute (IWMI) | <a href="">Termsof use</a></p>
                 </div>
 

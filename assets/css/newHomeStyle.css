@@ -3397,7 +3397,7 @@ line-height: normal;
      padding-left: .5rem;
      color: #000;
      font-family: Poppins;
-     font-size: 16px;
+     font-size: 14px;
      font-style: normal;
      font-weight: 400;
      line-height: normal;
@@ -3406,10 +3406,71 @@ line-height: normal;
  .breadcrumb-item.active {
      color: #000;
      font-family: Poppins;
-     font-size: 16px;
+     font-size: 14px;
      font-style: normal;
-     font-weight: 700;
+     font-weight: 600;
      line-height: normal;
+ }
+
+ .table-bordered thead td,
+ .table-bordered thead th {
+     border-bottom-width: 2px;
+     font-size: 14px;
+     font-weight: 600;
+ }
+
+ .table.tbl_role tr td {
+     font-size: 14px;
+ }
+
+
+ .table.tbl_role th {
+     border: 1px solid #dee2e6;
+     font-size: 14px;
+     font-weight: 600;
+ }
+
+ .table td,
+ .table th {
+     padding: .75rem;
+     vertical-align: middle;
+     border-top: 1px solid #dee2e6;
+     font-size: 14px;
+ }
+
+ .title1 {
+     color: var #28537D (--Dark-blue, #28537D);
+     font-family: Poppins;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 60px;
+ }
+
+ .login-user .dropdown-item {
+    font-size: 14px;
+ }
+
+ .table thead th {
+     vertical-align: bottom;
+     border-bottom: 2px solid #dee2e6;
+     font-size: 14px;
+ }
+
+ .card-title-text {
+     color: #000;
+     font-size: 16px;
+     font-weight: 600;
+ }
+
+ .accordion-button.bg-btn {
+     background: transparent;
+     border: 0px;
+     padding-left: 20px;
+ }
+
+ #options-hazard-compare {
+     padding-left: 20px;
  }
 
  .line-after span {
@@ -3460,6 +3521,7 @@ line-height: normal;
      border-radius: 20px;
      background: #FFF;
      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
+     min-height: 652px;
  }
 
  .lightImageBox {
@@ -3470,24 +3532,34 @@ line-height: normal;
  }
 
  .btn.btn-modify {
-    border-radius: 100px;
-    background: var(--blue-gradient, linear-gradient(90deg, #2A547A 0%, #1797A5 100%));
-    padding: 6px 15px;
-    color: var(--white, #FFF);
-    text-align: center;
-    font-family: Poppins;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 34px;
-    text-transform: uppercase;
-}
+     border-radius: 100px;
+     background: var(--blue-gradient, linear-gradient(90deg, #2A547A 0%, #1797A5 100%));
+     padding: 6px 15px;
+     color: var(--white, #FFF);
+     text-align: center;
+     font-family: Poppins;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 34px;
+     text-transform: uppercase;
+ }
 
-.btn.btn-delete {
-    border-radius: 100px;
-    background: rgba(255, 59, 48, 0.10);
-    padding: 10px;
-}
+ .font-name {
+     color: #000000b3;
+     font-family: Poppins;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     margin-bottom: 25px;
+ }
+
+ .btn.btn-delete {
+     border-radius: 100px;
+     background: rgba(255, 59, 48, 0.10);
+     padding: 10px;
+ }
 
  .btn.btn-delete {
      border-radius: 100px;
@@ -3507,6 +3579,7 @@ line-height: normal;
      border-radius: 100px;
      border: 1px solid var(--Dark-blue, #28537D);
      padding: 4px 12px;
+     margin-bottom: 10px;
  }
 
  .card_new p {

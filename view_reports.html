@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Climate-Smart Governance Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/newHomeStyle.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="./assets/scripts/env.js"></script>
     <script type="text/javascript" src="./assets/scripts/header-nav.js"></script>
 </head>
+
 <body>
     <section class="hero-section1" style="background-image: url('./assets/images/Hero.png');
         background-position: left; background-size: cover; background-repeat: no-repeat;width: 100%; padding: 0px;">
@@ -23,71 +28,88 @@
         </div>
     </section>
 
-    <div class="wrapper pt-5 mt-5">
-        <section class="content-height plr-100px pb-5 mb-5">
-            <h4 class="">Reports</h4>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-0 mt-4 pl-0">
-                            <ol class="breadcrumb text-black bg-white mb-0 pl-0">
-                                <li class="breadcrumb-item text-black mb-0"><a href="index.html">Home </a></li>
-                                <li class="breadcrumb-item text-black mb-0"><a href="mande_tool.html"> Monitoring and Evaluation Tools </a></li>
-                                <li class="breadcrumb-item active text-black mb-0" aria-current="page" id="breadcrumb-project-name"></li>
-                            </ol>
-                        </nav>
-                    </div>
+    <section class="content-height plr-100px pb-5 mb-5" style="background-color: #F8FAFB;">
+        <h4 class="">Reports</h4>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-0 mt-4 pl-0">
+                        <ol class="breadcrumb text-black bg-transparent mb-0 pl-0">
+                            <li class="breadcrumb-item text-black mb-0"><a href="index.html">Home </a></li>
+                            <li class="breadcrumb-item text-black mb-0"><a href="mande_tool.html"> Monitoring and
+                                    Evaluation Tools </a></li>
+                            <li class="breadcrumb-item active text-black mb-0" aria-current="page"
+                                id="breadcrumb-project-name"></li>
+                        </ol>
+                    </nav>
                 </div>
-                <span style="display: none;" id="static-project-id"></span>
-                <div class="d-flex justify-content-end align-items-center mb-5">
-                    <div class="me-5">
-                        <a role="button" href="add_report.html" id="shortcut-add-report">
-                            <button class="btn btn-white-rounded text-dark me-3">
-                                Add Report <span><img src="./assets/images/add-square.svg"></span>
-                            </button>
-                        </a>
-                    </div>
-                    <div class="me-5">
-                        <div class="search-box">
-                            <input type="text" class="form-control" name="" placeholder="Search" id="search-report-text">
-                            <!-- <span><img src="./assets/images/search-1.svg"></span> -->
-                        </div>
-                    </div>
+            </div>
+            <span style="display: none;" id="static-project-id"></span>
+            <div class="d-flex justify-content-end align-items-center mb-5">
+                <div class="mr-5">
+                    <a role="button" href="add_report.html" id="shortcut-add-report">
+                        <button class="btn btn-mande text-dark mr-3">
+                            Add Report <span><img src="./assets/images/add-square.svg"></span>
+                        </button>
+                    </a>
                 </div>
-                <div class="row">
-                  <div class="col-sm-12 col-md-6 col-lg-6">
-                    <div class="d-flex mt-2 mb-2 align-items-center" id="div-counts-status"></div>
-                  </div>
-                  <div class="col-sm-12 col-md-6 col-lg-6" id="btns-report-popup"> </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="table-responsive mb-2">
-                            <table id="table-report" class="display table-striped tbl_view border-bottom-0 mb-4 table table-bordered border-0" style="width:100%;">
-                                <thead id="thead-report"></thead>
-                                <tbody id="tbody-report"></tbody>
-                            </table>
-                        </div>
+                <div class="mr-5">
+                    <div class="search-box" style="margin-top: 0px;">
+                        <input type="text" class="form-control" name="" placeholder="Search" id="search-report-text">
+                        <!-- <span><img src="./assets/images/search-1.svg"></span> -->
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="d-flex mt-2 mb-2 align-items-center" id="div-counts-status"></div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6" id="btns-report-popup"> </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="table-responsive mb-2">
+                        <table id="table-report"
+                            class="display table-striped tbl_view border-bottom-0 mb-4 table table-bordered border-0"
+                            style="width:100%;">
+                            <thead id="thead-report"></thead>
+                            <tbody id="tbody-report"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="" style="background-image: url('./assets/images/Vector 1.svg');    background-size: cover;
+    width: 100%;
+    padding: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <button class="mt-5 btn btn-newsletter">Subscribe to the IWMI newsletter</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="">
         <div class="card footer border-0">
             <div class="card-body">
                 <div class="row p20px">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <div class="d-flex justify-content-start align-items-center">
-                            <div><img src="./assets/images/iwmi-white.png"></div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
+                            <div><img src="./assets/images/iwmi-white.png" class="w-100"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
                             <div>
-                                <p class="text-white font-weight-bold" style="white-space: nowrap;">Supported By</p>
-                                <p class="mb-0"><img src="./assets/images/logo_white.webp"></p>
+                                <p class="mb-0"><span class="pr-3">Supported By</span> <img
+                                        src="./assets/images/logo_white.webp"></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4"></div>
+                    <div class="col-sm-12 col-md-2 col-lg-2"></div>
                     <div class="col-sm-12 col-md-4 col-lg-4">
                         <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
                         <ul class="list-unstyled pl-0 ms-0 footer_ul">
@@ -153,7 +175,8 @@
         <div class="card-footer subfooter">
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water Management
+                    <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water
+                        Management
                         Institute (IWMI) | <a href="">Termsof use</a></p>
                 </div>
 
@@ -182,7 +205,7 @@
             </div>
         </div>
     </div>
-  
+
     <!-- Reject Modal-->
     <div class="modal" id="myModalReject">
         <div class="modal-dialog modal-dialog-centered">
@@ -192,7 +215,8 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <textarea name="" id="text-bulk-reject" placeholder="Enter reason for rejection" rows="4" class="form-control reject-form"></textarea>
+                    <textarea name="" id="text-bulk-reject" placeholder="Enter reason for rejection" rows="4"
+                        class="form-control reject-form"></textarea>
                 </div>
                 <div class="modal-footer d-flex justify-content-end text-center">
                     <button type="button" id="btn-bulk-reject" class="btn btn-success btn-sm">Submit</button>
@@ -200,7 +224,7 @@
             </div>
         </div>
     </div>
-  
+
     <!-- Deletion Modal-->
     <div class="modal" id="myModalDelete">
         <div class="modal-dialog modal-dialog-centered">
@@ -210,7 +234,8 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <textarea name="" id="text-bulk-delete" placeholder="Enter reason for deletion" rows="4" class="form-control reject-form"></textarea>
+                    <textarea name="" id="text-bulk-delete" placeholder="Enter reason for deletion" rows="4"
+                        class="form-control reject-form"></textarea>
                 </div>
                 <div class="modal-footer d-flex justify-content-end text-center">
                     <button type="button" id="btn-bulk-delete" class="btn btn-success btn-sm">Submit</button>
@@ -218,19 +243,20 @@
             </div>
         </div>
     </div>
-      
-  
-      <!-- waiting spinner -->
-      <div id="loading-modal" class="modal hide" data-backdrop="static" data-keyboard="false">
-          <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content p-3 text-white" style="background-color: transparent !important; border: 0px !important;">
-                  <div id="loading-modal-container"></div>
-              </div>
-          </div>
-      </div>
-  
-      <!-- Alert Modal -->
-      <div class="modal" id="alertModal" tabindex="-1" role="dialog" aria-hidden="true">
+
+
+    <!-- waiting spinner -->
+    <div id="loading-modal" class="modal hide" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3 text-white"
+                style="background-color: transparent !important; border: 0px !important;">
+                <div id="loading-modal-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert Modal -->
+    <div class="modal" id="alertModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-md modal-dialog-centered popup-wh" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -244,10 +270,11 @@
                 </div>
             </div>
         </div>
-      </div>
-  
-      <!-- page scripts -->
-      <script type="text/javascript" src="./assets/scripts/utils.js"></script>
-      <script type="text/javascript" src="./assets/scripts/view_reports.js"></script>
+    </div>
+
+    <!-- page scripts -->
+    <script type="text/javascript" src="./assets/scripts/utils.js"></script>
+    <script type="text/javascript" src="./assets/scripts/view_reports.js"></script>
 </body>
+
 </html>

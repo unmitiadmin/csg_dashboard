@@ -58,7 +58,7 @@ class SrilankaGeoCompare{
         };
         this.criteriaAccordion = `<div class="accordion-item bg-transparent border-0">
             <h2 class="accordion-header" id="heading-${this.criteria}-compare">
-                <button class="accordion-button bg-btn" type="button"
+                <button class="accordion-button" type="button"
                     data-bs-toggle="collapse" data-bs-target="#collapse-${this.criteria}-compare" aria-expanded="true"
                     aria-controls="collapse-${this.criteria}-compare">
                     <img src="./assets/images/${this.criteriaAccordionIndex[this.criteria].image}">
@@ -228,10 +228,10 @@ class SrilankaGeoCompare{
         let paneHtml = this.selectedVectorIndex.map(a => {
             let cardTitle = a.folder == "risk" ? `${a.group} - ${a.name}` : a.name;
             return `<div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card border-0 card_campare">
-                    <div class="card-header bg-white border-0">
+                <div class="card  border-1 card_campare">
+                    <div class="card-header border-0">
                         <div class="d-flex justify-content-between align-items-center">
-                            <div><h5 class="card-title-text mb-0">${cardTitle}</h5></div>
+                            <div><h5 class="card-title-text text-dark mb-0">${cardTitle}</h5></div>
                         </div>
                     </div>
                     <div class="card-body p-2 pt-0" style="width: 100%; height: 50vh;" id="map-pane-${a.type}">
@@ -631,7 +631,7 @@ class KenyaGeoCompare{
         let paneHtml = this.selectedVectorIndex.map(a => {
             let cardTitle = a.folder == "risk" ? `${a.group} - ${a.name}` : a.name;
             return `<div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card border-0 card_campare">
+                <div class="card border-1 card_campare">
                     <div class="card-header bg-white border-0">
                         <div class="d-flex justify-content-between align-items-center">
                             <div><h5 class="card-title-text mb-0">${cardTitle}</h5></div>
@@ -1034,7 +1034,7 @@ class SenegalGeoCompare{
         let paneHtml = this.selectedVectorIndex.map(a => {
             let cardTitle = a.folder == "risk" ? `${a.group} - ${a.name}` : a.name;
             return `<div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card border-0 card_campare">
+                <div class="card border-1 card_campare">
                     <div class="card-header bg-white border-0">
                         <div class="d-flex justify-content-between align-items-center">
                             <div><h5 class="card-title-text mb-0">${cardTitle}</h5></div>
@@ -1404,7 +1404,7 @@ class ZambiaGeoCompare{
         let paneHtml = this.selectedVectorIndex.map(a => {
             let cardTitle = a.folder == "risk" ? `${a.name}` : a.name;
             return `<div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card border-0 card_campare">
+                <div class="card border-1 card_campare">
                     <div class="card-header bg-white border-0">
                         <div class="d-flex justify-content-between align-items-center">
                             <div><h5 class="card-title-text mb-0">${cardTitle}</h5></div>

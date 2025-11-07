@@ -132,7 +132,7 @@ class MandETool {
     fillCards = (mainList) => {
         let mainHtml = mainList.map(a => {
             let sectors = a.sectors.length ? a.sectors.map(b => {
-                return `<button class="btn btn-sm btn-mande btn-success text-white mr-1">${b.sector}</button>`
+                return `<button class="btn btn-sm btn-mande mr-1">${b.sector}</button>`
             }).join("") : `<button class="btn btn-sm btn-mande btn-secondary text-white">Unclassified sector</button>`;
             let category = a.categories.map(b => {
                 return `
@@ -149,9 +149,11 @@ class MandETool {
                 </a>
 
             ` : ``;
-            let reportCounts = `<div class="d-flex justify-content-between align-items-center my-3">
+            let reportCounts = `<div class="d-flex justify-content-between align-items-center flex-wrap my-2">
                 <div> <h5>Total Submission</h5> <h6>${a.reports_breakup.Total}</h6> </div>
                 <div> <h5>Pending</h5> <h6>${a.reports_breakup.Pending}</h6> </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center flex-wrap my-2">
                 <div> <h5>Approved</h5> <h6>${a.reports_breakup.Approved}</h6> </div>
                 <div> <h5>Rejected</h5> <h6>${a.reports_breakup.Rejected}</h6> </div>
             </div>`;
@@ -159,12 +161,12 @@ class MandETool {
             let projectOptions = this.userRoleId == 1 || (this.userRoleId <= 2 && this.initialCountryId == this.selectedCountryId && this.emailVerified)
                 ? `
                     <a href="edit_project.html?project_id=${a.project_id}" style="">
-                        <button class="btn btn-white-rounded btn-mande me-3">
+                        <button class="btn btn-white-rounded btn-mande mr-3 mb-2">
                              Modify
                         </button>
                     </a>
                     <a class="btn_project_delete" data-project-id="${a.project_id}" data-project-name="${a.name}">
-                        <button class="btn btn-white-rounded btn-mande me-3">
+                        <button class="btn btn-white-rounded btn-mande mr-3 mb-2">
                             Delete
                         </button>
                     </a>
@@ -186,7 +188,7 @@ class MandETool {
                 this.userRoleId == 1
                     || (this.userRoleId <= 2 && (this.initialCountryId == this.selectedCountryId) && this.emailVerified)
                     ? `<div class="btn btn-mande btn-sm btn-success btn-change-banner"
-                            title="Edit project banner" data-project-id="${a.project_id}" data-project-name="${a.name}">
+                            title="Edit project banner" data-project-id="${a.project_id}" data-project-name="${a.name}" style="border:0px solid #fff;">
                             <span><i class="fa fa-edit text-white"></i></span>
                         </div>`
                     : "";
@@ -200,13 +202,13 @@ class MandETool {
                             background-position: bottom;
                             background-repeat: no-repeat;
                         "></div>
-                        <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
                             ${category}
                             ${bannerChangeOption}
                         </div>
                         <div class="mb-3">${sectors}</div>
-                        <div><b>${a.name}</b></div>
-                        <div class="d-flex justify-content-between align-items-center class="mt-1"">
+                        <div class="font-name">${a.name}</div>
+                        <div class="d-flex justify-content-start align-items-center flex-wrap mt-1">
                             ${projectOptions}
                             ${outcomeShortcut}
                         </div>

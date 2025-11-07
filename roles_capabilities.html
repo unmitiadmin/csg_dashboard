@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Climate-Smart Governance Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/newHomeStyle.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="./assets/scripts/env.js"></script>
     <script type="text/javascript" src="./assets/scripts/header-nav.js"></script>
 </head>
-<body>
+
+<body style="background-color: #F8FAFB;">
 
     <section class="hero-section1 pb-4" style="background-image: url('./assets/images/Hero.png');
         background-position: left; background-size: cover; background-repeat: no-repeat;width: 100%; padding: 0px;">
@@ -45,371 +53,536 @@
         </div>
     </section>
 
-    <div class="wrapper mt-4 pt-5">
-        <!-- page toggle and country filter -->
-        <section class="bg-white pt-3 pb-5 plr-100px">
-            <div class="container-fluid">
-                <div class="row mt-3">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                        <h4 class="capability-text pb-3">Roles and Capabilities</h4>
-                        <div class="table-responsive">
-                            <table class="table table-bordered tbl_role">
-                                <thead>
-                                    <tr class="bg-darklight">
-                                        <th>Capability</th>
-                                        <th>Super Admin or Product Admin</th>
-                                        <th>National Admin</th>
-                                        <th>State level/Department Admin</th>
-                                        <th>District Level Admin </th>
-                                        <th>Department Users or Ground level user</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr ><th colspan="6">Projects</th></tr>
-                                    <tr>
-                                        <td>Add Project</td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch1" data-capability="Add Project" data-role="productadmin">
-                                                <label class="custom-control-label" for="switch1"></label>
-                                            </div>
-                                         </td>
-                                         <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch2" data-capability="Add Project" data-role="country_admin">
-                                                <label class="custom-control-label" for="switch2"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch3" data-capability="Add Project" data-role="province_admin">
-                                                <label class="custom-control-label" for="switch3"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch4" data-capability="Add Project" data-role="district_admin">
-                                                <label class="custom-control-label" for="switch4"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch5" data-capability="Add Project" data-role="department_admin">
-                                                <label class="custom-control-label" for="switch5"></label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Edit Project</td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch6" data-capability="Edit Project" data-role="productadmin">
-                                                <label class="custom-control-label" for="switch6"></label>
-                                            </div>
-                                         </td>
-                                         <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch7" data-capability="Edit Project" data-role="country_admin">
-                                                <label class="custom-control-label" for="switch7"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch8" data-capability="Edit Project" data-role="province_admin">
-                                                <label class="custom-control-label" for="switch8"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch9" data-capability="Edit Project" data-role="district_admin">
-                                                <label class="custom-control-label" for="switch9"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch10" data-capability="Edit Project" data-role="department_admin">
-                                                <label class="custom-control-label" for="switch10"></label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr><th colspan="6">Outcomes</th></tr>
-                                    <tr>
-                                        <td>Add Outcome</td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch11" data-capability="Add Outcome" data-role="productadmin">
-                                                <label class="custom-control-label" for="switch11"></label>
-                                            </div>
-                                         </td>
-                                         <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch12" data-capability="Add Outcome" data-role="country_admin">
-                                                <label class="custom-control-label" for="switch12"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch13" data-capability="Add Outcome" data-role="province_admin">
-                                                <label class="custom-control-label" for="switch13"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch14" data-capability="Add Outcome" data-role="district_admin">
-                                                <label class="custom-control-label" for="switch14"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch15" data-capability="Add Outcome" data-role="department_admin">
-                                                <label class="custom-control-label" for="switch15"></label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Edit Outcome</td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch16" data-capability="Edit Outcome" data-role="productadmin">
-                                                <label class="custom-control-label" for="switch16"></label>
-                                            </div>
-                                         </td>
-                                         <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch17" data-capability="Edit Outcome" data-role="country_admin">
-                                                <label class="custom-control-label" for="switch17"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch18" data-capability="Edit Outcome" data-role="province_admin">
-                                                <label class="custom-control-label" for="switch18"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch19" data-capability="Edit Outcome" data-role="district_admin">
-                                                <label class="custom-control-label" for="switch19"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch20" data-capability="Edit Outcome" data-role="department_admin">
-                                                <label class="custom-control-label" for="switch20"></label>
-                                            </div>
-                                        </td>
-                                    </tr>
+    <section class="pt-3 pb-5 plr-100px">
+        <div class="container-fluid">
+            <div class="row mt-3">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <h4 class="capability-text pb-3">Roles and Capabilities</h4>
+                    <div class="table-responsive">
+                        <table class="table table-bordered tbl_role">
+                            <thead>
+                                <tr class="bg-darklight">
+                                    <th>Capability</th>
+                                    <th>Super Admin or Product Admin</th>
+                                    <th>National Admin</th>
+                                    <th>State level/Department Admin</th>
+                                    <th>District Level Admin </th>
+                                    <th>Department Users or Ground level user</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th colspan="6">Projects</th>
+                                </tr>
+                                <tr>
+                                    <td>Add Project</td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch1"
+                                                data-capability="Add Project" data-role="productadmin">
+                                            <label class="custom-control-label" for="switch1"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch2"
+                                                data-capability="Add Project" data-role="country_admin">
+                                            <label class="custom-control-label" for="switch2"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch3"
+                                                data-capability="Add Project" data-role="province_admin">
+                                            <label class="custom-control-label" for="switch3"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch4"
+                                                data-capability="Add Project" data-role="district_admin">
+                                            <label class="custom-control-label" for="switch4"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch5"
+                                                data-capability="Add Project" data-role="department_admin">
+                                            <label class="custom-control-label" for="switch5"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Edit Project</td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch6"
+                                                data-capability="Edit Project" data-role="productadmin">
+                                            <label class="custom-control-label" for="switch6"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch7"
+                                                data-capability="Edit Project" data-role="country_admin">
+                                            <label class="custom-control-label" for="switch7"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch8"
+                                                data-capability="Edit Project" data-role="province_admin">
+                                            <label class="custom-control-label" for="switch8"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch9"
+                                                data-capability="Edit Project" data-role="district_admin">
+                                            <label class="custom-control-label" for="switch9"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch10"
+                                                data-capability="Edit Project" data-role="department_admin">
+                                            <label class="custom-control-label" for="switch10"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="6">Outcomes</th>
+                                </tr>
+                                <tr>
+                                    <td>Add Outcome</td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch11"
+                                                data-capability="Add Outcome" data-role="productadmin">
+                                            <label class="custom-control-label" for="switch11"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch12"
+                                                data-capability="Add Outcome" data-role="country_admin">
+                                            <label class="custom-control-label" for="switch12"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch13"
+                                                data-capability="Add Outcome" data-role="province_admin">
+                                            <label class="custom-control-label" for="switch13"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch14"
+                                                data-capability="Add Outcome" data-role="district_admin">
+                                            <label class="custom-control-label" for="switch14"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch15"
+                                                data-capability="Add Outcome" data-role="department_admin">
+                                            <label class="custom-control-label" for="switch15"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Edit Outcome</td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch16"
+                                                data-capability="Edit Outcome" data-role="productadmin">
+                                            <label class="custom-control-label" for="switch16"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch17"
+                                                data-capability="Edit Outcome" data-role="country_admin">
+                                            <label class="custom-control-label" for="switch17"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch18"
+                                                data-capability="Edit Outcome" data-role="province_admin">
+                                            <label class="custom-control-label" for="switch18"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch19"
+                                                data-capability="Edit Outcome" data-role="district_admin">
+                                            <label class="custom-control-label" for="switch19"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch20"
+                                                data-capability="Edit Outcome" data-role="department_admin">
+                                            <label class="custom-control-label" for="switch20"></label>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                                    <tr>
-                                        <th>Outputs</th>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch21" data-capability="Outputs" data-role="productadmin">
-                                                <label class="custom-control-label" for="switch21"></label>
-                                            </div>
-                                         </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch22" data-capability="Outputs" data-role="country_admin">
-                                                <label class="custom-control-label" for="switch22"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch23" data-capability="Outputs" data-role="province_admin">
-                                                <label class="custom-control-label" for="switch23"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch24" data-capability="Outputs" data-role="district_admin">
-                                                <label class="custom-control-label" for="switch24"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch25" data-capability="Outputs" data-role="department_admin">
-                                                <label class="custom-control-label" for="switch25"></label>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                <tr>
+                                    <th>Outputs</th>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch21"
+                                                data-capability="Outputs" data-role="productadmin">
+                                            <label class="custom-control-label" for="switch21"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch22"
+                                                data-capability="Outputs" data-role="country_admin">
+                                            <label class="custom-control-label" for="switch22"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch23"
+                                                data-capability="Outputs" data-role="province_admin">
+                                            <label class="custom-control-label" for="switch23"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch24"
+                                                data-capability="Outputs" data-role="district_admin">
+                                            <label class="custom-control-label" for="switch24"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch25"
+                                                data-capability="Outputs" data-role="department_admin">
+                                            <label class="custom-control-label" for="switch25"></label>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                                    <tr>
-                                        <th>Record Approval Process</th>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch26" data-capability="Record Approval Process" data-role="productadmin">
-                                                <label class="custom-control-label" for="switch26"></label>
-                                            </div>
-                                         </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch27" data-capability="Record Approval Process" data-role="country_admin">
-                                                <label class="custom-control-label" for="switch27"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch28" data-capability="Record Approval Process" data-role="province_admin">
-                                                <label class="custom-control-label" for="switch28"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch29" data-capability="Record Approval Process" data-role="district_admin">
-                                                <label class="custom-control-label" for="switch29"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch30" data-capability="Record Approval Process" data-role="department_admin">
-                                                <label class="custom-control-label" for="switch30"></label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr><th colspan="6">User Management</th></tr>
-                                    <tr>
-                                        <td>Add User </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch31" data-capability="Add User" data-role="productadmin">
-                                                <label class="custom-control-label" for="switch31"></label>
-                                            </div>
-                                         </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch32" data-capability="Add User" data-role="country_admin">
-                                                <label class="custom-control-label" for="switch32"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch33" data-capability="Add User" data-role="province_admin">
-                                                <label class="custom-control-label" for="switch33"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch34" data-capability="Add User" data-role="district_admin">
-                                                <label class="custom-control-label" for="switch34"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch35" data-capability="Add User" data-role="department_admin">
-                                                <label class="custom-control-label" for="switch35"></label>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                <tr>
+                                    <th>Record Approval Process</th>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch26"
+                                                data-capability="Record Approval Process" data-role="productadmin">
+                                            <label class="custom-control-label" for="switch26"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch27"
+                                                data-capability="Record Approval Process" data-role="country_admin">
+                                            <label class="custom-control-label" for="switch27"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch28"
+                                                data-capability="Record Approval Process" data-role="province_admin">
+                                            <label class="custom-control-label" for="switch28"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch29"
+                                                data-capability="Record Approval Process" data-role="district_admin">
+                                            <label class="custom-control-label" for="switch29"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch30"
+                                                data-capability="Record Approval Process" data-role="department_admin">
+                                            <label class="custom-control-label" for="switch30"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="6">User Management</th>
+                                </tr>
+                                <tr>
+                                    <td>Add User </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch31"
+                                                data-capability="Add User" data-role="productadmin">
+                                            <label class="custom-control-label" for="switch31"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch32"
+                                                data-capability="Add User" data-role="country_admin">
+                                            <label class="custom-control-label" for="switch32"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch33"
+                                                data-capability="Add User" data-role="province_admin">
+                                            <label class="custom-control-label" for="switch33"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch34"
+                                                data-capability="Add User" data-role="district_admin">
+                                            <label class="custom-control-label" for="switch34"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch35"
+                                                data-capability="Add User" data-role="department_admin">
+                                            <label class="custom-control-label" for="switch35"></label>
+                                        </div>
+                                    </td>
+                                </tr>
 
-                                    <tr>
-                                        <td>Edit User </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch36" data-capability="Edit User" data-role="productadmin">
-                                                <label class="custom-control-label" for="switch36"></label>
-                                            </div>
-                                         </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch37" data-capability="Edit User" data-role="country_admin">
-                                                <label class="custom-control-label" for="switch37"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch38" data-capability="Edit User" data-role="province_admin">
-                                                <label class="custom-control-label" for="switch38"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch39" data-capability="Edit User" data-role="district_admin">
-                                                <label class="custom-control-label" for="switch39"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch40" data-capability="Edit User" data-role="department_admin">
-                                                <label class="custom-control-label" for="switch40"></label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>Output Report uploading  </th>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch41" data-capability="Output Report Uploading" data-role="productadmin">
-                                                <label class="custom-control-label" for="switch41"></label>
-                                            </div>
-                                         </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch42" data-capability="Output Report Uploading" data-role="country_admin">
-                                                <label class="custom-control-label" for="switch42"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch43" data-capability="Output Report Uploading" data-role="province_admin">
-                                                <label class="custom-control-label" for="switch43"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch44" data-capability="Output Report Uploading" data-role="district_admin">
-                                                <label class="custom-control-label" for="switch44"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch45" data-capability="Output Report Uploading" data-role="department_admin">
-                                                <label class="custom-control-label" for="switch45"></label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>Mobile Access </th>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch46" data-capability="Mobile Access" data-role="productadmin">
-                                                <label class="custom-control-label" for="switch46"></label>
-                                            </div>
-                                         </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch47" data-capability="Mobile Access" data-role="country_admin">
-                                                <label class="custom-control-label" for="switch47"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch48" data-capability="Mobile Access" data-role="province_admin">
-                                                <label class="custom-control-label" for="switch48"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch49" data-capability="Mobile Access" data-role="district_admin">
-                                                <label class="custom-control-label" for="switch49"></label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id="switch50" data-capability="Mobile Access" data-role="department_admin">
-                                                <label class="custom-control-label" for="switch50"></label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                                <tr>
+                                    <td>Edit User </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch36"
+                                                data-capability="Edit User" data-role="productadmin">
+                                            <label class="custom-control-label" for="switch36"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch37"
+                                                data-capability="Edit User" data-role="country_admin">
+                                            <label class="custom-control-label" for="switch37"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch38"
+                                                data-capability="Edit User" data-role="province_admin">
+                                            <label class="custom-control-label" for="switch38"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch39"
+                                                data-capability="Edit User" data-role="district_admin">
+                                            <label class="custom-control-label" for="switch39"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch40"
+                                                data-capability="Edit User" data-role="department_admin">
+                                            <label class="custom-control-label" for="switch40"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Output Report uploading </th>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch41"
+                                                data-capability="Output Report Uploading" data-role="productadmin">
+                                            <label class="custom-control-label" for="switch41"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch42"
+                                                data-capability="Output Report Uploading" data-role="country_admin">
+                                            <label class="custom-control-label" for="switch42"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch43"
+                                                data-capability="Output Report Uploading" data-role="province_admin">
+                                            <label class="custom-control-label" for="switch43"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch44"
+                                                data-capability="Output Report Uploading" data-role="district_admin">
+                                            <label class="custom-control-label" for="switch44"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch45"
+                                                data-capability="Output Report Uploading" data-role="department_admin">
+                                            <label class="custom-control-label" for="switch45"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Mobile Access </th>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch46"
+                                                data-capability="Mobile Access" data-role="productadmin">
+                                            <label class="custom-control-label" for="switch46"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch47"
+                                                data-capability="Mobile Access" data-role="country_admin">
+                                            <label class="custom-control-label" for="switch47"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch48"
+                                                data-capability="Mobile Access" data-role="province_admin">
+                                            <label class="custom-control-label" for="switch48"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch49"
+                                                data-capability="Mobile Access" data-role="district_admin">
+                                            <label class="custom-control-label" for="switch49"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="switch50"
+                                                data-capability="Mobile Access" data-role="department_admin">
+                                            <label class="custom-control-label" for="switch50"></label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
-    
+        </div>
+    </section>
+
+
+    <section class="" style="background-image: url('./assets/images/Vector 1.svg');    background-size: cover;
+    width: 100%;
+    padding: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <button class="mt-5 btn btn-newsletter">Subscribe to the IWMI newsletter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <div class="card footer border-0">
+            <div class="card-body">
+                <div class="row p20px">
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
+                            <div><img src="./assets/images/iwmi-white.png" class="w-100"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
+                            <div>
+                                <p class="mb-0"><span class="pr-3">Supported By</span> <img
+                                        src="./assets/images/logo_white.webp"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-2 col-lg-2"></div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
+                        <ul class="list-unstyled pl-0 ms-0 footer_ul">
+                            <li class="d-flex follow-link flex-wrap text-start">
+                                <div class="pr-3">
+                                    <a href="https://www.facebook.com/IWMIonFB" target="_blank" class="facebook-link">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.flickr.com/photos/iwmi" target="_blank" class="facebook-link">
+                                        <i class="fa fa-flickr"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.instagram.com/iwmi_water/" target="_blank"
+                                        class="facebook-link">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.linkedin.com/checkpoint/lg/login?session_redirect=%2Fauthwall&amp;fromSignIn=true&amp;trk=seo-authwall-base_google-one-tap-submit"
+                                        target="_blank" class="facebook-link">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="mailto:iwmi@cgiar.org" target="_blank" class="facebook-link">
+                                        <i class="fa fa-envelope"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.iwmi.cgiar.org/news/rss-feeds/" target="_blank"
+                                        class="facebook-link">
+                                        <i class="fa fa-wifi"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIWMI_"
+                                        target="_blank" class="facebook-link">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.youtube.com/iwmimedia" target="_blank" class="facebook-link">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer subfooter">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water
+                        Management
+                        Institute (IWMI) | <a href="">Termsof use</a></p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6 text-right">
+                    <ul class="d-flex justify-content-end list-unstyled align-items-center mb-0 pb-0">
+                        <li><a href="#">Ethics</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Subscribe to our newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- waiting spinner -->
     <div id="loading-modal" class="modal hide" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog modal-dialog-centered">
@@ -442,4 +615,5 @@
     <script type="text/javascript" src="./assets/scripts/utils.js"></script>
     <script type="text/javascript" src="./assets/scripts/roles_capabilities.js"></script>
 </body>
+
 </html>
