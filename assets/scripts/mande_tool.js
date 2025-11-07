@@ -131,66 +131,50 @@ class MandETool {
 
     fillCards = (mainList) => {
         let mainHtml = mainList.map(a => {
-            let sectors = a.sectors ? a.sectors.map(b => {
-                return `<button class="btn btn-md text-white btn-success mx-1">${b.sector}</button>`
-            }).join("") : "";
+            let sectors = a.sectors.length ? a.sectors.map(b => {
+                return `<button class="btn btn-sm btn-mande btn-success text-white mr-1">${b.sector}</button>`
+            }).join("") : `<button class="btn btn-sm btn-mande btn-secondary text-white">Unclassified sector</button>`;
             let category = a.categories.map(b => {
                 return `
-                    <div> <button class="btn text-white btn-${b.label}">${b.category}</button> ${sectors}</div>
+                    <div> <button class="btn btn-sm btn-mande btn-${b.label}">${b.category}</button></div>
                 `
             }).join("");
             let reportsListShortcut = a.count_outputs && (
                 this.userRoleId == 1 || (this.userRoleId <= 3 && this.initialCountryId == this.selectedCountryId && this.emailVerified)
-            )
-                ? `<a href="view_reports.html?project_id=${a.project_id}">
-                    <button class="btn btn-white-rounded text-white">
-                    Progress/View Report
+            )? ` <a href="view_reports.html?project_id=${a.project_id}">
+                    <button class="btn btn btn-mande">
+                        Progress/View Report
                         <span><img src="./assets/images/view-report.svg"></span>
                     </button>
-                </a>`
-                : ``;
+                </a>
 
-            let reportCounts = `<div class="row p-2">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div
-                        class="d-flex bg-light align-items-center justify-content-between p-2 border-radius-6">
-                        <div class="upload-text" id="">
-                            <h4 class="mb-0">Total Submissions: ${a.reports_breakup.Total}</h4>
-                        </div>
-                        <div class="border-right line mx-2"></div>
-                        <div class="pending-text" id="pending_surveys">
-                            <h4 class="mb-0">Pending: ${a.reports_breakup.Pending}</h4>
-                        </div>
-                        <div class="border-right line mx-2"></div>
-                        <div class="approved-text" id="approved_surveys">
-                            <h4 class="mb-0">Approved: ${a.reports_breakup.Approved}</h4>
-                        </div>
-                        <div class="border-right line mx-2"></div>
-                        <div class="reject-text" id="rejected_surveys">
-                            <h4 class="mb-0">Rejected: ${a.reports_breakup.Rejected}</h4>
-                        </div>
-                    </div>
-                </div>
+            ` : ``;
+            let reportCounts = `<div class="d-flex justify-content-between align-items-center my-3">
+                <div> <h5>Total Submission</h5> <h6>${a.reports_breakup.Total}</h6> </div>
+                <div> <h5>Pending</h5> <h6>${a.reports_breakup.Pending}</h6> </div>
+                <div> <h5>Approved</h5> <h6>${a.reports_breakup.Approved}</h6> </div>
+                <div> <h5>Rejected</h5> <h6>${a.reports_breakup.Rejected}</h6> </div>
             </div>`;
 
-            let projectOptions =
-                this.userRoleId == 1
-                    || (this.userRoleId <= 2 && this.initialCountryId == this.selectedCountryId && this.emailVerified)
-                    ? `<a href="edit_project.html?project_id=${a.project_id}">
-                    <button class="btn btn-white-rounded text-white me-3">
-                    Modify Project <span><img src="./assets/images/edit-2.svg"></span>
-                    </button>
-                </a>
-                <a class="btn_project_delete" data-project-id="${a.project_id}" data-project-name="${a.name}">
-                    <button class="btn btn-white-rounded text-white me-3">
-                        Delete Project <span><img src="./assets/images/delete.svg"></span>
-                    </button>
-                </a>` : "";
+            let projectOptions = this.userRoleId == 1 || (this.userRoleId <= 2 && this.initialCountryId == this.selectedCountryId && this.emailVerified)
+                ? `
+                    <a href="edit_project.html?project_id=${a.project_id}" style="">
+                        <button class="btn btn-white-rounded btn-mande me-3">
+                             Modify
+                        </button>
+                    </a>
+                    <a class="btn_project_delete" data-project-id="${a.project_id}" data-project-name="${a.name}">
+                        <button class="btn btn-white-rounded btn-mande me-3">
+                            Delete
+                        </button>
+                    </a>
+                `: "";
+                
             let outcomeShortcut =
                 this.userRoleId == 1
                     || (this.userRoleId <= 3 && this.initialCountryId == this.selectedCountryId && this.emailVerified)
                     ? `    <a href="manage_outcomes.html?project_id=${a.project_id}">
-                    <button class="btn btn-white-rounded text-white">
+                    <button class="btn btn-white-rounded btn-mande">
                     Add or modify Project Outcomes 
                         <span><img src="./assets/images/view-report.svg"></span>
                     </button>
@@ -201,74 +185,35 @@ class MandETool {
             let bannerChangeOption =
                 this.userRoleId == 1
                     || (this.userRoleId <= 2 && (this.initialCountryId == this.selectedCountryId) && this.emailVerified)
-                    ? `<div class="cursor btn-change-banner"
-                    title="Edit project banner" data-project-id="${a.project_id}" data-project-name="${a.name}">
-                    <span class="btn btn-success"><i class="fa fa-edit text-white"></i></span>
-                </div>`
+                    ? `<div class="btn btn-mande btn-sm btn-success btn-change-banner"
+                            title="Edit project banner" data-project-id="${a.project_id}" data-project-name="${a.name}">
+                            <span><i class="fa fa-edit text-white"></i></span>
+                        </div>`
                     : "";
-            return `
-                <div class="col-sm-12 col-md-4 col-lg-4">
+            return `<div class="col-sm-12 col-md-4 col-lg-4">
                 <div class="card border-0 mb-3 card_new">
                     <div class="card-body">
-                        <div class="lightImageBox">
-                            image
+                        <div class="lightImageBox mb-2"
+                            style="
+                            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${bannerLink}');
+                            background-size: cover;
+                            background-position: bottom;
+                            background-repeat: no-repeat;
+                        "></div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            ${category}
+                            ${bannerChangeOption}
                         </div>
-
-                        <div class="d-flex justify-content-start align-items-center my-3">
-                            <div>
-                                <button class="btn btn-mande"> Adaptation</button>
-                                <button class="btn btn-mande"> Water</button>
-                            </div>
+                        <div class="mb-3">${sectors}</div>
+                        <div><b>${a.name}</b></div>
+                        <div class="d-flex justify-content-between align-items-center class="mt-1"">
+                            ${projectOptions}
+                            ${outcomeShortcut}
                         </div>
-                        <p>Additional Financing for Coastal Region Water Security and Climate Resilience Project</p>
-
-                        <div class="d-flex justify-content-between align-items-center my-3">
-                            <div>
-                                <h5>Total Submission</h5>
-                                <h6>0</h6>
-                            </div>
-                           <div>
-                                <h5>Pending</h5>
-                                <h6>0</h6>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center my-3">
-                            <div>
-                                <h5>Approved</h5>
-                                <h6>0</h6>
-                            </div>
-                           <div>
-                                <h5>Rejected</h5>
-                                <h6>0</h6>
-                            </div>
-                        </div>
-
-                        <button class="btn btn-modify mr-3"><img src="./assets/images/edit-white.png" alt=""> Modify project <button>
-                        <button class="btn btn-delete"><img src="./assets/images/trash.png"><button>
-                        
-                        
+                        <div class="mt-1">${reportCounts}</div>
                     </div>
                 </div>
-                    <div 
-                        class="bg-project-card"
-                        style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${bannerLink}');"
-                    >
-                        <div class="row p-32px">
-                            <div class="col-sm-12 col-md-12 col-lg-12">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    ${category}
-                                    ${bannerChangeOption}
-                                </div>
-                                <p>${a.name}</p>
-                                ${projectOptions}
-                                ${outcomeShortcut}
-                                ${reportsListShortcut}
-                            </div>
-                        </div>
-                        ${reportCounts}
-                    </div>
-                </div>
-            `;
+            </div>`;
         }).join("\n");
         $("div#cards-projects").empty().html(mainHtml);
     }
@@ -276,6 +221,7 @@ class MandETool {
 
     enableBannerEdit = () => {
         $("div.btn-change-banner").unbind("click").on("click", event => {
+            debugger;
             let projectId = $(event.currentTarget).data("project-id");
             let projectName = $(event.currentTarget).data("project-name");
             $("#edit-banner-modal").modal("show");
