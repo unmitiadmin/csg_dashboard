@@ -211,16 +211,19 @@
         <div class="card footer border-0">
             <div class="card-body">
                 <div class="row p20px">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <div class="d-flex justify-content-start align-items-center">
-                            <div><img src="./assets/images/iwmi-white.png"></div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
+                            <div><img src="./assets/images/iwmi-white.png" class="w-100"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
                             <div>
-                                <p class="text-white font-weight-bold" style="white-space: nowrap;">Supported By</p>
-                                <p class="mb-0"><img src="./assets/images/logo_white.webp"></p>
+                                <p class="mb-0"><span class="pr-3">Supported By</span> <img src="./assets/images/logo_white.webp"></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4"></div>
+                    <div class="col-sm-12 col-md-2 col-lg-2"></div>
                     <div class="col-sm-12 col-md-4 col-lg-4">
                         <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
                         <ul class="list-unstyled pl-0 ms-0 footer_ul">
@@ -319,9 +322,9 @@
     <script type="text/javascript" src="./assets/scripts/utils.js"></script>
     <script type="text/javascript" src="./assets/scripts/climate_outlook.js"></script>
     <script>
-        $('#pageSelect').on('change', function() {
-          const url = $(this).val();
-          if (url) window.location.href = url;
+        $('#pageSelect').on('change', function () {
+            const url = $(this).val();
+            if (url) window.location.href = url;
         });
     </script>
 </body>

@@ -193,7 +193,7 @@ class Mitigation {
                                         <h5 class="mt-4">Current Status</h5>
                                         <button class="btn btn-active mt-2"><img src="${imgSrc}"> ${a.current_status || "Unavailable"}</button>
                                         <h5 class="mt-4">Targeted SDGs</h5>
-                                        <div class="d-flex justify-content-start align-items-center mt-3 mb-2">
+                                        <div class="d-flex justify-content-start align-items-center mt-3 mb-2 flex-wrap">
                                             ${sdgTargeted}
                                         </div>
                                     </div>
