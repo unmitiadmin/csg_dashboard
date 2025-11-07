@@ -62,12 +62,12 @@ class MandETool {
 
     execute = () => {
         if (this.isLoggedIn) {
-            this.countryId 
-            ? (this.userRoleId != 1 
-                ? this.userCountryIcon.attr("src", `./assets/flag_icons/${this.initialCountryId}.png`).show()
-                : this.userCountryIcon.attr("src", null).hide())
-            : this.userCountryIcon.attr("src", null).hide();
-            if(this.countryId) this.fetchData();
+            this.countryId
+                ? (this.userRoleId != 1
+                    ? this.userCountryIcon.attr("src", `./assets/flag_icons/${this.initialCountryId}.png`).show()
+                    : this.userCountryIcon.attr("src", null).hide())
+                : this.userCountryIcon.attr("src", null).hide();
+            if (this.countryId) this.fetchData();
             else {
                 $("select#filter-country option:first").prop("selected", true).trigger("change");
                 this.countryId = $("select#filter-country").val();
@@ -84,53 +84,53 @@ class MandETool {
             this.getApi(this.authHeader, `projects/list?country_id=${this.countryId}`),
             this.getApi(this.authHeader, `auth/self`)
         ])
-        .then(([lkpResponse, response, userSelf]) => {
-            if(lkpResponse.success && response.success && userSelf.success) {
-                this.emailVerified = userSelf.data.verified;
-                this.userRoleId = userSelf.data.role_id;
-                let mainList = response.data.page_list.map(a => {
-                    this.sectors = lkpResponse.data.find(b => b.table == "sector").lookup_data;
-                    return {
-                        "project_id": a.id,
-                        "name": a.project_name.replace(/�/g, ""),
-                        "categories": a.category
-                            ? a.category.map(b => this.categories.find(c => c.id == b))
-                            : [{ "category": "Unavailable", "label": "secondary" }],
-                        "sectors": a.sector
-                            ? this.sectors.filter(b => a.sector.includes(b.id))
-                            : null,
-                        "start_year": a.start_year,
-                        "end_year": a.end_year,
-                        "current_status": a.current_status,
-                        "banner_image": a.banner_image,
-                        "count_outcomes": a.count_outcomes,
-                        "count_outputs": a.count_outputs,
-                        "count_reports": a.count_reports,
-                        "outcomes_breakup": a.outcomes_breakup,
-                        "outputs_breakup": a.outputs_breakup,
-                        "reports_breakup": a.reports_breakup,
-                    }
-                });
-                this.projectList = mainList;
-                this.fillTable(mainList);
-                this.fillCards(mainList);
-            } else this.pageAlert("Unable to get data", 0);
-        })
-        .then(() => this.bindSearch())
-        .then(() => this.enableDeletion())
-        .then(() => this.enableBannerEdit())
-        .catch(err => {
-            console.error(err);
-            this.pageAlert(err.responseJSON.message, 0);
-            if (err.status == 401) {
-                setTimeout(() => this.onLogoutClick(), 1000);
-            }
-        })
-        .finally(() => this.stopWaiting())
+            .then(([lkpResponse, response, userSelf]) => {
+                if (lkpResponse.success && response.success && userSelf.success) {
+                    this.emailVerified = userSelf.data.verified;
+                    this.userRoleId = userSelf.data.role_id;
+                    let mainList = response.data.page_list.map(a => {
+                        this.sectors = lkpResponse.data.find(b => b.table == "sector").lookup_data;
+                        return {
+                            "project_id": a.id,
+                            "name": a.project_name.replace(/�/g, ""),
+                            "categories": a.category
+                                ? a.category.map(b => this.categories.find(c => c.id == b))
+                                : [{ "category": "Unavailable", "label": "secondary" }],
+                            "sectors": a.sector
+                                ? this.sectors.filter(b => a.sector.includes(b.id))
+                                : null,
+                            "start_year": a.start_year,
+                            "end_year": a.end_year,
+                            "current_status": a.current_status,
+                            "banner_image": a.banner_image,
+                            "count_outcomes": a.count_outcomes,
+                            "count_outputs": a.count_outputs,
+                            "count_reports": a.count_reports,
+                            "outcomes_breakup": a.outcomes_breakup,
+                            "outputs_breakup": a.outputs_breakup,
+                            "reports_breakup": a.reports_breakup,
+                        }
+                    });
+                    this.projectList = mainList;
+                    this.fillTable(mainList);
+                    this.fillCards(mainList);
+                } else this.pageAlert("Unable to get data", 0);
+            })
+            .then(() => this.bindSearch())
+            .then(() => this.enableDeletion())
+            .then(() => this.enableBannerEdit())
+            .catch(err => {
+                console.error(err);
+                this.pageAlert(err.responseJSON.message, 0);
+                if (err.status == 401) {
+                    setTimeout(() => this.onLogoutClick(), 1000);
+                }
+            })
+            .finally(() => this.stopWaiting())
     }
 
     fillCards = (mainList) => {
-        let mainHtml = mainList.map(a => {            
+        let mainHtml = mainList.map(a => {
             let sectors = a.sectors ? a.sectors.map(b => {
                 return `<button class="btn btn-md text-white btn-success mx-1">${b.sector}</button>`
             }).join("") : "";
@@ -140,17 +140,17 @@ class MandETool {
                 `
             }).join("");
             let reportsListShortcut = a.count_outputs && (
-                this.userRoleId == 1|| (this.userRoleId <= 3 && this.initialCountryId == this.selectedCountryId && this.emailVerified)
+                this.userRoleId == 1 || (this.userRoleId <= 3 && this.initialCountryId == this.selectedCountryId && this.emailVerified)
             )
-            ? `<a href="view_reports.html?project_id=${a.project_id}">
+                ? `<a href="view_reports.html?project_id=${a.project_id}">
                     <button class="btn btn-white-rounded text-white">
                     Progress/View Report
                         <span><img src="./assets/images/view-report.svg"></span>
                     </button>
                 </a>`
-            : ``;
+                : ``;
 
-            let reportCounts =  `<div class="row p-2">
+            let reportCounts = `<div class="row p-2">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <div
                         class="d-flex bg-light align-items-center justify-content-between p-2 border-radius-6">
@@ -173,10 +173,10 @@ class MandETool {
                 </div>
             </div>`;
 
-            let projectOptions = 
+            let projectOptions =
                 this.userRoleId == 1
-                || (this.userRoleId <= 2 && this.initialCountryId == this.selectedCountryId && this.emailVerified)
-                ? `<a href="edit_project.html?project_id=${a.project_id}">
+                    || (this.userRoleId <= 2 && this.initialCountryId == this.selectedCountryId && this.emailVerified)
+                    ? `<a href="edit_project.html?project_id=${a.project_id}">
                     <button class="btn btn-white-rounded text-white me-3">
                     Modify Project <span><img src="./assets/images/edit-2.svg"></span>
                     </button>
@@ -186,10 +186,10 @@ class MandETool {
                         Delete Project <span><img src="./assets/images/delete.svg"></span>
                     </button>
                 </a>` : "";
-            let outcomeShortcut = 
+            let outcomeShortcut =
                 this.userRoleId == 1
-                || (this.userRoleId <= 3 && this.initialCountryId == this.selectedCountryId && this.emailVerified)
-                ? `    <a href="manage_outcomes.html?project_id=${a.project_id}">
+                    || (this.userRoleId <= 3 && this.initialCountryId == this.selectedCountryId && this.emailVerified)
+                    ? `    <a href="manage_outcomes.html?project_id=${a.project_id}">
                     <button class="btn btn-white-rounded text-white">
                     Add or modify Project Outcomes 
                         <span><img src="./assets/images/view-report.svg"></span>
@@ -198,16 +198,57 @@ class MandETool {
             let bannerLink = this.apiUrl == "http://localhost:8000"
                 ? `${this.apiUrl}/clima_adapt_api/media/project_banners/${a.banner_image}`
                 : `${this.apiUrl}/clima_adapt_media/project_banners/${a.banner_image}`;
-            let bannerChangeOption = 
+            let bannerChangeOption =
                 this.userRoleId == 1
-                || (this.userRoleId <= 2 && (this.initialCountryId == this.selectedCountryId) && this.emailVerified ) 
-                ? `<div class="cursor btn-change-banner"
+                    || (this.userRoleId <= 2 && (this.initialCountryId == this.selectedCountryId) && this.emailVerified)
+                    ? `<div class="cursor btn-change-banner"
                     title="Edit project banner" data-project-id="${a.project_id}" data-project-name="${a.name}">
                     <span class="btn btn-success"><i class="fa fa-edit text-white"></i></span>
                 </div>`
-                : "";
+                    : "";
             return `
-                <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card border-0 mb-3 card_new">
+                    <div class="card-body">
+                        <div class="lightImageBox">
+                            image
+                        </div>
+
+                        <div class="d-flex justify-content-start align-items-center my-3">
+                            <div>
+                                <button class="btn btn-mande"> Adaptation</button>
+                                <button class="btn btn-mande"> Water</button>
+                            </div>
+                        </div>
+                        <p>Additional Financing for Coastal Region Water Security and Climate Resilience Project</p>
+
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                            <div>
+                                <h5>Total Submission</h5>
+                                <h6>0</h6>
+                            </div>
+                           <div>
+                                <h5>Pending</h5>
+                                <h6>0</h6>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center my-3">
+                            <div>
+                                <h5>Approved</h5>
+                                <h6>0</h6>
+                            </div>
+                           <div>
+                                <h5>Rejected</h5>
+                                <h6>0</h6>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-modify mr-3"><img src="./assets/images/edit-white.png" alt=""> Modify project <button>
+                        <button class="btn btn-delete"><img src="./assets/images/trash.png"><button>
+                        
+                        
+                    </div>
+                </div>
                     <div 
                         class="bg-project-card"
                         style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${bannerLink}');"
@@ -253,22 +294,22 @@ class MandETool {
 
     updateBanner = (projectId, reqBody) => {
         this.patchWithFile(this.authHeader, reqBody, `projects/banner?project_id=${projectId}`)
-        .then(response => {
-            if(response.success){
-                this.pageAlert(response.message, 1);
-                setTimeout(() => window.location.reload(), 1000);
-                // this.fetchData();
-            }
-        })
-        .catch(err => {
-            console.error(err);
-            this.pageAlert(err.responseJSON.message, 0);
-            if (err.status == 401) {
-                this.onLogoutClick()
-                setTimeout(() => this.onLogoutClick(), 1000);
-            }
-        })
-        .finally(() => this.stopWaiting())
+            .then(response => {
+                if (response.success) {
+                    this.pageAlert(response.message, 1);
+                    setTimeout(() => window.location.reload(), 1000);
+                    // this.fetchData();
+                }
+            })
+            .catch(err => {
+                console.error(err);
+                this.pageAlert(err.responseJSON.message, 0);
+                if (err.status == 401) {
+                    this.onLogoutClick()
+                    setTimeout(() => this.onLogoutClick(), 1000);
+                }
+            })
+            .finally(() => this.stopWaiting())
     }
 
     enableDeletion = () => {
@@ -289,21 +330,21 @@ class MandETool {
 
     deleteProject = (projectId) => {
         this.deleteApi(this.authHeader, `projects/manage?project_id=${projectId}`)
-        .then(response => {
-            if (response.success) {
-                this.pageAlert(response.message, 1);
-                this.filterCountry.trigger("change");
-                window.location.reload();
-            } else this.pageAlert("Unable to delete project");
-        })
-        .catch(err => {
-            console.error(err);
-            this.pageAlert(err.responseJSON.message, 0);
-            if (err.status == 401) {
-                setTimeout(() => this.onLogoutClick(), 1000);
-            }
-        })
-        .finally(() => this.stopWaiting())
+            .then(response => {
+                if (response.success) {
+                    this.pageAlert(response.message, 1);
+                    this.filterCountry.trigger("change");
+                    window.location.reload();
+                } else this.pageAlert("Unable to delete project");
+            })
+            .catch(err => {
+                console.error(err);
+                this.pageAlert(err.responseJSON.message, 0);
+                if (err.status == 401) {
+                    setTimeout(() => this.onLogoutClick(), 1000);
+                }
+            })
+            .finally(() => this.stopWaiting())
     }
 
 
@@ -422,7 +463,7 @@ class MandETool {
 
     pageAlert = (text, success) => {
         let alertIcon = success !== null || success !== undefined
-            ? (success 
+            ? (success
                 ? `<img src="assets/images/success.png"><h5 class="success-text-popup my-2">SUCCESS!</h5>`
                 : `<img src="assets/images/success-false.png"><h5 class="success-text-popup my-2">ERROR!</h5>`)
             : "";
