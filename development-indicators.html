@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Climate Smart Governance</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="./assets/images/adapt-logo.png" sizes="32x32" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" />
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/newStyle1.css" />
+<link rel="stylesheet" type="text/css" href="./assets/css/newHomeStyle.css" />
+   <!-- <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.14/css/bootstrap-select.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <!-- js -->
+  <!-- <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/modules/treemap.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  <script src="https://code.highcharts.com/modules/sankey.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DXGH9K238E"></script>
+    <script type="text/javascript" src="./assets/scripts/env.js"></script>
+    <script type="text/javascript" src="./assets/scripts/header-nav.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-DXGH9K238E");
+  </script>
+
+  <style data-emotion="css vubbuv">
+    .css-vubbuv {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      width: 1em;
+      height: 1em;
+      display: inline-block;
+      fill: currentColor;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      font-size: 1.5rem;
+    }
+
+    .fa-arrow-right {
+      color: rgb(245, 124, 0);
+      font-size: 20px;
+      margin: 0px 8px 0px 0px;
+    }
+
+    #sdg_color_refer {
+      margin: 0px 0px 0px 8px;
+      /* font-family: Yantramanav, sans-serif; */
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.43;
+      align-self: center;
+    }
+
+    #sdg_trend_refer {
+      margin: 0px 0px 0px 8px;
+      /* font-family: Yantramanav, sans-serif; */
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.43;
+      align-self: center;
+    }
+
+    #sdg_description {
+      margin: 0px 0px 18px 0px;
+      /* font-family: Yantramanav, sans-serif; */
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.43;
+    }
+
+    .fa-arrow-down:before {
+      content: "\f063";
+      font-size: 20px;
+      margin: 0px 8px 0px 0px;
+    }
+
+    /* Add margin to legend items */
+    .chart-legend li {
+      margin-bottom: 10px;
+      /* Adjust the margin as needed */
+    }
+  </style>
+   <style>
+    *,
+    ::before,
+    ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dropdown-menu.inner.show {
+        top: 55px !important;
+    }
+
+    .home {
+        height: 100vh;
+        position: relative;
+    }
+
+    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+        width: 100% !important;
+    }
+
+    .bootstrap-select>.dropdown-toggle {
+        height: 48px !important;
+        color: #6c757d !important;
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        padding: 14px 10px !important;
+    }
+
+    .bootstrap-select .dropdown-menu li {
+        position: relative;
+    }
+
+    .dropdown-menu.show {
+        display: block;
+        background: #ffffff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        position: absolute !important;
+        border: 0px;
+        left: 0px !important;
+    }
+
+    .dropdown.bootstrap-select .dropdown-menu.show {
+        min-height: 290px !important;
+    }
+
+    .dropdown-menu.inner.show {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        overflow-y: scroll;
+        height: 290px;
+    }
+
+    .dropdown-item.active,
+    .dropdown-item:active {
+        color: #fff;
+        text-decoration: none;
+        background-color: #b2b2b2;
+    }
+
+    .form-select.input-radio {
+        border-radius: 40px;
+        height: 48px;
+        font-size: 14px !important;
+        color: #000000b0;
+    }
+
+    .mx-35 {
+        margin: 0px 35px;
+    }
+
+    .form-select::placeholder {
+        color: #6c757d !important;
+    }
+    .collapse {
+        background-color: transparent !important;
+    }
+    .subfooter {
+        background: #174a7c !important;
+        border-radius: 0px !important;
+    }
+</style>
+</head>
+
+<body>
+    
+    <section class="hero-section1" style="background-image: url('./assets/images/Hero.png');
+        background-position: left; background-size: cover; background-repeat: no-repeat;width: 100%; padding: 0px;">
+        <div class="container pt-5" id="headerContainer">
+            <!-- Dynamic navbar - based on login -->
+        </div>
+        <div class="container mt-57px">
+            <div class="row">
+                <div class="col-sm-12 col-md-2 col-lg-2"></div>
+                <div class="col-sm-12 col-md-3 col-lg-4">
+                    <div class="form-group countrySelect mb-0">
+                        <select class="form-control w-100" id="countrySelect">
+                            <option value="senegal">Senegal</option>
+                            <option value="zambia">Zambia</option>
+                            <option value="kenya">Kenya</option>
+                            <option value="srilanka">Srilanka</option>
+                        </select>
+                        <span><img src="./assets/images/location.png" alt=""></span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="form-group countrySelect mb-0">
+                        <select class="form-control w-100" id="pageSelect">
+                            <option value="country_overview.html">Country Overview</option>
+                            <option value="climate_outlook.html">Climate Outlook</option>
+                            <option value="project_tracker.html" selected>Project Tracker</option>
+                            <option value="geospatial.html">Geo-intelligence Tools</option>
+                            <option value="mande_tool.html">Monitoring and Evaluation</option>
+                            <option value="development_indicators.html" selected>Development Indicators</option>
+                        </select>
+                        <span><img src="./assets/images/element-3.png" alt=""></span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-2 col-lg-2"></div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="d-flex justify-content-center alin-items-center">
+                        <div class="">
+                            <a href="add_project.html?page=project_tracker" class="btn btn-edit1 mb-2 mr-2"><img
+                                    src="./assets/images/add.png" alt=""> Add Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="informationBoxKey bg-lightBlue">
+        <div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <button class="btn btn-key mb-3"><img src="./assets/images/key1.png" alt="">
+                        Key Features</button>
+                    <h1 class="title-black mb-3 mt-2"> Development Indicator </h1>
+
+                    <p class="font-14px">This module is designed to facilitate understanding of a
+                    country’s progress towards meeting the UN SDGs. When
+                    individual projects are listed, dashboard users add
+                    information on the specific SDGs they intend to address.
+                    This guide monitoring and evaluation teams on where to
+                    undertake surveys to assess changes in SDG indicators, by
+                    which progress towards meeting targets is measured. Data
+                    accumulated from many projects can help highlight a
+                    nation’s achievements towards meeting the SDGs. For
+                    example, following the implementation of a project that is
+                    aiming to reduce poverty (Target 1-1), participants can be
+                    surveyed to see how many are living on less than USD1.25
+                    (Target 1-1 indicator) and how that number has changed
+                    since before the project started.</p>
+                        
+                    <div class="container-fluid">
+                        <div class="row mt-5">
+                        <div class="col-sm-12 col-md-8 col-lg-8">
+                            <div class="row">
+                            <div class="MuiBox-root css-19idom">
+                                <h2 class="MuiTypography-root MuiTypography-h2 css-p6fvt mb-4" style="line-height: 1">
+                                SDG Trends (as per 2023)
+                                </h2>
+                            </div>
+                            <div id="data-container"></div>
+                            <button id="show_parent_div" onclick="show_parent_sdg()" style="width: fit-content">
+                                Back
+                            </button>
+
+                            <div id="sdg_parent_div">
+                                <div style="display: flex; flex-direction: row; flex-wrap: wrap">
+                                <div class="col-sm-6 col-md-3 col-lg-2" onclick="sdg_index(1)">
+                                    <div class="sdgGoals-box-5 ml-3">
+                                    <div id="sdg_goal_1" class="sdgGoalImgBox">
+                                        <img src="./assets/images/E_01.svg" alt="1" class="e1d0vhw30" />
+                                    </div>
+                                    <div class="sdgGoalIconBox-4">
+                                        <i class="fa fa-arrow-down text-danger"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-2" onclick="sdg_index(2)">
+                                    <div class="sdgGoals-box-5 ml-3">
+                                    <div id="sdg_goal_2" class="sdgGoalImgBox">
+                                        <img src="./assets/images/E_02.svg" alt="1" class="sdgGoal-img e1d0vhw30" />
+                                    </div>
+                                    <div class="sdgGoalIconBox-4">
+                                        <i class="fa fa-arrow-right sdgs-icon"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-2" onclick="sdg_index(3)">
+                                    <div class="sdgGoals-box-5 ml-3">
+                                    <div id="sdg_goal_3" class="sdgGoalImgBox">
+                                        <img src="./assets/images/E_03.svg" alt="1" class="sdgGoal-img e1d0vhw30" />
+                                    </div>
+                                    <div class="sdgGoalIconBox-4">
+                                        <i class="fa fa-arrow-down sdgs-icon text-danger"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-2" onclick="sdg_index(4)">
+                                    <div class="sdgGoals-box-5 ml-3">
+                                    <div class="sdgGoalImgBox">
+                                        <img src="./assets/images/E_04.svg" alt="1" class="sdgGoal-img e1d0vhw30" />
+                                    </div>
+                                    <div class="sdgGoalIconBox-4">
+                                        <i class="fa fa-arrow-right sdgs-icon"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-2" onclick="sdg_index(5)">
+                                    <div class="sdgGoals-box-5 ml-3">
+                                    <div class="sdgGoalImgBox">
+                                        <img src="./assets/images/E_05.svg" alt="1" class="sdgGoal-img e1d0vhw30" />
+                                    </div>
+                                    <div class="sdgGoalIconBox-4">
+                                        <i class="fa fa-arrow-right sdgs-icon"></i>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3 col-lg-2" onclick="sdg_index(6)">
+                                    <div class="sdgGoals-box-5 ml-3">
+                                    <div class="sdgGoalImgBox">
+                                        <img src="./assets/images/E_06.svg" alt="1" class="sdgGoal-img e1d0vhw30" />
+                                    </div>
+                                    <div class="sdgGoalIconBox-4">
+                                        <i class="fa fa-arrow-right sdgs-icon"></i>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3 col-lg-2" onclick="sdg_index(7)">
+                                    <div class="sdgGoals-box-5 ml-3">
+                                    <div class="sdgGoalImgBox">
+                                        <img src="./assets/images/E_07.svg" alt="1" class="sdgGoal-img e1d0vhw30" />
+                                    </div>
+                                    <div class="sdgGoalIconBox-4">
+                                        <i class="fa fa-arrow-up sdgs-icon"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-2" onclick="sdg_index(8)">
+                                    <div class="sdgGoals-box-5 ml-3">
+                                    <div class="sdgGoalImgBox">
+                                        <img src="./assets/images/E_08.svg" alt="1" class="sdgGoal-img e1d0vhw30" />
+                                    </div>
+                                    <div class="sdgGoalIconBox-4">
+                                        <i class="fa fa-arrow-right sdgs-icon"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-2" onclick="sdg_index(9)">
+                                    <div class="sdgGoals-box-5 ml-3">
+                                    <div class="sdgGoalImgBox">
+                                        <img src="./assets/images/E_09.svg" alt="1" class="sdgGoal-img e1d0vhw30" />
+                                    </div>
+                                    <div class="sdgGoalIconBox-4">
+                                        <i class="fa fa-arrow-down sdgs-icon"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-2" onclick="sdg_index(10)">
+                                    <div class="sdgGoals-box-5 ml-3">
+                                    <div class="sdgGoalImgBox">
+                                        <img src="./assets/images/E_10.svg" alt="1" class="sdgGoal-img e1d0vhw30" />
+                                    </div>
+                                    <div class="sdgGoalIconBox-4">
+                                        <i class="fa fa-arrow-right sdgs-icon"></i>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3 col-lg-2" onclick="sdg_index(11)">
+                                    <div class="sdgGoals-box-5 ml-3">
+                                    <div class="sdgGoalImgBox">
+                                        <img src="./assets/images/E_11.svg" alt="1" class="sdgGoal-img e1d0vhw30" />
+                                    </div>
+                                    <div class="sdgGoalIconBox-4">
+                                        <i class="fa fa-arrow-right sdgs-icon"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-2" onclick="sdg_index(12)">
+                                    <div class="sdgGoals-box-5 ml-3">
+                                    <div class="sdgGoalImgBox">
+                                        <img src="./assets/images/E_12.svg" alt="1" class="sdgGoal-img e1d0vhw30" />
+                                    </div>
+                                    <div class="sdgGoalIconBox-4">
+                                        <i class="fa fa-arrow-up"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-2" onclick="sdg_index(13)">
+                                    <div class="sdgGoals-box-5 ml-3">
+                                    <div class="sdgGoalImgBox">
+                                        <img src="./assets/images/E_13.svg" alt="1" class="sdgGoal-img e1d0vhw30" />
+                                    </div>
+                                    <div class="sdgGoalIconBox-4">
+                                        <i class="fa fa-arrow-right sdgs-icon"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-2" onclick="sdg_index(14)">
+                                    <div class="sdgGoals-box-5 ml-3">
+                                    <div class="sdgGoalImgBox">
+                                        <img src="./assets/images/E_14.svg" alt="1" class="sdgGoal-img e1d0vhw30" />
+                                    </div>
+                                    <div class="sdgGoalIconBox-4">
+                                        <i class="fa fa-arrow-up sdgs-icon"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-2" onclick="sdg_index(15)">
+                                    <div class="sdgGoals-box-5 ml-3">
+                                    <div class="sdgGoalImgBox">
+                                        <img src="./assets/images/E_15.svg" alt="1" class="sdgGoal-img e1d0vhw30" />
+                                    </div>
+                                    <div class="sdgGoalIconBox-4">
+                                        <i class="fa fa-arrow-down sdgs-icon"></i>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-md-3 col-lg-2" onclick="sdg_index(16)">
+                                    <div class="sdgGoals-box-5 ml-3">
+                                    <div class="sdgGoalImgBox">
+                                        <img src="./assets/images/E_16.svg" alt="1" class="sdgGoal-img e1d0vhw30" />
+                                    </div>
+                                    <div class="sdgGoalIconBox-4">
+                                        <i class="fa fa-arrow-right sdgs-icon"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-3 col-lg-2" onclick="sdg_index(17)">
+                                    <div class="sdgGoals-box-5 ml-3">
+                                    <div class="sdgGoalImgBox">
+                                        <img src="./assets/images/E_17.svg" alt="1" class="sdgGoal-img e1d0vhw30" />
+                                    </div>
+                                    <div class="sdgGoalIconBox-4">
+                                        <i class="fa fa-arrow-down sdgs-icon"></i>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="MuiBox-root css-q80iy6">
+                                    <div class="MuiBox-root css-1ku073z">
+                                        <p class="MuiTypography-root MuiTypography-body2 css-1qua9tr">
+                                        <span class="MuiBox-root css-10rvbm3">Dashboards<!-- -->:</span>
+                                        </p>
+                                    </div>
+                                    <div class="MuiBox-root css-1ku073z">
+                                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false"
+                                        color="#43a047" aria-hidden="true" viewBox="0 0 24 24" style="vertical-align: middle"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                        <path
+                                            d="M12 4.08A7.92 7.92 0 0 0 4.08 12 7.92 7.92 0 0 0 12 19.92 7.92 7.92 0 0 0 19.92 12 7.92 7.92 0 0 0 12 4.08Z"
+                                            style="stroke-width: 0.792"></path>
+                                        </svg>
+                                        <p class="MuiTypography-root MuiTypography-body2 css-1qua9tr">
+                                        SDG achieved
+                                        </p>
+                                    </div>
+                                    <div class="MuiBox-root css-1ku073z">
+                                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false"
+                                        color="#fcc30b" aria-hidden="true" viewBox="0 0 24 24" style="vertical-align: middle"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                        <path
+                                            d="M12 4.08A7.92 7.92 0 0 0 4.08 12 7.92 7.92 0 0 0 12 19.92 7.92 7.92 0 0 0 19.92 12 7.92 7.92 0 0 0 12 4.08Z"
+                                            style="stroke-width: 0.792"></path>
+                                        </svg>
+                                        <p class="MuiTypography-root MuiTypography-body2 css-1qua9tr">
+                                        Challenges remain
+                                        </p>
+                                    </div>
+                                    <div class="MuiBox-root css-1ku073z">
+                                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false"
+                                        color="#f57c00" aria-hidden="true" viewBox="0 0 24 24" style="vertical-align: middle"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                        <path
+                                            d="M12 4.08A7.92 7.92 0 0 0 4.08 12 7.92 7.92 0 0 0 12 19.92 7.92 7.92 0 0 0 19.92 12 7.92 7.92 0 0 0 12 4.08Z"
+                                            style="stroke-width: 0.792"></path>
+                                        </svg>
+                                        <p class="MuiTypography-root MuiTypography-body2 css-1qua9tr">
+                                        Significant challenges remain
+                                        </p>
+                                    </div>
+                                    <div class="MuiBox-root css-1ku073z">
+                                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false"
+                                        color="#d32f2f" aria-hidden="true" viewBox="0 0 24 24" style="vertical-align: middle"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                        <path
+                                            d="M12 4.08A7.92 7.92 0 0 0 4.08 12 7.92 7.92 0 0 0 12 19.92 7.92 7.92 0 0 0 19.92 12 7.92 7.92 0 0 0 12 4.08Z"
+                                            style="stroke-width: 0.792"></path>
+                                        </svg>
+                                        <p class="MuiTypography-root MuiTypography-body2 css-1qua9tr">
+                                        Major challenges remain
+                                        </p>
+                                    </div>
+                                    <div class="MuiBox-root css-1ku073z">
+                                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false"
+                                        color="#bdbdbd" aria-hidden="true" viewBox="0 0 24 24" style="vertical-align: middle"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                        <path
+                                            d="M12 4.08A7.92 7.92 0 0 0 4.08 12 7.92 7.92 0 0 0 12 19.92 7.92 7.92 0 0 0 19.92 12 7.92 7.92 0 0 0 12 4.08Z"
+                                            style="stroke-width: 0.792"></path>
+                                        </svg>
+                                        <p class="MuiTypography-root MuiTypography-body2 css-1qua9tr">
+                                        Information unavailable
+                                        </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-12 c0l-lg-12">
+                                    <div class="MuiBox-root css-q80iy6">
+                                    <div class="MuiBox-root css-1ku073z">
+                                        <p class="MuiTypography-root MuiTypography-body2 css-1qua9tr">
+                                        <span class="MuiBox-root css-10rvbm3">Trends<!-- -->:</span>
+                                        </p>
+                                    </div>
+                                    <div class="MuiBox-root css-1ku073z">
+                                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false"
+                                        color="#43a047" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowUpThickIcon"
+                                        style="vertical-align: middle">
+                                        <path d="M14,20H10V11L6.5,14.5L4.08,12.08L12,4.16L19.92,12.08L17.5,14.5L14,11V20Z"></path>
+                                        </svg>
+                                        <p class="MuiTypography-root MuiTypography-body2 css-1qua9tr">
+                                        On track or maintaining SDG achievement
+                                        </p>
+                                    </div>
+                                    <div class="MuiBox-root css-1ku073z">
+                                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false"
+                                        color="#fcc30b" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowTopRightThickIcon"
+                                        style="vertical-align: middle">
+                                        <path d="M8.5,18.31L5.69,15.5L12.06,9.12H7.11V5.69H18.31V16.89H14.89V11.94L8.5,18.31Z"></path>
+                                        </svg>
+                                        <p class="MuiTypography-root MuiTypography-body2 css-1qua9tr">
+                                        Moderately improving
+                                        </p>
+                                    </div>
+                                    <div class="MuiBox-root css-1ku073z">
+                                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false"
+                                        color="#f57c00" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowRightThickIcon"
+                                        style="vertical-align: middle">
+                                        <path d="M4,10V14H13L9.5,17.5L11.92,19.92L19.84,12L11.92,4.08L9.5,6.5L13,10H4Z"></path>
+                                        </svg>
+                                        <p class="MuiTypography-root MuiTypography-body2 css-1qua9tr">
+                                        Stagnating
+                                        </p>
+                                    </div>
+                                    <div class="MuiBox-root css-1ku073z">
+                                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false"
+                                        color="#d32f2f" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowDownThickIcon"
+                                        style="vertical-align: middle">
+                                        <path d="M10,4H14V13L17.5,9.5L19.92,11.92L12,19.84L4.08,11.92L6.5,9.5L10,13V4Z"></path>
+                                        </svg>
+                                        <p class="MuiTypography-root MuiTypography-body2 css-1qua9tr">
+                                        Decreasing
+                                        </p>
+                                    </div>
+                                    <div class="MuiBox-root css-1ku073z">
+                                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false"
+                                        color="#bdbdbd" aria-hidden="true" viewBox="0 0 24 24" style="vertical-align: middle"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                        <path
+                                            d="M13.447 12a2.895 2.895 0 1 1 5.79 0 2.895 2.895 0 0 1-5.79 0m-8.684 0a2.895 2.895 0 1 1 5.79 0 2.895 2.895 0 0 1-5.79 0"
+                                            style="stroke-width: 1.44745767"></path>
+                                        </svg>
+                                        <p class="MuiTypography-root MuiTypography-body2 css-1qua9tr">
+                                        Trend information unavailable
+                                        </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <div id="individual_sdg"></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4">
+                            <div class="card ml-5" style="box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+                            0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+                            0px 1px 5px 0px rgba(0, 0, 0, 0.12) !important;width: 90%;margin-top: 68px;">
+                            <div class="card-body">
+                                <div id="sdg_sub_indicators" class="indicator-box">
+                                <div class="d-flex justify-content-between align-items-center sdg-box">
+                                    <div id="sdg_goal_number"></div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-x mx-2" viewBox="0 0 16 16" onclick="sdg_sub_indicators_toggle()">
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </div>
+                                <div id="sdg_goal_name" style="font-weight: 500; margin-bottom: 12px"></div>
+                                <hr />
+                                <div style="display: flex" class="mb-2">
+                                    <div class="" height="20px" id="sdg_bg_color" style="
+                                    width: 18px;
+                                    margin: 4px 10px;
+                                    height: 18px;
+                                    border-radius: 50%;
+                                    background-color: rgb(245, 124, 0);
+                                    "></div>
+                                    <div id="sdg_color_refer"></div>
+                                </div>
+                                <div style="display: flex" class="mb-2">
+                                    <div id="sdg_trend" class="mx-2" style="width: 28px"></div>
+                                    <div id="sdg_trend_refer"></div>
+                                </div>
+                                <hr />
+                                <div class="des_text">Description</div>
+                                <div id="sdg_description"></div>
+                                <div class="des_text">Indicators</div>
+                                <div id="sub_indicators_trend" class="all_indicators_data"></div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-5">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="sendai-box">
+                            <h4>SDG Score Trends</h4>
+                            <div class="d-flex">
+                            <div style="margin: auto 30px">Showing results for</div>
+                            <select class="form-control w-200px mt-3" id="sdg_goal_selected">
+                                <option value="all_goals">All goals</option>
+                                <option value="1">SDG 1</option>
+                                <option value="2">SDG 2</option>
+                                <option value="3">SDG 3</option>
+                                <option value="4">SDG 4</option>
+                                <option value="5">SDG 5</option>
+                                <option value="6">SDG 6</option>
+                                <option value="7">SDG 7</option>
+                                <option value="8">SDG 8</option>
+                                <option value="9">SDG 9</option>
+                                <option value="10">SDG 10</option>
+                                <option value="11">SDG 11</option>
+                                <option value="12">SDG 12</option>
+                                <option value="13">SDG 13</option>
+                                <option value="14">SDG 14</option>
+                                <option value="15">SDG 15</option>
+                                <option value="16">SDG 16</option>
+                                <option value="17">SDG 17</option>
+                            </select>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-11">
+                        <canvas id="lineChart" width="1200" height="500" class="mt-3"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+    
+    <section class="">
+        <div class="card footer border-0">
+            <div class="card-body">
+                <div class="row p20px">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="d-flex justify-content-start align-items-center">
+                            <div><img src="./assets/images/iwmi-white.png"></div>
+                            <div>
+                                <p class="text-white font-weight-bold" style="white-space: nowrap;">Supported By</p>
+                                <p class="mb-0"><img src="./assets/images/logo_white.webp"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4"></div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
+                        <ul class="list-unstyled pl-0 ms-0 footer_ul">
+                            <li class="d-flex follow-link flex-wrap text-start">
+                                <div class="pr-3">
+                                    <a href="https://www.facebook.com/IWMIonFB" target="_blank" class="facebook-link">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.flickr.com/photos/iwmi" target="_blank" class="facebook-link">
+                                        <i class="fa fa-flickr"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.instagram.com/iwmi_water/" target="_blank"
+                                        class="facebook-link">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.linkedin.com/checkpoint/lg/login?session_redirect=%2Fauthwall&amp;fromSignIn=true&amp;trk=seo-authwall-base_google-one-tap-submit"
+                                        target="_blank" class="facebook-link">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="mailto:iwmi@cgiar.org" target="_blank" class="facebook-link">
+                                        <i class="fa fa-envelope"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.iwmi.cgiar.org/news/rss-feeds/" target="_blank"
+                                        class="facebook-link">
+                                        <i class="fa fa-wifi"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIWMI_"
+                                        target="_blank" class="facebook-link">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.youtube.com/iwmimedia" target="_blank" class="facebook-link">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer subfooter">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water
+                        Management
+                        Institute (IWMI) | <a href="">Termsof use</a></p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6 text-right">
+                    <ul class="d-flex justify-content-end list-unstyled align-items-center mb-0 pb-0">
+                        <li><a href="#">Ethics</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Subscribe to our newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <script>
+    const parent_sdg = document.getElementById("sdg_parent_div");
+    const individual_sdg = document.getElementById("individual_sdg");
+    const show_parent_div = document.getElementById("show_parent_div");
+    individual_sdg.style.display = "none";
+    show_parent_div.style.display = "none";
+
+    let selected_sdg_no = 1;
+
+    const sdg_sub_indicators = document.getElementById("sdg_sub_indicators");
+
+    let dashboard_sdg = {};
+    let sdg_goals_data = [];
+
+    const iconBgColors = document.querySelectorAll(".sdgGoalImgBox");
+
+    const iconContainers = document.querySelectorAll(".sdgGoalIconBox-4");
+
+    const countrySelect = document.getElementById("countrySelect");
+
+    // Get the value of the 'country_id' cookie
+    const countryId = $.cookie("countryId");
+    if (countryId == "2") {
+      countrySelect.value = "zambia";
+    } else if (countryId == "4"){
+      countrySelect.value = "srilanka";
+    } else if(countryId == "5"){
+      countrySelect.value = "kenya";
+    } else if(countryId == "7"){
+      countrySelect.value = "senegal";
+    }
+
+
+    function fetchDataByCountry(country) {
+      const jsonFileURL = `./assets/united_nations_data/${country}_sdg.json`;
+
+      fetch(jsonFileURL)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          dashboard_sdg = data;
+          sdg_goals_data = dashboard_sdg.pageProps.goals;
+
+          iconContainers.forEach((iconContainer, index) => {
+            const iconElement = iconContainer.querySelector("i");
+            const svgExistedElement = iconContainer.querySelector("svg");
+
+            const jsonData = sdg_goals_data[index];
+
+            const rating = jsonData.rating ?? jsonData.indicator.rating;
+
+            const ratingToColor = {
+              red: "#d32f2f",
+              orange: "#f57c00",
+              green: "#43a047",
+              gray: "#bdbdbd",
+              yellow: "#fcc30b",
+            };
+
+            if (ratingToColor.hasOwnProperty(rating)) {
+              iconBgColors[index].style.background = ratingToColor[rating];
+            } else {
+              console.error("Unrecognized rating value:", rating);
+            }
+
+            const trendToIconClass = {
+              "→": "fa-arrow-right",
+              "↑": "fa-arrow-up",
+              "↓": ["fa-arrow-down", "text-danger"], // Separate classes with a space
+              "•": "icon_dot",
+              "➚": "icon_slope",
+            };
+
+            const defaultIconClass = "fa-question-circle";
+
+            if (jsonData.trend in trendToIconClass) {
+              const newIconClass = trendToIconClass[jsonData.trend];
+
+              if (newIconClass == "icon_slope") {
+                if (iconElement != null) {
+                  iconElement.remove();
+                }
+                if (svgExistedElement != null) {
+                  svgExistedElement.remove();
+                }
+
+                const svgElement = document.createElementNS(
+                  "http://www.w3.org/2000/svg",
+                  "svg"
+                );
+                svgElement.setAttribute(
+                  "class",
+                  "MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06"
+                );
+                svgElement.setAttribute("focusable", "false");
+                svgElement.setAttribute("color", "#fcc30b");
+                svgElement.setAttribute("aria-hidden", "true");
+                svgElement.setAttribute("viewBox", "0 0 24 24");
+                svgElement.setAttribute(
+                  "data-testid",
+                  "ArrowTopRightThickIcon"
+                );
+                svgElement.setAttribute("style", "vertical-align: middle;");
+
+                svgElement.innerHTML = `
+                                                <path d="M8.5,18.31L5.69,15.5L12.06,9.12H7.11V5.69H18.31V16.89H14.89V11.94L8.5,18.31Z"></path>
+                                              `;
+
+                iconContainer.appendChild(svgElement);
+              } else if (newIconClass == "icon_dot") {
+                if (iconElement != null) {
+                  iconElement.remove();
+                }
+                if (svgExistedElement != null) {
+                  svgExistedElement.remove();
+                }
+                const svgElement = document.createElementNS(
+                  "http://www.w3.org/2000/svg",
+                  "svg"
+                );
+                svgElement.setAttribute(
+                  "class",
+                  "MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                );
+                svgElement.setAttribute("focusable", "false");
+                svgElement.setAttribute("aria-hidden", "true");
+                svgElement.setAttribute("viewBox", "0 0 24 24");
+                svgElement.setAttribute("style", "fill: rgb(189, 189, 189);");
+                svgElement.setAttribute(
+                  "xmlns",
+                  "http://www.w3.org/2000/svg"
+                );
+
+                svgElement.innerHTML = `
+                                      <path d="M13.447 12a2.895 2.895 0 1 1 5.79 0 2.895 2.895 0 0 1-5.79 0m-8.684 0a2.895 2.895 0 1 1 5.79 0 2.895 2.895 0 0 1-5.79 0" style="stroke-width:1.44745767"></path>
+                                    `;
+
+                iconContainer.appendChild(svgElement);
+              } else {
+                if (svgExistedElement != null) {
+                  svgExistedElement.remove();
+                }
+                if (iconElement != null) {
+                  iconElement.classList.remove(
+                    "fa-arrow-right",
+                    "fa-arrow-up",
+                    "fa-arrow-down",
+                    "sdgs-icon",
+                    "text-danger"
+                  );
+
+                  if (Array.isArray(newIconClass)) {
+                    newIconClass.forEach((className) => {
+                      iconElement.classList.add(className);
+                    });
+                  } else {
+                    iconElement.classList.add(newIconClass);
+                  }
+                } else {
+                  const newIconElement = document.createElement("i");
+                  if (jsonData.trend === "→") {
+                    newIconElement.classList.add("fa", "fa-arrow-right");
+                    newIconElement.style.color = "rgb(245, 124, 0)";
+                  } else if (jsonData.trend === "↑") {
+                    newIconElement.classList.add("fa", "fa-arrow-up");
+                  } else if (jsonData.trend === "↓") {
+                    newIconElement.classList.add(
+                      "fa",
+                      "fa-arrow-down",
+                      "text-danger"
+                    );
+                  } else {
+                  }
+
+                  iconContainer.appendChild(newIconElement);
+                }
+              }
+            }
+          });
+          sdg_index(selected_sdg_no);
+        })
+        .catch((error) => {
+          console.error("Error fetching data:", error);
+        });
+    }
+
+    countrySelect.addEventListener("change", () => {
+      const selectedCountry = countrySelect.value;
+      $.cookie(
+        "countryId",
+        countrySelect.value == "zambia"
+          ? "2"
+          : countrySelect.value == "srilanka"
+            ? "4"
+            : "0"
+      );
+
+      fetchDataByCountry(selectedCountry);
+      sdg_indicators_loader();
+      get_united_nations_sdg_goals(selectedCountry);
+    });
+
+    const defaultSelectedCountry = countrySelect.value;
+    fetchDataByCountry(defaultSelectedCountry);
+
+    const sdg_goals_names = [
+      "No poverty",
+      "Zero hunger",
+      "Good health and well-being",
+      "Quality education",
+      "Gender equality",
+      "Clean water and sanitation",
+      "Affordable and clean energy",
+      "Decent work and economic growth",
+      "Industry, innovation and infrastructure",
+      "Reduced inequalities",
+      "Sustainable cities and communities",
+      "Responsible consumption and production",
+      "Climate action",
+      "Life below water",
+      "Life on land",
+      "Peace, justice and strong institutions",
+      "Partnerships for the goals",
+    ];
+
+    const sdg_trend_bg_color_means = {
+      "rgb(211, 47, 47)": "Major challenges remain",
+      "rgb(245, 124, 0)": "Significant challenges remain",
+      "rgb(67, 160, 71)": "SDG achieved",
+      "rgb(189, 189, 189)": "Information unavailable",
+      "rgb(252, 195, 11)": "Challenges remain",
+    };
+
+    const sdg_trend_meanings = {
+      "→": "Score stagnating or increasing at less than 50% of required rate",
+      "↑": "On track or maintaining SDG achievement",
+      "↓": "Score decreasing",
+      "•": "Trend information unavailable",
+      "➚": "Score moderately improving, insufficient to attain goal",
+    };
+
+    const sdg_descriptions = [
+      "End poverty in all its forms everywhere.",
+      "End hunger, achieve food security and improved nutrition and promote sustainable agriculture.",
+      "Ensure healthy lives and promote well-being for all at all ages.",
+      "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.",
+      "Achieve gender equality and empower all women and girls.",
+      "Ensure availability and sustainable management of water and sanitation for all.",
+      "Ensure access to affordable, reliable, sustainable and modern energy for all.",
+      "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all.",
+      "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation.",
+      "Reduce inequality within and among countries.",
+      "Make cities and human settlements inclusive, safe, resilient and sustainable.",
+      "Ensure sustainable consumption and production patterns.",
+      "Take urgent action to combat climate change and its impacts.",
+      "Conserve and sustainably use the oceans, seas and marine resources for sustainable development.",
+      "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss .",
+      "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.",
+      "Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development.",
+    ];
+
+    function sdg_sub_indicators_toggle() {
+      const isHidden = sdg_sub_indicators.style.display === "none";
+      sdg_sub_indicators.style.display = isHidden ? "block" : "none";
+    }
+
+    const sdg_goal_number = document.getElementById("sdg_goal_number");
+    const sdg_goal_name = document.getElementById("sdg_goal_name");
+    const sdg_bg_color = document.getElementById("sdg_bg_color");
+    const sdg_trend = document.getElementById("sdg_trend");
+    const sdg_trend_refer = document.getElementById("sdg_trend_refer");
+
+    const sdg_description = document.getElementById("sdg_description");
+    const sdg_color_refer = document.getElementById("sdg_color_refer");
+    const sub_indicators_trend = document.getElementById(
+      "sub_indicators_trend"
+    );
+
+    function sdg_index(numb) {
+      while (sdg_trend.firstChild) {
+        sdg_trend.removeChild(sdg_trend.firstChild);
+      }
+      const bg_color = iconBgColors[numb - 1].style.backgroundColor;
+      const childToMove = iconContainers[numb - 1].children[0];
+      const clonedChild = childToMove.cloneNode(true);
+      sdg_trend.appendChild(clonedChild);
+      sdg_goal_number.innerText = "SDG " + numb;
+      sdg_goal_name.innerText = sdg_goals_names[numb - 1];
+      sdg_bg_color.style.backgroundColor = bg_color;
+      sdg_color_refer.innerText = sdg_trend_bg_color_means[bg_color];
+
+      sdg_trend_refer.innerText =
+        sdg_trend_meanings[sdg_goals_data[numb - 1].trend];
+      sdg_description.innerText = sdg_descriptions[numb - 1];
+      sdg_sub_indicators.style.display = "block";
+      createIndicatorButtons(numb);
+      selected_sdg_no = numb;
+    }
+
+    let sdg_indicators_json = [];
+
+    function sdg_indicators_loader() {
+      fetch(
+        `./assets/united_nations_data/${countrySelect.value}_indicators.json`
+      )
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          sdg_indicators_json = data.pageProps.goals;
+          sdg_index(selected_sdg_no);
+        });
+    }
+
+    sdg_indicators_loader();
+
+    function createIndicatorButtons(numb) {
+      const goal = sdg_indicators_json.find((item) => item.number === numb);
+
+      if (goal && goal.indicators) {
+        while (sub_indicators_trend.firstChild) {
+          sub_indicators_trend.removeChild(sub_indicators_trend.firstChild);
+        }
+        goal.indicators.forEach((item) => {
+          const div = document.createElement("div");
+          div.style.display = "flex";
+          div.style.marginBottom = "10px";
+          div.style.justifyContent = "between";
+
+          const labelDiv = document.createElement("div");
+          labelDiv.textContent = `${item.label}`;
+          labelDiv.style.width = "210px";
+
+          const ratingDiv = document.createElement("div");
+          ratingDiv.style.width = "20px";
+          ratingDiv.style.height = "20px";
+          ratingDiv.style.margin = "0px 6px 0px 0px";
+          ratingDiv.style.borderRadius = "50%";
+
+          if (item.rating === "red") {
+            ratingDiv.style.backgroundColor = "#d32f2f";
+          } else if (item.rating === "green") {
+            ratingDiv.style.backgroundColor = "#43a047";
+          } else if (item.rating === "yellow") {
+            ratingDiv.style.backgroundColor = "#fcc30b";
+          } else if (item.rating === "gray") {
+            ratingDiv.style.backgroundColor = "#bdbdbd";
+          } else if (item.rating === "orange") {
+            ratingDiv.style.backgroundColor = "#f57c00";
+          }
+          div.appendChild(ratingDiv);
+
+          if (item.trend === "➚") {
+            const svgElement = document.createElementNS(
+              "http://www.w3.org/2000/svg",
+              "svg"
+            );
+            svgElement.setAttribute(
+              "class",
+              "MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06"
+            );
+            svgElement.setAttribute("focusable", "false");
+            svgElement.setAttribute("color", "#fcc30b");
+            svgElement.setAttribute("aria-hidden", "true");
+            svgElement.setAttribute("viewBox", "0 0 24 24");
+            svgElement.setAttribute("data-testid", "ArrowTopRightThickIcon");
+            svgElement.setAttribute("style", "vertical-align: middle;");
+
+            svgElement.innerHTML = `
+                                    <path d="M8.5,18.31L5.69,15.5L12.06,9.12H7.11V5.69H18.31V16.89H14.89V11.94L8.5,18.31Z"></path>
+                                  `;
+
+            div.appendChild(svgElement);
+          } else if (item.trend === "•") {
+            const svgElement = document.createElementNS(
+              "http://www.w3.org/2000/svg",
+              "svg"
+            );
+            svgElement.setAttribute(
+              "class",
+              "MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+            );
+            svgElement.setAttribute("focusable", "false");
+            svgElement.setAttribute("aria-hidden", "true");
+            svgElement.setAttribute("viewBox", "0 0 24 24");
+            svgElement.setAttribute(
+              "style",
+              "font-size:28px;fill: rgb(189, 189, 189);"
+            );
+            svgElement.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+
+            svgElement.innerHTML = `
+                                      <path d="M13.447 12a2.895 2.895 0 1 1 5.79 0 2.895 2.895 0 0 1-5.79 0m-8.684 0a2.895 2.895 0 1 1 5.79 0 2.895 2.895 0 0 1-5.79 0" style="stroke-width:1.44745767"></path>
+                                    `;
+
+            div.appendChild(svgElement);
+          } else {
+            const newIconElement = document.createElement("i");
+            if (item.trend === "→") {
+              newIconElement.classList.add("fa", "fa-arrow-right");
+            } else if (item.trend === "↑") {
+              newIconElement.classList.add("fa", "fa-arrow-up");
+            } else if (item.trend === "↓") {
+              newIconElement.classList.add(
+                "fa",
+                "fa-arrow-down",
+                "text-danger"
+              );
+            } else {
+            }
+
+            div.appendChild(newIconElement);
+          }
+
+          div.appendChild(labelDiv);
+
+          sub_indicators_trend.appendChild(div);
+        });
+      }
+    }
+  </script>
+
+  <script>
+    let sdg_goals_scores = [];
+    let lineChart;
+    get_united_nations_sdg_goals("zambia");
+    function get_united_nations_sdg_goals(country_name) {
+      fetch(`./assets/united_nations_data/${country_name}_sdg_goals.json`)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          sdg_goals_scores = data;
+
+          if (sdg_goal_selected.value !== "all_goals") {
+            createLineChart(
+              pluckGoalScores(sdg_goals_scores, sdg_goal_selected.value)
+            );
+          } else {
+            createLineChart(sdg_goals_scores);
+          }
+        });
+    }
+
+    const colors = [
+      "#1f77b4",
+      "#ff7f0e",
+      "#2ca02c",
+      "#d62728",
+      "#9467bd",
+      "#8c564b",
+      "#e377c2",
+      "#7f7f7f",
+      "#bcbd22",
+      "#17becf",
+      "#b5bd61",
+      "#dd8452",
+      "#9c9ede",
+      "#c49c94",
+      "#7f7f7f",
+      "#c5b0d5",
+      "#898989",
+    ];
+
+    // Function to generate a random color in hexadecimal format
+    function getRandomColor() {
+      const letters = "0123456789ABCDEF";
+      let color = "#";
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function formatData(data) {
+      const labels = data.map((item) => item.year);
+      const datasets = [];
+
+      // Loop through each goal and add it as a dataset
+      for (let i = 1; i <= 17; i++) {
+        const goalLabel = `Goal ${i} Score`;
+        const goalData = data.map((item) => item[goalLabel]);
+
+        datasets.push({
+          label: `Goal ${i}`,
+          fill: false,
+          data: goalData,
+          borderColor: colors[i], // You can define a function to generate random colors
+          backgroundColor: colors[i], // Set background color to transparent
+          // backgroundColor: "rgba(0, 0, 0, 0)", // Set background color to transparent
+        });
+      }
+
+      return {
+        labels: labels,
+        datasets: datasets,
+      };
+    }
+
+    function createLineChart(data) {
+      const formattedData = formatData(data);
+
+      const ctx = document.getElementById("lineChart").getContext("2d");
+
+      // Destroy the existing chart if it exists
+      if (lineChart) {
+        lineChart.destroy();
+      }
+      lineChart = new Chart(ctx, {
+        type: "line",
+        data: formattedData,
+        options: {
+          scales: {
+            x: {
+              title: {
+                display: true,
+                text: "Year",
+              },
+            },
+            y: {
+              title: {
+                display: true,
+                text: "Score",
+              },
+            },
+          },
+          plugins: {
+            legend: {
+              display: true,
+              position: "right",
+              labels: {
+                usePointStyle: false,
+                boxWidth: 10, // Set the size of the legend box
+                boxHeight: 10, // Set the size of the legend box
+              },
+            },
+            tooltip: {
+              callbacks: {
+                title: function (context) {
+                  // Show the goal number as a tooltip title
+                  return `Goal ${context[0].datasetIndex + 1}`;
+                },
+                // beforeLabel: function (tooltipItem) {
+                //   // Get the dataset index and data index
+                //   const datasetIndex = tooltipItem.datasetIndex;
+                //   const dataIndex = tooltipItem.dataIndex;
+
+                //   // Get the corresponding data point
+                //   const dataPoint = data[dataIndex];
+
+                //   // Extract desired information
+                //   const goalNumber = datasetIndex + 1;
+                //   const country = dataPoint["Country"];
+                //   const year = dataPoint["year"];
+                //   const population = dataPoint["population"];
+
+                //   // Customize the tooltip label
+                //   return `Goal ${goalNumber} - ${country}, ${year}, Population: ${population}`;
+                // },
+
+                label: function (tooltipItem) {
+                  const dataIndex = tooltipItem.dataIndex;
+                  const dataPoint = data[dataIndex];
+
+                  // Extract desired information
+                  const country = dataPoint["Country"];
+                  const year = dataPoint["year"];
+                  const population = dataPoint["population"];
+
+                  // Customize the tooltip label
+                  return `Score: ${tooltipItem["formattedValue"]}, Year: ${year}`;
+                },
+              },
+            },
+          },
+          layout: {
+            padding: {
+              // right: 500, // Add spacing between the graph and the legend,
+              // top: 150,
+            },
+          },
+        },
+      });
+    }
+
+    const sdg_goal_selected = document.getElementById("sdg_goal_selected");
+
+    sdg_goal_selected.addEventListener("change", () => {
+      if (sdg_goal_selected.value !== "all_goals") {
+        createLineChart(
+          pluckGoalScores(sdg_goals_scores, sdg_goal_selected.value)
+        );
+      } else {
+        createLineChart(sdg_goals_scores);
+      }
+    });
+
+    function pluckGoalScores(data, goalNumber) {
+      // Define an array to hold the keys for the goal scores
+      const goalKeys = [];
+
+      // Generate the keys for the goal scores
+      for (let i = 1; i <= 17; i++) {
+        goalKeys.push(`Goal ${i} Score`);
+      }
+
+      // Extract the desired keys based on the provided goal number
+      const extractedData = data.map((item) => ({
+        Country: item["Country"],
+        year: item["year"],
+        population: item["population"],
+        [goalKeys[goalNumber - 1]]: item[`Goal ${goalNumber} Score`],
+      }));
+
+      return extractedData;
+    }
+  </script>
+  
+  <script src="./assets/scripts/utils.js"></script>
+  <script>
+    $(window).on("load", () => {
+      let countryId = parseInt(getCookies(document.cookie).countryId);
+      let userRoleId = parseInt(getCookies(document.cookie).userRoleId);
+      let userEmail = getCookies(document.cookie).userEmail;
+      let userMgmtLink = $("li#user-management-link");
+      userRoleId == 1 ? userMgmtLink.show() : userMgmtLink.hide();
+      let loggedInUserEmailLabel = $("li#user-email-label");
+      loggedInUserEmailLabel.empty().html(`<div class='mx-3'>${userEmail}</div>`);
+      let userCountryIcon = $("img#user-country-icon");
+      let isLoggedIn = getCookies(document.cookie).isLoggedIn;
+      let initialCountryId = parseInt(getCookies(document.cookie).initialCountryId);
+      isLoggedIn
+        ? userRoleId != 1
+          ? userCountryIcon.attr("src", `./assets/flag_icons/${initialCountryId}.png`).attr("title", flagIndex[initialCountryId]).show()
+          : userCountryIcon.attr("src", null).attr("title", null).hide()
+        : userCountryIcon.attr("src", null).attr("title", null).hide();
+    });
+  </script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.14/js/bootstrap-select.min.js"></script>
+  <script>
+    setTimeout(() => $("select#input-registration-origin-country").selectpicker({
+      liveSearch: true
+    }), 1000);
+  </script>
+</body>
+
+</html>
