@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Climate-Smart Governance Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/newHomeStyle.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/env.js"></script>
+    <script type="text/javascript" src="./assets/scripts/header-nav.js"></script>
+</head>
+<body>
+
+    <section class="hero-section1 pb-4" style="background-image: url('./assets/images/Hero.png');
+        background-position: left; background-size: cover; background-repeat: no-repeat;width: 100%; padding: 0px;">
+        <div class="container pt-5" id="headerContainer">
+            <!-- Dynamic navbar - based on login -->
+        </div>
+        <!-- keep country filter hidden -->
+        <div class="container" style="display: none;">
+            <div class="row">
+                <div class="col-sm-12 col-md-1 col-lg-1"></div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="form-group countrySelect mb-0">
+                        <select class="form-control w-100" id="filter-country">
+                            <option value="5">Kenya</option>
+                            <option value="7">Senegal</option>
+                            <option value="4">Sri Lanka</option>
+                            <option value="2">Zambia</option>
+                        </select>
+                        <span><img src="./assets/images/location.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Change Password  Modal -->
+    <div class="modal" id="changePasswordModal">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content border-0">
+
+                <!-- Modal Header -->
+                <div class="modal-header border-0 py-4">
+                    <h4 class="ndc-title mb-2"><strong>Change Password</strong></h4>
+                    <button type="button" class="close-circle" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body border-lr-radius pt-0">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-group mb-4">
+                                <label>Current Password<sup class="text-danger">*</sup></label>
+                                <input type="password" placeholder="Current Password" id="input-current-password" class="form-control ndc-input" />
+                            </div>
+
+                            <div class="form-group my-4">
+                                <label>New Password<sup class="text-danger">*</sup></label>
+                                <input type="password" placeholder="New Password" id="input-new-password" class="form-control ndc-input" />
+                            </div>
+
+                            <div class="form-group mt-4">
+                                <label>Confirm Password<sup class="text-danger">*</sup></label>
+                                <input type="password" placeholder="Confirm New Password" id="input-confirm-new-password" class="form-control ndc-input" />
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mt-4 pb-4">
+                                <button class="btn btn btn-cancel-edit  text-center pxy-40px" data-dismiss="modal"> Back
+                                </button>
+                                <div class="">
+                                    <button type="buttpn"
+                                         class="btn btn-update-edit text-center text-white  pxy-40px" 
+                                         id="submit-reset-password"> Save
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper pt-5 mt-4">
+        <section class="content-height px-3 pb-2 mb-4">
+            <div class="container-fluid">
+                <div class="row mt-5">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <h4 class="ndc-title mb-2"><strong>PERSONAL DETAILS</strong></h4>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="bg-box-personal mt-3">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-9 col-lg-9">
+                                    <div class="d-flex justify-content-between mb-3 mt-3 flex-wrap">
+                                        <div class="primary-vl">
+                                            <p class="mb-0 mt-1 pl-2">Name</p>
+                                            <p class="mb-0 mt-1 pl-2"><span class="small-bold" id="label-username"></span>
+                                            </p>
+                                        </div>
+                                        <div class="primary-vl">
+                                            <p class="mb-0 mt-1 pl-2">Email</p>
+                                            <p class="mb-0 mt-1 pl-2"><span class="small-bold" id="label-email"></span></p>
+                                        </div>
+                                        <div class="primary-vl">
+                                            <p class="mb-0 mt-1 pl-2">Password :</p>
+                                            <div class="d-flex">
+                                                <p class="mb-0 mt-1 pl-2"> <span class="small-bold">*******</span></p>
+                                                <i class="btn btn-dark btn-sm cursor btn-short mx-2" data-toggle="modal"
+                                                    data-target="#changePasswordModal"><img
+                                                        src="./assets/images/edit-2.svg" alt="edit-2"
+                                                        loading="lazy"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-3 col-lg-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- waiting spinner -->
+    <div id="loading-modal" class="modal hide" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3 text-white"
+                style="background-color: transparent !important; border: 0px !important;">
+                <div id="loading-modal-container"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Alert Modal -->
+    <div class="modal" id="alertModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered popup-wh" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <div id="icon-alert-modal"></div>
+                        <h5 class="text-center pt-2" id="text-alert-modal"></h5>
+                    </div>
+                    <div class="d-flex justify-content-center mt-40px">
+                        <button class="btn btn-update-edit px-5" data-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Scripts -->
+    <script type="text/javascript" src="./assets/scripts/utils.js"></script>
+    <script type="text/javascript" src="./assets/scripts/profile.js"></script>
+</body>
+</html>
