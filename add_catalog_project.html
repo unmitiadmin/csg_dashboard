@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Climate Smart Governance</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./assets/images/adapt-logo.png" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/newHomeStyle.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style-bootstrap4.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="./assets/scripts/env.js"></script>
+    <script type="text/javascript" src="./assets/scripts/header-nav.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DXGH9K238E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DXGH9K238E');
+    </script>
+</head>
+
+<body>
+    <section class="hero-section1" style="background-image: url('./assets/images/Hero.png');
+        background-position: left; background-size: cover; background-repeat: no-repeat;width: 100%; padding: 0px;">
+        <div class="container pt-5" id="headerContainer">
+            <!-- Dynamic navbar - based on login -->
+        </div>
+    </section>
+    <!-- <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0 bg-white fixed-top">
+            <a class="navbar-brand" href="index.html">
+                <span class="pt-12px pb-12px"><img src="./assets/images/new-logo.svg"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0"></ul>
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0"></ul>
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);">Development Version</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about-us.html">About Us <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="our-team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Resources</a>
+                      </li>
+                    <li class="nav-item">
+                        <select class="form-select language-filter border-0  text-white ml-3 mr-3 mt-2" disabled>
+                            <option value="En">English </option>
+                            <option value="Fr">French</option>
+                            <option value="Sp">Spanish</option>
+                        </select>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-login btn-secondary dropdown-toggle mr-4" type="button"
+                                id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
+                                <img src="./assets/images/login-user.svg">
+                            </button>
+                            <ul class="dropdown-menu login-user mt-2" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" id="link-logout" href="index.html">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header> -->
+    <div class="wrapper mt-4 pt-5">
+        <section class="content-height plr-100px">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-0 mt-4 pl-0">
+                            <ol class="breadcrumb text-black bg-white mb-0 pl-0">
+                                <li class="breadcrumb-item text-black mb-0"><a href="index.html">Home </a></li>
+                                <li class="breadcrumb-item active text-black mb-0" aria-current="page"> Add Adaptive
+                                    Catalog Project</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="add-report-form">
+                            <h4 class="">Add Adaptive Catalog Project</h4>
+                            <div class="row mt-4">
+                                <!-- Name of the Project -->
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="project_name">Name of the Project</label>
+                                        <input type="text" class="form-control input-add-project" name="project_name"
+                                            placeholder="Name of the Project" id="input_project_name">
+                                    </div>
+                                </div>
+                                <!-- Project Description -->
+                                <div class="col-sm-12 col-md-8 col-lg-8">
+                                    <div class="form-group">
+                                        <label for="project_description">Project Description</label>
+                                        <input type="text" class="form-control input-add-project"
+                                            name="project_description" placeholder="Project Description"
+                                            id="input_project_description">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- Donors -->
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="dodonor_idsnors">Donors</label>
+                                        <select multiple class="selectpicker input-add-theme" name="donor_ids"
+                                            id="input_donor_ids"></select>
+                                    </div>
+                                </div>
+                                <!-- Start Date -->
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="start_date">Start Date</label>
+                                        <input type="date" class="form-control input-add-project" name="start_date"
+                                            placeholder="Start Date" id="input_start_date">
+                                    </div>
+                                </div>
+                                <!-- End Date -->
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="end_date">End Date</label>
+                                        <input type="date" class="form-control input-add-project" name="end_date"
+                                            placeholder="End Date" id="input_end_date">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- Budget -->
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="budget">Budget</label>
+                                        <input type="number" class="form-control input-add-project" name="budget"
+                                            placeholer="Funding Amount" id="input_budget" />
+                                    </div>
+                                </div>
+                                <!-- Countries -->
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="country_ids">Country</label>
+                                        <select multiple class="selectpicker input-add-country" name="country_ids"
+                                            id="input_country_ids"></select>
+                                    </div>
+                                </div>
+                                <!-- Hazards -->
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="hazard_ids">Hazards</label>
+                                        <select multiple class="selectpicker input-add-hazard" name="hazard_ids"
+                                            id="input_hazard_ids"></select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- Scale -->
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="scale_ids">Scale</label>
+                                        <select multiple class="selectpicker input-add-scale" name="scale_ids"
+                                            id="input_scale_ids"></select>
+                                    </div>
+                                </div>
+                                <!-- Themes -->
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="theme_ids">Themes</label>
+                                        <select multiple class="selectpicker input-add-theme" name="theme_ids"
+                                            id="input_theme_ids"></select>
+                                    </div>
+                                </div>
+                                <!-- Approach -->
+                                <div class="col-sm-12 col-md-4 col-lg-4">
+                                    <div class="form-group">
+                                        <label for="approach_ids">Approaches</label>
+                                        <select multiple class="selectpicker input-add-approach" name="approach_ids"
+                                            id="input_approach_ids"></select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 my-5">
+                                <div class="d-flex justify-content-end align-items-center">
+                                    <button role="button" class="btn btn-cancel-report mx-3"
+                                        id="cancel_add_project">Cancel</button>
+                                    <button role="button" class="btn btn-save-report mx-3"
+                                        id="save_new_project">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <section class="footer bg-black p-60px pb-0 plr-100px">
+            <div class="container-fluid">
+                <div class="row plr-100px" style="margin-top:40px;">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                            <div class="">
+                                <div><a href="https://www.iwmi.cgiar.org/" target="_blank">
+                                        <div class="d-flex">
+                                            <span><img src="./assets/images/iwmi.png" height="120px"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class=""></div>
+                            <div class="">
+                                <div><a href="https://www.cgiar.org/initiative/climate-resilience/" target="_blank">
+                                        <div class="d-flex">
+                                            <span><img src="./assets/images/cgiar-new-1.svg" height="100px" /></span>
+                                            <span class="line"
+                                                style="height:82px; width:1px;background: #fff;margin-top: 6px;"></span>
+                                            <div class="" style="margin-top: 13px;">
+                                                <span class="logo-text-small">initiative on</span>
+                                                <span class="logo-text-bold">Climate Resilience</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <div class="">
+                                <div><a href="https://www.cgiar.org/initiative/climate-resilience/" target="_blank">
+                                        <div class="d-flex">
+                                            <span><img src="./assets/images/cgiar-white.webp" height="100px"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div> -->
+                            <!-- <div class="">
+                                <div><a href="https://www.cgiar.org/" target="_blank">
+                                        <div class="d-flex">
+                                            <span><img src="./assets/images/cgiar-new.svg" height="120px"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div> -->
+                            <div>
+                                <ul class="list-unstyled ps-0 ms-0 footer_ul">
+                                    <li class="d-flex follow-link flex-wrap text-start">
+                                        <div class="pe-3">
+                                            <a href="https://www.facebook.com/IWMIonFB" target="_blank"
+                                                class="facebook-link">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="pe-3">
+                                            <a href="https://www.flickr.com/photos/iwmi" target="_blank"
+                                                class="facebook-link">
+                                                <i class="fa fa-flickr"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="pe-3">
+                                            <a href="https://www.instagram.com/iwmi_water/" target="_blank"
+                                                class="facebook-link">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="pe-3">
+                                            <a href="https://www.linkedin.com/checkpoint/lg/login?session_redirect=%2Fauthwall&fromSignIn=true&trk=seo-authwall-base_google-one-tap-submit"
+                                                target="_blank" class="facebook-link">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="pe-3">
+                                            <a href="mailto:iwmi@cgiar.org" target="_blank" class="facebook-link">
+                                                <i class="fa fa-envelope"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="pe-3">
+                                            <a href="https://www.iwmi.cgiar.org/news/rss-feeds/" target="_blank"
+                                                class="facebook-link">
+                                                <i class="fa fa-wifi"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="pe-3">
+                                            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIWMI_"
+                                                target="_blank" class="facebook-link">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </div>
+
+                                        <div class="pe-3">
+                                            <a href="https://www.youtube.com/iwmimedia" target="_blank"
+                                                class="facebook-link">
+                                                <i class="fa fa-youtube-play"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr class="mb-0" style="background: #fff" />
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <p class="text-copyright text-center py-3">
+                            Copyright © 2024. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+    <!-- waiting spinner -->
+    <div id="loading-modal" class="modal hide" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3 text-white"
+                style="background-color: transparent !important; border: 0px !important;">
+                <div id="loading-modal-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert Modal -->
+    <div class="modal" id="alertModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered popup-wh" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <div id="icon-alert-modal"></div>
+                        <h5 class="text-center pt-2" id="text-alert-modal"></h5>
+                    </div>
+                    <div class="d-flex justify-content-center mt-40px">
+                        <button class="btn btn-update-edit px-5" data-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page scripts -->
+    <script type="text/javascript" src="./assets/scripts/utils.js"></script>
+    <script type="text/javascript" src="./assets/scripts/add_catalog_project.js"></script>
+</body>
+
+</html>
