@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Climate-Smart Governance Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/newHomeStyle.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script type="text/javascript" src="./assets//scripts/env.js"></script>
     <script type="text/javascript" src="./assets/scripts/header-nav.js"></script>
 </head>
+
 <body>
-    <section class="hero-section1" style="background-image: url('./assets/images/Hero.png');
-        background-position: left; background-size: cover; background-repeat: no-repeat;width: 100%; padding: 0px;">
+    <section class="hero-section1" style="background: url('./assets/images/network-background.png') no-repeat bottom right;
+    background-attachment: fixed;
+    background-size: contain;">
         <div class="container pt-5" id="headerContainer">
             <!-- Dynamic navbar - based on login -->
         </div>
@@ -35,11 +43,12 @@
                             act on climate vulnerability, risk, and adaptation data.
                         </p>
                         <div class="pt-4">
-                            <button class="btn btn-dashboard" 
+                            <button class="btn btn-dashboard"
                                 onclick="document.getElementById('dashboard-entry-point').scrollIntoView({ behavior: 'smooth' });">
                                 VIEW DASHBOARD
                             </button>
-                            <button class="btn btn-explore-orange">EXPLORE AI AGENT</button>
+                            <a href="http://65.0.242.164/csg_ai_chatbot/#/home" target="_blank"
+                                class="btn btn-explore-orange">Explore CSG Agent</a>
                         </div>
                     </div>
                 </div>
@@ -67,6 +76,7 @@
                             <div class="overlay"></div>
                             <div class="card-content">
                                 <h1 id="label_count_sdg"><span>SDGs</span></h1>
+                                <p>Contributing to</p>
                                 <p class="mb-0 mt-5 pt-5">Efforts toward building an inclusive, sustainable and
                                     resilient
                                     future</p>
@@ -92,7 +102,7 @@
                                 <h1 id="label_sum_funding"></h1>
                             </div>
                         </div>
-                        
+
                     </div>
 
                     <!-- Card 3 -->
@@ -119,7 +129,7 @@
 
                     <!-- Card 5 -->
                     <div class="process-step">
-                        <div class="process-card ">
+                        <div class="process-card " style="border-radius: 12px;background: #0297A6;">
                             <div class="d-flex justify-content-between">
                                 <div>
                                     <p>Projects</p>
@@ -187,12 +197,12 @@
             </div>
         </div>
     </section>
-    
+
     <section class="video-section text-center">
         <div class="container-fluid p-0">
             <div class="video-wrapper">
                 <!-- Thumbnail -->
-                <img src="./assets/images/video-img.png" alt="Video background" class="video-thumbnail"
+                <img src="./assets/images/globe.png" alt="Video background" class="video-thumbnail"
                     id="videoThumbnail" />
 
                 <!-- Play / Pause Button -->
@@ -302,10 +312,8 @@
                                             <h2 class="mb-0">Country Overview</h2>
                                             <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
                                                 an overview of key development indicators.</p>
-                                            <button 
-                                                class="btn btn-explore-new mt-4"
-                                                onclick="window.location.href='country_overview.html'"
-                                                >
+                                            <button class="btn btn-explore-new mt-4"
+                                                onclick="window.location.href='country_overview.html'">
                                                 Explore <img src="./assets/images/icon.png" alt="">
                                             </button>
                                         </div>
@@ -324,10 +332,8 @@
                                             <h2 class="mb-0">Climate Outlook</h2>
                                             <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
                                                 an overview of key development indicators.</p>
-                                            <button 
-                                                class="btn btn-explore-new mt-4"
-                                                onclick="window.location.href='climate_outlook.html'"
-                                                >
+                                            <button class="btn btn-explore-new mt-4"
+                                                onclick="window.location.href='climate_outlook.html'">
                                                 Explore <img src="./assets/images/icon.png" alt="">
                                             </button>
                                         </div>
@@ -347,10 +353,8 @@
                                             <h2 class="mb-0">Project Tracker</h2>
                                             <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
                                                 an overview of key development indicators.</p>
-                                            <button 
-                                                class="btn btn-explore-new mt-4"
-                                                onclick="window.location.href='project_tracker.html'"
-                                                >
+                                            <button class="btn btn-explore-new mt-4"
+                                                onclick="window.location.href='project_tracker.html'">
                                                 Explore <img src="./assets/images/icon.png" alt="">
                                             </button>
                                         </div>
@@ -371,10 +375,8 @@
                                             <h2 class="mb-0">Geo Intelligence Tool</h2>
                                             <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
                                                 an overview of key development indicators.</p>
-                                            <button 
-                                                class="btn btn-explore-new mt-4"
-                                                onclick="window.location.href='geospatial.html'"
-                                                >
+                                            <button class="btn btn-explore-new mt-4"
+                                                onclick="window.location.href='geospatial.html'">
                                                 Explore <img src="./assets/images/icon.png" alt="">
                                             </button>
                                         </div>
@@ -393,10 +395,8 @@
                                             <h2 class="mb-0">Monitoring and Evaluation</h2>
                                             <p class="mb-0 mt-3">Welcome to the country overview summaries that provide
                                                 an overview of key development indicators.</p>
-                                            <button 
-                                                class="btn btn-explore-new mt-4"
-                                                onclick="window.location.href='mande_tool.html'"
-                                                >
+                                            <button class="btn btn-explore-new mt-4"
+                                                onclick="window.location.href='mande_tool.html'">
                                                 Explore <img src="./assets/images/icon.png" alt="">
                                             </button>
                                         </div>
@@ -550,20 +550,111 @@
         </div>
     </section>
 
-    <section class="countryBox">
+    <section class="countryBox pb-0" style="background: url('./assets/images/network-background.png') lightgray 50% / cover no-repeat;
+    background-attachment: fixed;background-position: bottom;">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12 text-center">
                 <h3>Use AI Agent Navigation</h3>
                 <p>Guided by a chatbot-style assistant</p>
 
-                <button class="btn btn-explore mt-3">Explore AI Agent</button>
+                <a href="http://65.0.242.164/csg_ai_chatbot/#/home" target="_blank" class="btn btn-explore mt-3">Explore
+                    CSG Agent</a>
             </div>
         </div>
 
         <div class="container pt-5">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col0lg-12">
-                    <img src="./assets/images/ai-chat-boat.png" alt="" class="w-100">
+                    <img src="./assets/images/financial-gap.png" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="countryBox py-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h3>Assessing Financial Gap</h3>
+                <p>Guided by a chatbot-style assistant</p>
+            </div>
+        </div>
+
+        <div class="row pt-5">
+            <div class="col-sm-12 col-md-6 col-lg-6 pr-1">
+                <div class="card card-gap border-0">
+                    <div class="card-body">
+                        <h3>Water Adaptation Finance (WAF)</h3>
+                        <p>Evaluate climate and financial resilience across regions</p>
+                        <button class="btn btn-open">Click here to open</button>
+
+
+                        <div class="row mt-5">
+                            <div class="col-sm-12 col-md-4 col-lg-4 pr-0">
+                                <div class="d-flex justify-content-end">
+                                    <div class="card card-smallCard mb-2">
+                                        <div class="card-body p-2">
+                                            <h4>0.47 <sub>Index (0-1)</sub></h4>
+                                            <p>National Average WAF Index</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <div class="card card-smallCard">
+                                        <div class="card-body p-2">
+                                            <h4>25 <sub>Districts</sub></h4>
+                                            <p>Districts Covered</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-8 col-lg-8">
+                                <div class="card card-smallCard border-0">
+                                    <div class="card-body p-0">
+                                        <img src="./assets/images/waf-1.png" class="w-100" alt="waf-1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 pl-1">
+                <div class="card card-gap1 border-0">
+                    <div class="card-body">
+                        <h3>Agricultural Adaptation &
+                            Finance Indicators</h3>
+                        <p>Explore data, maps, and graphs manually</p>
+                        <button class="btn btn-open">Click here to open</button>
+
+
+                        <div class="row mt-5">
+                            <div class="col-sm-12 col-md-8 col-lg-8">
+                                <div class="card card-smallCard border-0">
+                                    <div class="card-body p-0">
+                                        <img src="./assets/images/waf-2.png" class="w-100" alt="waf-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4 pl-0">
+                                <div class="d-flex justify-content-end">
+                                    <div class="card card-smallCard mb-2 border-0">
+                                        <div class="card-body p-2">
+                                            <h4>0.47 <sub>Index (0-1)</sub></h4>
+                                            <p>National Average WAF Index</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <div class="card card-smallCard border-0">
+                                        <div class="card-body p-2">
+                                            <h4>25 <sub>Districts</sub></h4>
+                                            <p>Districts Covered</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -577,7 +668,7 @@
                     <h3 class="mt-4">See How It Helped Others</h3>
                 </div>
             </div>
-            <div id="owl-demo-2" class="owl-carousel owl-theme">
+            <div id="owl-demo-2" class="owl-carousel owl-theme mt-4">
                 <!-- Item 1 -->
                 <article class="thumbnail item">
                     <img src="./assets/images/carousel-1.png" />
@@ -658,13 +749,13 @@
         </div>
     </section>
 
-    <section class="" style="background-image: url('./assets/images/Vector 1.svg');    background-size: cover;
-    width: 100%;
-    padding: 50px;">
+
+    <!-- Footer -->
+    <section class="footer-top">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                    <button class="mt-5 btn btn-newsletter">Subscribe to the IWMI newsletter</button>
+                    <button class="btn btn-newsletter mt-60px">Subscribe to the IWMI newsletter</button>
                 </div>
             </div>
         </div>
@@ -681,7 +772,8 @@
                     <div class="col-sm-12 col-md-3 col-lg-3">
                         <div class="d-flex justify-content-start align-items-center pt-3">
                             <div>
-                                <p class="mb-0"><span class="pr-3">Supported By</span> <img src="./assets/images/logo_white.webp"></p>
+                                <p class="mb-0"><span class="pr-3">Supported By</span> <img class="mb-2"
+                                        src="./assets/images/logo_white.webp"></p>
                             </div>
                         </div>
                     </div>
@@ -831,5 +923,30 @@
             icon.classList.add("play-icon");
         });
     </script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            var owl = $("#owl-demo-2");
+
+            owl.owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                loop: true,
+                margin: 10,
+                smartSpeed: 600,
+                responsive: {
+                    0: { items: 1 },
+                    480: { items: 2 },
+                    768: { items: 3 },
+                    992: { items: 4 },
+                    1200: { items: 4 }
+                },
+                nav: true,
+                //navText: ["<", ">"]
+            });
+        });
+    </script>
 </body>
+
 </html>

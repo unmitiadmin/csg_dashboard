@@ -268,12 +268,12 @@
      text-align: center;
      font-family: Poppins;
      font-size: 14px;
+     background: rgba(255, 255, 255, 0.10);
      font-style: normal;
      font-weight: 600;
      line-height: 34px;
      border-radius: 12px;
-     border: 1px solid #FFF;
-     /* 242.857% */
+     border: 0px solid #FFF;
  }
 
  .section-keyFeature h4 {
@@ -609,9 +609,112 @@
      font-style: normal;
      font-weight: 600;
      line-height: 34px;
-     border-radius: 12px;
-     border: 1px solid #000;
      width: 134px;
+     border-radius: 12px;
+     background: rgba(0, 0, 0, 0.10);
+ }
+
+ .card.card-gap {
+     border-radius: 20px;
+     background: var(--blue-gradient, linear-gradient(90deg, #2A547A 0%, #1797A5 100%));
+     min-height: 550px;
+     margin-bottom: 10px;
+ }
+
+ .card.card-gap1 {
+     border-radius: 20px;
+     background: var(--Organge-gradient, linear-gradient(90deg, #DB8F23 0%, #E6693C 100%));
+     min-height: 550px;
+     margin-bottom: 10px;
+ }
+
+ .mt-60px {
+     margin-top: 60px;
+ }
+
+ .card-gap h3 {
+     color: #FFF;
+     font-family: Poppins;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     text-align: left;
+ }
+
+ .card-gap p {
+     color: #FFF;
+     font-family: Poppins;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     text-align: left;
+ }
+
+ .card-gap1 h3 {
+     color: #FFF;
+     font-family: Poppins;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     text-align: left;
+ }
+
+ .card-gap1 p {
+     color: #FFF;
+     font-family: Poppins;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     text-align: left;
+ }
+
+
+ .card.card-smallCard h4 {
+     color: var(--Dark-blue, #28537D);
+     font-size: 26px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     text-align: left;
+ }
+
+ .card.card-smallCard h4 sub {
+     color: #000;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     text-align: left;
+ }
+
+ .card.card-smallCard p {
+     color: #000;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     text-align: left;
+ }
+
+ .btn.btn-open {
+     color: #3F7E44;
+     font-family: Poppins;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     border-radius: 100px;
+     background: #FFF;
+ }
+
+ .card.card-smallCard {
+     border-radius: 10px;
+     border: 1px solid rgba(40, 83, 125, 0.20);
+     background: #FFF;
  }
 
  .countryBox.others h3 {
@@ -651,7 +754,7 @@
      font-size: 12px;
      font-style: normal;
      font-weight: 600;
-     line-height: 34px;
+     line-height: 25px;
      /* 242.857% */
      text-transform: uppercase;
      border-radius: 100px;
@@ -730,7 +833,7 @@
  }
 
  .p20px {
-     padding: 30px 40px;
+     padding: 30px 0px;
  }
 
  .subfooter {
@@ -811,7 +914,7 @@
      border-radius: 100px;
      border: 1px solid rgba(0, 0, 0, 0.10);
      background: #EAF0F6;
-     padding: 10px;
+     padding: 13.5px 10px;
      color: #000;
      font-family: Poppins;
      font-size: 14px;
@@ -881,7 +984,7 @@
  }
 
  .informationBox {
-     padding: 60px 100px;
+     padding: 60px 60px;
  }
 
  .informationBox::before {
@@ -914,7 +1017,7 @@
  }
 
  .informationBox.senegal {
-     padding: 60px 100px;
+     padding: 60px 60px;
  }
 
  .informationBox.senegal::before {
@@ -946,7 +1049,7 @@
  }
 
  .informationBox.zambia {
-     padding: 60px 100px;
+     padding: 60px 60px;
  }
 
  .informationBox.zambia::before {
@@ -969,13 +1072,46 @@
      /* keep cards above background */
  }
 
+
+
+
+ .informationBox.srilanka {
+     position: relative;
+     min-height: 600px;
+     overflow: hidden;
+ }
+
+ .informationBox.srilanka {
+     padding: 60px 60px;
+ }
+
+ .informationBox.srilanka::before {
+     content: "";
+     position: absolute;
+     inset: 0;
+     /* top, right, bottom, left = 0 */
+     background-image: url("../images/srilanka-country.svg");
+     background-position: right;
+     background-repeat: no-repeat;
+     background-size: contain;
+     opacity: 0.1;
+     /* only background transparent */
+     z-index: 0;
+ }
+
+ .informationBox.srilanka .container {
+     position: relative;
+     z-index: 1;
+     /* keep cards above background */
+ }
+
  .btn.btn-newsletter {
      border-radius: 100px;
      border: 1px solid #F8FAFB;
      color: #F8FAFB;
      text-align: center;
      font-family: Poppins;
-     font-size: 20px;
+     font-size: 16px;
      font-style: normal;
      font-weight: 400;
      line-height: normal;
@@ -1056,7 +1192,12 @@
      border-radius: 6px;
      background: #EFF6FA;
      margin-bottom: 10px;
-     min-height: 190px;
+     min-height: 185px;
+     max-width: 295px;
+ }
+
+ .detailBox .card-body {
+     padding: 10px !important;
  }
 
  .detailBox h5 {
@@ -1092,8 +1233,9 @@
  }
 
  .btn.btn-statical {
+     border: brown;
      border-radius: 12px;
-     border: 1px solid var(--Dark-blue, #28537D);
+     background: rgba(40, 83, 125, 0.10);
      color: var(--Dark-blue, #28537D);
      text-align: center;
      font-family: Poppins;
@@ -1102,7 +1244,18 @@
      font-weight: 600;
      line-height: 34px;
      padding: 0 16px;
-     background: #fff;
+ }
+
+ .btn.btn-key {
+     color: #000;
+     text-align: center;
+     font-family: Poppins;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 34px;
+     border-radius: 12px;
+     background: rgba(40, 83, 125, 0.10);
  }
 
  .title {
@@ -1205,9 +1358,8 @@
      line-height: normal;
  }
 
+
  .btn.btn-overview {
-     border-radius: 12px;
-     border: 1px solid #fff;
      color: #fff;
      text-align: center;
      font-family: Poppins;
@@ -1216,7 +1368,16 @@
      font-weight: 600;
      line-height: 34px;
      width: 134px;
-     /* 242.857% */
+     border-radius: 12px;
+     background: rgba(255, 255, 255, 0.10);
+ }
+
+ .goog-te-gadget .goog-te-combo {
+     margin: 0px 0 !important;
+     border-radius: 100px;
+     border: 1px solid #FFF;
+     /* background-color: transparent; */
+     padding: 10px;
  }
 
  .main-title {
@@ -1634,18 +1795,92 @@
      padding: 60px 100px;
  }
 
- .btn.btn-key {
-     color: #000;
-     text-align: center;
-     font-family: Poppins;
-     font-size: 14px;
-     font-style: normal;
-     font-weight: 600;
-     line-height: 34px;
-     /* 242.857% */
-     border-radius: 12px;
-     border: 1px solid #000;
+ .modal-title {
+     margin-bottom: 0;
+     line-height: 1.5;
+     font-size: 16px;
  }
+
+ .modal-content {
+     border-radius: 20px;
+     background: #FFF;
+     font-size: 14px;
+ }
+
+ .btn-close {
+     width: 49px;
+     height: 32px;
+     background-color: #808080;
+     /* red background */
+     border-radius: 50%;
+     color: white;
+     font-size: 20px;
+     line-height: 32px;
+     text-align: center;
+     border: none;
+ }
+
+ .footer-top {
+     background-color: #e8e7e7;
+     background-image: url('../images/Vector 1.svg');
+     background-size: cover;
+     width: 100%;
+     padding: 45px;
+ }
+
+ .breadcrumb-item+.breadcrumb-item {
+     padding-left: .5rem;
+     color: #000;
+     font-family: Poppins;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+ }
+
+ .ccs-title {
+     color: #000;
+     font-family: Poppins;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+
+ }
+
+ .tbl_ccs tr th {
+     color: var(--Dark-blue, #28537D);
+     font-family: Poppins;
+     font-size: 14px !important;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+     border-radius: 10px;
+     background: #F8FAFB;
+     border-bottom: 0px !important;
+     border-top: 0px;
+ }
+
+ .project-title {
+     color: #000;
+     font-family: Poppins;
+     font-size: 32px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+ }
+
+ .btn-close::before {
+     content: "×";
+     font-weight: bold;
+ }
+
+ .btn-close:hover {
+     background-color: #808080;
+     transform: scale(1.1);
+     transition: 0.2s;
+ }
+
 
  .title-black {
      color: #000;
@@ -3275,7 +3510,7 @@ line-height: normal;
 
  .accountPos {
      position: absolute;
-     bottom: 22px;
+     bottom: 4px;
  }
 
  .register-steps {
@@ -3448,7 +3683,34 @@ line-height: normal;
  }
 
  .login-user .dropdown-item {
-    font-size: 14px;
+     font-size: 14px;
+ }
+
+ /* .hero-section1:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: url('../images/network-background.png') bottom right no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+} */
+
+ #filter-country {
+     appearance: none;
+     /* Hide default arrow */
+     background: url('../images/arrow-down.png') no-repeat right 15px center;
+     background-color: #f2f2f2;
+     padding-right: 40px;
+ }
+
+ #pageSelect {
+     appearance: none;
+     /* Hide default arrow */
+     background: url('../images/arrow-down.png') no-repeat right 15px center;
+     background-color: #f2f2f2;
+     padding-right: 40px;
  }
 
  .table thead th {

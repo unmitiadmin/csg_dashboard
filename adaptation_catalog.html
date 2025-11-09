@@ -212,8 +212,14 @@
 
 <body>
     
-    <section class="hero-section1" style="background-image: url('./assets/images/Hero.png');
-        background-position: left; background-size: cover; background-repeat: no-repeat;width: 100%; padding: 0px;">
+    <section class="hero-section1">
+        <img src="./assets/images/network-background.png" alt="corner" style="
+            position: absolute;
+            top: -290px;
+            right: 0;
+             width: 46%;
+            height: fit-content;
+             z-index: -1; ">
         <div class="container pt-5" id="headerContainer">
             <!-- Dynamic navbar - based on login -->
         </div>
@@ -495,110 +501,114 @@
     </section>
   </div>
 
-  <footer>
-    <section class="footer bg-black p-60px pb-0 plr-100px">
-      <div class="container-fluid">
-        <div class="row plr-100px" style="margin-top: 70px">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="d-flex justify-content-between align-items-center flex-wrap">
-              <div class="">
-                <div>
-                  <a href="https://www.iwmi.cgiar.org/" target="_blank">
-                    <div class="d-flex">
-                      <span><img src="./assets/images/iwmi.png" height="120px" /></span>
-                    </div>
-                  </a>
+   <!-- Footer -->
+    <section class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <button class="btn btn-newsletter mt-60px">Subscribe to the IWMI newsletter</button>
                 </div>
-              </div>
-              <div class=""></div>
-              <div class="">
-                <div>
-                  <a href="https://www.cgiar.org/initiative/climate-resilience/" target="_blank">
-                    <div class="d-flex">
-                      <span><img src="./assets/images/cgiar-new-1.svg" height="100px" /></span>
-                      <span class="line" style="
-                            height: 82px;
-                            width: 1px;
-                            background: #fff;
-                            margin-top: 6px;
-                          "></span>
-                      <div class="" style="margin-top: 13px">
-                        <span class="logo-text-small">initiative on</span>
-                        <span class="logo-text-bold">Climate Resilience</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div>
-                <ul class="list-unstyled ps-0 ms-0 footer_ul">
-                  <li class="d-flex follow-link flex-wrap text-start">
-                    <div class="pe-3">
-                      <a href="https://www.facebook.com/IWMIonFB" target="_blank" class="facebook-link">
-                        <i class="fa fa-facebook"></i>
-                      </a>
-                    </div>
-
-                    <div class="pe-3">
-                      <a href="https://www.flickr.com/photos/iwmi" target="_blank" class="facebook-link">
-                        <i class="fa fa-flickr"></i>
-                      </a>
-                    </div>
-
-                    <div class="pe-3">
-                      <a href="https://www.instagram.com/iwmi_water/" target="_blank" class="facebook-link">
-                        <i class="fa fa-instagram"></i>
-                      </a>
-                    </div>
-
-                    <div class="pe-3">
-                      <a href="https://www.linkedin.com/checkpoint/lg/login?session_redirect=%2Fauthwall&fromSignIn=true&trk=seo-authwall-base_google-one-tap-submit"
-                        target="_blank" class="facebook-link">
-                        <i class="fa fa-linkedin"></i>
-                      </a>
-                    </div>
-
-                    <div class="pe-3">
-                      <a href="mailto:iwmi@cgiar.org" target="_blank" class="facebook-link">
-                        <i class="fa fa-envelope"></i>
-                      </a>
-                    </div>
-
-                    <div class="pe-3">
-                      <a href="https://www.iwmi.cgiar.org/news/rss-feeds/" target="_blank" class="facebook-link">
-                        <i class="fa fa-wifi"></i>
-                      </a>
-                    </div>
-
-                    <div class="pe-3">
-                      <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIWMI_" target="_blank"
-                        class="facebook-link">
-                        <i class="fa fa-twitter"></i>
-                      </a>
-                    </div>
-
-                    <div class="pe-3">
-                      <a href="https://www.youtube.com/iwmimedia" target="_blank" class="facebook-link">
-                        <i class="fa fa-youtube-play"></i>
-                      </a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
             </div>
-          </div>
         </div>
-        <hr class="mb-0" style="background: #fff" />
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <p class="text-copyright text-center py-3">
-              Copyright © 2024. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </div>
     </section>
-  </footer>
+    <section class="">
+        <div class="card footer border-0">
+            <div class="card-body">
+                <div class="row p20px">
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
+                            <div><img src="./assets/images/iwmi-white.png" class="w-100"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
+                            <div>
+                                <p class="mb-0"><span class="pr-3">Supported By</span> <img class="mb-2"
+                                        src="./assets/images/logo_white.webp"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-2 col-lg-2"></div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
+                        <ul class="list-unstyled pl-0 ms-0 footer_ul">
+                            <li class="d-flex follow-link flex-wrap text-start">
+                                <div class="pr-3">
+                                    <a href="https://www.facebook.com/IWMIonFB" target="_blank" class="facebook-link">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.flickr.com/photos/iwmi" target="_blank" class="facebook-link">
+                                        <i class="fa fa-flickr"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.instagram.com/iwmi_water/" target="_blank"
+                                        class="facebook-link">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.linkedin.com/checkpoint/lg/login?session_redirect=%2Fauthwall&amp;fromSignIn=true&amp;trk=seo-authwall-base_google-one-tap-submit"
+                                        target="_blank" class="facebook-link">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="mailto:iwmi@cgiar.org" target="_blank" class="facebook-link">
+                                        <i class="fa fa-envelope"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.iwmi.cgiar.org/news/rss-feeds/" target="_blank"
+                                        class="facebook-link">
+                                        <i class="fa fa-wifi"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIWMI_"
+                                        target="_blank" class="facebook-link">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </div>
+
+                                <div class="pr-3">
+                                    <a href="https://www.youtube.com/iwmimedia" target="_blank" class="facebook-link">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer subfooter">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water
+                        Management
+                        Institute (IWMI) | <a href="">Termsof use</a></p>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6 text-right">
+                    <ul class="d-flex justify-content-end list-unstyled align-items-center mb-0 pb-0">
+                        <li><a href="#">Ethics</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Subscribe to our newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
   <!-- waiting spinner -->
   <div id="loading-modal" class="modal hide" data-bs-backdrop="static" data-bs-keyboard="false">

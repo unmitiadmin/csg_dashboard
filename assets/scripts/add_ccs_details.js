@@ -211,7 +211,10 @@ class CCSFormAdd {
                 <a class="nav-link ${initialActive} form-tabs" id="tab-${a.field_id}" 
                     data-tab-id="${a.field_id}" data-tab-index="${i}"
                     data-toggle="tab" href="#ccs${a.field_id}" role="tab">
-                    ${a.label}
+                    <div class="d-flex justify-content-between align-items-center">
+                    <div>  ${a.label} </div>
+                    <div style="border-radius: 100px;background: #fff;"> <img class="p-1" width="22px" src="assets/images/arrow-right.png" alt="aroow right"></div>
+                  </div>
                 </a>
             </li>`;
         }).join("\n");
@@ -268,7 +271,7 @@ class CCSFormAdd {
         let formTabContainer = `<div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <form id="form${formTabId}">
-                    <div class="card ccs-card">
+                    <div class="card ccs-card border-0">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-sm-12 col-md-12 col-lg-12">

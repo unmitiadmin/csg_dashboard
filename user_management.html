@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Climate-Smart Governance Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/newHomeStyle.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="./assets/scripts/env.js"></script>
     <script type="text/javascript" src="./assets/scripts/header-nav.js"></script>
 </head>
+
 <body style="background-color: #F8FAFB;">
 
-    <section class="hero-section1 pb-4" style="background-image: url('./assets/images/Hero.png');
-        background-position: left; background-size: cover; background-repeat: no-repeat;width: 100%; padding: 0px;">
+    <section class="hero-section1">
+        <img src="./assets/images/network-background.png" alt="corner" style="
+            position: absolute;
+            top: -290px;
+            right: 0;
+             width: 46%;
+            height: fit-content;
+             z-index: -1; ">
         <div class="container pt-5" id="headerContainer">
             <!-- Dynamic navbar - based on login -->
         </div>
@@ -46,58 +60,58 @@
     </section>
 
     <section class="content-height px-3 pb-2 mb-4" style="background-color: #F8FAFB;">
-            <div class="container-fluid">
-                <div class="row mt-3">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="card-header bg-transparent border-0 px-0">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div>
-                                    <h4 class="title1 mb-0">User Management</h4>
-                                </div>
-                                <div><button class="btn btn-mande" data-toggle="modal"
-                                        data-target="#addUserModal"> Add New User</button></div>
+        <div class="container-fluid">
+            <div class="row mt-3">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="card-header bg-transparent border-0 px-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h4 class="title1 mb-0">User Management</h4>
                             </div>
+                            <div><button class="btn btn-mande" data-toggle="modal" data-target="#addUserModal"> Add New
+                                    User</button></div>
                         </div>
-                        <div class="card border-0">
-                            <div class="card-body p-1">
-                                <div class="table-responsive" style="height: 530px;overflow-y: scroll;">
-                                    <table class="table tbl-usermanagement">
-                                        <thead>
-                                            <tr>
-                                                <th>S.No</th>
-                                                <th>Username</th>
-                                                <th>Email</th>
-                                                <th>Country</th>
-                                                <th>Organization</th>
-                                                <th>Designation</th>
-                                                <th>Role</th>
-                                                <th>Organization Category</th>
-                                                <th>Mobile Number</th>
-                                                <th>Gender</th>
-                                                <th>Reason to use the tool</th>
-                                                <th>Added On</th>
-                                                <th>Email Verification Status</th>
-                                                <th>User Account Status</th>
-                                                <th style="background-color:#f9f9f9;width: 150px;" class="text-center">Actions</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="tbody-users-list"></tbody>
-                                    </table>
-                                </div>
+                    </div>
+                    <div class="card border-0">
+                        <div class="card-body p-1">
+                            <div class="table-responsive" style="height: 530px;overflow-y: scroll;">
+                                <table class="table tbl-usermanagement">
+                                    <thead>
+                                        <tr>
+                                            <th>S.No</th>
+                                            <th>Username</th>
+                                            <th>Email</th>
+                                            <th>Country</th>
+                                            <th>Organization</th>
+                                            <th>Designation</th>
+                                            <th>Role</th>
+                                            <th>Organization Category</th>
+                                            <th>Mobile Number</th>
+                                            <th>Gender</th>
+                                            <th>Reason to use the tool</th>
+                                            <th>Added On</th>
+                                            <th>Email Verification Status</th>
+                                            <th>User Account Status</th>
+                                            <th style="background-color:#f9f9f9;width: 150px;" class="text-center">
+                                                Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbody-users-list"></tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    
-   <section class="" style="background-image: url('./assets/images/Vector 1.svg');    background-size: cover;
-    width: 100%;
-    padding: 50px;">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer-top">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                    <button class="mt-5 btn btn-newsletter">Subscribe to the IWMI newsletter</button>
+                    <button class="btn btn-newsletter mt-60px">Subscribe to the IWMI newsletter</button>
                 </div>
             </div>
         </div>
@@ -114,7 +128,8 @@
                     <div class="col-sm-12 col-md-3 col-lg-3">
                         <div class="d-flex justify-content-start align-items-center pt-3">
                             <div>
-                                <p class="mb-0"><span class="pr-3">Supported By</span> <img src="./assets/images/logo_white.webp"></p>
+                                <p class="mb-0"><span class="pr-3">Supported By</span> <img class="mb-2"
+                                        src="./assets/images/logo_white.webp"></p>
                             </div>
                         </div>
                     </div>
@@ -200,7 +215,7 @@
         </div>
     </section>
 
-    
+
     <!-- waiting spinner -->
     <div id="loading-modal" class="modal hide" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog modal-dialog-centered">
@@ -253,7 +268,8 @@
                         <div class="col-sm-12 col-md-6 col-lg-6">
                             <div class="form-group my-2">
                                 <label class="pl-14px lable-text mb-0">Country of Origin<sup>*</sup></label>
-                                <select class="form-control input-add-project-data" id="input-add-origin-country"></select>
+                                <select class="form-control input-add-project-data"
+                                    id="input-add-origin-country"></select>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-6">
@@ -368,7 +384,8 @@
                         <div class="col-sm-12 col-md-6 col-lg-6">
                             <div class="form-group my-2">
                                 <label class="pl-14px lable-text mb-0">Country of Origin<sup>*</sup></label>
-                                <select class="form-control input-add-project-data" id="input-edit-origin-country"></select>
+                                <select class="form-control input-add-project-data"
+                                    id="input-edit-origin-country"></select>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-6">
@@ -507,11 +524,13 @@
                         </div>
                         <div class="form-group my-2 fg-input-map" id="fg-input-role-province" style="display: none;">
                             <label class="ps-0 lable-text">Province</label>
-                            <select class="form-control input-add-project" id="input-edit-role-province" multiple></select>
+                            <select class="form-control input-add-project" id="input-edit-role-province"
+                                multiple></select>
                         </div>
                         <div class="form-group my-2 fg-input-map" id="fg-input-role-district" style="display: none;">
                             <label class="ps-0 lable-text">District</label>
-                            <select class="form-control input-add-project" id="input-edit-role-district" multiple></select>
+                            <select class="form-control input-add-project" id="input-edit-role-district"
+                                multiple></select>
                         </div>
                     </div>
                 </div>
@@ -545,4 +564,5 @@
     <script type="text/javascript" src="./assets/scripts/utils.js"></script>
     <script type="text/javascript" src="./assets/scripts/user_management.js"></script>
 </body>
+
 </html>

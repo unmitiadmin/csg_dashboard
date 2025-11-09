@@ -1,27 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Climate-Smart Governance Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/newHomeStyle.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="./assets//scripts/env.js"></script>
     <script type="text/javascript" src="./assets/scripts/header-nav.js"></script>
+
+    <style>
+        .bootstrap-select.goog-te-combo {
+            background: transparent;
+            border: 0px;
+        }
+
+        .goog-te-combo .btn.dropdown-toggle {
+            border-radius: 100px !important;
+            padding: 13px 20px;
+            color: #000;
+        }
+
+        .nav-tabs.ccs-tabs .nav-item.show .nav-link,
+        .nav-tabs.ccs-tabs .nav-link.active {
+            border-radius: 10px;
+            background: var(--Dark-blue, #28537D);
+            color: #fff;
+            border-color: #dee2e6 #dee2e6 #fff;
+            text-align: left;
+            color: #FFF;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .nav-tabs.ccs-tabs .nav-link {
+            border: 1px solid transparent;
+            border-top-left-radius: .25rem;
+            border-top-right-radius: .25rem;
+            text-align: left;
+            color: #808080;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .accordion.ccs-accordian {
+            border-radius: 8px;
+            border: 1px solid var(--Dark-blue, #28537D);
+            background: rgba(40, 83, 125, 0.10);
+            color: #000;
+            font-family: "Open Sans";
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 500;
+            line-height: 25px;
+            text-transform: capitalize;
+        }
+
+        .nav-tabs.ccs-tabs {
+            border-bottom: 1px solid #dee2e6;
+            height: 95vh;
+            overflow-y: scroll;
+            border-radius: 10px;
+            background: #FFF;
+        }
+
+
+        .ccs-card label {
+            display: inline-block;
+            margin-bottom: .5rem;
+            color: #000;
+            font-family: "Open Sans";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        .ccs-card span {
+            color: #000000b3;
+            font-size: 12px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        .bootstrap-select>.dropdown-toggle {
+            border-radius: 8px !important;
+            border: 1px solid rgba(0, 0, 0, 0.10) !important;
+            background: rgba(217, 217, 217, 0.10);
+        }
+
+        .form-control.input-ccs {
+            border-radius: 8px !important;
+            border: 1px solid rgba(0, 0, 0, 0.10) !important;
+            background: rgba(217, 217, 217, 0.10);
+            height: 48px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        #btn-submit-ccs {
+            border-radius: 100px;
+            background: var(--blue-gradient, linear-gradient(90deg, #2A547A 0%, #1797A5 100%));
+            width: 153px;
+            height: 46px;
+            padding: 0 12px;
+            color: var(--white, #FFF);
+            text-align: center;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 34px;
+            text-transform: uppercase;
+        }
+
+        #btn-next-ccs {
+            border-radius: 100px;
+            background: var(--blue-gradient, linear-gradient(90deg, #2A547A 0%, #1797A5 100%));
+            width: 153px;
+            height: 46px;
+            padding: 0 12px;
+            color: var(--white, #FFF);
+            text-align: center;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 34px;
+            text-transform: uppercase;
+        }
+
+        #btn-previous-ccs {
+            border-radius: 100px;
+            border: 1px solid var(--Orange, #E86933);
+            width: 153px;
+            height: 46px;
+            padding: 0 12px;
+        }
+
+        .btn-link {
+            text-decoration: none;
+            color: #000;
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            text-transform: capitalize;
+        }
+
+        .goog-te-combo .btn.dropdown-toggle:hover {
+            border-radius: 100px !important;
+            padding: 14px 20px;
+            color: #000;
+            height: 48px;
+        }
+    </style>
 </head>
+
 <body>
-    <section class="hero-section1" style="background-image: url('./assets/images/Hero.png');
-        background-position: left; background-size: cover; background-repeat: no-repeat;width: 100%; padding: 0px;">
+    <section class="hero-section1">
+        <img src="./assets/images/network-background.png" alt="corner" style="
+            position: absolute;
+            top: -290px;
+            right: 0;
+             width: 46%;
+            height: fit-content;
+             z-index: -1; ">
         <div class="container pt-5" id="headerContainer">
             <!-- Dynamic navbar - based on login -->
         </div>
@@ -29,14 +200,15 @@
 
     <!-- OLD CODE -->
     <div class="wrapper" style="background: #F4FAF7;">
-        <section class="content-height plr-100px bg-ccs">
+        <section class="content-height plr-100px bg-ccs pb-0">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="row mb-4 mt-2">
-                            <div class="col-sm-12 col-md-12 col-lg-8">
+                        <div class="row  mt-2">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
                                 <div class="banner-small-box p-2 text-start">
-                                    <p class="paratext text-start">This online project submission form streamlines the
+                                    <p class="paratext text-start font-14px">This online project submission form
+                                        streamlines the
                                         submission process, ensuring accuracy and completeness of project details. The
                                         integrated access management system facilitates collaboration, allowing various
                                         users
@@ -46,20 +218,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="py-5 plr-100px">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12 col-md-3 col-lg-2">
-                        <div class="all-filter-box">
-                            <ul class="nav nav-tabs ccs-tabs" id="formTabs" role="tablist"></ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-9 col-lg-10">
                         <div class="row mb-3">
                             <div class="col-sm-12 col-md-12 col-lg-12">
                                 <div id="accordionExample" class="accordion ccs-accordian">
@@ -88,6 +247,20 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 plr-100px">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="all-filter-box">
+                            <ul class="nav nav-tabs nav-fill ccs-tabs" id="formTabs" role="tablist"></ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-9 col-lg-9">
                         <div class="tab-content" id="formTabsContent"></div>
                         <div class="d-flex justify-content-end align-items-center mt-5">
                             <button type="button" class="btn btn-cancel-ccs mr-3"
@@ -104,20 +277,34 @@
     </div>
     <!-- OLD CODE -->
 
+    <!-- Footer -->
+    <section class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <button class="btn btn-newsletter mt-60px">Subscribe to the IWMI newsletter</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="">
         <div class="card footer border-0">
             <div class="card-body">
                 <div class="row p20px">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <div class="d-flex justify-content-start align-items-center">
-                            <div><img src="./assets/images/iwmi-white.png"></div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
+                            <div><img src="./assets/images/iwmi-white.png" class="w-100"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
                             <div>
-                                <p class="text-white font-weight-bold" style="white-space: nowrap;">Supported By</p>
-                                <p class="mb-0"><img src="./assets/images/logo_white.webp"></p>
+                                <p class="mb-0"><span class="pr-3">Supported By</span> <img class="mb-2"
+                                        src="./assets/images/logo_white.webp"></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4"></div>
+                    <div class="col-sm-12 col-md-2 col-lg-2"></div>
                     <div class="col-sm-12 col-md-4 col-lg-4">
                         <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
                         <ul class="list-unstyled pl-0 ms-0 footer_ul">
@@ -232,4 +419,5 @@
     <script type="text/javascript" src="./assets/scripts/utils.js"></script>
     <script type="text/javascript" src="./assets/scripts/add_ccs_details.js"></script>
 </body>
+
 </html>

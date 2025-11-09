@@ -109,11 +109,11 @@ class Index {
         this.getApi({}, "projects/summary")
             .then(response => {
                 if (response.success) {
-                    this.labelProjects.empty().html(`${response.data.projects} Projects`);
+                    this.labelProjects.empty().html(`${response.data.projects} `);
                     this.labelCountries.empty().html(`${response.data.countries}`);
                     this.labelBudget.empty().html(`${strNum(response.data.budget)} Dollars`);
                     this.labelBeneficiaries.empty().html(`${strNum(response.data.beneficiaries)} beneficiaries`);
-                    this.labelSdg.empty().html(`Contributing to ${response.data.sdg_impacted} SDGs`);
+                    this.labelSdg.empty().html(` ${response.data.sdg_impacted} SDGs`);
                 }
             })
             .catch(err => {

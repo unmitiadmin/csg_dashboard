@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Climate-Smart Governance Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/newHomeStyle.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="./assets/scripts/env.js"></script>
     <script type="text/javascript" src="./assets/scripts/header-nav.js"></script>
 </head>
+
 <body>
-    <section class="hero-section1" style="background-image: url('./assets/images/Hero.png');
-        background-position: left; background-size: cover; background-repeat: no-repeat;width: 100%; padding: 0px;">
+    <section class="hero-section1">
+        <img src="./assets/images/network-background.png" alt="corner" style="
+            position: absolute;
+            top: -290px;
+            right: 0;
+             width: 46%;
+            height: fit-content;
+             z-index: -1; ">
         <div class="container pt-5" id="headerContainer">
             <!-- Dynamic navbar - based on login -->
         </div>
@@ -39,7 +50,8 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-2 col-lg-2">
-                    <a href="add_ccs_details.html" class="btn btn-edit1 mb-2"><img src="./assets/images/eye.png" alt="">&nbsp;New Proposal</a>
+                    <a href="add_ccs_details.html" class="btn btn-edit1 mb-2"><img src="./assets/images/eye.png"
+                            alt="">&nbsp;New Proposal</a>
                 </div>
                 <div class="col-sm-12 col-md-2 col-lg-2"></div>
             </div>
@@ -47,21 +59,35 @@
     </section>
 
     <!-- OLD CODE -->
-    <div class="wrapper" style="background: #F4FAF7;">
-        <section class="content-height plr-100px bg-ccs">
+    <div class="" style="background: #F4FAF7;">
+        <section class="content-height plr-100px bg-ccs pb-3">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="row mb-4 mt-2">
-                            <div class="col-sm-12 col-md-12 col-lg-8">
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="mb-0 mt-4 pl-0">
+                            <ol class="breadcrumb text-black bg-transparent mb-0 pl-0">
+                                <li class="breadcrumb-item text-black mb-0"><a href="index.html">Home </a></li>
+                                <li class="breadcrumb-item text-black mb-0"><a href="project_tracker.html"> Project Tracker
+                                    </a></li>
+                                <li class="breadcrumb-item text-black mb-0" aria-current="page">Project Submission Form
+                                </li>
+                                <!-- <li class="breadcrumb-item active text-black mb-0" aria-current="page"> Add Outcome</li> -->
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="row mt-2">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
                                 <div class="banner-small-box p-2 text-start">
-                                    <p class="paratext text-start">This online project submission form streamlines the
+                                    <h4 class="project-title">Project Submission Form</h4>
+                                    <p class="paratext text-start font-14px">This online project submission form streamlines the
                                         submission process, ensuring accuracy and completeness of project details. The
                                         integrated access management system facilitates collaboration, allowing various
-                                        users
-                                        within the organization to contribute to and submit the form for review and
-                                        approval by
-                                        the appropriate authority.</p>
+                                        users within the organization to contribute to and submit the form for review
+                                        and approval by the appropriate authority.</p>
                                 </div>
                             </div>
                         </div>
@@ -70,17 +96,19 @@
             </div>
         </section>
 
-        <section class="py-5 plr-100px">
+        <section class="plr-100px py-0">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12">
-                        <div class="ccs-box">
-                            <h4 class="ccs-title">Projects List</h4>
-                            <div class="table-responsive mt-3">
-                                <table class="table tbl_ccs">
-                                    <thead id="thead-ccs"></thead>
-                                    <tbody id="tbody-ccs"></tbody>
-                                </table>
+                        <div class="ccs-box card border-0">
+                            <div class="card-body">
+                                <h4 class="ccs-title">Projects List</h4>
+                                <div class="table-responsive mt-3">
+                                    <table class="table tbl_ccs">
+                                        <thead id="thead-ccs"></thead>
+                                        <tbody id="tbody-ccs"></tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -90,20 +118,34 @@
     </div>
     <!-- OLD CODE -->
 
+    <!-- Footer -->
+    <section class="footer-top bg-transparent">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <button class="btn btn-newsletter mt-60px">Subscribe to the IWMI newsletter</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="">
         <div class="card footer border-0">
             <div class="card-body">
                 <div class="row p20px">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <div class="d-flex justify-content-start align-items-center">
-                            <div><img src="./assets/images/iwmi-white.png"></div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
+                            <div><img src="./assets/images/iwmi-white.png" class="w-100"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
                             <div>
-                                <p class="text-white font-weight-bold" style="white-space: nowrap;">Supported By</p>
-                                <p class="mb-0"><img src="./assets/images/logo_white.webp"></p>
+                                <p class="mb-0"><span class="pr-3">Supported By</span> <img class="mb-2"
+                                        src="./assets/images/logo_white.webp"></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4"></div>
+                    <div class="col-sm-12 col-md-2 col-lg-2"></div>
                     <div class="col-sm-12 col-md-4 col-lg-4">
                         <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
                         <ul class="list-unstyled pl-0 ms-0 footer_ul">

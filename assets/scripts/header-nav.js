@@ -54,7 +54,7 @@ window.addEventListener("load", (event) => {
 
     const userProfileArea = ` <li class="nav-item">
         <div class="dropdown">
-            <button class="btn btn-login btn-secondary dropdown-toggle" type="button"
+            <button class="btn btn-login btn-secondary dropdown-toggle py-1 px-3" type="button"
                 id="dropdownMenuButton1" data-toggle="dropdown" data-toggle="dropdown" aria-expanded="false">
                 <img src="./assets/images/login-user.svg">
             </button>
@@ -83,14 +83,10 @@ window.addEventListener("load", (event) => {
     </li>`;
 
 
-    const headerContent = `<nav class="navbar navbar-expand-lg navbar-dark">
+    const headerContent = `<nav class="navbar navbar-expand-xl navbar-dark">
         <a class="navbar-brand text-white" href="index.html">
             <div class="d-flex align-items-center">
-                <div><img src="./assets/images/logo_white.webp" alt="Logo" height="40px"></div>
-                <div class="vl"></div>
-                <div>
-                    <p class="mb-0" style="white-space: nowrap;"><small>INITIATIVE</small> Climate Resilience</p>
-                </div>
+                <div><img src="./assets/images/iwmi-white.png" alt="Logo" height="60px"></div>
             </div>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -98,33 +94,24 @@ window.addEventListener("load", (event) => {
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav" style="flex-wrap: nowrap;">
-            <ul class="navbar-nav align-items-center">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <ul class="navbar-nav m-auto align-items-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" style="white-space: nowrap;" href="#">About Us</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="modulesDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Modules
+                        Explore
                     </a>
                     <div class="dropdown-menu modules" aria-labelledby="modulesDropdown">
-                        <a class="dropdown-item" href="index.html"><img class="pr-2" pr-2
-                                src="./assets/images/element-3.png" alt=""> Country Overview</a>
-                        <a class="dropdown-item" href="#"><img class="pr-2" src="./assets/images/element-3.png"
-                                alt=""> Climate Outlook</a>
-                        <a class="dropdown-item" href="#"><img class="pr-2" src="./assets/images/element-3.png"
-                                alt=""> Project Tracker</a>
-                        <a class="dropdown-item" href="#"><img class="pr-2" src="./assets/images/element-3.png"
-                                alt=""> Geo Intelligence Tool</a>
-                        <a class="dropdown-item" href="#"><img class="pr-2" src="./assets/images/element-3.png"
-                                alt=""> Monitoring and Evaluation</a>
-                        <a class="dropdown-item" href="#"><img class="pr-2" src="./assets/images/element-3.png"
-                                alt=""> Development Indicator</a>
-                        <a class="dropdown-item" href="#"><img class="pr-2" src="./assets/images/element-3.png"
-                                alt=""> Adaption Catalog</a>
-                        <a class="dropdown-item" href="#"><img class="pr-2" src="./assets/images/element-3.png"
-                                alt=""> Investment Portfolio Planning</a>
-                        <a class="dropdown-item" href="#"><img class="pr-2" src="./assets/images/element-3.png"
-                                alt=""> Nationally Determined Contributions</a>
+                        <a class="dropdown-item" href="country_overview.html">Country Overview</a>
+                        <a class="dropdown-item" href="climate_outlook.html">Climate Outlook</a>
+                        <a class="dropdown-item" href="project_tracker.html"> Project Tracker</a>
+                        <a class="dropdown-item" href="geospatial.html"> Geo Intelligence Tool</a>
+                        <a class="dropdown-item" href="mande_tool.html">Monitoring and Evaluation</a>
+                        <a class="dropdown-item" href="#">Development Indicator</a>
+                        <a class="dropdown-item" href="#"> Adaptation Catalog</a>
+                        <a class="dropdown-item" href="#"> Investment Portfolio Planning</a>
+                        <a class="dropdown-item" href="#"> Nationally Determined Contributions</a>
                     </div>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
@@ -139,19 +126,19 @@ window.addEventListener("load", (event) => {
                 ${cookies.jwt ? userProfileArea : loginArea}
                 
                 <li class="nav-item">
-                    <button class="btn btn-explore" style="white-space: nowrap;">Explore AI Agent</button>
+                    <a href="http://65.0.242.164/csg_ai_chatbot/#/home" class="btn btn-explore" style="white-space: nowrap;">Explore CSG Agent</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- login/register modal -->
     <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="login-modal-label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content">
                 <div class="modal-body p-2">
                     <div class="row">
                         <!-- Left Side Image Section -->
-                        <div class="col-lg-6 d-none d-lg-block">
+                       <!--  <div class="col-lg-6 d-none d-lg-block">
                             <div class="login-image-fit p31px" style="
                                     border-radius: 20px 0 0 10px;
                                     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/images/login-bg.png) lightgray 50% / cover no-repeat;
@@ -167,16 +154,16 @@ window.addEventListener("load", (event) => {
                                             <li class="list-group-item"><span class="pr-2"><img src="./assets/images/sun.png"></span> Geo Intelligence Tool</li>
                                             <li class="list-group-item"><span class="pr-2"><img src="./assets/images/sun.png"></span> Monitoring and Evaluation</li>
                                             <li class="list-group-item"><span class="pr-2"><img src="./assets/images/sun.png"></span> Development Indicator</li>
-                                            <li class="list-group-item"><span class="pr-2"><img src="./assets/images/sun.png"></span> Adaption Catalog</li>
+                                            <li class="list-group-item"><span class="pr-2"><img src="./assets/images/sun.png"></span> Adaptation Catalog</li>
                                             <li class="list-group-item"><span class="pr-2"><img src="./assets/images/sun.png"></span> Investment Portfolio Planning</li>
                                             <li class="list-group-item"><span class="pr-2"><img src="./assets/images/sun.png"></span> Nationally Determined Contributions</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>  -->
                         <!-- Right Side Form -->
-                        <div class="col-lg-6  border-radius-20px">
+                        <div class="col-lg-12  border-radius-20px">
                             <div class="p-5">
                                 <ul class="nav nav-tabs login_tabs border-0 nav-fill" role="tablist">
                                     <li class="nav-item">
@@ -680,7 +667,7 @@ window.addEventListener("load", (event) => {
     style.textContent = `
         .goog-te-gadget {
           display: block !important;
-          margin-top: 8px;
+          margin-top: -4px;
           z-index: 1000;
         }
         .goog-te-gadget .goog-te-combo {

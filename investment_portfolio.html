@@ -57,7 +57,7 @@
             padding-right: 3rem;
         }
     </style>
-     <style>
+    <style>
         *,
         ::before,
         ::after {
@@ -65,20 +65,20 @@
             margin: 0;
             padding: 0;
         }
-    
+
         .dropdown-menu.inner.show {
             top: 55px !important;
         }
-    
+
         .home {
             height: 100vh;
             position: relative;
         }
-    
+
         .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
             width: 100% !important;
         }
-    
+
         .bootstrap-select>.dropdown-toggle {
             height: 48px !important;
             color: #6c757d !important;
@@ -86,11 +86,11 @@
             font-size: 14px !important;
             padding: 14px 10px !important;
         }
-    
+
         .bootstrap-select .dropdown-menu li {
             position: relative;
         }
-    
+
         .dropdown-menu.show {
             display: block;
             background: #ffffff;
@@ -100,42 +100,44 @@
             border: 0px;
             left: 0px !important;
         }
-    
+
         .dropdown.bootstrap-select .dropdown-menu.show {
             min-height: 290px !important;
         }
-    
+
         .dropdown-menu.inner.show {
             margin-top: 0px;
             margin-bottom: 0px;
             overflow-y: scroll;
             height: 290px;
         }
-    
+
         .dropdown-item.active,
         .dropdown-item:active {
             color: #fff;
             text-decoration: none;
             background-color: #b2b2b2;
         }
-    
+
         .form-select.input-radio {
             border-radius: 40px;
             height: 48px;
             font-size: 14px !important;
             color: #000000b0;
         }
-    
+
         .mx-35 {
             margin: 0px 35px;
         }
-    
+
         .form-select::placeholder {
             color: #6c757d !important;
         }
+
         .collapse {
             background-color: transparent !important;
         }
+
         .subfooter {
             background: #174a7c !important;
             border-radius: 0px !important;
@@ -144,10 +146,16 @@
 </head>
 
 <body>
-    
-    
-    <section class="hero-section1" style="background-image: url('./assets/images/Hero.png');
-        background-position: left; background-size: cover; background-repeat: no-repeat;width: 100%; padding: 0px;">
+
+
+    <section class="hero-section1">
+        <img src="./assets/images/network-background.png" alt="corner" style="
+            position: absolute;
+            top: -290px;
+            right: 0;
+             width: 46%;
+            height: fit-content;
+             z-index: -1; ">
         <div class="container pt-5" id="headerContainer">
             <!-- Dynamic navbar - based on login -->
         </div>
@@ -215,8 +223,7 @@
                         CDRI (2023). Global Infrastructure Resilience:
                         Capturing the Resilience Dividend - A Biennial Report from the Coalition
                         for Disaster Resilient Infrastructure, New Delhi. Data and information
-                        retrieved from:<a href="https://cdri.world/giri"
-                            class="text-white">https://cdri.world/giri</a>
+                        retrieved from:<a href="https://cdri.world/giri" class="text-white">https://cdri.world/giri</a>
                     </p>
                 </div>
             </div>
@@ -226,20 +233,36 @@
         <div id="country-content-placeholder"></div>
     </section>
 
+
+
+     <!-- Footer -->
+    <section class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <button class="btn btn-newsletter mt-60px">Subscribe to the IWMI newsletter</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="">
         <div class="card footer border-0">
             <div class="card-body">
                 <div class="row p20px">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <div class="d-flex justify-content-start align-items-center">
-                            <div><img src="./assets/images/iwmi-white.png"></div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
+                            <div><img src="./assets/images/iwmi-white.png" class="w-100"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
                             <div>
-                                <p class="text-white font-weight-bold" style="white-space: nowrap;">Supported By</p>
-                                <p class="mb-0"><img src="./assets/images/logo_white.webp"></p>
+                                <p class="mb-0"><span class="pr-3">Supported By</span> <img class="mb-2"
+                                        src="./assets/images/logo_white.webp"></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4"></div>
+                    <div class="col-sm-12 col-md-2 col-lg-2"></div>
                     <div class="col-sm-12 col-md-4 col-lg-4">
                         <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
                         <ul class="list-unstyled pl-0 ms-0 footer_ul">
@@ -323,8 +346,7 @@
 
     <!-- page scripts -->
     <script type="text/javascript" src="./assets/scripts/utils.js"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.14/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.14/js/bootstrap-select.min.js"></script>
     <script>
         setTimeout(() => $("select#input-registration-origin-country").selectpicker({
             liveSearch: true
@@ -361,45 +383,45 @@
     </style>
 </body>
 
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('filter-country').value = "4"; // Sri Lanka
-            document.getElementById('filter-country').dispatchEvent(new Event('change'));
-        });
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('filter-country').value = "4"; // Sri Lanka
+        document.getElementById('filter-country').dispatchEvent(new Event('change'));
+    });
 
-        // Map country values to their corresponding HTML file names
-        const countryFileMap = {
-            "5": "kenya_portfolio.html",
-            "7": "senegal_portfolio.html",
-            "4": "srilanka_portfolio.html",
-            "2": "zambia_portfolio.html"
-        };
+    // Map country values to their corresponding HTML file names
+    const countryFileMap = {
+        "5": "kenya_portfolio.html",
+        "7": "senegal_portfolio.html",
+        "4": "srilanka_portfolio.html",
+        "2": "zambia_portfolio.html"
+    };
 
-        document.getElementById('filter-country').addEventListener('change', function () {
-            const selectedValue = this.value;
-            const contentPlaceholder = document.getElementById('country-content-placeholder');
+    document.getElementById('filter-country').addEventListener('change', function () {
+        const selectedValue = this.value;
+        const contentPlaceholder = document.getElementById('country-content-placeholder');
 
-            // Clear existing content
-            contentPlaceholder.innerHTML = '';
+        // Clear existing content
+        contentPlaceholder.innerHTML = '';
 
-            if (countryFileMap[selectedValue]) {
-                const htmlFile = countryFileMap[selectedValue];
+        if (countryFileMap[selectedValue]) {
+            const htmlFile = countryFileMap[selectedValue];
 
-                fetch(htmlFile)
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error(`Failed to load ${htmlFile}`);
-                        }
-                        return response.text();
-                    })
-                    .then(data => {
-                        contentPlaceholder.innerHTML = data;
-                    })
-                    .catch(error => {
-                        contentPlaceholder.innerHTML = `<p style="color:red;">${error.message}</p>`;
-                    });
-            }
-        });
-    </script>
+            fetch(htmlFile)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Failed to load ${htmlFile}`);
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    contentPlaceholder.innerHTML = data;
+                })
+                .catch(error => {
+                    contentPlaceholder.innerHTML = `<p style="color:red;">${error.message}</p>`;
+                });
+        }
+    });
+</script>
 
 </html>

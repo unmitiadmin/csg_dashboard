@@ -94,19 +94,18 @@ class CCSList{
                             alt="Edit Record"
                         >
                             <img src="assets/images/edit-user.svg"  alt="Edit User">
-                            <br>Edit Info
                         </a>
                     </div>
                     <div>
                         <a role="button" 
-                            class="btn btn-transparent user-text dropdown-item user-edit text-center btn-delete"
+                            class="btn btn-transparent user-text dropdown-item user-edit text-center"
                             data-project-id="${a.data_id}"
                             data-toggle="modal"
                             data-target="#modal-delete"
                             alt="Delete Record"
                         >
                             <img src="assets/images/trash.svg"
-                                alt="Delete Role"><br>Delete
+                                alt="Delete Role">
                         </a>
                     </div>
                 </div>

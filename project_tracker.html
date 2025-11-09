@@ -39,8 +39,14 @@
 </head>
 
 <body>
-    <section class="hero-section1" style="background-image: url('./assets/images/Hero.png');
-        background-position: left; background-size: cover; background-repeat: no-repeat;width: 100%; padding: 0px;">
+    <section class="hero-section1">
+        <img src="./assets/images/network-background.png" alt="corner" style="
+            position: absolute;
+            top: -290px;
+            right: 0;
+             width: 46%;
+            height: fit-content;
+             z-index: -1; ">
         <div class="container pt-5" id="headerContainer">
             <!-- Dynamic navbar - based on login -->
         </div>
@@ -383,20 +389,34 @@
         </div>
     </section>
 
+     <!-- Footer -->
+    <section class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <button class="btn btn-newsletter mt-60px">Subscribe to the IWMI newsletter</button>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="">
         <div class="card footer border-0">
             <div class="card-body">
                 <div class="row p20px">
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <div class="d-flex justify-content-start align-items-center">
-                            <div><img src="./assets/images/iwmi-white.png"></div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
+                            <div><img src="./assets/images/iwmi-white.png" class="w-100"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3">
+                        <div class="d-flex justify-content-start align-items-center pt-3">
                             <div>
-                                <p class="text-white font-weight-bold" style="white-space: nowrap;">Supported By</p>
-                                <p class="mb-0"><img src="./assets/images/logo_white.webp"></p>
+                                <p class="mb-0"><span class="pr-3">Supported By</span> <img class="mb-2"
+                                        src="./assets/images/logo_white.webp"></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4"></div>
+                    <div class="col-sm-12 col-md-2 col-lg-2"></div>
                     <div class="col-sm-12 col-md-4 col-lg-4">
                         <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
                         <ul class="list-unstyled pl-0 ms-0 footer_ul">
@@ -477,9 +497,7 @@
             </div>
         </div>
     </section>
-
-
-
+   
 
     <!-- waiting spinner  modal-->
     <div id="loading-modal" class="modal hide" data-backdrop="static" data-keyboard="false">
@@ -508,6 +526,97 @@
             </div>
         </div>
     </div>
+
+
+
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Chart Title </h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <p class="text-start">
+                                Budget by Project Category
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModal2Label">Chart Title </h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <p class="text-start">
+                                Provinces X Sector
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalOne" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Distribution of climate investment across adaptation,
+                        mitigation and cross-cutting projects in <span class="label-country"></span> </h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <p class="text-start">
+                                The figure provides region-wise project activities to assist users to identify on-going
+                                interventions to help in planning and prioritizing new investments
+                            </p>
+                            <p><strong>Map source:</strong> CGIAR initiative on Climate Resilience and Data Source: GoSL
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalTwo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Distribution of climate investment based on
+                        multi-hazards in <span class="label-country"></span></h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <p class="text-start">
+                                The visual provides hazards specifics adaptation, mitigation program across regions to
+                                help mitigate climate risk and building resilience.
+                            </p>
+                            <p><strong>Map source:</strong> CGIAR initiative on Climate Resilience and Data Source: GoSL
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Page scripts -->
     <script type="text/javascript" src="./assets/scripts/utils.js"></script>
