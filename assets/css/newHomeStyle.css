@@ -171,7 +171,7 @@
      border-radius: 100px;
      background: linear-gradient(90deg, #DD9103 0%, #E86933 100%);
      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
-     color: #FFF;
+     color: #FFF!important;
      text-align: center;
      font-family: Poppins;
      font-size: 14px;
@@ -180,6 +180,33 @@
      line-height: 34px;
      text-transform: uppercase;
  }
+
+ .btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none!important;
+}
+
+.btn-login.btn-secondary {
+    width: 89px;
+    height: 44px;
+    background: transparent !important;
+    border-radius: 24px !important;
+    margin-top: 4px;
+    box-shadow: none !important;
+    border: 1px solid #fff;
+    color: #0000008a !important;
+}
+
+.btn-login.btn-secondary:hover {
+    width: 89px;
+    height: 44px;
+    background: transparent !important;
+    border-radius: 24px !important;
+    margin-top: 4px;
+    box-shadow: none !important;
+    border: 1px solid #fff;
+    color: #0000008a !important;
+}
 
  .section-keyFeature {
      background: var(--Dark-blue, #2E65A3);
@@ -317,12 +344,15 @@
      font-style: normal;
      font-weight: 400;
      line-height: normal;
-     padding: 7px 30px;
+     padding: 7px 33px;
  }
-
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
  .countrySelect span {
      position: relative;
-     bottom: 37px;
+     bottom: 38px;
      left: 12px;
  }
 
@@ -489,7 +519,7 @@
  .btn.btn-explore-new {
      border-radius: 100px;
      background: var(--blue-gradient, linear-gradient(90deg, #2A547A 0%, #1797A5 100%));
-     color: #FFF;
+     color: #FFF!important;
      text-align: center;
      font-family: Poppins;
      font-size: 15px;
@@ -837,9 +867,25 @@
  }
 
  .subfooter {
-     background: #174a7c;
+     background: #174a7c!important;
      border-radius: 0px !important;
  }
+
+ .card-footer {
+    padding: 0px 16px!important;
+    background-color: rgba(0, 0, 0, .03);
+    border-top: 1px solid rgba(0, 0, 0, .125);
+}
+
+.card.footer {
+    border-radius: 0px!important;
+}
+
+.form-control:focus {
+    color: #495057;
+    outline: 0;
+    box-shadow: none;
+}
 
  .subfooter p {
      font-size: 12px;
@@ -849,7 +895,7 @@
 
  .subfooter p a {
      font-size: 12px;
-     color: #fff;
+     color: #fff!important;
  }
 
  .footer_ul li {
@@ -875,7 +921,7 @@
 
  .subfooter ul li a {
      font-size: 12px;
-     color: #fff;
+     color: #fff!important;
      margin: 0px 10px;
  }
 

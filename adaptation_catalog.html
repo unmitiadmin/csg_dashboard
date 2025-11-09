@@ -9,8 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <!-- css -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" />
-<link rel="stylesheet" type="text/css" href="./assets/css/newHomeStyle.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/css/newHomeStyle.css" />
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
@@ -44,8 +46,8 @@
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DXGH9K238E"></script>
-    <script type="text/javascript" src="./assets/scripts/env.js"></script>
-    <script type="text/javascript" src="./assets/scripts/header-nav.js"></script>
+  <script type="text/javascript" src="./assets/scripts/env.js"></script>
+  <script type="text/javascript" src="./assets/scripts/header-nav.js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -62,6 +64,17 @@
       position: absolute;
       top: 5px;
       right: 5px;
+    }
+
+    .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+      padding: 0px 10px !important;
+      font-weight: 500;
+      color: #495057;
+      font-size: 12px !important;
+    }
+
+    .facebook-link {
+      margin-right: 0px!important;
     }
 
     .leaflet-bar a {
@@ -131,321 +144,360 @@
       text-decoration: underline;
     }
   </style>
-   <style>
+  <style>
     *,
     ::before,
     ::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     .dropdown-menu.inner.show {
-        top: 55px !important;
+      top: 55px !important;
     }
 
     .home {
-        height: 100vh;
-        position: relative;
+      height: 100vh;
+      position: relative;
     }
 
     .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
-        width: 100% !important;
+      width: 100% !important;
     }
 
     .bootstrap-select>.dropdown-toggle {
-        height: 48px !important;
-        color: #6c757d !important;
-        font-weight: 400 !important;
-        font-size: 14px !important;
-        padding: 14px 10px !important;
+      height: 40px !important;
+      color: #6c757d !important;
+      font-weight: 400 !important;
+      font-size: 12px !important;
+      padding: 9px 10px !important;
+      border-radius: 100px !important;
+      border: 1px solid rgba(0, 0, 0, 0.10) !important;
+      background-color: #fff!important;
+    }
+
+    .btn.btn-apply {
+      color: #FFF;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      height: 36px;
+      font-weight: 400;
+      line-height: 4px;
+      box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12);
+      border-radius: 100px;
+      background: var(--Dark-blue, #28537D);
+    }
+
+    .btn.btn-apply-cancel {
+      color: var(--Dark-blue, #28537D);
+      font-family: Poppins;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      height: 36px;
+      box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12);
+      border-radius: 100px;
+      border: 1px solid var(--Dark-blue, #28537D);
+      background: #fff;
+      line-height: 4px;
     }
 
     .bootstrap-select .dropdown-menu li {
-        position: relative;
+      position: relative;
     }
 
     .dropdown-menu.show {
-        display: block;
-        background: #ffffff;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 4px;
-        position: absolute !important;
-        border: 0px;
-        left: 0px !important;
+      display: block;
+      background: #ffffff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 4px;
+      position: absolute !important;
+      border: 0px;
+      left: 0px !important;
     }
 
     .dropdown.bootstrap-select .dropdown-menu.show {
-        min-height: 290px !important;
+      min-height: 290px !important;
     }
 
     .dropdown-menu.inner.show {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        overflow-y: scroll;
-        height: 290px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      overflow-y: scroll;
+      height: 290px;
     }
 
     .dropdown-item.active,
     .dropdown-item:active {
-        color: #fff;
-        text-decoration: none;
-        background-color: #b2b2b2;
+      color: #fff;
+      text-decoration: none;
+      background-color: #b2b2b2;
     }
 
     .form-select.input-radio {
-        border-radius: 40px;
-        height: 48px;
-        font-size: 14px !important;
-        color: #000000b0;
+      border-radius: 40px;
+      height: 48px;
+      font-size: 14px !important;
+      color: #000000b0;
     }
 
     .mx-35 {
-        margin: 0px 35px;
+      margin: 0px 35px;
     }
 
     .form-select::placeholder {
-        color: #6c757d !important;
+      color: #6c757d !important;
     }
-</style>
+
+    .card.adaptation-filter {
+      border-radius: 10px;
+      background: #FFF;
+      min-height: 90vh;
+      padding: 6px 12px 12px 12px;
+      box-shadow: none!important;
+    }
+    .filter-title {
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+  </style>
 </head>
 
 <body>
-    
-    <section class="hero-section1">
-        <img src="./assets/images/network-background.png" alt="corner" style="
+
+  <section class="hero-section1">
+    <img src="./assets/images/network-background.png" alt="corner" style="
             position: absolute;
             top: -290px;
             right: 0;
              width: 46%;
             height: fit-content;
              z-index: -1; ">
-        <div class="container pt-5" id="headerContainer">
-            <!-- Dynamic navbar - based on login -->
-        </div>
-        <div class="container mt-57px">
-            <div class="row">
-                <div class="col-sm-12 col-md-2 col-lg-2"></div>
-                <div class="col-sm-12 col-md-3 col-lg-4">
-                    <div class="form-group countrySelect mb-0">
-                        <select class="form-control w-100" id="countrySelect">
-                            <option value="senegal">Senegal</option>
-                            <option value="zambia">Zambia</option>
-                            <option value="kenya">Kenya</option>
-                            <option value="srilanka">Srilanka</option>
-                        </select>
-                        <span><img src="./assets/images/location.png" alt=""></span>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div class="form-group countrySelect mb-0">
-                        <select class="form-control w-100" id="pageSelect">
-                            <option value="country_overview.html">Country Overview</option>
-                            <option value="climate_outlook.html">Climate Outlook</option>
-                            <option value="project_tracker.html" selected>Project Tracker</option>
-                            <option value="geospatial.html">Geo-intelligence Tools</option>
-                            <option value="mande_tool.html">Monitoring and Evaluation</option>
-                            <option value="development_indicators.html" selected>Development Indicators</option>
-                            <option value="adaptation_catalog.html" selected>Adaptation Catalog</option>
-                        </select>
-                        <span><img src="./assets/images/element-3.png" alt=""></span>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-2 col-lg-2"></div>
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="d-flex justify-content-center alin-items-center">
-                        <div class="">
-                            <a href="add_catalog_project.html" class="btn btn-edit1 mb-2 mr-2"><img
-                                    src="./assets/images/add.png" alt=""> Add Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="informationBoxKey bg-lightBlue">
-        <div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <button class="btn btn-key mb-3"><img src="./assets/images/key1.png" alt="">
-                        Key Features</button>
-                    <h1 class="title-black mb-3 mt-2"> Development Indicator </h1>
-
-                    <p class="font-14px">This module showcases the climate adaptation projects from
-                    around the world that are implemented from national to
-                    local scale. Anyone who has signed up to the system can
-                    upload information about projects they are working on,
-                    with this information then becoming visible to all other
-                    users of the system. In time, the dashboard may be made
-                    available more widely, so that members of smaller
-                    enterprises and the public can also upload information on
-                    initiatives. Projects can be viewed on a map, to show
-                    where clusters of similar initiatives or gaps exist.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-  <div class="wrapper">
-    <section class="p-5" style="background-color: #f4faf7">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <h4 class="title pb-0 mb-18px">Adaptation Catalog</h4>
+    <div class="container pt-5" id="headerContainer">
+      <!-- Dynamic navbar - based on login -->
+    </div>
+    <div class="container mt-57px">
+      <div class="row">
+        <div class="col-sm-12 col-md-2 col-lg-2"></div>
+        <div class="col-sm-12 col-md-3 col-lg-4">
+          <div class="form-group countrySelect mb-0">
+            <select class="form-control w-100" id="countrySelect">
+              <option value="senegal">Senegal</option>
+              <option value="zambia">Zambia</option>
+              <option value="kenya">Kenya</option>
+              <option value="srilanka">Srilanka</option>
+            </select>
+            <span><img src="./assets/images/location.png" alt=""></span>
           </div>
-          <div class="col-sm-12 col-md-3 col-lg-3 pr-0">
-            <div class="card border-0 adaptation-filter">
-              <div class="card-body">
-                <div class="filter-label">
-                  <div class="row">
-                    <h4 class="filter-title pl-3">Search By Filter</h4>
-                    <hr />
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                      <div class="form-group mt-22px">
-                        <p class="mb-0" for="">Country</p>
-                        <select multiple class="selectpicker" name="selected_countries" id="selected_countries"
-                          data-actions-box="true" data-live-search="true" data-select-all="true"></select>
-                      </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <div class="form-group countrySelect mb-0">
+            <select class="form-control w-100" id="pageSelect">
+              <option value="country_overview.html">Country Overview</option>
+              <option value="climate_outlook.html">Climate Outlook</option>
+              <option value="project_tracker.html" selected>Project Tracker</option>
+              <option value="geospatial.html">Geo-intelligence Tools</option>
+              <option value="mande_tool.html">Monitoring and Evaluation</option>
+              <option value="development_indicators.html" selected>Development Indicators</option>
+              <option value="adaptation_catalog.html" selected>Adaptation Catalog</option>
+            </select>
+            <span><img src="./assets/images/element-3.png" alt=""></span>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-2 col-lg-2"></div>
+      </div>
 
-                      <div class="form-group mt-22px">
-                        <p class="mb-0" for="">Theme</p>
-                        <select class="selectpicker" name="" multiple id="selected_themes" data-actions-box="true"
-                          data-live-search="true"></select>
-                      </div>
+      <div class="row mb-3">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <div class="d-flex justify-content-center alin-items-center">
+            <div class="">
+              <a href="add_catalog_project.html" class="btn btn-edit1 mb-2 mr-2"><img src="./assets/images/add.png"
+                  alt=""> Add Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                      <div class="form-group mt-22px">
-                        <p class="mb-0" for="">Approach</p>
-                        <select class="selectpicker" multiple id="selected_approaches" data-actions-box="true"
-                          data-live-search="true"></select>
-                      </div>
+  <section class="informationBoxKey bg-lightBlue pb-0">
+    <div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <button class="btn btn-key mb-3"><img src="./assets/images/key1.png" alt="">
+            Key Features</button>
+          <h1 class="title-black mb-3 mt-2"> Adaptation Catalog</h1>
 
-                      <div class="form-group mt-22px">
-                        <p class="mb-0" for="">Hazards</p>
-                        <select class="selectpicker" multiple id="selected_hazards" data-actions-box="true"
-                          data-live-search="true"></select>
-                      </div>
+          <p class="font-14px">This module showcases the climate adaptation projects from around the world that are
+            implemented from national to local scale. Anyone who has signed up to the system can upload information
+            about projects they are working on, with this information then becoming visible to all other users of the
+            system. In time, the dashboard may be made available more widely, so that members of smaller enterprises and
+            the public can also upload information on initiatives. Projects can be viewed on a map, to show where
+            clusters of similar initiatives or gaps exist.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                      <div class="form-group mt-22px">
-                        <p class="mb-0" for="">Scale</p>
-                        <select class="selectpicker" name="" multiple id="selected_scales" data-actions-box="true"
-                          data-live-search="true">
-                          <!-- <option selected>All scale</option> -->
-                        </select>
-                      </div>
+  <section class="py-5 px-0" style="background-color: #f4faf7">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-3 col-lg-3 pr-0 px-0">
+          <div class="card border-0 adaptation-filter">
+            <div class="card-body">
+              <div class="filter-label">
+                <div class="row">
+                  <h4 class="filter-title pl-3">Filter</h4>
+                  <hr />
+                  <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="form-group mt-22px">
+                      <p class="mb-0" for="">Country</p>
+                      <select multiple class="selectpicker" name="selected_countries" id="selected_countries"
+                        data-actions-box="true" data-live-search="true" data-select-all="true"></select>
+                    </div>
 
-                      <div class="form-group mt-22px">
-                        <p class="mb-4" for="">Budget</p>
-                        <input type="text" class="" id="example-slider" name="example_name"
-                          onchange="convertToReadableNotation()" />
-                      </div>
-                      <div class="form-group mt-22px">
-                        <div class="row">
-                          <div class="col-sm-12 col-md-12 col-lg-12">
-                            <span class="calender-img"><img src="./assets/images/dollar.png" height="13px" /></span>
-                            <p class="mb-4" for="">Min</p>
-                            <div style="display: flex">
-                              <input type="text" name="" value="" class="form-control number_dollor_2" id="budget_min"
-                                oninput="convertToReadableNotation()" /><span id="formattedMinBudget" style="
+                    <div class="form-group mt-22px">
+                      <p class="mb-0" for="">Theme</p>
+                      <select class="selectpicker" name="" multiple id="selected_themes" data-actions-box="true"
+                        data-live-search="true"></select>
+                    </div>
+
+                    <div class="form-group mt-22px">
+                      <p class="mb-0" for="">Approach</p>
+                      <select class="selectpicker" multiple id="selected_approaches" data-actions-box="true"
+                        data-live-search="true"></select>
+                    </div>
+
+                    <div class="form-group mt-22px">
+                      <p class="mb-0" for="">Hazards</p>
+                      <select class="selectpicker" multiple id="selected_hazards" data-actions-box="true"
+                        data-live-search="true"></select>
+                    </div>
+
+                    <div class="form-group mt-22px">
+                      <p class="mb-0" for="">Scale</p>
+                      <select class="selectpicker" name="" multiple id="selected_scales" data-actions-box="true"
+                        data-live-search="true">
+                        <!-- <option selected>All scale</option> -->
+                      </select>
+                    </div>
+
+                    <div class="form-group mt-22px">
+                      <p class="mb-4" for="">Budget</p>
+                      <input type="text" class="" id="example-slider" name="example_name"
+                        onchange="convertToReadableNotation()" />
+                    </div>
+                    <div class="form-group mt-22px">
+                      <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                          <span class="calender-img"><img src="./assets/images/dollar.png" height="13px" /></span>
+                          <p class="mb-4" for="">Min</p>
+                          <div style="display: flex">
+                            <input type="text" name="" value="" class="form-control number_dollor_2" id="budget_min"
+                              oninput="convertToReadableNotation()" /><span id="formattedMinBudget" style="
                                     margin: 12px 0 0 -73px;
                                     font-size: 14px;
                                   "></span>
-                            </div>
                           </div>
-                          <div class="col-sm-12 col-md-12 col-lg-12">
-                            <span class="calender-img"><img src="./assets/images/dollar.png" height="13px" /></span>
-                            <p class="mb-4" for="">Max</p>
-                            <div style="display: flex">
-                              <input type="text" name="" value="" class="form-control number_dollor_2" id="budget_max"
-                                oninput="convertToReadableNotation()" />
-                              <span id="formattedMaxBudget" style="
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                          <span class="calender-img"><img src="./assets/images/dollar.png" height="13px" /></span>
+                          <p class="mb-4" for="">Max</p>
+                          <div style="display: flex">
+                            <input type="text" name="" value="" class="form-control number_dollor_2" id="budget_max"
+                              oninput="convertToReadableNotation()" />
+                            <span id="formattedMaxBudget" style="
                                     margin: 11px 0 0 -65px;
                                     font-size: 14px;
                                   "></span>
-                            </div>
                           </div>
                         </div>
                       </div>
+                    </div>
 
-                      <div class="form-group mt-22px">
-                        <p class="mb-0" for="">Donors</p>
-                        <select class="selectpicker" name="" multiple id="selected_donors" data-actions-box="true"
-                          data-live-search="true"></select>
-                      </div>
+                    <div class="form-group mt-22px">
+                      <p class="mb-0" for="">Donors</p>
+                      <select class="selectpicker" name="" multiple id="selected_donors" data-actions-box="true"
+                        data-live-search="true"></select>
+                    </div>
 
-                      <div class="form-group mt-22px">
-                        <p class="" for="">
-                          Duration <span class="span_yearly">(Yearly)</span>
-                        </p>
-                        <input type="text" id="example-slider1" name="example_name1" />
-                      </div>
-                      <div class="form-group mt-22px">
-                        <div class="row">
-                          <div class="col-sm-12 col-md-6 col-lg-6">
-                            <span class="calender-img-1"><img src="./assets/images/yearplaceholder.svg" /></span>
-                            <input type="text" id="year-datepicker" class="form-control number_dollor_1" value="" />
-                          </div>
-                          <div class="col-sm-12 col-md-6 col-lg-6">
-                            <span class="calender-img-1"><img src="./assets/images/yearplaceholder.svg" /></span>
-                            <input type="text" id="year-datepicker-1" class="form-control number_dollor_1" value="" />
-                          </div>
+                    <div class="form-group mt-22px">
+                      <p class="" for="">
+                        Duration <span class="span_yearly">(Yearly)</span>
+                      </p>
+                      <input type="text" id="example-slider1" name="example_name1" />
+                    </div>
+                    <div class="form-group mt-22px">
+                      <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                          <span class="calender-img-1"><img src="./assets/images/yearplaceholder.svg" /></span>
+                          <input type="text" id="year-datepicker" class="form-control number_dollor_1" value="" />
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                          <span class="calender-img-1"><img src="./assets/images/yearplaceholder.svg" /></span>
+                          <input type="text" id="year-datepicker-1" class="form-control number_dollor_1" value="" />
                         </div>
                       </div>
+                    </div>
 
-                      <div class="mt-22px">
-                        <button class="btn btn-apply w-100 p-3" onclick="get_filtered_data('apply')">
-                          Apply
-                        </button>
-                        <button class="btn btn-apply w-100 mt-3 p-3" id="resetFilterBtn">
-                          Reset Filters
-                        </button>
-                      </div>
+                    <div class="mt-22px">
+                      <button class="btn btn-apply w-100 p-3" onclick="get_filtered_data('apply')">
+                        Apply
+                      </button>
+                      <button class="btn btn-apply-cancel w-100 mt-3 p-3" id="resetFilterBtn">
+                        Reset Filters
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-sm-12 col-md-9 col-lg-9 pl-0">
-            <div class="card border-0 mt-40px">
-              <div class="card-body p-0">
-                <div id="map" style="height: 550px; width: 100%"></div>
+        <div class="col-sm-12 col-md-9 col-lg-9 pl-0">
+          <div class="card border-0">
+            <div class="card-body p-0">
+              <div id="map" style="height: 550px; width: 100%"></div>
 
-                <div class="map-popup" id="map-popup">
-                  <h5 class="country-name">India</h5>
-                  <div class="project-area" id="no_of_projects">
-                    No of Projects: 4
-                  </div>
-                  <!-- <div class="budget-area">Total budget : $3000</div> -->
+              <div class="map-popup" id="map-popup">
+                <h5 class="country-name">India</h5>
+                <div class="project-area" id="no_of_projects">
+                  No of Projects: 4
                 </div>
+                <!-- <div class="budget-area">Total budget : $3000</div> -->
+              </div>
 
-                <button class="btn btn-collapse text-white" data-toggle="collapse" href="#collapseExample" role="button"
-                  aria-expanded="false" aria-controls="collapseExample">
-                  <i class="fa fa-caret-up"></i>
-                </button>
-                <div class="collapsed collapseDropdown" id="collapseExample">
-                  <div class="card bg-project-table">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                          <h5 class="project_title_head">Projects</h5>
+              <button class="btn btn-collapse text-white" data-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa fa-caret-up"></i>
+              </button>
+              <div class="collapsed collapseDropdown" id="collapseExample">
+                <div class="card bg-project-table">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-12">
+                        <h5 class="project_title_head">Projects</h5>
 
-                          <div class="table-responsive" id="table-container" style="height: 395px; overflow-y: scroll">
-                            <table class="table table-bordered project_tbl">
-                              <thead></thead>
-                              <tbody></tbody>
-                            </table>
-                          </div>
+                        <div class="table-responsive" id="table-container" style="height: 395px; overflow-y: scroll">
+                          <table class="table table-bordered project_tbl">
+                            <thead></thead>
+                            <tbody></tbody>
+                          </table>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- <div class="">
+              </div>
+              <!-- <div class="">
                                     <div class="project-model">
                                         <div class="title">
                                             <h5>Project</h5>
@@ -493,122 +545,119 @@
                                     </div>
                                 </div>
                                  <div id="map-container" style="height: 700px; width: 100%"></div> -->
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
-   <!-- Footer -->
-    <section class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <button class="btn btn-newsletter mt-60px">Subscribe to the IWMI newsletter</button>
-                </div>
-            </div>
+  <!-- Footer -->
+  <section class="footer-top bg-transparent" style="padding: 54px 0px 42px 0px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <button class="btn btn-newsletter mt-60px">Subscribe to the IWMI newsletter</button>
         </div>
-    </section>
-    <section class="">
-        <div class="card footer border-0">
-            <div class="card-body">
-                <div class="row p20px">
-                    <div class="col-sm-12 col-md-3 col-lg-3">
-                        <div class="d-flex justify-content-start align-items-center pt-3">
-                            <div><img src="./assets/images/iwmi-white.png" class="w-100"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-3 col-lg-3">
-                        <div class="d-flex justify-content-start align-items-center pt-3">
-                            <div>
-                                <p class="mb-0"><span class="pr-3">Supported By</span> <img class="mb-2"
-                                        src="./assets/images/logo_white.webp"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-2 col-lg-2"></div>
-                    <div class="col-sm-12 col-md-4 col-lg-4">
-                        <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
-                        <ul class="list-unstyled pl-0 ms-0 footer_ul">
-                            <li class="d-flex follow-link flex-wrap text-start">
-                                <div class="pr-3">
-                                    <a href="https://www.facebook.com/IWMIonFB" target="_blank" class="facebook-link">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </div>
-
-                                <div class="pr-3">
-                                    <a href="https://www.flickr.com/photos/iwmi" target="_blank" class="facebook-link">
-                                        <i class="fa fa-flickr"></i>
-                                    </a>
-                                </div>
-
-                                <div class="pr-3">
-                                    <a href="https://www.instagram.com/iwmi_water/" target="_blank"
-                                        class="facebook-link">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </div>
-
-                                <div class="pr-3">
-                                    <a href="https://www.linkedin.com/checkpoint/lg/login?session_redirect=%2Fauthwall&amp;fromSignIn=true&amp;trk=seo-authwall-base_google-one-tap-submit"
-                                        target="_blank" class="facebook-link">
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </div>
-
-                                <div class="pr-3">
-                                    <a href="mailto:iwmi@cgiar.org" target="_blank" class="facebook-link">
-                                        <i class="fa fa-envelope"></i>
-                                    </a>
-                                </div>
-
-                                <div class="pr-3">
-                                    <a href="https://www.iwmi.cgiar.org/news/rss-feeds/" target="_blank"
-                                        class="facebook-link">
-                                        <i class="fa fa-wifi"></i>
-                                    </a>
-                                </div>
-
-                                <div class="pr-3">
-                                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIWMI_"
-                                        target="_blank" class="facebook-link">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </div>
-
-                                <div class="pr-3">
-                                    <a href="https://www.youtube.com/iwmimedia" target="_blank" class="facebook-link">
-                                        <i class="fa fa-youtube-play"></i>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      </div>
+    </div>
+  </section>
+  <section class="">
+    <div class="card footer border-0">
+      <div class="card-body">
+        <div class="row p20px">
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="d-flex justify-content-start align-items-center pt-3">
+              <div><img src="./assets/images/iwmi-white.png" class="w-100"></div>
             </div>
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-3">
+            <div class="d-flex justify-content-start align-items-center pt-3">
+              <div>
+                <p class="mb-0"><span class="pr-3">Supported By</span> <img class="mb-2"
+                    src="./assets/images/logo_white.webp"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-1 col-lg-1"></div>
+          <div class="col-sm-12 col-md-5 col-lg-5">
+            <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
+            <ul class="list-unstyled pl-0 ms-0 footer_ul">
+              <li class="d-flex follow-link flex-wrap text-start">
+                <div class="pr-3">
+                  <a href="https://www.facebook.com/IWMIonFB" target="_blank" class="facebook-link">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                </div>
+
+                <div class="pr-3">
+                  <a href="https://www.flickr.com/photos/iwmi" target="_blank" class="facebook-link">
+                    <i class="fa fa-flickr"></i>
+                  </a>
+                </div>
+
+                <div class="pr-3">
+                  <a href="https://www.instagram.com/iwmi_water/" target="_blank" class="facebook-link">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </div>
+
+                <div class="pr-3">
+                  <a href="https://www.linkedin.com/checkpoint/lg/login?session_redirect=%2Fauthwall&amp;fromSignIn=true&amp;trk=seo-authwall-base_google-one-tap-submit"
+                    target="_blank" class="facebook-link">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </div>
+
+                <div class="pr-3">
+                  <a href="mailto:iwmi@cgiar.org" target="_blank" class="facebook-link">
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </div>
+
+                <div class="pr-3">
+                  <a href="https://www.iwmi.cgiar.org/news/rss-feeds/" target="_blank" class="facebook-link">
+                    <i class="fa fa-wifi"></i>
+                  </a>
+                </div>
+
+                <div class="pr-3">
+                  <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIWMI_" target="_blank"
+                    class="facebook-link">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </div>
+
+                <div class="pr-3">
+                  <a href="https://www.youtube.com/iwmimedia" target="_blank" class="facebook-link">
+                    <i class="fa fa-youtube-play"></i>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-footer subfooter p-2 px-5">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water
+            Management
+            Institute (IWMI) | <a href="">Termsof use</a></p>
         </div>
 
-        <div class="card-footer subfooter">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water
-                        Management
-                        Institute (IWMI) | <a href="">Termsof use</a></p>
-                </div>
-
-                <div class="col-sm-12 col-md-6 col-lg-6 text-right">
-                    <ul class="d-flex justify-content-end list-unstyled align-items-center mb-0 pb-0">
-                        <li><a href="#">Ethics</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Subscribe to our newsletter</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 text-right">
+          <ul class="d-flex justify-content-end list-unstyled align-items-center mb-0 pb-0">
+            <li><a href="#">Ethics</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Subscribe to our newsletter</a></li>
+          </ul>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
   <!-- waiting spinner -->
   <div id="loading-modal" class="modal hide" data-bs-backdrop="static" data-bs-keyboard="false">
