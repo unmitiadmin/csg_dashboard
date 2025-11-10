@@ -108,10 +108,10 @@ window.addEventListener("load", (event) => {
                         <a class="dropdown-item" href="project_tracker.html"> Project Tracker</a>
                         <a class="dropdown-item" href="geospatial.html"> Geo Intelligence Tool</a>
                         <a class="dropdown-item" href="mande_tool.html">Monitoring and Evaluation</a>
-                        <a class="dropdown-item" href="#">Development Indicator</a>
-                        <a class="dropdown-item" href="#"> Adaptation Catalog</a>
-                        <a class="dropdown-item" href="#"> Investment Portfolio Planning</a>
-                        <a class="dropdown-item" href="#"> Nationally Determined Contributions</a>
+                        <a class="dropdown-item" href="development-indicators.html">Development Indicator</a>
+                        <a class="dropdown-item" href="adaptation_catalog.html"> Adaptation Catalog</a>
+                        <a class="dropdown-item" href="investment_portfolio.html"> Investment Portfolio Planning</a>
+                        <a class="dropdown-item" href="ndc.html"> Nationally Determined Contributions</a>
                     </div>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>

@@ -286,20 +286,47 @@
  .btn.btnPos {
      position: absolute;
      bottom: 30px;
+     padding: 11px 29.234px 12px 33.234px;
+ }
+
+ .profileText h6 {
+     color: var(--Dark-blue, #28537D);
+     font-family: Poppins;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: normal;
+     margin-bottom: 0px;
+     margin-top: 10px;
+ }
+
+ .countryBox .profileText p {
+     color: #000000b3;
+     font-family: Poppins;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     text-align: left;
+     margin-bottom: 0px;
+    min-height: 50px;
  }
 
  .profileBox {
-     border-radius: 6px;
-     background: rgba(40, 83, 125, 0.10);
-     width: 219px;
-     height: 219px;
- }
+    border-radius: 6px;
+    background: #e6e5eb;
+    width: 210px;
+    height: 210px;
+    margin-right: 12px;
+}
 
- .profileBox img {
-     position: relative;
-     bottom: 29px;
-     padding: 23px;
- }
+.profileBox img {
+    position: relative;
+    bottom: 20px;
+    padding: 23px;
+    object-fit: cover;
+    height: 252px;
+}
 
  .countryBox h3 {
      color: #000;
