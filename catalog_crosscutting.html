@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Climate-Smart Governance Dashboard</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/newHomeStyle.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -39,6 +45,7 @@
         }
     </style>
 </head>
+
 <body>
     <section class="hero-section1">
         <img src="./assets/images/network-background.png" alt="corner" style="
@@ -151,9 +158,9 @@
                             <div class="filter-tab-box">
                                 <ul class="nav nav-tabs border-0 bg-white p-1" id="nav-tab" role="tablist">
                                     <li class="nav-item">
-                                        <button class="btn btn-sm nav-link active" id="nav-first-tab"
-                                            data-toggle="tab" data-target="#nav-first" type="button"
-                                            role="tab" aria-controls="nav-first" aria-selected="true">
+                                        <button class="btn btn-sm nav-link active" id="nav-first-tab" data-toggle="tab"
+                                            data-target="#nav-first" type="button" role="tab" aria-controls="nav-first"
+                                            aria-selected="true">
                                             <!-- <img src="./assets/images/normal-view.svg"> -->
                                             <i class="fa fa-clone" aria-hidden="true"></i>
                                         </button>
@@ -168,8 +175,8 @@
                                     </li>
                                     <li class="nav-item">
                                         <button class="btn btn-sm nav-link" id="nav-third-tab" data-toggle="tab"
-                                            data-target="#nav-third" type="button" role="tab"
-                                            aria-controls="nav-third" aria-selected="false">
+                                            data-target="#nav-third" type="button" role="tab" aria-controls="nav-third"
+                                            aria-selected="false">
                                             <!-- <img src="./assets/images/table-view.svg"> -->
                                             <i class="fa fa-table" aria-hidden="true"></i>
                                         </button>
@@ -196,9 +203,8 @@
                                     <div class="card-body">
                                         <h4 class="mb-3 font-22px chart-title">Distribution of climate investment
                                             across key sectors in <span class="label-country"></span>
-                                            <span data-toggle="modal" data-target="#modalOne"
-                                                class="pl-2 cursor"><img src="./assets/images/info-circle.svg"
-                                                    height="20px"></span>
+                                            <span data-toggle="modal" data-target="#modalOne" class="pl-2 cursor"><img
+                                                    src="./assets/images/info-circle.svg" height="20px"></span>
                                         </h4>
                                         <div id="chart_budget_by_sector" style="height: 350px; width: 100%;"></div>
                                     </div>
@@ -209,9 +215,8 @@
                                     <div class="card-body">
                                         <h6 class="mb-3 font-22px chart-title">Distribution of climate projects to
                                             specific hazards in <span class="label-country"></span> <span
-                                                data-toggle="modal" data-target="#modalTwo"
-                                                class="pl-2 cursor"><img src="./assets/images/info-circle.svg"
-                                                    height="20px"></span></h6>
+                                                data-toggle="modal" data-target="#modalTwo" class="pl-2 cursor"><img
+                                                    src="./assets/images/info-circle.svg" height="20px"></span></h6>
                                         <div id="chart_budget_by_hazard" style="height: 350px; width: 100%;"></div>
                                     </div>
                                 </div>
@@ -219,10 +224,9 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12 col-md-3 col-lg-2" style="display:none;">
-                                <h6 class="mb-3">Projects by beneficiary (Male/Female/Youth) <span
-                                        data-toggle="modal" data-target="#exampleModal"
-                                        class="pl-2 cursor"><img src="./assets/images/info-circle.svg"
-                                            height="20px"></span></h6>
+                                <h6 class="mb-3">Projects by beneficiary (Male/Female/Youth) <span data-toggle="modal"
+                                        data-target="#exampleModal" class="pl-2 cursor"><img
+                                            src="./assets/images/info-circle.svg" height="20px"></span></h6>
                                 <div id="chart_projects_by_beneficiary_type" style="height: 350px; width: 100%;">
                                 </div>
                             </div>
@@ -232,7 +236,8 @@
                                         <h6 class="mb-3 font-22px chart-title">Summary of projects beneficiaries in
                                             <span class="label-country"></span> <span data-toggle="modal"
                                                 data-target="#modalThree" class="pl-2 cursor"><img
-                                                    src="./assets/images/info-circle.svg" height="20px"></span></h6>
+                                                    src="./assets/images/info-circle.svg" height="20px"></span>
+                                        </h6>
                                         <div id="chart_projects_by_beneficiary_category"
                                             style="height: 350px; width: 100%;"></div>
                                     </div>
@@ -257,9 +262,8 @@
                                     <div class="card-body">
                                         <h6 class="mb-3 font-22px chart-title">Distribution of climate projects in
                                             key sectors across <span class="label-country"></span> <span
-                                                data-toggle="modal" data-target="#modalFive"
-                                                class="pl-2 cursor"><img src="./assets/images/info-circle.svg"
-                                                    height="20px"></span></h6>
+                                                data-toggle="modal" data-target="#modalFive" class="pl-2 cursor"><img
+                                                    src="./assets/images/info-circle.svg" height="20px"></span></h6>
                                         <div id="chart_sectors_by_province" style="height: 350px; width: 100%;">
                                         </div>
                                     </div>
@@ -269,12 +273,11 @@
                                 <div class="card my-2 border-0 rounded-card">
                                     <div class="card-body">
                                         <h6 class="mb-3 font-22px chart-title">Summary of climate investments in key
-                                            sectors across <span class="label-country"></span> <span
-                                                data-toggle="modal" data-target="#modalSix"
-                                                class="pl-2 cursor"><img src="./assets/images/info-circle.svg"
-                                                    height="20px"></span></h6>
-                                        <div id="chart_sector_budget_by_province"
-                                            style="height: 350px; width: 100%;"></div>
+                                            sectors across <span class="label-country"></span> <span data-toggle="modal"
+                                                data-target="#modalSix" class="pl-2 cursor"><img
+                                                    src="./assets/images/info-circle.svg" height="20px"></span></h6>
+                                        <div id="chart_sector_budget_by_province" style="height: 350px; width: 100%;">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -284,9 +287,8 @@
                                 <div class="card my-2 border-0 rounded-card">
                                     <div class="card-body">
                                         <h6 class="mb-3 font-22px chart-title">Distribution of climate adaptation,
-                                            mitigation and cross-cutting projects in <span
-                                                class="label-country"></span> <span data-toggle="modal"
-                                                data-target="#modalSeven" class="pl-2 cursor"><img
+                                            mitigation and cross-cutting projects in <span class="label-country"></span>
+                                            <span data-toggle="modal" data-target="#modalSeven" class="pl-2 cursor"><img
                                                     src="./assets/images/info-circle.svg" height="20px"></span></h6>
                                         <div id="chart_projects_by_category" style="height: 350px; width: 100%;">
                                         </div>
@@ -301,8 +303,8 @@
                                                 class="label-country"></span> <span data-toggle="modal"
                                                 data-target="#modalEight" class="pl-2 cursor"><img
                                                     src="./assets/images/info-circle.svg" height="20px"></span></h6>
-                                        <div id="chart_project_budget_by_category"
-                                            style="height: 350px; width: 100%;"></div>
+                                        <div id="chart_project_budget_by_category" style="height: 350px; width: 100%;">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -312,8 +314,7 @@
                         <div class="card border-0">
                             <div class="card-body">
                                 <div class="table-responsive">
-                                    <table id="table-project"
-                                        class="display tbl_view border-bottom-0 mb-4 table"
+                                    <table id="table-project" class="display tbl_view border-bottom-0 mb-4 table"
                                         style="width:100%">
                                         <thead>
                                             <tr>
@@ -322,7 +323,7 @@
                                                 <th>Start Year</th>
                                                 <th>End Year</th>
                                                 <th>Current Status</th>
-                                                <th  nowrap>Action</th>
+                                                <th nowrap>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody id="tbody-project"></tbody>
@@ -335,6 +336,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <section class="footer-top">
@@ -349,23 +351,16 @@
     <section class="">
         <div class="card footer border-0">
             <div class="card-body">
-                <div class="row p20px">
-                    <div class="col-sm-12 col-md-3 col-lg-3">
-                        <div class="d-flex justify-content-start align-items-center pt-3">
-                            <div><img src="./assets/images/iwmi-white.png" class="w-100"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-3 col-lg-3">
-                        <div class="d-flex justify-content-start align-items-center pt-3">
-                            <div>
-                                <p class="mb-0"><span class="pr-3">Supported By</span> <img class="mb-2"
-                                        src="./assets/images/logo_white.webp"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-2 col-lg-2"></div>
+                <div class="row pt-4">
                     <div class="col-sm-12 col-md-4 col-lg-4">
-                        <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
+                        <div class="d-flex justify-content-between flex-wrap align-items-center">
+                            <div><img src="./assets/images/iwmi-white.png" class="w-100" height="80px"></div>
+                            <div><img src="./assets/images/footer-logo.png" class="w-100" height="60px"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3"></div>
+                    <div class="col-sm-12 col-md-5 col-lg-5">
+                        <p class="text-white font-weight-bold" style="white-space: nowrap;">Follow Us</p>
                         <ul class="list-unstyled pl-0 ms-0 footer_ul">
                             <li class="d-flex follow-link flex-wrap text-start">
                                 <div class="pr-3">
@@ -427,7 +422,7 @@
         </div>
 
         <div class="card-footer subfooter">
-            <div class="row">
+            <div class="row p-2">
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water
                         Management
@@ -477,4 +472,5 @@
     <script type="text/javascript" src="./assets/scripts/utils.js"></script>
     <script type="text/javascript" src="./assets/scripts/catalog_crosscutting.js"></script>
 </body>
+
 </html>
