@@ -242,7 +242,7 @@
 
  .countryBox {
      background: var(--Dark-blue, #fff);
-     padding: 100px;
+     padding: 50px 60px;
  }
 
  .informationCount h2 {
@@ -692,7 +692,7 @@
  }
 
  .section-keyFeatureNew {
-     padding: 100px;
+     padding: 50px 60px;
      background: var(--green-gradient, linear-gradient(90deg, #1797A4 0%, #2BAC7A 100%));
  }
 
@@ -744,7 +744,7 @@
 
  .countryBox.others {
      background: var(--Dark-blue, #fff);
-     padding: 50px 90px;
+     padding: 50px 60px;
      background: var(--Grey, #E8E7E7);
  }
 
@@ -769,7 +769,7 @@
  }
 
  .mt-16px {
-     margin-top: 16px;
+     margin-top: 50px;
  }
 
  .card.card-gap1 {
@@ -779,6 +779,17 @@
      margin-bottom: 10px;
  }
 
+ .countryDiv h6 {
+            color: #2B2B2B;
+            font-size: 14px;
+            font-style: normal;
+            white-space: normal;
+            font-weight: 500;
+            text-transform: capitalize;
+            line-height: normal;
+            text-align: start;
+        }
+
  .card.card-gap img {
      min-height: 342px;
      object-fit: contain;
@@ -786,7 +797,7 @@
  }
 
  .card.card-gap1 img {
-     min-height: 342px;
+     min-height: 363px;
      object-fit: contain;
      border-radius: 20px;
  }
@@ -1755,7 +1766,7 @@
 
  .csgConceptBox {
      background: var(--blue-gradient, linear-gradient(90deg, #2A547A 0%, #1797A5 100%));
-     padding: 100px;
+     padding: 50px 60px;
  }
 
  .process-card.three {
