@@ -296,9 +296,9 @@
  }
 
  .profileBox img {
-    position: relative;
-    bottom: 29px;
-    padding: 23px;
+     position: relative;
+     bottom: 29px;
+     padding: 23px;
  }
 
  .countryBox h3 {
@@ -733,16 +733,33 @@
  .card.card-gap {
      border-radius: 20px;
      background: var(--blue-gradient, linear-gradient(90deg, #2A547A 0%, #1797A5 100%));
-     min-height: 550px;
+     min-height: 600px;
      margin-bottom: 10px;
+ }
+
+ .mt-16px {
+     margin-top: 16px;
  }
 
  .card.card-gap1 {
      border-radius: 20px;
      background: var(--Organge-gradient, linear-gradient(90deg, #DB8F23 0%, #E6693C 100%));
-     min-height: 550px;
+     min-height: 600px;
      margin-bottom: 10px;
  }
+
+ .card.card-gap img {
+     min-height: 342px;
+     object-fit: contain;
+     border-radius: 20px;
+ }
+
+ .card.card-gap1 img {
+     min-height: 342px;
+     object-fit: contain;
+     border-radius: 20px;
+ }
+
 
  .mt-60px {
      margin-top: 60px;
