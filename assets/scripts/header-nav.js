@@ -126,7 +126,7 @@ window.addEventListener("load", (event) => {
                 ${cookies.jwt ? userProfileArea : loginArea}
                 
                 <li class="nav-item">
-                    <a href="http://65.0.242.164/csg_ai_chatbot/#/home" class="btn btn-explore" style="white-space: nowrap;">Explore CSG Agent</a>
+                    <a href="http://65.0.242.164/csg_ai_chatbot/#/home" class="btn btn-explore" style="white-space: nowrap;">Explore CSG AI Agent</a>
                 </li>
             </ul>
         </div>
