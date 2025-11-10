@@ -237,7 +237,7 @@
  .card.lightBox1 {
      border-radius: 20px;
      background: var(--Grey, #E8E7E7);
-     min-height: 550px;
+     min-height: 600px;
  }
 
  .countryBox {
