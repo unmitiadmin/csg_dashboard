@@ -309,24 +309,28 @@
      line-height: normal;
      text-align: left;
      margin-bottom: 0px;
-    min-height: 50px;
+     min-height: 50px;
  }
 
  .profileBox {
-    border-radius: 6px;
-    background: #e6e5eb;
-    width: 210px;
-    height: 210px;
-    margin-right: 12px;
-}
+     border-radius: 6px;
+     background: #e6e5eb;
+     width: 210px;
+     height: 210px;
+     margin-right: 34px;
+ }
 
-.profileBox img {
-    position: relative;
-    bottom: 20px;
-    padding: 23px;
-    object-fit: cover;
-    height: 252px;
-}
+ .p-60px {
+     padding: 50px 50px !important;
+ }
+
+ .profileBox img {
+     position: relative;
+     bottom: 20px;
+     padding: 23px;
+     object-fit: cover;
+     height: 252px;
+ }
 
  .countryBox h3 {
      color: #000;
@@ -4212,6 +4216,25 @@ line-height: normal;
      .concept-card {
          flex: 1 1 100%;
          /* 1 per row */
+     }
+
+     .card.lightBox1 {
+         border-radius: 20px;
+         background: var(--Grey, #E8E7E7);
+         min-height: 670px;
+         margin-bottom: 10px;
+     }
+
+     .p-60px {
+         padding: 50px 17px !important;
+     }
+
+     .profileBox {
+         border-radius: 6px;
+         background: #e6e5eb;
+         width: 210px;
+         height: 210px;
+         margin-right: 10px;
      }
 
      .heroBox .badge-title {
