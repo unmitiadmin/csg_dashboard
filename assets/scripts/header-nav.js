@@ -60,11 +60,11 @@ window.addEventListener("load", (event) => {
             </button>
             <ul class="dropdown-menu login-user mt-3" aria-labelledby="dropdownMenuButton1">
             <li id="user-email-label"></li>
-            <!--li><a class="dropdown-item" href="profile.html">Profile</a></li>
+            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
             <li id="user-management-link"> 
                 <a class="dropdown-item"  href="user_management.html">User Management</a>
                 <a class="dropdown-item"  href="roles_capabilities.html">Roles and Capabilities</a>
-            </li -->
+            </li>
             <li><a class="dropdown-item" id="link-logout" href="index.html">Log Out</a></li>
             </ul>
         </div>
@@ -126,7 +126,7 @@ window.addEventListener("load", (event) => {
                 ${cookies.jwt ? userProfileArea : loginArea}
                 
                 <li class="nav-item">
-                    <a href="http://65.0.242.164/csg_ai_chatbot/#/home" class="btn btn-explore" style="white-space: nowrap;">Explore CSG Agent</a>
+                    <a href="http://65.0.242.164/csg_ai_chatbot/#/home" class="btn btn-explore" style="white-space: nowrap;">Explore CSG AI Agent</a>
                 </li>
             </ul>
         </div>
