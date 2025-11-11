@@ -11,26 +11,25 @@ window.addEventListener("load", (event) => {
             return { [key]: value }
         }).reduce((a, b) => Object.assign(a, b), {});
     }
-
     const startWaiting = () => {
         let loadingIcon = `<div class="text-center"><div class="fa-3x mb-1"><i class="fa fa-spinner fa-pulse" aria-hidden="true"></i></div><span>Loading</span></div>`;
         $("#loading-modal-container").empty().html(loadingIcon);
         $('#loading-modal').modal('show');
     }
-
     const stopWaiting = () => {
         $("#loading-modal-container").empty();
         $("#loading-modal").modal("hide");
     }
-
     const pageNavAlert = (text, success) => {
         let alertIcon = success !== null || success !== undefined
             ? (success
                 ? `<img src="assets/images/success.png"><h5 class="success-text-popup my-2">SUCCESS!</h5>`
                 : `<img src="assets/images/success-false.png"><h5 class="success-text-popup my-2">ERROR!</h5>`)
             : "";
+        $("#icon-alert-modal").html(alertIcon);
+        $("#text-alert-modal").text(text);
+        $("#alertModal").modal('show');
     }
-
     const checkAuthPage = () => {
         const projectTrackerAssociatedPages = [
             "project_tracker.html",
@@ -48,11 +47,8 @@ window.addEventListener("load", (event) => {
         const currentPage = (currentPageWithoutParams || '').split('?')[0];
         return loginRequiredPages.includes(currentPage);
     }
-
-
     const cookies = getCookies();
     const isAuthPage = checkAuthPage();
-
     const userProfileArea = ` <li class="nav-item">
         <div class="dropdown">
             <button class="btn btn-login btn-secondary dropdown-toggle py-1 px-3" type="button"
@@ -62,15 +58,14 @@ window.addEventListener("load", (event) => {
             <ul class="dropdown-menu login-user mt-3" aria-labelledby="dropdownMenuButton1">
             <li id="user-email-label"></li>
             <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-            <li id="user-management-link"> 
-                <a class="dropdown-item"  href="user_management.html">User Management</a>
-                <a class="dropdown-item"  href="roles_capabilities.html">Roles and Capabilities</a>
+            <li id="user-management-link">
+                <a class="dropdown-item" href="user_management.html">User Management</a>
+                <a class="dropdown-item" href="roles_capabilities.html">Roles and Capabilities</a>
             </li>
             <li><a class="dropdown-item" id="link-logout" href="index.html">Log Out</a></li>
             </ul>
         </div>
     </li>`;
-
     const countryFlagArea = () => {
         let style = cookies.isLoggedIn && cookies.userRoleId != 1 ? "display: block;" : "display: none;";
         let imagePath = cookies.isLoggedIn && cookies.userRoleId != 1 ? `./assets/flag_icons/${cookies.initialCountryId}.png` : null;
@@ -78,12 +73,9 @@ window.addEventListener("load", (event) => {
           <img src="${imagePath} " height="35" width="35" id="user-country-icon" style="${style}"/>
         </li>`;
     }
-
     const loginArea = `<li class="nav-item">
         <button id="nav-login-btn" class="btn btn-login">Login</button>
     </li>`;
-
-
     const headerContent = `<nav class="navbar navbar-expand-xl navbar-dark">
         <a class="navbar-brand text-white" href="index.html">
             <div class="d-flex align-items-center">
@@ -125,7 +117,7 @@ window.addEventListener("load", (event) => {
                     <div id="google_translate_element" class="mt-1 notranslate" style="z-index: 1000;"></div>
                 </li>
                 ${cookies.jwt ? userProfileArea : loginArea}
-                
+               
                 <li class="nav-item">
                     <a href="http://65.0.242.164/aiagent/#/home" class="btn btn-explore" style="white-space: nowrap;">Explore CSG AI Agent</a>
                 </li>
@@ -139,7 +131,7 @@ window.addEventListener("load", (event) => {
                 <div class="modal-body p-2">
                     <div class="row">
                         <!-- Left Side Image Section -->
-                       <!--  <div class="col-lg-6 d-none d-lg-block">
+                       <!-- <div class="col-lg-6 d-none d-lg-block">
                             <div class="login-image-fit p31px" style="
                                     border-radius: 20px 0 0 10px;
                                     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(./assets/images/login-bg.png) lightgray 50% / cover no-repeat;
@@ -162,9 +154,9 @@ window.addEventListener("load", (event) => {
                                     </div>
                                 </div>
                             </div>
-                        </div>  -->
+                        </div> -->
                         <!-- Right Side Form -->
-                        <div class="col-lg-12  border-radius-20px">
+                        <div class="col-lg-12 border-radius-20px">
                             <div class="d-flex justify-content-end">
                                 <a type="button" class="close" aria-label="Close" href="index.html">
                                     <span aria-hidden="true">&times;</span>
@@ -191,25 +183,21 @@ window.addEventListener("load", (event) => {
                                             <input type="password" class="form-control logInInput" placeholder="Password" id="input-login-password">
                                         </div>
                                         <button class="btn btn-login1 w-100 text-white mt-3" id="submit-login">Login</button>
-
                                         <div class="d-flex justify-content-between align-items-center mt-2">
                                             <!-- div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1"  checked>
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
                                                     <label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
                                                 </div>
                                             </div -->
                                             <!--div><a href="#" class="font-14px"><strong>Forgot Password?</strong></a>
                                             </div-->
                                         </div>
-
                                         <!--div class="d-flex justify-content-center align-items-center">
                                             <p class="mb-0 font-14px accountPos">Don’t have an account? <a href="#"
                                                     class="mb-0 font-14px"><strong>Register</strong></a></p>
                                         </div-->
                                     </div>
-
-
                                     <!-- Register Tab -->
                                     <div class="tab-pane fade" id="register" role="tabpanel">
                                         <div class="modal-content border-0">
@@ -220,7 +208,6 @@ window.addEventListener("load", (event) => {
                                                 <div class="step-circle">2</div>
                                                 <div class="step-circle">3</div>
                                             </div>
-
                                             <!-- Step 1 -->
                                             <div class="register-step step-1 active">
                                                 <div class="form-group">
@@ -234,7 +221,6 @@ window.addEventListener("load", (event) => {
                                                 </div>
                                                 <button class="btn btn-login1 next-step w-100 mt-3">Next</button>
                                             </div>
-
                                             <!-- Step 2 -->
                                             <div class="register-step step-2">
                                                 <div class="form-group">
@@ -249,7 +235,6 @@ window.addEventListener("load", (event) => {
                                                 <button class="btn btn-secondary prev-step">Back</button>
                                                 <button class="btn btn-login1 float-right next-step">Next</button>
                                             </div>
-
                                             <!-- Step 3 -->
                                             <div class="register-step step-3">
                                                  <div class="form-group">
@@ -520,17 +505,14 @@ window.addEventListener("load", (event) => {
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>            
+            </div>
         </div>
     </div>`;
-
-
     const register = () => {
         let reqBody = {
             "full_name": document.querySelector("input#input-registration-name")?.value || null,
@@ -576,7 +558,6 @@ window.addEventListener("load", (event) => {
             })
             .finally(() => stopWaiting());
     }
-
     const handleOperation = () => {
         if (cookies.jwt) {
             document.querySelector("#link-logout").addEventListener('click', () => {
@@ -634,8 +615,7 @@ window.addEventListener("load", (event) => {
                     })
                     .finally(() => stopWaiting());
             });
-
-            // for step wise methods 
+            // for step wise methods
             $(document).ready(function () {
                 let currentStep = 1;
                 function showStep(step) {
@@ -659,15 +639,12 @@ window.addEventListener("load", (event) => {
             });
         }
     }
-
-
     document.querySelector("#headerContainer").innerHTML = headerContent;
     handleOperation();
     if (isAuthPage && !cookies.jwt) {
         const loginModal = $("div#login-modal");
         loginModal.modal("show");
     }
-
     // Google Translate integration
     const style = document.createElement("style");
     style.textContent = `
@@ -714,20 +691,17 @@ window.addEventListener("load", (event) => {
         }
       `;
     document.head.appendChild(style);
-
     const languages = [
         { code: "en", label: "English", flag: "🇬🇧" },
         { code: "hi", label: "Hindi", flag: "🇮🇳" },
         { code: "te", label: "Telugu", flag: "🇮🇳" },
         { code: "es", label: "Spanish", flag: "🇪🇸" },
     ];
-
     let isTranslateLoaded = false;
     let scriptError = false;
     let queuedLanguage = null;
     let isApplyingLanguage = false;
     let currentLanguage = ''; // Start with no default language
-
     function googleTranslateElementInit() {
         if (window.googleTranslateInitialized) {
             isTranslateLoaded = true;
@@ -769,7 +743,6 @@ window.addEventListener("load", (event) => {
             document.getElementById('error-message').style.display = 'block';
         }
     }
-
     function findGoogleTranslateSelector() {
         let select = document.querySelector(".goog-te-combo");
         if (select) {
@@ -788,7 +761,6 @@ window.addEventListener("load", (event) => {
         }
         return null;
     }
-
     function applyLanguage(langCode, attempts = 60, delay = 2000) {
         if (isApplyingLanguage) {
             queuedLanguage = langCode;
@@ -847,7 +819,6 @@ window.addEventListener("load", (event) => {
             document.getElementById('error-message').style.display = 'none';
         }
     }
-
     function modifyTranslateWidget(attempts = 30, delay = 3000) {
         function tryModify(retryCount) {
             let modified = false;
@@ -895,7 +866,6 @@ window.addEventListener("load", (event) => {
         }
         tryModify(attempts);
     }
-
     function updateOptions() {
         const interval = setInterval(() => {
             const select = document.querySelector(".goog-te-combo");
@@ -910,7 +880,6 @@ window.addEventListener("load", (event) => {
             }
         }, 500);
     }
-
     function loadScript(retryCount = 5, retryDelay = 5000) {
         if (!document.querySelector("#google-translate-script") && !window.googleTranslateInitialized) {
             const addScript = document.createElement("script");
@@ -930,7 +899,6 @@ window.addEventListener("load", (event) => {
             isTranslateLoaded = true;
         }
     }
-
     // Initialization
     if (window.google && window.google.translate && window.google.translate.TranslateElement) {
         googleTranslateElementInit();
@@ -939,7 +907,6 @@ window.addEventListener("load", (event) => {
         window.googleTranslateElementInit = googleTranslateElementInit;
         loadScript();
     }
-
     // Observer for widget modifications
     const observer = new MutationObserver((mutations) => {
         let shouldModify = false;
@@ -965,7 +932,6 @@ window.addEventListener("load", (event) => {
         observer.observe(translateElement, { childList: true, subtree: true, characterData: true });
     }
     observer.observe(document.body, { childList: true, subtree: true });
-
     // Periodically remove aria-hidden from modals if needed
     setInterval(() => {
         const modals = document.querySelectorAll("[aria-hidden='true']");
@@ -973,7 +939,6 @@ window.addEventListener("load", (event) => {
             modal.removeAttribute("aria-hidden");
         });
     }, 1000);
-
     // Check for dropdown readiness
     setTimeout(() => {
         const selector = findGoogleTranslateSelector();
@@ -985,7 +950,6 @@ window.addEventListener("load", (event) => {
             document.getElementById('error-message').style.display = 'block';
         }
     }, 30000);
-
     // Monitor language changes
     setInterval(() => {
         const selector = findGoogleTranslateSelector();
