@@ -126,7 +126,7 @@ window.addEventListener("load", (event) => {
                 ${cookies.jwt ? userProfileArea : loginArea}
                 
                 <li class="nav-item">
-                    <a href="http://65.0.242.164/csg_ai_chatbot/#/home" class="btn btn-explore" style="white-space: nowrap;">Explore CSG AI Agent</a>
+                    <a href="http://65.0.242.164/aiagent/#/home" class="btn btn-explore" style="white-space: nowrap;">Explore CSG AI Agent</a>
                 </li>
             </ul>
         </div>
@@ -193,14 +193,14 @@ window.addEventListener("load", (event) => {
                                                     <label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
                                                 </div>
                                             </div -->
-                                            <div><a href="#" class="font-14px"><strong>Forgot Password?</strong></a>
-                                            </div>
+                                            <!--div><a href="#" class="font-14px"><strong>Forgot Password?</strong></a>
+                                            </div-->
                                         </div>
 
-                                        <div class="d-flex justify-content-center align-items-center">
+                                        <!--div class="d-flex justify-content-center align-items-center">
                                             <p class="mb-0 font-14px accountPos">Don’t have an account? <a href="#"
                                                     class="mb-0 font-14px"><strong>Register</strong></a></p>
-                                        </div>
+                                        </div-->
                                     </div>
 
 
