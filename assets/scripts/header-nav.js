@@ -32,14 +32,15 @@ window.addEventListener("load", (event) => {
     }
 
     const checkAuthPage = () => {
-        const loginRequiredPages = [
+        const projectTrackerAssociatedPages = [
             "project_tracker.html",
-            "catalog_adaptation.html",
-            "catalog_mitigation.html",
-            "catalog_crosscutting.html",
+            "add_project.html", "edit_project.html", "add_outcome.html", "edit_outcome.html", "add_output.html", "edit_output.html",
+            "catalog_adaptation.html", "catalog_mitigation.html", "catalog_crosscutting.html", "mande_tool.html",
+        ];
+        const loginRequiredPages = [
+            "edit_country_info.html",
+            ...projectTrackerAssociatedPages,
             "geospatial.html",
-            "mande_tool.html",
-            // all reports pages - add edit - project, outcome, output, report redirect to index.html
             "adaptation_catalog.html",
         ];
         // const currentPage = location.href.split('/').findLast(d => d);
@@ -132,7 +133,7 @@ window.addEventListener("load", (event) => {
         </div>
     </nav>
     <!-- login/register modal -->
-    <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="login-modal-label" aria-hidden="true">
+    <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="login-modal-label" aria-hidden="true" ${isAuthPage && !cookies.jwt ? 'data-backdrop="static"' : ''}>
         <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content">
                 <div class="modal-body p-2">
@@ -164,6 +165,11 @@ window.addEventListener("load", (event) => {
                         </div>  -->
                         <!-- Right Side Form -->
                         <div class="col-lg-12  border-radius-20px">
+                            <div class="d-flex justify-content-end">
+                                <a type="button" class="close" aria-label="Close" href="index.html">
+                                    <span aria-hidden="true">&times;</span>
+                                </a>
+                            </div>
                             <div class="p-5">
                                 <ul class="nav nav-tabs login_tabs border-0 nav-fill" role="tablist">
                                     <li class="nav-item">
