@@ -237,12 +237,12 @@
  .card.lightBox1 {
      border-radius: 20px;
      background: var(--Grey, #E8E7E7);
-     min-height: 550px;
+     min-height: 600px;
  }
 
  .countryBox {
      background: var(--Dark-blue, #fff);
-     padding: 100px;
+     padding: 50px 60px;
  }
 
  .informationCount h2 {
@@ -286,19 +286,50 @@
  .btn.btnPos {
      position: absolute;
      bottom: 30px;
+     padding: 11px 29.234px 12px 33.234px;
+ }
+
+ .profileText h6 {
+     color: var(--Dark-blue, #28537D);
+     font-family: Poppins;
+     font-size: 18px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: normal;
+     margin-bottom: 0px;
+     margin-top: 10px;
+ }
+
+ .countryBox .profileText p {
+     color: #000000b3;
+     font-family: Poppins;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     text-align: left;
+     margin-bottom: 0px;
+     min-height: 50px;
  }
 
  .profileBox {
      border-radius: 6px;
-     background: rgba(40, 83, 125, 0.10);
-     width: 219px;
-     height: 219px;
+     background: #e6e5eb;
+     width: 210px;
+     height: 210px;
+     margin-right: 34px;
+ }
+
+ .p-60px {
+     padding: 50px 60px !important;
  }
 
  .profileBox img {
      position: relative;
-     bottom: 29px;
+     bottom: 20px;
      padding: 23px;
+     object-fit: cover;
+     height: 252px;
  }
 
  .countryBox h3 {
@@ -661,7 +692,7 @@
  }
 
  .section-keyFeatureNew {
-     padding: 100px;
+     padding: 50px 60px;
      background: var(--green-gradient, linear-gradient(90deg, #1797A4 0%, #2BAC7A 100%));
  }
 
@@ -713,7 +744,7 @@
 
  .countryBox.others {
      background: var(--Dark-blue, #fff);
-     padding: 50px 90px;
+     padding: 50px 60px;
      background: var(--Grey, #E8E7E7);
  }
 
@@ -738,7 +769,7 @@
  }
 
  .mt-16px {
-     margin-top: 16px;
+     margin-top: 50px;
  }
 
  .card.card-gap1 {
@@ -748,6 +779,17 @@
      margin-bottom: 10px;
  }
 
+ .countryDiv h6 {
+            color: #2B2B2B;
+            font-size: 14px;
+            font-style: normal;
+            white-space: normal;
+            font-weight: 500;
+            text-transform: capitalize;
+            line-height: normal;
+            text-align: start;
+        }
+
  .card.card-gap img {
      min-height: 342px;
      object-fit: contain;
@@ -755,7 +797,7 @@
  }
 
  .card.card-gap1 img {
-     min-height: 342px;
+     min-height: 363px;
      object-fit: contain;
      border-radius: 20px;
  }
@@ -1045,19 +1087,20 @@
      width: 113px;
  }
 
- .btn.btn-edit {
-     border-radius: 100px;
-     border: 1px solid rgba(0, 0, 0, 0.10);
-     background: #EAF0F6;
-     padding: 10px;
-     width: 113px;
-     color: #000;
-     font-family: Poppins;
-     font-size: 14px;
-     font-style: normal;
-     font-weight: 400;
-     line-height: normal;
- }
+.btn.btn-edit {
+    border-radius: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #EAF0F6;
+    padding: 14px 70px;
+    white-space: nowrap;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
  a.btn.btn-edit1 {
      border-radius: 100px;
@@ -1097,7 +1140,7 @@
 
 
  .informationCount {
-     padding: 60px 100px;
+     padding: 50px 60px;
      background: #22AD7A;
  }
 
@@ -1133,7 +1176,7 @@
  }
 
  .informationBox {
-     padding: 60px 60px;
+     padding: 50px 60px;
  }
 
  .informationBox::before {
@@ -1166,7 +1209,7 @@
  }
 
  .informationBox.senegal {
-     padding: 60px 60px;
+     padding: 50px 60px;
  }
 
  .informationBox.senegal::before {
@@ -1198,7 +1241,7 @@
  }
 
  .informationBox.zambia {
-     padding: 60px 60px;
+     padding: 50px 60px;
  }
 
  .informationBox.zambia::before {
@@ -1231,7 +1274,7 @@
  }
 
  .informationBox.srilanka {
-     padding: 60px 60px;
+     padding: 50px 60px;
  }
 
  .informationBox.srilanka::before {
@@ -1290,7 +1333,7 @@
  }
 
  .informationBox {
-     padding: 60px 100px;
+     padding: 50px 60px;
  }
 
  .informationBox::before {
@@ -1724,7 +1767,7 @@
 
  .csgConceptBox {
      background: var(--blue-gradient, linear-gradient(90deg, #2A547A 0%, #1797A5 100%));
-     padding: 100px;
+     padding: 50px 60px;
  }
 
  .process-card.three {
@@ -1941,7 +1984,7 @@
 
  .informationBoxKey {
      background-color: #fff;
-     padding: 60px 100px;
+     padding: 50px 60px;
  }
 
  .modal-title {
@@ -4185,6 +4228,25 @@ line-height: normal;
      .concept-card {
          flex: 1 1 100%;
          /* 1 per row */
+     }
+
+     .card.lightBox1 {
+         border-radius: 20px;
+         background: var(--Grey, #E8E7E7);
+         min-height: 670px;
+         margin-bottom: 10px;
+     }
+
+     .p-60px {
+         padding: 50px 17px !important;
+     }
+
+     .profileBox {
+         border-radius: 6px;
+         background: #e6e5eb;
+         width: 210px;
+         height: 210px;
+         margin-right: 10px;
      }
 
      .heroBox .badge-title {

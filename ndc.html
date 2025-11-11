@@ -69,6 +69,38 @@
             background-image: url('assets/images/download.svg');
         }
 
+        .btn.btn-login {
+            background: transparent !important;
+        }
+
+        .nav-tabs.login_tabs .nav-item.show .nav-link,
+        .nav-tabs.login_tabs .nav-link.active {
+            color: #000 !important;
+            
+            font-style: normal;
+            font-weight: 600 !important;
+            border-radius: 0px;
+            font-size: 20px !important;
+            line-height: 24px !important;
+            text-transform: capitalize;
+            background: transparent !important;
+            border-bottom: 0px solid #db644f !important;
+        }
+
+        .nav-tabs.login_tabs .nav-link {
+            background: 0 0;
+            font-weight: 600 !important;
+            font-size: 20px !important;
+            line-height: 33px !important;
+            color: #0000004d !important;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+            
+            font-style: normal;
+            text-transform: capitalize;
+        }
+
+
         .irs--flat .irs-handle {
             top: 24px;
             width: 18px;
@@ -317,7 +349,6 @@
             background: var(--Dark-blue, #28537D) !important;
             padding: 7px 25px !important;
             color: #FFF !important;
-            font-family: "Open Sans";
             font-style: normal;
             font-weight: 600;
             line-height: normal;
@@ -378,12 +409,18 @@
 
 <body>
 
-    <section class="hero-section1" style="background-image: url('./assets/images/Hero.png');
-        background-position: left; background-size: cover; background-repeat: no-repeat;width: 100%; padding: 0px;">
+    <section class="hero-section1">
+        <img src="./assets/images/network-background.png" alt="corner" style="
+            position: absolute;
+            top: -290px;
+            right: 0;
+             width: 46%;
+            height: fit-content;
+             z-index: -1; ">
         <div class="container pt-5" id="headerContainer">
             <!-- Dynamic navbar - based on login -->
         </div>
-        <div class="container mt-57px">
+        <div class="container-fluid p-50px">
             <div class="row">
                 <div class="col-sm-12 col-md-2 col-lg-2"></div>
                 <div class="col-sm-12 col-md-3 col-lg-4">
@@ -398,15 +435,18 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div class="form-group countrySelect mb-0">
+                    <div class="form-group countrySelect mb-0">            
                         <select class="form-control w-100" id="pageSelect">
                             <option value="country_overview.html">Country Overview</option>
                             <option value="climate_outlook.html">Climate Outlook</option>
-                            <option value="project_tracker.html" selected>Project Tracker</option>
-                            <option value="geospatial.html">Geo-intelligence Tools</option>
-                            <option value="mande_tool.html">Monitoring and Evaluation</option>
-                            <option value="development_indicators.html">Development Indicators</option>
+                            <option value="project_tracker.html">Project Tracker</option>
+                            <option value="geospatial.html">Geo-Intelligence Tools</option>
+                            <option value="mande_tool.html">Monitoring and Evaluation Tools</option>
+                            <option value="development-indicators.html">Development Indicators</option>
+                            <option value="adaptation_catalog.html">Adaptation Catalog</option>
+                            <option value="investment_portfolio.html">Investment Portfolio Planning</option>
                             <option value="ndc.html" selected>NDC Tracker</option>
+                            <option value="ccs.html">Project Submission Form</option>
                         </select>
                         <span><img src="./assets/images/element-3.png" alt=""></span>
                     </div>
@@ -448,7 +488,7 @@
 
     <div class="wrapper">
         <section class="newInvest-box">
-            <div class="container px-0">
+            <div class="container-fluid p-60px pt-0" style="padding-top: 30px;">
                 <div class="row pt-3">
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <div class="accordion mb-4" id="accordionExample">
@@ -1021,7 +1061,7 @@
 
 
     <!-- Footer -->
-    <section class="footer-top" style="background-color: #F8FAFB">
+    <section class="footer-top bg-light">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
@@ -1033,23 +1073,16 @@
     <section class="">
         <div class="card footer border-0">
             <div class="card-body">
-                <div class="row p20px">
-                    <div class="col-sm-12 col-md-3 col-lg-3">
-                        <div class="d-flex justify-content-start align-items-center pt-3">
-                            <div><img src="./assets/images/iwmi-white.png" class="w-100"></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-3 col-lg-3">
-                        <div class="d-flex justify-content-start align-items-center pt-3">
-                            <div>
-                                <p class="mb-0"><span class="pr-3">Supported By</span> <img class="mb-2"
-                                        src="./assets/images/logo_white.webp"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-2 col-lg-2"></div>
+                <div class="row pt-4">
                     <div class="col-sm-12 col-md-4 col-lg-4">
-                        <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
+                        <div class="d-flex justify-content-between flex-wrap align-items-center">
+                            <div><img src="./assets/images/iwmi-white.png" class="w-100" height="80px"></div>
+                            <div><img src="./assets/images/footer-logo.png" class="w-100" height="60px"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-3"></div>
+                    <div class="col-sm-12 col-md-5 col-lg-5">
+                        <p class="text-white font-weight-bold" style="white-space: nowrap;">Follow Us</p>
                         <ul class="list-unstyled pl-0 ms-0 footer_ul">
                             <li class="d-flex follow-link flex-wrap text-start">
                                 <div class="pr-3">
@@ -1111,7 +1144,7 @@
         </div>
 
         <div class="card-footer subfooter">
-            <div class="row">
+            <div class="row p-2">
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water
                         Management
@@ -1183,6 +1216,12 @@
         setTimeout(() => $("select#input-registration-origin-country").selectpicker({
             liveSearch: true
         }), 1000);
+    </script>
+    <script>
+        $('#pageSelect').on('change', function () {
+            const url = $(this).val();
+            if (url) window.location.href = url;
+        });
     </script>
 
     <script>

@@ -61,11 +61,11 @@ window.addEventListener("load", (event) => {
             </button>
             <ul class="dropdown-menu login-user mt-3" aria-labelledby="dropdownMenuButton1">
             <li id="user-email-label"></li>
-            <!--li><a class="dropdown-item" href="profile.html">Profile</a></li>
+            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
             <li id="user-management-link"> 
                 <a class="dropdown-item"  href="user_management.html">User Management</a>
                 <a class="dropdown-item"  href="roles_capabilities.html">Roles and Capabilities</a>
-            </li -->
+            </li>
             <li><a class="dropdown-item" id="link-logout" href="index.html">Log Out</a></li>
             </ul>
         </div>
@@ -109,10 +109,10 @@ window.addEventListener("load", (event) => {
                         <a class="dropdown-item" href="project_tracker.html"> Project Tracker</a>
                         <a class="dropdown-item" href="geospatial.html"> Geo Intelligence Tool</a>
                         <a class="dropdown-item" href="mande_tool.html">Monitoring and Evaluation</a>
-                        <a class="dropdown-item" href="#">Development Indicator</a>
-                        <a class="dropdown-item" href="#"> Adaptation Catalog</a>
-                        <a class="dropdown-item" href="#"> Investment Portfolio Planning</a>
-                        <a class="dropdown-item" href="#"> Nationally Determined Contributions</a>
+                        <a class="dropdown-item" href="development-indicators.html">Development Indicator</a>
+                        <a class="dropdown-item" href="adaptation_catalog.html"> Adaptation Catalog</a>
+                        <a class="dropdown-item" href="investment_portfolio.html"> Investment Portfolio Planning</a>
+                        <a class="dropdown-item" href="ndc.html"> Nationally Determined Contributions</a>
                     </div>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
@@ -127,7 +127,7 @@ window.addEventListener("load", (event) => {
                 ${cookies.jwt ? userProfileArea : loginArea}
                 
                 <li class="nav-item">
-                    <a href="http://65.0.242.164/csg_ai_chatbot/#/home" class="btn btn-explore" style="white-space: nowrap;">Explore CSG Agent</a>
+                    <a href="http://65.0.242.164/aiagent/#/home" class="btn btn-explore" style="white-space: nowrap;">Explore CSG AI Agent</a>
                 </li>
             </ul>
         </div>
@@ -199,14 +199,14 @@ window.addEventListener("load", (event) => {
                                                     <label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
                                                 </div>
                                             </div -->
-                                            <div><a href="#" class="font-14px"><strong>Forgot Password?</strong></a>
-                                            </div>
+                                            <!--div><a href="#" class="font-14px"><strong>Forgot Password?</strong></a>
+                                            </div-->
                                         </div>
 
-                                        <div class="d-flex justify-content-center align-items-center">
+                                        <!--div class="d-flex justify-content-center align-items-center">
                                             <p class="mb-0 font-14px accountPos">Don’t have an account? <a href="#"
                                                     class="mb-0 font-14px"><strong>Register</strong></a></p>
-                                        </div>
+                                        </div-->
                                     </div>
 
 
@@ -580,7 +580,7 @@ window.addEventListener("load", (event) => {
     const handleOperation = () => {
         if (cookies.jwt) {
             document.querySelector("#link-logout").addEventListener('click', () => {
-                const countryVal = document.querySelector('select#filter-country').value;
+                const countryVal = document.querySelector('select#filter-country')?.value || '';
                 document.cookie = `countryId=${countryVal}`;
                 document.cookie = `jwt=null`;
                 document.cookie = `userEmail=null`;
@@ -600,7 +600,7 @@ window.addEventListener("load", (event) => {
                     "email": $("input#input-login-email").val() || null,
                     "password": $("input#input-login-password").val() || null,
                 };
-                let countryId = document.querySelector('select#filter-country').value;
+                let countryId = document.querySelector('select#filter-country')?.value || '';
                 startWaiting();
                 fetch(`${apiUrl}/auth/login`, {
                     method: 'POST',

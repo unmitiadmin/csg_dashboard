@@ -1,4 +1,3 @@
-
 let countries = [];
 let projects = [];
 let all_projects = [];
@@ -39,7 +38,6 @@ const authToken = cookieObject.jwt;
 const isLoggedIn = cookieObject.isLoggedIn;
 const initialCountryId = cookieObject.initialCountryId;
 const userEmail = cookieObject.userEmail;
-isLoggedIn ? $("li#user-email-label").empty().html(`<div class='mx-3'>${userEmail}</div>`) : $("li#user-email-label").empty();
 let applied_count = 0;
 $(document).ready(function () {
     $(".selectpicker").selectpicker({
@@ -607,19 +605,6 @@ function projects_filter(countryId) {
     }
     $("#selected_countries").selectpicker("refresh");
     $("#selected_countries").selectpicker("render");
-}
-
-if (!isLoggedIn) {
-    pageAlert("Please log in", 0);
-    setTimeout(() => window.location.replace("index.html"), 1000);
-}
-
-function onLogoutClick() {
-    document.cookie = `userEmail=null`;
-    document.cookie = `jwt=null`;
-    document.cookie = `isLoggedIn=false`;
-    document.cookie = `userRoleId=null`;
-    window.location.replace("index.html");
 }
 
 function convertToReadableNotation() {

@@ -5,7 +5,6 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif !important;
   background-color: #f6f6f6;
 }
 
@@ -77,7 +76,7 @@ body {
   color: #fff !important;
   background: #2E5F44 !important;
   border-radius: 30px;
-  font-family: "Open Sans";
+  
   font-size: 16px !important;
   font-style: normal;
   text-align: left;
@@ -93,7 +92,7 @@ body {
   border: 0px;
   border-radius: var(--bs-nav-pills-border-radius);
   color: #000 !important;
-  font-family: "Open Sans";
+  
   font-size: 14px !important;
   font-style: normal;
   margin-bottom: 10px;
@@ -112,7 +111,7 @@ body {
   background: #2E5F44 !important;
   height: 42px;
   text-align: center;
-  font-family: "Open Sans";
+  
   font-size: 14px;
   font-style: normal;
   line-height: 10px;
@@ -124,7 +123,7 @@ body {
   background: #F9F9F9 !important;
   height: 42px;
   text-align: center;
-  font-family: "Open Sans";
+  
   font-size: 14px;
   font-style: normal;
   line-height: 10px;
@@ -170,7 +169,7 @@ body {
   background: rgba(46, 95, 68, 0.10);
   padding: 7px 25px !important;
   color: #2E5F44;
-  font-family: "Open Sans";
+  
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -184,7 +183,7 @@ body {
   background: #2E5F44 !important;
   padding: 7px 25px !important;
   color: #FFF !important;
-  font-family: "Open Sans";
+  
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -203,7 +202,7 @@ body {
 
 .card.chartCard .chart-title-new {
   color: #000;
-  font-family: "Open Sans";
+  
   font-size: 17px;
   font-style: normal;
   white-space: normal !important;
@@ -218,7 +217,7 @@ body {
 
 .nummber-text {
   color: #000;
-  font-family: "Open Sans";
+  
   font-size: 50px;
   font-style: normal;
   font-weight: 600;
@@ -228,7 +227,7 @@ body {
 
 .count-title {
   color: #000;
-  font-family: "Open Sans";
+  
   font-size: 16px;
   opacity: 0.4;
   font-style: normal;
@@ -240,7 +239,7 @@ body {
 
 .table.summary-table td {
   padding: 11px !important;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 14px !important;
@@ -297,7 +296,7 @@ tr {
 }
 
 .agri-title h3 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -308,7 +307,7 @@ tr {
 }
 
 .agri-title .number {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500 !important;
   font-size: 24px;
@@ -353,7 +352,7 @@ tr {
 }
 
 .text-overview-1 p {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -544,7 +543,7 @@ section {
 .success-text-popup {
   color: #000 !important;
   text-align: center;
-  font-family: "Open Sans";
+  
   font-size: 24px;
   font-style: normal;
   font-weight: 700 !important;
@@ -556,7 +555,7 @@ section {
   border-radius: 40px;
   background: #003F35;
   color: #FFF;
-  font-family: "Open Sans";
+  
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -636,7 +635,7 @@ section {
 
 .ccs-title {
   color: #000;
-  font-family: "Open Sans";
+  
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -674,7 +673,7 @@ table.tbl_ccs {
   border-radius: 40px;
   border: 1px solid #003F35;
   color: #003F35;
-  font-family: "Open Sans";
+  
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -685,7 +684,7 @@ table.tbl_ccs {
   border-radius: 40px;
   background: rgba(0, 63, 53, 0.10);
   color: #003F35;
-  font-family: "Open Sans";
+  
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -711,7 +710,7 @@ table.tbl_ccs {
 
 .countryDiv h6 {
   color: #2B2B2B;
-    font-family: "Open Sans";
+    
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -721,7 +720,7 @@ table.tbl_ccs {
 
 .countryDiv p {
   color: #2b2b2b80;
-    font-family: "Open Sans";
+    
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -745,7 +744,7 @@ table.tbl_ccs {
   border-radius: 40px;
   background: #003F35;
   color: #FFF;
-  font-family: "Open Sans";
+  
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -756,7 +755,7 @@ table.tbl_ccs {
   border-radius: 40px;
   background: #003F35;
   color: #FFF;
-  font-family: "Open Sans";
+  
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -871,7 +870,7 @@ table.tbl_ccs {
 }
 
 .text-location {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -895,7 +894,7 @@ table.tbl_ccs {
   background: #003f35;
   border-radius: 40px;
   min-width: 122px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   width: 182px;
@@ -1312,7 +1311,7 @@ table.tbl_ccs {
   color: #fff !important;
   background: #2e5f44 !important;
   border-radius: 30px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   line-height: 22px;
@@ -1323,7 +1322,7 @@ table.tbl_ccs {
   border: 0;
   background: rgba(46, 95, 68, 0.1);
   border-radius: 30px !important;
-  font-family: "Open Sans";
+  
   padding: 16px !important;
   font-style: normal;
   font-weight: 600;
@@ -1346,7 +1345,7 @@ table.tbl_ccs {
 }
 
 .tem-img h4 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1387,7 +1386,7 @@ table.tbl_ccs {
 }
 
 .tem-img .sub-title {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1398,7 +1397,7 @@ table.tbl_ccs {
 }
 
 .tem-img p {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -1408,7 +1407,7 @@ table.tbl_ccs {
 }
 
 .tem-img p strong {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 800;
   font-size: 15px;
@@ -1429,7 +1428,7 @@ table.tbl_ccs {
 }
 
 .accordion-item .accordion-button span {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 20px !important;
@@ -1467,7 +1466,7 @@ tbody td {
 }
 
 .font-17px {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 17px;
@@ -1477,7 +1476,7 @@ tbody td {
 }
 
 .icons-text p {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1533,7 +1532,7 @@ tr {
 }
 
 .guage-title {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -1544,7 +1543,7 @@ tr {
 }
 
 .tbl_border_none td {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1577,7 +1576,7 @@ label.label-reg sup {
 }
 
 .para-text-accordian p {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1586,7 +1585,7 @@ label.label-reg sup {
 }
 
 .small-bold {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1620,7 +1619,7 @@ label.label-reg sup {
   white-space: nowrap;
   width: 147px;
   height: 46px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -2590,7 +2589,7 @@ label.label-reg sup {
 }
 
 .how-we-work p {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -2764,7 +2763,7 @@ label.label-reg sup {
 
 .head-box h4 {
   color: #000 !important;
-  font-family: "Open Sans";
+  
   font-size: 20px !important;
   font-style: normal;
   font-weight: 600;
@@ -2830,7 +2829,7 @@ label.label-reg sup {
   background: rgba(131, 180, 255, 0.1) !important;
   border-radius: 6px !important;
   padding: 10px !important;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 10px;
@@ -2861,7 +2860,7 @@ label.label-reg sup {
 .badge.badge-bg {
   background: rgba(219, 100, 79, 0.1);
   border-radius: 6px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   padding: 10px;
   font-weight: 600;
@@ -2937,7 +2936,7 @@ label.label-reg sup {
 
 .nav-tabs.country-viewTab .nav-link.active {
   color: #fff !important;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400 !important;
   border-radius: 0px;
@@ -3149,7 +3148,7 @@ label.label-reg sup {
 
 .nav-tabs.country-viewTab .nav-link {
   color: #fff !important;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400 !important;
   border-radius: 0px;
@@ -3366,7 +3365,7 @@ sup {
 }
 
 .modal-filter-box h4 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -3376,7 +3375,7 @@ sup {
 }
 
 .modal-filter-box .sub-title {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -3871,7 +3870,7 @@ tbody#tbody-users-list tr td {
   border-radius: 50px;
   border: 1px solid #fff;
   padding-left: 0px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -3891,7 +3890,7 @@ tbody#tbody-users-list tr td {
 }
 
 .new-risk-box-1 h5 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   padding-left: 105px;
@@ -3912,7 +3911,7 @@ tbody#tbody-users-list tr td {
 
 
 .new-risk-box h5 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   text-align: center;
@@ -3924,7 +3923,7 @@ tbody#tbody-users-list tr td {
 }
 
 .temp-inc-1 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   min-width: 108px;
@@ -4047,7 +4046,7 @@ tbody#tbody-users-list tr td {
 }
 
 .temp-inc {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   text-align: center;
@@ -4060,7 +4059,7 @@ tbody#tbody-users-list tr td {
 }
 
 .new-risk-box p {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -4070,7 +4069,7 @@ tbody#tbody-users-list tr td {
 }
 
 .highcharts-title {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -4201,7 +4200,7 @@ tbody#tbody-users-list tr td {
 .btn.btn-addmore {
   background: #e5eceb;
   border-radius: 40px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -4223,7 +4222,7 @@ tbody#tbody-users-list tr td {
 }
 
 .footer-text {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -4268,7 +4267,7 @@ tbody#tbody-users-list tr td {
 
 .footer_ul li a {
   padding-left: 0px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -4476,7 +4475,7 @@ tbody#tbody-users-list tr td {
 }
 
 .footer-text {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -4486,7 +4485,7 @@ tbody#tbody-users-list tr td {
 }
 
 .font-18px {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -4512,7 +4511,7 @@ tbody#tbody-users-list tr td {
 }
 
 .logo-title {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -4523,7 +4522,7 @@ tbody#tbody-users-list tr td {
 }
 
 .text-title-logo {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -4561,7 +4560,7 @@ tbody#tbody-users-list tr td {
 }
 
 .form-select.country-filter {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400 !important;
   font-size: 14px;
@@ -4606,7 +4605,7 @@ tbody#tbody-users-list tr td {
 }
 
 .form-select.language-filter {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400 !important;
   font-size: 14px;
@@ -4628,7 +4627,7 @@ tbody#tbody-users-list tr td {
 }
 
 .form-control.language-filter {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400 !important;
   font-size: 14px;
@@ -4705,7 +4704,7 @@ margin-bottom: 10px;
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   color: #fff !important;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400 !important;
   border-radius: 0px;
@@ -4744,7 +4743,7 @@ margin-bottom: 10px;
 
 .nav-link {
   display: block;
-  font-family: "Open Sans";
+  
   font-style: normal;
   padding: 0.8rem 1rem !important;
   font-weight: 400;
@@ -4767,7 +4766,7 @@ margin-bottom: 10px;
 
 .bg-light-1 {
   background-color: #bde9a9;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -4938,7 +4937,7 @@ a {
   color: #000 !important;
   text-decoration: none !important;
   padding: 3px 5px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -4963,7 +4962,7 @@ hr {
 
 .form-check-label {
   white-space: normal;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -5077,7 +5076,7 @@ hr {
 }
 
 .small-sub-title {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -5092,7 +5091,7 @@ hr {
 }
 
 .small-chart-title {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -5179,7 +5178,7 @@ hr {
 }
 
 .title-menu {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -5221,7 +5220,7 @@ hr {
 .btn-read {
   background: #50a379 !important;
   border-radius: 4px !important;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600 !important;
   font-size: 14px;
@@ -5247,7 +5246,7 @@ hr {
   border: 1px solid transparent;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -5264,7 +5263,7 @@ hr {
   z-index: 2;
   left: 47px;
   top: 30px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500 !important;
   font-size: 14px !important;
@@ -5344,7 +5343,7 @@ table.dataTable thead td {
 }
 
 .banner-title-text-1 {
-  font-family: "Open Sans";
+  
   font-weight: 600;
   font-style: normal;
   font-size: 50px;
@@ -5355,7 +5354,7 @@ table.dataTable thead td {
 }
 
 .agri-title h5 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -5365,7 +5364,7 @@ table.dataTable thead td {
 }
 
 .agri-title p {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600 !important;
   font-size: 14px;
@@ -5401,7 +5400,7 @@ table.dataTable thead td {
 }
 
 .text-sdgs {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -5436,7 +5435,7 @@ table.dataTable thead td {
 }
 
 .tooltip-box p {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -5448,7 +5447,7 @@ table.dataTable thead td {
 }
 
 .viewmore-text {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -5483,7 +5482,7 @@ table.dataTable thead td {
 }
 
 .funds-text p span {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -5515,7 +5514,7 @@ table.dataTable thead td {
 .nav-tabs.adaptationTab .nav-link.active {
   font-weight: 600 !important;
   color: #d29433 !important;
-  font-family: "Open Sans";
+  
   font-style: normal;
   border-radius: 0px;
   font-size: 14px !important;
@@ -5526,7 +5525,7 @@ table.dataTable thead td {
 }
 
 .adaption-title h5 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -5536,7 +5535,7 @@ table.dataTable thead td {
 }
 
 .overview-label-text {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -5579,7 +5578,7 @@ table.dataTable thead td {
 }
 
 .country-details-box:hover p {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -5611,7 +5610,7 @@ table.dataTable thead td {
 .nav-pills.right-pills .nav-link {
   background-color: #fff !important;
   border: none !important;
-  font-family: "Open Sans";
+  
   font-style: normal;
   padding: 10px !important;
   margin-right: 8px;
@@ -5624,7 +5623,7 @@ table.dataTable thead td {
 }
 
 .overview-select {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400 !important;
   font-size: 14px !important;
@@ -5635,7 +5634,7 @@ table.dataTable thead td {
 }
 
 .adaption-title p {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -5661,7 +5660,7 @@ table.dataTable thead td {
     color: #000000;
 } */
 .title-tab {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -5672,7 +5671,7 @@ table.dataTable thead td {
 }
 
 .title-tab-des {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -5742,7 +5741,7 @@ table.dataTable thead td {
   white-space: nowrap;
   width: 147px;
   height: 46px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -5779,7 +5778,7 @@ table.dataTable thead td {
 }
 
 .add-report-form label {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -5793,7 +5792,7 @@ table.dataTable thead td {
   border: 1px solid #c7c7c7;
   border-radius: 24px;
   height: 48px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -5803,7 +5802,7 @@ table.dataTable thead td {
 }
 
 .upload-file-text {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -5828,7 +5827,7 @@ table.dataTable thead td {
   height: 58px;
   background: #003f35 !important;
   border-radius: 40px !important;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 20px !important;
@@ -5860,7 +5859,7 @@ table.tbl_view.tbl_edit.dataTable tbody td {
 }
 
 .manage-text h4 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -5870,7 +5869,7 @@ table.tbl_view.tbl_edit.dataTable tbody td {
 }
 
 .manage-text p {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -5884,7 +5883,7 @@ table.tbl_view.tbl_edit.dataTable tbody td {
   border: 1px solid #c7c7c7;
   border-radius: 24px;
   height: 48px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -6249,7 +6248,7 @@ table.tbl_border_none td {
 
 .filter-tab-box .nav-tabs .nav-link.active {
   color: #fff !important;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400 !important;
   border-radius: 0px;
@@ -6269,7 +6268,7 @@ table.tbl_border_none td {
 .nav-tabs.login_tabs .nav-item.show .nav-link,
 .nav-tabs.login_tabs .nav-link.active {
   color: #000 !important;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 700 !important;
   border-radius: 0px;
@@ -6288,7 +6287,7 @@ table.tbl_border_none td {
   color: #0000004d !important;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-  font-family: "Open Sans";
+  
   font-style: normal;
   text-transform: capitalize;
 }
@@ -6392,7 +6391,7 @@ select[name="form-control"]::after {
   white-space: nowrap;
   width: 147px;
   height: 52px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -6429,7 +6428,7 @@ select[name="form-control"]::after {
 
 .accordion-button:not(.collapsed) {
   background-color: #fff !important;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -6441,7 +6440,7 @@ select[name="form-control"]::after {
 .accordion-button {
   position: relative;
   display: flex;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 14px !important;
@@ -6468,7 +6467,7 @@ select[name="form-control"]::after {
 }
 
 .adaptation-catalog-box h5 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -6481,7 +6480,7 @@ select[name="form-control"]::after {
 }
 
 .form-check-label-1 {
-  font-family: "Open Sans";
+  
   font-style: italic;
   font-weight: 400;
   font-size: 14px;
@@ -6490,7 +6489,7 @@ select[name="form-control"]::after {
 }
 
 .adaption-label {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -6520,7 +6519,7 @@ select[name="form-control"]::after {
 }
 
 .left-banner-bax p {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -6530,7 +6529,7 @@ select[name="form-control"]::after {
 }
 
 .banner-title-text {
-  font-family: "Open Sans";
+  
   font-weight: 600;
   font-style: normal;
   font-size: 50px;
@@ -6541,7 +6540,7 @@ select[name="form-control"]::after {
 }
 
 .title_description {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -6710,7 +6709,7 @@ foreignObject>div {
 }
 
 .country-details-box {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -6752,7 +6751,7 @@ foreignObject>div {
 }
 
 .form-select.bg-transparent {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -6766,7 +6765,7 @@ foreignObject>div {
 }
 
 .country-details-box p {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -6785,7 +6784,7 @@ foreignObject>div {
 .nav-tabs.all-tabs .nav-link.active {
   font-weight: 600 !important;
   color: #d29433 !important;
-  font-family: "Open Sans";
+  
   font-style: normal;
   border-radius: 0px;
   font-size: 16px !important;
@@ -7032,7 +7031,7 @@ foreignObject>div {
 
 .map-legend-title {
   position: absolute;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -7051,7 +7050,7 @@ foreignObject>div {
 
 .nav-tabs.adpt-tabs .nav-item.show .nav-link,
 .nav-tabs.adpt-tabs .nav-link.active {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   background-color: transparent !important;
@@ -7065,7 +7064,7 @@ foreignObject>div {
 
 .nav-tabs.tabs-three .nav-item.show .nav-link,
 .nav-tabs.tabs-three .nav-link.active {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   background-color: transparent !important;
@@ -7078,7 +7077,7 @@ foreignObject>div {
 }
 
 .text-body-title {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -7092,7 +7091,7 @@ foreignObject>div {
 }
 
 .text-para {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -7102,7 +7101,7 @@ foreignObject>div {
 }
 
 .text-impact {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -7113,7 +7112,7 @@ foreignObject>div {
 }
 
 .font-logo {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-size: 17px;
   line-height: 24px;
@@ -7165,7 +7164,7 @@ foreignObject>div {
 }
 
 .project-title {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -7175,7 +7174,7 @@ foreignObject>div {
 }
 
 .chart-description {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 13.7508px;
@@ -7204,7 +7203,7 @@ foreignObject>div {
 .btn-status {
   background: rgba(219, 100, 79, 0.1) !important;
   border-radius: 6px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600 !important;
   font-size: 10px !important;
@@ -7214,7 +7213,7 @@ foreignObject>div {
 }
 
 .title-text {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -7224,7 +7223,7 @@ foreignObject>div {
 }
 
 .label-text {
-  font-family: "Open Sans";
+  
   font-style: normal;
   margin-bottom: 5px;
   font-weight: 400;
@@ -7583,7 +7582,7 @@ a.btn.btn-new:hover {
     background: rgba(46, 95, 68, 0.10);
     padding: 10px 20px !important;
     color: #000;
-    font-family: "Open Sans";
+    
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -7596,7 +7595,7 @@ a.btn.btn-new:hover {
     background: rgba(46, 95, 68, 0.10);
     padding: 10px 20px !important;
     color: #000;
-    font-family: "Open Sans";
+    
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -7608,7 +7607,7 @@ a.btn.btn-new:hover {
   border-radius: 30px;
     background: #003F35;
     color: #FFF;
-    font-family: "Open Sans";
+    
     font-size: 14px;
     font-style: normal;
     padding: 10px 20px;
@@ -7620,7 +7619,7 @@ a.btn.btn-new:hover {
   border-radius: 30px;
     background: #003F35;
     color: #FFF;
-    font-family: "Open Sans";
+    
     font-size: 14px;
     font-style: normal;
     padding: 10px 20px;
@@ -7632,7 +7631,7 @@ a.btn.btn-new:hover {
   border-radius: 30px;
     border: 1px solid #003F35;
     color: #003F35;
-    font-family: "Open Sans";
+    
     font-size: 14px;
     padding: 10px 20px;
     font-style: normal;
@@ -7643,7 +7642,7 @@ a.btn.btn-new:hover {
   border-radius: 30px;
     border: 1px solid #003F35;
     color: #003F35;
-    font-family: "Open Sans";
+    
     font-size: 14px;
     padding: 10px 20px;
     font-style: normal;
@@ -7687,7 +7686,7 @@ nav ul#navi li a {
   border-style: solid;
   border-color: #d9d9d9;
   padding: 4px 15px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -7701,7 +7700,7 @@ nav ul#navi li a {
 } */
 
 .filter_tab .active a {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -7793,7 +7792,7 @@ nav ul#navi li a {
 }
 
 p.label {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600 !important;
   font-size: 14px !important;
@@ -7833,7 +7832,7 @@ p.label {
 .btn.btn-addmore:hover {
   background: #e5eceb;
   border-radius: 40px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -7957,7 +7956,7 @@ p.label {
 
 .nav-pills.socio-pills .nav-link.active,
 .nav-pills.socio-pills .show>.nav-link {
-  font-family: "Open Sans";
+  
   font-style: normal;
   line-height: 19px;
   color: #53aa7e !important;
@@ -7983,7 +7982,7 @@ p.label {
 .nav-pills.socio-pills .nav-link {
   text-align: left !important;
   padding: 10px !important;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 14px !important;
@@ -7994,7 +7993,7 @@ p.label {
 }
 
 .form-select.bg-white {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -8014,7 +8013,7 @@ p.label {
 }
 
 .filter-label {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -8177,7 +8176,7 @@ p.label {
 }
 
 .status-box h3 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -8187,7 +8186,7 @@ p.label {
 }
 
 .status-box span {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -8207,7 +8206,7 @@ p.label {
 }
 
 .title-text-1 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -8217,7 +8216,7 @@ p.label {
 }
 
 .project-title-text {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -8227,7 +8226,7 @@ p.label {
 }
 
 .project_title_description {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -8245,7 +8244,7 @@ p.label {
 }
 
 .year-text {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -8255,7 +8254,7 @@ p.label {
 }
 
 .year-number {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -8290,7 +8289,7 @@ p.label {
 }
 
 .modal-title {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -8301,7 +8300,7 @@ p.label {
 }
 
 .chart-title {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -8311,7 +8310,7 @@ p.label {
 }
 
 .card-title {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -8340,7 +8339,7 @@ p.label {
 }
 
 .main-card h3 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -8389,7 +8388,7 @@ p.label {
 }
 
 .main-card p {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -8435,7 +8434,7 @@ tr {
 }
 
 .title_of_projects {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -8447,7 +8446,7 @@ tr {
 }
 
 .chart-title-new {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -8457,7 +8456,7 @@ tr {
 }
 
 .content h3 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -8666,7 +8665,7 @@ tbody td {
 }
 
 .content h4 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -8920,7 +8919,7 @@ tr {
 .team-box h3 {
   font-size: 17px !important;
   font-weight: 700;
-  font-family: "Open Sans";
+  
   color: #000;
 }
 
@@ -9071,7 +9070,7 @@ h3.three a {
   margin-bottom: 0px;
   min-height: 40px;
   font-weight: 500;
-  font-family: "Open Sans";
+  
 }
 
 .paratext {
@@ -9183,7 +9182,7 @@ h3.three a {
 }
 
 .project_title {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -9260,7 +9259,7 @@ h3.three a {
 }
 
 .description-1 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -9293,7 +9292,7 @@ h3.three a {
 .btn-status-project {
   background: #0085ff !important;
   border-radius: 20px !important;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 14px !important;
@@ -9316,7 +9315,7 @@ h3.three a {
 }
 
 .text-outcomes {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -9326,7 +9325,7 @@ h3.three a {
 }
 
 .text-overview h5 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -9336,7 +9335,7 @@ h3.three a {
 }
 
 .text-overview p {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -9346,7 +9345,7 @@ h3.three a {
 }
 
 .description {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -9485,7 +9484,7 @@ h3.three a {
 }
 
 .rank-text {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 11.9111px;
@@ -9495,7 +9494,7 @@ h3.three a {
 }
 
 .rank-count {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 800;
   font-size: 14.8889px;
@@ -9517,7 +9516,7 @@ h3.three a {
 }
 
 .overview-box h5 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 19.9288px;
@@ -9547,7 +9546,7 @@ h3.three a {
 }
 
 .overview-box-1 h5 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -9559,7 +9558,7 @@ h3.three a {
 }
 
 .overview-box-1 p {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -9570,7 +9569,7 @@ h3.three a {
 }
 
 .chart-title-small {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 13.0773px;
@@ -9580,7 +9579,7 @@ h3.three a {
 }
 
 .title-current {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -9638,7 +9637,7 @@ h3.three a {
 }
 
 .column-1 p {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -10286,7 +10285,7 @@ h3.three a {
 }
 
 .rank-count-1 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 800;
   font-size: 20.8889px;
@@ -10296,7 +10295,7 @@ h3.three a {
 }
 
 .rank-text-1 {
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 16.9111px;
@@ -11043,7 +11042,7 @@ h3.three a {
 
 @media (max-width: 912px) {
   .project-title-text {
-    font-family: "Open Sans";
+    
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -11845,7 +11844,7 @@ h3.three a {
 
 .accordion-body.one p {
   color: #000;
-  font-family: "Open Sans";
+  
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -11857,7 +11856,7 @@ h3.three a {
   border-top-left-radius: var(--bs-accordion-inner-border-radius);
   border-top-right-radius: var(--bs-accordion-inner-border-radius);
   color: #000 !important;
-  font-family: "Open Sans";
+  
   font-size: 20px !important;
   font-style: normal;
   font-weight: 600;
@@ -12083,7 +12082,7 @@ h3.three a {
   background: #e5eceb;
   width: 147px;
   border-radius: 40px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -12094,7 +12093,7 @@ h3.three a {
 .btn.btn-addmores {
   background: #e5eceb;
   border-radius: 40px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -12106,7 +12105,7 @@ h3.three a {
 .btn.btn-addmores:hover {
   background: #e5eceb;
   border-radius: 40px;
-  font-family: "Open Sans";
+  
   font-style: normal;
   font-weight: 500;
   font-size: 12px;

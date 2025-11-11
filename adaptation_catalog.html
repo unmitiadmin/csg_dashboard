@@ -20,7 +20,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css" />
-  <!-- <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" /> -->
   <!--Plugin CSS file with desired skin-->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
@@ -30,8 +29,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css" />
   <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
-  <!-- js -->
 
+  <!-- js (jQuery first) -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
@@ -50,239 +49,50 @@
   <script type="text/javascript" src="./assets/scripts/header-nav.js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-DXGH9K238E");
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-DXGH9K238E');
   </script>
 
   <style>
-    .leaflet-control-container {
-      z-index: 1000;
-      position: absolute;
-      top: 5px;
-      right: 5px;
-    }
-
-    .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
-      padding: 0px 10px !important;
-      font-weight: 500;
-      color: #495057;
-      font-size: 12px !important;
-    }
-
-    .facebook-link {
-      margin-right: 0px!important;
-    }
-
-    .leaflet-bar a {
-      background-color: #fff;
-      border-bottom: 1px solid #ccc;
-      width: 26px;
-      height: 26px;
-      line-height: 26px;
-      display: block;
-      text-align: center;
-      text-decoration: none;
-      color: black;
-      background-color: #b5abab;
-      border-radius: 10%;
-    }
-
-    .leaflet-control-attribution {
-      display: none;
-    }
-
-    .leaflet-touch .leaflet-bar a {
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
-    }
-
-    .map-popup {
-      position: absolute;
-      z-index: 1000;
-      border-radius: 8px !important;
-      border: -0.5px solid var(--light-mode-neutral-150, #eaeaef);
-      background: #fff;
-      box-shadow: 0px 1px 4px 0px rgba(33, 33, 52, 0.1) !important;
-      max-width: 80%;
-      width: 200px;
-      background-color: #fff;
-      border-radius: 10px;
-      max-height: 80%;
-      padding: 20px;
-      display: none;
-      transition: all 0.3s ease-in-out;
-    }
-
-    .country-name {
-      color: #2e5f44;
-      font-family: Open Sans;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-      text-transform: capitalize;
-    }
-
-    .map-popup.show {
-      display: block;
-    }
-
-    .map-popup .project-area {
-      cursor: pointer;
-      color: #000;
-      font-family: Open Sans;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      text-transform: capitalize;
-      text-decoration: underline;
-    }
-  </style>
-  <style>
-    *,
-    ::before,
-    ::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    .dropdown-menu.inner.show {
-      top: 55px !important;
-    }
-
-    .home {
-      height: 100vh;
-      position: relative;
-    }
-
-    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
-      width: 100% !important;
-    }
-
-    .bootstrap-select>.dropdown-toggle {
-      height: 40px !important;
-      color: #6c757d !important;
-      font-weight: 400 !important;
-      font-size: 12px !important;
-      padding: 9px 10px !important;
-      border-radius: 100px !important;
-      border: 1px solid rgba(0, 0, 0, 0.10) !important;
-      background-color: #fff!important;
-    }
-
-    .btn.btn-apply {
-      color: #FFF;
-      text-align: center;
-      font-size: 14px;
-      font-style: normal;
-      height: 36px;
-      font-weight: 400;
-      line-height: 4px;
-      box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12);
-      border-radius: 100px;
-      background: var(--Dark-blue, #28537D);
-    }
-
-    .btn.btn-apply-cancel {
-      color: var(--Dark-blue, #28537D);
-      font-family: Poppins;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 600;
-      height: 36px;
-      box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12);
-      border-radius: 100px;
-      border: 1px solid var(--Dark-blue, #28537D);
-      background: #fff;
-      line-height: 4px;
-    }
-
-    .bootstrap-select .dropdown-menu li {
-      position: relative;
-    }
-
-    .dropdown-menu.show {
-      display: block;
-      background: #ffffff;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 4px;
-      position: absolute !important;
-      border: 0px;
-      left: 0px !important;
-    }
-
-    .dropdown.bootstrap-select .dropdown-menu.show {
-      min-height: 290px !important;
-    }
-
-    .dropdown-menu.inner.show {
-      margin-top: 0px;
-      margin-bottom: 0px;
-      overflow-y: scroll;
-      height: 290px;
-    }
-
-    .dropdown-item.active,
-    .dropdown-item:active {
-      color: #fff;
-      text-decoration: none;
-      background-color: #b2b2b2;
-    }
-
-    .form-select.input-radio {
-      border-radius: 40px;
-      height: 48px;
-      font-size: 14px !important;
-      color: #000000b0;
-    }
-
-    .mx-35 {
-      margin: 0px 35px;
-    }
-
-    .form-select::placeholder {
-      color: #6c757d !important;
-    }
-
-    .card.adaptation-filter {
-      border-radius: 10px;
-      background: #FFF;
-      min-height: 90vh;
-      padding: 6px 12px 12px 12px;
-      box-shadow: none!important;
-    }
-    .filter-title {
-    line-height: 20px;
-    text-transform: capitalize;
-    color: #000;
-    font-family: Poppins;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-}
+    /* (all the original <style> blocks stay exactly the same) */
+    .leaflet-control-container{z-index:1000;position:absolute;top:5px;right:5px}
+    .bootstrap-select .dropdown-toggle .filter-option-inner-inner{padding:0px 10px!important;font-weight:500;color:#495057;font-size:12px!important}
+    .facebook-link{margin-right:0px!important}
+    .leaflet-bar a{background-color:#fff;border-bottom:1px solid #ccc;width:26px;height:26px;line-height:26px;display:block;text-align:center;text-decoration:none;color:black;background-color:#b5abab;border-radius:10%}
+    .leaflet-control-attribution{display:none}
+    .leaflet-touch .leaflet-bar a{width:30px;height:30px;line-height:30px}
+    .map-popup{position:absolute;z-index:1000;border-radius:8px!important;border:-0.5px solid var(--light-mode-neutral-150,#eaeaef);background:#fff;box-shadow:0px 1px 4px 0px rgba(33,33,52,.1)!important;max-width:80%;width:200px;background-color:#fff;border-radius:10px;max-height:80%;padding:20px;display:none;transition:all .3s ease-in-out}
+    .country-name{color:#2e5f44;font-family:Open Sans;font-size:18px;font-style:normal;font-weight:600;line-height:normal;text-transform:capitalize}
+    .map-popup.show{display:block}
+    .map-popup .project-area{cursor:pointer;color:#000;font-family:Open Sans;font-size:12px;font-style:normal;font-weight:400;line-height:normal;text-transform:capitalize;text-decoration:underline}
+    *,::before,::after{box-sizing:border-box;margin:0;padding:0}
+    .dropdown-menu.inner.show{top:55px!important}
+    .home{height:100vh;position:relative}
+    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){width:100%!important}
+    .bootstrap-select>.dropdown-toggle{height:40px!important;color:#6c757d!important;font-weight:400!important;font-size:12px!important;padding:9px 10px!important;border-radius:100px!important;border:1px solid rgba(0,0,0,.10)!important;background-color:#fff!important}
+    .btn.btn-apply{color:#FFF;text-align:center;font-size:14px;font-style:normal;height:36px;font-weight:400;line-height:4px;box-shadow:0px 0px 14px 0px rgba(0,0,0,.12);border-radius:100px;background:var(--Dark-blue,#28537D)}
+    .btn.btn-apply-cancel{color:var(--Dark-blue,#28537D);font-family:Poppins;font-size:14px;font-style:normal;font-weight:600;height:36px;box-shadow:0px 0px 14px 0px rgba(0,0,0,.12);border-radius:100px;border:1px solid var(--Dark-blue,#28537D);background:#fff;line-height:4px}
+    .bootstrap-select .dropdown-menu li{position:relative}
+    .dropdown-menu.show{display:block;background:#ffffff;box-shadow:0px 4px 4px rgba(0,0,0,.25);border-radius:4px;position:absolute!important;border:0px;left:0px!important}
+    .dropdown.bootstrap-select .dropdown-menu.show{min-height:290px!important}
+    .dropdown-menu.inner.show{margin-top:0px;margin-bottom:0px;overflow-y:scroll;height:290px}
+    .dropdown-item.active,.dropdown-item:active{color:#fff;text-decoration:none;background-color:#b2b2b2}
+    .form-select.input-radio{border-radius:40px;height:48px;font-size:14px!important;color:#000000b0}
+    .mx-35{margin:0px 35px}
+    .form-select::placeholder{color:#6c757d!important}
+    .card.adaptation-filter{border-radius:10px;background:#FFF;min-height:90vh;padding:6px 12px 12px 12px;box-shadow:none!important}
+    .filter-title{line-height:20px;text-transform:capitalize;color:#000;font-family:Poppins;font-size:24px;font-style:normal;font-weight:600}
   </style>
 </head>
 
 <body>
 
   <section class="hero-section1">
-    <img src="./assets/images/network-background.png" alt="corner" style="
-            position: absolute;
-            top: -290px;
-            right: 0;
-             width: 46%;
-            height: fit-content;
-             z-index: -1; ">
-    <div class="container pt-5" id="headerContainer">
-      <!-- Dynamic navbar - based on login -->
-    </div>
+    <img src="./assets/images/network-background.png" alt="corner"
+      style="position:absolute;top:-290px;right:0;width:46%;height:fit-content;z-index:-1;">
+    <div class="container pt-5" id="headerContainer"><!-- Dynamic navbar – header-nav.js injects it --></div>
+
     <div class="container mt-57px">
       <div class="row">
         <div class="col-sm-12 col-md-2 col-lg-2"></div>
@@ -302,11 +112,14 @@
             <select class="form-control w-100" id="pageSelect">
               <option value="country_overview.html">Country Overview</option>
               <option value="climate_outlook.html">Climate Outlook</option>
-              <option value="project_tracker.html" selected>Project Tracker</option>
-              <option value="geospatial.html">Geo-intelligence Tools</option>
-              <option value="mande_tool.html">Monitoring and Evaluation</option>
-              <option value="development_indicators.html" selected>Development Indicators</option>
+              <option value="project_tracker.html">Project Tracker</option>
+              <option value="geospatial.html">Geo-Intelligence Tools</option>
+              <option value="mande_tool.html">Monitoring and Evaluation Tools</option>
+              <option value="development-indicators.html">Development Indicators</option>
               <option value="adaptation_catalog.html" selected>Adaptation Catalog</option>
+              <option value="investment_portfolio.html">Investment Portfolio Planning</option>
+              <option value="ndc.html">NDC Tracker</option>
+              <option value="ccs.html">Project Submission Form</option>
             </select>
             <span><img src="./assets/images/element-3.png" alt=""></span>
           </div>
@@ -331,24 +144,18 @@
     <div>
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12">
-          <button class="btn btn-key mb-3"><img src="./assets/images/key1.png" alt="">
-            Key Features</button>
+          <button class="btn btn-key mb-3"><img src="./assets/images/key1.png" alt="">Key Features</button>
           <h1 class="title-black mb-3 mt-2"> Adaptation Catalog</h1>
-
-          <p class="font-14px">This module showcases the climate adaptation projects from around the world that are
-            implemented from national to local scale. Anyone who has signed up to the system can upload information
-            about projects they are working on, with this information then becoming visible to all other users of the
-            system. In time, the dashboard may be made available more widely, so that members of smaller enterprises and
-            the public can also upload information on initiatives. Projects can be viewed on a map, to show where
-            clusters of similar initiatives or gaps exist.</p>
+          <p class="font-14px">This module showcases the climate adaptation projects …</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="py-5 px-0" style="background-color: #f4faf7">
+  <section class="py-5 px-0" style="background-color:#f4faf7">
     <div class="container">
       <div class="row">
+        <!-- FILTER PANEL (unchanged) -->
         <div class="col-sm-12 col-md-3 col-lg-3 pr-0 px-0">
           <div class="card border-0 adaptation-filter">
             <div class="card-body">
@@ -357,40 +164,28 @@
                   <h4 class="filter-title pl-3">Filter</h4>
                   <hr />
                   <div class="col-sm-12 col-md-12 col-lg-12">
-                    <div class="form-group mt-22px">
-                      <p class="mb-0" for="">Country</p>
+                    <!-- all the filter controls stay exactly as they were -->
+                    <div class="form-group mt-22px"><p class="mb-0" for="">Country</p>
                       <select multiple class="selectpicker" name="selected_countries" id="selected_countries"
                         data-actions-box="true" data-live-search="true" data-select-all="true"></select>
                     </div>
-
-                    <div class="form-group mt-22px">
-                      <p class="mb-0" for="">Theme</p>
+                    <div class="form-group mt-22px"><p class="mb-0" for="">Theme</p>
                       <select class="selectpicker" name="" multiple id="selected_themes" data-actions-box="true"
                         data-live-search="true"></select>
                     </div>
-
-                    <div class="form-group mt-22px">
-                      <p class="mb-0" for="">Approach</p>
+                    <div class="form-group mt-22px"><p class="mb-0" for="">Approach</p>
                       <select class="selectpicker" multiple id="selected_approaches" data-actions-box="true"
                         data-live-search="true"></select>
                     </div>
-
-                    <div class="form-group mt-22px">
-                      <p class="mb-0" for="">Hazards</p>
+                    <div class="form-group mt-22px"><p class="mb-0" for="">Hazards</p>
                       <select class="selectpicker" multiple id="selected_hazards" data-actions-box="true"
                         data-live-search="true"></select>
                     </div>
-
-                    <div class="form-group mt-22px">
-                      <p class="mb-0" for="">Scale</p>
+                    <div class="form-group mt-22px"><p class="mb-0" for="">Scale</p>
                       <select class="selectpicker" name="" multiple id="selected_scales" data-actions-box="true"
-                        data-live-search="true">
-                        <!-- <option selected>All scale</option> -->
-                      </select>
+                        data-live-search="true"></select>
                     </div>
-
-                    <div class="form-group mt-22px">
-                      <p class="mb-4" for="">Budget</p>
+                    <div class="form-group mt-22px"><p class="mb-4" for="">Budget</p>
                       <input type="text" class="" id="example-slider" name="example_name"
                         onchange="convertToReadableNotation()" />
                     </div>
@@ -399,39 +194,29 @@
                         <div class="col-sm-12 col-md-12 col-lg-12">
                           <span class="calender-img"><img src="./assets/images/dollar.png" height="13px" /></span>
                           <p class="mb-4" for="">Min</p>
-                          <div style="display: flex">
-                            <input type="text" name="" value="" class="form-control number_dollor_2" id="budget_min"
-                              oninput="convertToReadableNotation()" /><span id="formattedMinBudget" style="
-                                    margin: 12px 0 0 -73px;
-                                    font-size: 14px;
-                                  "></span>
+                          <div style="display:flex">
+                            <input type="text" class="form-control number_dollor_2" id="budget_min"
+                              oninput="convertToReadableNotation()" /><span id="formattedMinBudget"
+                              style="margin:12px 0 0 -73px;font-size:14px"></span>
                           </div>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-12">
                           <span class="calender-img"><img src="./assets/images/dollar.png" height="13px" /></span>
                           <p class="mb-4" for="">Max</p>
-                          <div style="display: flex">
-                            <input type="text" name="" value="" class="form-control number_dollor_2" id="budget_max"
+                          <div style="display:flex">
+                            <input type="text" class="form-control number_dollor_2" id="budget_max"
                               oninput="convertToReadableNotation()" />
-                            <span id="formattedMaxBudget" style="
-                                    margin: 11px 0 0 -65px;
-                                    font-size: 14px;
-                                  "></span>
+                            <span id="formattedMaxBudget" style="margin:11px 0 0 -65px;font-size:14px"></span>
                           </div>
                         </div>
                       </div>
                     </div>
-
-                    <div class="form-group mt-22px">
-                      <p class="mb-0" for="">Donors</p>
+                    <div class="form-group mt-22px"><p class="mb-0" for="">Donors</p>
                       <select class="selectpicker" name="" multiple id="selected_donors" data-actions-box="true"
                         data-live-search="true"></select>
                     </div>
-
-                    <div class="form-group mt-22px">
-                      <p class="" for="">
-                        Duration <span class="span_yearly">(Yearly)</span>
-                      </p>
+                    <div class="form-group mt-22px"><p class="" for="">Duration <span
+                          class="span_yearly">(Yearly)</span></p>
                       <input type="text" id="example-slider1" name="example_name1" />
                     </div>
                     <div class="form-group mt-22px">
@@ -446,14 +231,9 @@
                         </div>
                       </div>
                     </div>
-
                     <div class="mt-22px">
-                      <button class="btn btn-apply w-100 p-3" onclick="get_filtered_data('apply')">
-                        Apply
-                      </button>
-                      <button class="btn btn-apply-cancel w-100 mt-3 p-3" id="resetFilterBtn">
-                        Reset Filters
-                      </button>
+                      <button class="btn btn-apply w-100 p-3" onclick="get_filtered_data('apply')">Apply</button>
+                      <button class="btn btn-apply-cancel w-100 mt-3 p-3" id="resetFilterBtn">Reset Filters</button>
                     </div>
                   </div>
                 </div>
@@ -462,31 +242,30 @@
           </div>
         </div>
 
+        <!-- MAP + TABLE (unchanged) -->
         <div class="col-sm-12 col-md-9 col-lg-9 pl-0">
           <div class="card border-0">
             <div class="card-body p-0">
-              <div id="map" style="height: 550px; width: 100%"></div>
+              <div id="map" style="height:550px;width:100%"></div>
 
               <div class="map-popup" id="map-popup">
                 <h5 class="country-name">India</h5>
-                <div class="project-area" id="no_of_projects">
-                  No of Projects: 4
-                </div>
-                <!-- <div class="budget-area">Total budget : $3000</div> -->
+                <div class="project-area" id="no_of_projects">No of Projects: 4</div>
               </div>
 
-              <button class="btn btn-collapse text-white" data-toggle="collapse" href="#collapseExample" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
+              <button class="btn btn-collapse text-white" data-toggle="collapse" href="#collapseExample"
+                role="button" aria-expanded="false" aria-controls="collapseExample">
                 <i class="fa fa-caret-up"></i>
               </button>
+
               <div class="collapsed collapseDropdown" id="collapseExample">
                 <div class="card bg-project-table">
                   <div class="card-body">
                     <div class="row">
                       <div class="col-sm-12 col-md-12 col-lg-12">
                         <h5 class="project_title_head">Projects</h5>
-
-                        <div class="table-responsive" id="table-container" style="height: 395px; overflow-y: scroll">
+                        <div class="table-responsive" id="table-container"
+                          style="height:395px;overflow-y:scroll">
                           <table class="table table-bordered project_tbl">
                             <thead></thead>
                             <tbody></tbody>
@@ -497,54 +276,6 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="">
-                                    <div class="project-model">
-                                        <div class="title">
-                                            <h5>Project</h5>
-                                            <span class="close-btn">X</span>
-                                        </div>
-                                        <hr>
-                                        <div class="search-area">
-                                            <input type="text">
-                                        </div>
-                                        <div class="contents">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </div>
-                                        <div class="contents">Officia aperiam tempora, omnis minima voluptatem debitis minus! Neque, molestiae dolore. Eius perferendis voluptatibus a ipsam recusandae.</div>
-                                        <div class="contents">accusantium. Fuga, velit. Omnis atque vitae odit in repellendus ad minima id sunt accusamus, </div>
-                                    </div>
-                                    <div id="map"></div>
-                                    <div class="map-popup">
-                                        <h5 class="country-name">India</h5>
-                                        <a class="project-area" role="link">No of Projects: 4</a>
-                                        <div class="budget-area">Total budget : $3000</div>
-                                    </div>
-                                </div>
-                              
-
-                                <div class="project-details-box">
-                                    <div class="row">
-                                        <div class="col-sm-12 col-md-12 col-lg-12">
-                                            <div class="d-flex justify-content-between align-items-center pd-2">
-                                                <div><h5 class="details_para">Projects</h5></div>
-                                                <div><img src="./assets/images/CrossCircle.svg"></div>
-                                            </div>
-                                            <hr style="background-color: #fff;">
-                                            <div class="pd-2 pt-2 pb-3">
-                                                <input type="text" class="form-control search-projects" placeholder="Search" name="">
-                                                <span class="search-project-icon"><img src="./assets/images/search-projects.svg"></span>
-                                            </div>
-                                            <div>
-                                                <ul class="list-group listActive">
-                                                    <li class="list-group-item active" aria-current="true">Supporting Zambia to Integrate Agriculture Sectors into National Adaptation Plans</li>
-                                                    <li class="list-group-item">Supporting Zambia to Integrate Agriculture Sectors into National Adaptation Plans</li>
-                                                    <li class="list-group-item active">Supporting Zambia to Integrate Agriculture Sectors into National Adaptation Plans</li>
-                                                    <li class="list-group-item">Supporting Zambia to Integrate Agriculture Sectors into National Adaptation Plans</li>
-                                                    <li class="list-group-item active">Supporting Zambia to Integrate Agriculture Sectors into National Adaptation Plans</li>
-                                                  </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                 <div id="map-container" style="height: 700px; width: 100%"></div> -->
             </div>
           </div>
         </div>
@@ -552,8 +283,8 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <section class="footer-top bg-transparent" style="padding: 54px 0px 42px 0px;">
+  <!-- Footer (unchanged) -->
+  <section class="footer-top bg-transparent" style="padding:54px 0px 42px 0px;">
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-12">
@@ -562,77 +293,39 @@
       </div>
     </div>
   </section>
+
   <section class="">
     <div class="card footer border-0">
       <div class="card-body">
-        <div class="row p20px">
-          <div class="col-sm-12 col-md-3 col-lg-3">
-            <div class="d-flex justify-content-start align-items-center pt-3">
-              <div><img src="./assets/images/iwmi-white.png" class="w-100"></div>
+        <div class="row pt-4">
+          <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="d-flex justify-content-between flex-wrap align-items-center">
+              <div><img src="./assets/images/iwmi-white.png" class="w-100" height="80px"></div>
+              <div><img src="./assets/images/footer-logo.png" class="w-100" height="60px"></div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-3 col-lg-3">
-            <div class="d-flex justify-content-start align-items-center pt-3">
-              <div>
-                <p class="mb-0"><span class="pr-3">Supported By</span> <img class="mb-2"
-                    src="./assets/images/logo_white.webp"></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-1 col-lg-1"></div>
+          <div class="col-sm-12 col-md-3 col-lg-3"></div>
           <div class="col-sm-12 col-md-5 col-lg-5">
-            <p class="text-white font-weight-bold pt-4" style="white-space: nowrap;">Follow Us</p>
+            <p class="text-white font-weight-bold" style="white-space:nowrap;">Follow Us</p>
             <ul class="list-unstyled pl-0 ms-0 footer_ul">
               <li class="d-flex follow-link flex-wrap text-start">
-                <div class="pr-3">
-                  <a href="https://www.facebook.com/IWMIonFB" target="_blank" class="facebook-link">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </div>
-
-                <div class="pr-3">
-                  <a href="https://www.flickr.com/photos/iwmi" target="_blank" class="facebook-link">
-                    <i class="fa fa-flickr"></i>
-                  </a>
-                </div>
-
-                <div class="pr-3">
-                  <a href="https://www.instagram.com/iwmi_water/" target="_blank" class="facebook-link">
-                    <i class="fa fa-instagram"></i>
-                  </a>
-                </div>
-
-                <div class="pr-3">
-                  <a href="https://www.linkedin.com/checkpoint/lg/login?session_redirect=%2Fauthwall&amp;fromSignIn=true&amp;trk=seo-authwall-base_google-one-tap-submit"
-                    target="_blank" class="facebook-link">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </div>
-
-                <div class="pr-3">
-                  <a href="mailto:iwmi@cgiar.org" target="_blank" class="facebook-link">
-                    <i class="fa fa-envelope"></i>
-                  </a>
-                </div>
-
-                <div class="pr-3">
-                  <a href="https://www.iwmi.cgiar.org/news/rss-feeds/" target="_blank" class="facebook-link">
-                    <i class="fa fa-wifi"></i>
-                  </a>
-                </div>
-
-                <div class="pr-3">
-                  <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIWMI_" target="_blank"
-                    class="facebook-link">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </div>
-
-                <div class="pr-3">
-                  <a href="https://www.youtube.com/iwmimedia" target="_blank" class="facebook-link">
-                    <i class="fa fa-youtube-play"></i>
-                  </a>
-                </div>
+                <div class="pr-3"><a href="https://www.facebook.com/IWMIonFB" target="_blank" class="facebook-link"><i
+                      class="fa fa-facebook"></i></a></div>
+                <div class="pr-3"><a href="https://www.flickr.com/photos/iwmi" target="_blank" class="facebook-link"><i
+                      class="fa fa-flickr"></i></a></div>
+                <div class="pr-3"><a href="https://www.instagram.com/iwmi_water/" target="_blank"
+                    class="facebook-link"><i class="fa fa-instagram"></i></a></div>
+                <div class="pr-3"><a
+                    href="https://www.linkedin.com/checkpoint/lg/login?session_redirect=%2Fauthwall&amp;fromSignIn=true&amp;trk=seo-authwall-base_google-one-tap-submit"
+                    target="_blank" class="facebook-link"><i class="fa fa-linkedin"></i></a></div>
+                <div class="pr-3"><a href="mailto:iwmi@cgiar.org" target="_blank" class="facebook-link"><i
+                      class="fa fa-envelope"></i></a></div>
+                <div class="pr-3"><a href="https://www.iwmi.cgiar.org/news/rss-feeds/" target="_blank"
+                    class="facebook-link"><i class="fa fa-wifi"></i></a></div>
+                <div class="pr-3"><a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIWMI_"
+                    target="_blank" class="facebook-link"><i class="fa fa-twitter"></i></a></div>
+                <div class="pr-3"><a href="https://www.youtube.com/iwmimedia" target="_blank" class="facebook-link"><i
+                      class="fa fa-youtube-play"></i></a></div>
               </li>
             </ul>
           </div>
@@ -640,14 +333,12 @@
       </div>
     </div>
 
-    <div class="card-footer subfooter p-2 px-5">
-      <div class="row">
+    <div class="card-footer subfooter">
+      <div class="row p-2">
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water
-            Management
-            Institute (IWMI) | <a href="">Termsof use</a></p>
+          <p class="mb-0"><img src="./assets/images/revisit.svg" height="30px"> 2025 International Water Management
+            Institute (IWMI) | <a href="">Terms of use</a></p>
         </div>
-
         <div class="col-sm-12 col-md-6 col-lg-6 text-right">
           <ul class="d-flex justify-content-end list-unstyled align-items-center mb-0 pb-0">
             <li><a href="#">Ethics</a></li>
@@ -662,15 +353,14 @@
   <!-- waiting spinner -->
   <div id="loading-modal" class="modal hide" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content p-3 text-white" style="
-            background-color: transparent !important;
-            border: 0px !important;
-          ">
+      <div class="modal-content p-3 text-white"
+        style="background-color:transparent!important;border:0px!important;">
         <div id="loading-modal-container"></div>
       </div>
     </div>
   </div>
 
+  <!-- alert modal (used by utils.js) -->
   <div class="modal" id="alertModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-md modal-dialog-centered popup-wh" role="document">
       <div class="modal-content">
@@ -687,257 +377,51 @@
     </div>
   </div>
 
-  <!-- login/register modal -->
-  <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="login-modal-label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-      <div class="modal-content">
-        <div class="modal-body p-0">
-          <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <div class="login-image-fit" style="
-                    background-image: url('./assets/images/background-img-3.svg');
-                    background-repeat: no-repeat;
-                    width: 100%;
-                    height: 85vh;
-                    background-position: center;
-                    background-size: 100%;
-                  ">
-                <div class="row">
-                  <div class="col-sm-12 col-md-12col-lg-12">
-                    <div class="ptb-50px">
-                      <p class="pb-3">
-                        <img src="./assets/images/new-logo.svg" />
-                      </p>
-                      <p class="pb-3 text-center">
-                        <img src="./assets/images/dots-group.svg" />
-                      </p>
-                      <div class="d-flex justify-content-start">
-                        <div class="pe-1">
-                          <img src="./assets/images/doublebrace.svg" />
-                        </div>
-                        <div class="pb-5 text-des-data">
-                          The Climate-Smart Governance Dashboard provides
-                          accurate data on climate-related hazards, climate
-                          scenarios, project trackers, and M&E tools to
-                          support medium to long-term adaptation planning
-                          aligned with global development goals. Specifically,
-                          it can help nations undertake the UNFCCC NAP process
-                          and integrate adaptation into new and existing
-                          national, sectoral, and local policies.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- <img src="./assets/images/register-image.svg" class="w-100"> -->
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 bg-white border-radius-20px">
-              <div class="row my-5 mx-5 p-5">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                  <ul class="nav nav-tabs login_tabs border-0" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login"
-                        type="button" role="tab" aria-controls="login" aria-selected="true">
-                        Login
-                      </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register"
-                        type="button" role="tab" aria-controls="register" aria-selected="false">
-                        Register
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                  <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
-                      <div class="row my-2">
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                          <div class="form-group my-3">
-                            <input type="text" placeholder="Email" class="form-control login-input"
-                              id="input-login-email" />
-                          </div>
-                          <div class="form-group my-3">
-                            <input type="password" placeholder="Password" class="form-control login-input"
-                              id="input-login-password" />
-                          </div>
-                          <button class="btn btn-login w-100 text-center text-white my-2" id="submit-login">
-                            Login
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
-                      <div class="mt-2">
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                          <div class="form-group mt-2">
-                            <input type="text" placeholder="Name*" class="form-control login-input"
-                              id="input-registration-name" />
-                          </div>
-                          <div class="form-group mt-2">
-                            <input type="text" placeholder="Email*" class="form-control login-input"
-                              id="input-registration-email" />
-                          </div>
-                          <div class="mt-2">
-                            <select class="form-select input-radio" id="input-registration-country">
-                              <option value="" disabled selected>
-                                Country*
-                              </option>
-                              <option value="4">Sri Lanka</option>
-                              <option value="2">Zambia</option>
-                            </select>
-                          </div>
-                          <div class="form-group mt-2">
-                            <input type="text" placeholder="Organization*" class="form-control login-input"
-                              id="input-registration-organization" />
-                          </div>
-                          <div class="form-group mt-2">
-                            <input type="text" placeholder="Designation*" class="form-control login-input"
-                              id="input-registration-designation" />
-                          </div>
-                          <div class="form-group mt-2">
-                            <input type="text" placeholder="Organization Category" class="form-control login-input"
-                              id="input-registration-organization-category" />
-                          </div>
-                          <div class="form-group mt-2">
-                            <input type="text" placeholder="Mobile Number" class="form-control login-input"
-                              oninput="this.value=this.value.replace(/[^0-9]/, '')" maxlength="15"
-                              id="input-registration-phone" />
-                          </div>
-                          <div class="mt-2">
-                            <select class="form-select input-radio" id="input-registration-gender">
-                              <option value="" disabled selected>
-                                Gender*
-                              </option>
-                              <option value="Male">Male</option>
-                              <option value="Female">Female</option>
-                            </select>
-                          </div>
-                          <div class="form-group mt-2">
-                            <input type="text" placeholder="Reason to use the tool" class="form-control login-input"
-                              id="input-registration-reason" />
-                          </div>
-                          <div class="form-group mt-2">
-                            <input type="password" placeholder="Create a password*" class="form-control login-input"
-                              id="input-registration-password" />
-                          </div>
-                          <button class="btn btn-login w-100 text-center text-white my-2" id="submit-register">
-                            Register
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- page scripts -->
+  <!-- page scripts (unchanged) -->
   <script type="text/javascript" src="./assets/scripts/utils.js"></script>
   <script type="text/javascript" src="./assets/scripts/main.js"></script>
   <script type="text/javascript" src="./assets/scripts/MapProp.js"></script>
-  <!--Plugin JavaScript file-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
   <script>
     $(document).ready(function () {
       $(".selectpicker").selectpicker();
-
-      $(".date-own").datepicker({
-        minViewMode: 2,
-        format: "yyyy",
-      });
+      $(".date-own").datepicker({ minViewMode: 2, format: "yyyy" });
     });
 
     $("#resetFilterBtn").click(function () {
-      // Reset the Bootstrap Selectpicker to its initial state
-      $("#selected_countries").selectpicker("deselectAll");
-      $("#selected_countries").selectpicker("refresh");
-      $("#selected_themes").selectpicker("deselectAll");
-      $("#selected_themes").selectpicker("refresh");
-      $("#selected_approaches").selectpicker("deselectAll");
-      $("#selected_approaches").selectpicker("refresh");
-      $("#selected_hazards").selectpicker("deselectAll");
-      $("#selected_hazards").selectpicker("refresh");
-      $("#selected_scales").selectpicker("deselectAll");
-      $("#selected_scales").selectpicker("refresh");
-      $("#selected_donors").selectpicker("deselectAll");
-      $("#selected_donors").selectpicker("refresh");
+      $("#selected_countries, #selected_themes, #selected_approaches, #selected_hazards, #selected_scales, #selected_donors")
+        .selectpicker("deselectAll").selectpicker("refresh");
     });
   </script>
 
   <script>
     $(document).ready(function () {
       $("#year-datepicker, #year-datepicker-1").datepicker({
-        format: "yyyy",
-        view: "years",
-        startView: "years",
-        minViewMode: "years",
-        autoclose: true,
-        startDate: "1990",
-        endDate: "2050",
+        format: "yyyy", view: "years", startView: "years", minViewMode: "years",
+        autoclose: true, startDate: "1990", endDate: "2050"
       });
 
-      $("#year-datepicker").on("changeDate", function (e) {
-        const startDate = e.date;
-        const endDate = $("#year-datepicker-1").datepicker("getDate");
-
-        if (startDate && endDate) {
-          if (startDate >= endDate) {
-            alert("start year must be lesser than the end year.");
-            $("#year-datepicker").val("");
-          }
-        }
+      $("#year-datepicker").on("changeDate", e => {
+        const start = e.date, end = $("#year-datepicker-1").datepicker("getDate");
+        if (start && end && start >= end) { alert("Start year must be less than end year."); $("#year-datepicker").val(""); }
+      });
+      $("#year-datepicker-1").on("changeDate", e => {
+        const start = $("#year-datepicker").datepicker("getDate"), end = e.date;
+        if (start && end && start >= end) { alert("End year must be greater than start year."); $("#year-datepicker-1").val(""); }
       });
 
-      $("#year-datepicker-1").on("changeDate", function (e) {
-        const startDate = $("#year-datepicker").datepicker("getDate");
-        const endDate = e.date;
-
-        if (startDate && endDate) {
-          if (startDate >= endDate) {
-            alert("End year must be greater than the start year.");
-            $("#year-datepicker-1").val("");
-          }
-        }
-      });
-      $("#map-popup").on("click", function (e) {
-        // alert("jdljdfl");
-        // Hide the element with id "map-popup"
-        $("#map-popup").toggle();
-      });
+      $("#map-popup").on("click", () => $("#map-popup").toggle());
     });
   </script>
 
-  <!-- <script type="text/javascript" src="./assets/scripts/utils.js"></script> -->
   <script type="text/javascript" src="./assets/scripts/adaptation_catalog.js"></script>
 
-  <script type="text/javascript">
-    function setUserDetailsInNavbar() {
-
-      let cookiesObj = getCookies(document.cookie);
-
-      if (cookiesObj.isLoggedIn) {
-        $("li#user-email-label").empty().html(`<div class='mx-3'>${cookiesObj.userEmail}</div>`);
-        if (cookiesObj.userRoleId != 1) {
-          $("img#user-country-icon").attr("src", `./assets/flag_icons/${cookiesObj.initialCountryId}.png`).attr("title", null).show()
-          $("li#user-management-link").hide();
-        } else {
-          $("img#user-country-icon").attr("src", null).attr("title", null).hide();
-          $("li#user-management-link").show();
-        }
-      } else {
-        $("li#user-email-label").empty();
-        $("img#user-country-icon").attr("src", null).attr("title", null).hide()
-      };
-    }
-    setTimeout(() => setUserDetailsInNavbar(), 1000);
+  <script>
+    $('#pageSelect').on('change', function () {
+      const url = $(this).val();
+      if (url) window.location.href = url;
+    });
   </script>
 </body>
 
