@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,8 +22,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script type="text/javascript" src="./assets//scripts/env.js"></script>
     <script type="text/javascript" src="./assets/scripts/header-nav.js"></script>
+    <style>
+        .btn-overview, .btn-keyfeature, .btn-resources, .btn-newsletter {
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    </style>
 </head>
-
 <body>
     <section class="hero-section1" style="background: url('./assets/images/network-background.png') no-repeat bottom right;
     background-attachment: fixed;
@@ -55,7 +61,6 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-5 col-lg-5">
-
                     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -104,19 +109,17 @@
                             <span class="sr-only">Next</span>
                         </button> -->
                     </div>
-                    
+                   
                     <!-- <div class="lightBox pt-4 px-4 rounded pb-0">
-                    
+                   
                     </div> -->
                 </div>
             </div>
         </div>
-
         <input id="redirectionLink" type="hidden" />
         <div class="container-fluid">
             <div class="process-flow position-relative pt-5">
                 <!-- <div class="process-line"></div> -->
-
                 <div class="d-flex justify-content-center align-items-end flex-wrap">
                     <!-- Card 1 -->
                     <div class="process-step">
@@ -143,7 +146,6 @@
                             <h2 id="label_count_countries"></h2>
                         </div>
                     </div>
-
                     <!-- Card 2 -->
                     <div class="process-step">
                         <div class="sdg-card1">
@@ -153,9 +155,7 @@
                                 <h1 id="label_sum_funding"></h1>
                             </div>
                         </div>
-
                     </div>
-
                     <!-- Card 3 -->
                     <div class="process-step">
                         <div class="sdg-card2 mb-2">
@@ -170,14 +170,12 @@
                             <h3 id="label_sum_beneficiaries"></h3>
                         </div>
                     </div>
-
                     <!-- Card 4 -->
                     <div class="process-step">
                         <div class="sdg-card3">
                             <div class="overlay"></div>
                         </div>
                     </div>
-
                     <!-- Card 5 -->
                     <div class="process-step">
                         <div class="process-card " style="border-radius: 12px;background: #0297A6;">
@@ -194,14 +192,12 @@
             </div>
         </div>
     </section>
-
     <section class="csgConceptBox mt-5">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <button class="btn btn-overview">Overview</button>
                 <h1 class="main-title mt-3">CSG Concept</h1>
             </div>
-
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <div class="conceptBox d-flex flex-wrap justify-content-between pt-4">
                     <div class="concept-card">
@@ -248,19 +244,16 @@
             </div>
         </div>
     </section>
-
     <section class="video-section text-center">
         <div class="container-fluid p-0">
             <div class="video-wrapper">
                 <!-- Thumbnail -->
                 <img src="./assets/images/globe.png" alt="Video background" class="video-thumbnail"
                     id="videoThumbnail" />
-
                 <!-- Play / Pause Button -->
                 <div class="custom-play-button" id="playButton">
                     <div class="play-icon"></div>
                 </div>
-
                 <!-- Video -->
                 <video id="mainVideo" class="video-player" preload="metadata" muted playsinline>
                     <source src="./assets/images/Clips Stitched.mp4" type="video/mp4" />
@@ -269,7 +262,6 @@
             </div>
         </div>
     </section>
-
     <section class="countryBox" id="dashboard-entry-point">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
@@ -281,9 +273,9 @@
                             <div class="col-sm-12 col-md-8 col-lg-8">
                                 <div class="form-group countrySelect mb-0">
                                     <select class="form-control w-100" id="filter-country">
+                                        <option value="4" selected>Sri Lanka</option>
                                         <option value="5">Kenya</option>
                                         <option value="7">Senegal</option>
-                                        <option value="4">Sri Lanka</option>
                                         <option value="2">Zambia</option>
                                     </select>
                                     <span><img src="./assets/images/location.png" alt=""></span>
@@ -298,9 +290,7 @@
                     </div>
                     <div class="col-sm-12 col-md-3 col-lg-3"></div>
                 </div>
-
-
-                <div class="row  pt-5">
+                <div class="row pt-5">
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <ul class="nav nav-pills tblCountry mb-3 d-flex justify-content-center" id="pills-tab"
                             role="tablist">
@@ -334,7 +324,6 @@
                                     type="button" role="tab" aria-controls="pills-six" aria-selected="false">Development
                                     Indicator</button>
                             </li>
-
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pills-seven-tab" data-toggle="pill"
                                     data-target="#pills-seven" type="button" role="tab" aria-controls="pills-seven"
@@ -352,7 +341,6 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="col-sm-12 col-md-12 col-lg-12">
                         <div class="tab-content mt-4" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-one" role="tabpanel"
@@ -420,8 +408,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
                             <div class="tab-pane fade" id="pills-four" role="tabpanel" aria-labelledby="pills-four-tab">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-4 col-lg-4">
@@ -483,7 +469,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="tab-pane fade" id="pills-seven" role="tabpanel"
                                 aria-labelledby="pills-seven-tab">
                                 <div class="row">
@@ -549,40 +534,32 @@
             </div>
         </div>
     </section>
-
     <section class="section-keyFeatureNew">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <button class="btn btn-keyfeature"><img src="./assets/images/key.png" alt=""> Key Features</button>
             </div>
-
             <div class="col-sm-12 col-md-7 col-lg-7 mt-3">
                 <h4>Innovation for Climate Resilience, Social Transformation and Equity</h4>
             </div>
-            <div class="col-sm-12 col-md-5 col-lg-5  mt-3">
+            <div class="col-sm-12 col-md-5 col-lg-5 mt-3">
                 <p>The Climate-Smart Governance Dashboard provides accurate data on climate-related hazards, population
                     vulnerability, forecast climate scenarios, sector-relevant data (water, health, agriculture,
                     ecosystem), infrastructure and climate-related projects to support coordinated mid- to long-term
                     adaptation planning aligned to global development goals. </p>
-
-                <!--  -->
+                <!-- -->
             </div>
         </div>
-
-
         <div class="row mt-5">
             <div class="col-sm-12 col-md-4 col-lg-4">
                 <div class="climate-card one mb-2">
-
                     <h3 class="card-title pt-3">
                         Track Climate <br />
                         Risks
                     </h3>
-
                     <p class="card-description">
                         Visualize exposure to floods, droughts, and heat across vulnerable regions.
                     </p>
-
                 </div>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4">
@@ -593,7 +570,6 @@
                     <p class="card-description">
                         Aid national action plans, budget tracking, and risk-informed planning.
                     </p>
-
                 </div>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-4">
@@ -604,24 +580,20 @@
                     <p class="card-description">
                         Assess adaptation and mitigation efforts at district and national levels.
                     </p>
-
                 </div>
             </div>
         </div>
     </section>
-
     <section class="countryBox pb-0" style="background: url('./assets/images/network-background.png') lightgray 50% / cover no-repeat;
     background-attachment: fixed;background-position: bottom;">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12 text-center">
                 <h3>Use AI Agent Navigation</h3>
                 <p>Guided by a chatbot-style assistant</p>
-
                 <a href="http://65.0.242.164/aiagent/#/home" target="_blank" class="btn btn-explore mt-3">Explore
                     CSG AI Agent</a>
             </div>
         </div>
-
         <div class="container-fluid pt-5">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col0lg-12">
@@ -630,7 +602,6 @@
             </div>
         </div>
     </section>
-
     <section class="countryBox py-5">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
@@ -638,7 +609,6 @@
                 <p>Guided by a chatbot-style assistant</p>
             </div>
         </div>
-
         <div class="row pt-5">
             <div class="col-sm-12 col-md-6 col-lg-6 pr-1">
                 <div class="card card-gap border-0 h-100">
@@ -646,8 +616,6 @@
                         <h3>Water Adaptation Finance (WAF)</h3>
                         <p>Evaluate climate and financial resilience across regions</p>
                         <button class="btn btn-open">Click here to open</button>
-
-
                         <div class="row mt-5">
                             <div class="col-sm-12 col-md-4 col-lg-4 pr-0">
                                 <div class="d-flex justify-content-end">
@@ -685,8 +653,6 @@
                             Finance Indicators</h3>
                         <p>Explore data, maps, and graphs manually</p>
                         <button class="btn btn-open">Click here to open</button>
-
-
                         <div class="row mt-5">
                             <div class="col-sm-12 col-md-8 col-lg-8">
                                 <div class="card card-smallCard border-0">
@@ -719,7 +685,6 @@
             </div>
         </div>
     </section>
-
     <section class="countryBox others text-left">
         <div class="container-fluid">
             <div class="row">
@@ -741,7 +706,6 @@
                         <a href="#" class="btn btn-explore-new">View More</a>
                     </div>
                 </article>
-
                 <!-- Item 2 -->
                 <article class="thumbnail item">
                     <img src="./assets/images/carousel-2.png" />
@@ -753,7 +717,6 @@
                         <a href="#" class="btn btn-explore-new">View More</a>
                     </div>
                 </article>
-
                 <!-- Item 3 -->
                 <article class="thumbnail item">
                     <img src="./assets/images/carousel-3.png" />
@@ -768,7 +731,6 @@
                         <a href="#" class="btn btn-explore-new">View More</a>
                     </div>
                 </article>
-
                 <!-- Item 4 -->
                 <article class="thumbnail item">
                     <img src="./assets/images/carousel-4.png" />
@@ -780,7 +742,6 @@
                         <a href="#" class="btn btn-explore-new">View More</a>
                     </div>
                 </article>
-
                 <!-- Item 1 -->
                 <article class="thumbnail item">
                     <img src="./assets/images/carousel-1.png" />
@@ -793,7 +754,6 @@
                         <a href="#" class="btn btn-explore-new">View More</a>
                     </div>
                 </article>
-
                 <!-- Item 2 -->
                 <article class="thumbnail item">
                     <img src="./assets/images/carousel-2.png" />
@@ -808,8 +768,6 @@
             </div>
         </div>
     </section>
-
-
 <!-- Footer -->
     <section class="footer-top">
         <div class="container-fluid">
@@ -840,47 +798,40 @@
                                         <i class="fa fa-facebook"></i>
                                     </a>
                                 </div>
-
                                 <div class="pr-3">
                                     <a href="https://www.flickr.com/photos/iwmi" target="_blank" class="facebook-link">
                                         <i class="fa fa-flickr"></i>
                                     </a>
                                 </div>
-
                                 <div class="pr-3">
                                     <a href="https://www.instagram.com/iwmi_water/" target="_blank"
                                         class="facebook-link">
                                         <i class="fa fa-instagram"></i>
                                     </a>
                                 </div>
-
                                 <div class="pr-3">
                                     <a href="https://www.linkedin.com/checkpoint/lg/login?session_redirect=%2Fauthwall&amp;fromSignIn=true&amp;trk=seo-authwall-base_google-one-tap-submit"
                                         target="_blank" class="facebook-link">
                                         <i class="fa fa-linkedin"></i>
                                     </a>
                                 </div>
-
                                 <div class="pr-3">
                                     <a href="mailto:iwmi@cgiar.org" target="_blank" class="facebook-link">
                                         <i class="fa fa-envelope"></i>
                                     </a>
                                 </div>
-
                                 <div class="pr-3">
                                     <a href="https://www.iwmi.cgiar.org/news/rss-feeds/" target="_blank"
                                         class="facebook-link">
                                         <i class="fa fa-wifi"></i>
                                     </a>
                                 </div>
-
                                 <div class="pr-3">
                                     <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIWMI_"
                                         target="_blank" class="facebook-link">
                                         <i class="fa fa-twitter"></i>
                                     </a>
                                 </div>
-
                                 <div class="pr-3">
                                     <a href="https://www.youtube.com/iwmimedia" target="_blank" class="facebook-link">
                                         <i class="fa fa-youtube-play"></i>
@@ -892,7 +843,6 @@
                 </div>
             </div>
         </div>
-
         <div class="card-footer subfooter">
             <div class="row p-2">
                 <div class="col-sm-12 col-md-6 col-lg-6">
@@ -900,7 +850,6 @@
                         Management
                         Institute (IWMI) | <a href="">Termsof use</a></p>
                 </div>
-
                 <div class="col-sm-12 col-md-6 col-lg-6 text-right">
                     <ul class="d-flex justify-content-end list-unstyled align-items-center mb-0 pb-0">
                         <li><a href="#">Ethics</a></li>
@@ -911,9 +860,7 @@
             </div>
         </div>
     </section>
-
-
-    <!-- waiting spinner  modal-->
+    <!-- waiting spinner modal-->
     <div id="loading-modal" class="modal hide" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content p-3 text-white" style="
@@ -923,7 +870,6 @@
             </div>
         </div>
     </div>
-
     <!-- Alert Modal -->
     <div class="modal" id="alertModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-md modal-dialog-centered popup-wh" role="document">
@@ -940,7 +886,6 @@
             </div>
         </div>
     </div>
-
     <!-- Page scripts -->
     <script type="text/javascript" src="./assets/scripts/utils.js"></script>
     <script type="text/javascript" src="./assets/scripts/index.js"></script>
@@ -952,7 +897,6 @@
         playButton.addEventListener("click", async () => {
             thumbnail.style.display = "none";
             video.style.display = "block";
-
             try {
                 if (video.paused) {
                     await video.play();
@@ -976,11 +920,9 @@
             icon.classList.add("play-icon");
         });
     </script>
-
     <script>
         jQuery(document).ready(function ($) {
             var owl = $("#owl-demo-2");
-
             owl.owlCarousel({
                 autoplay: true,
                 autoplayTimeout: 3000,
@@ -1001,5 +943,4 @@
         });
     </script>
 </body>
-
 </html>

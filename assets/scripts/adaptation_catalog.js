@@ -87,8 +87,16 @@ fetch(lookup_url, options)
             if (information.table === "country") {
                 countries = information.lookup_data;
                 countries.sort((a, b) => a.country.localeCompare(b.country));
-
                 selected_countries.innerHTML = "";
+                for (let i = 0; i < countries.length; i++) {
+                    const option = document.createElement("option");
+                    option.value = countries[i].id;
+                    option.selected = (countries[i].id === 4);
+                    option.textContent = countries[i].country;
+                    selected_countries.appendChild(option);
+                }
+                $(selected_countries).selectpicker("refresh");
+                $(selected_countries).selectpicker("render");
             } else if (information.table === "theme") {
                 let themes = information.lookup_data;
                 themes.sort((a, b) => a.theme.localeCompare(b.theme));
@@ -458,19 +466,6 @@ async function get_filtered_data(text_) {
                 all_projects = data.data
                 generateTable(all_projects);
                 mapProps.changeCountryColors(countryIds, projects);
-                countries = countries.filter((item) => {
-                    return countryIds.includes(item["id"]);
-                });
-
-                for (let i = 0; i < countries.length; i++) {
-                    const option = document.createElement("option");
-                    option.value = countries[i].id;
-                    option.selected = true;
-                    option.textContent = countries[i].country;
-                    selected_countries.appendChild(option);
-                }
-                $("#selected_countries").selectpicker("refresh");
-                $("#selected_countries").selectpicker("render");
                 applied_count++;
             } else {
                 // $("#map-popup").hide();

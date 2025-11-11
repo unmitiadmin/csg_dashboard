@@ -44,7 +44,7 @@ class Index {
         this.registrationOrganization = $("input#input-registration-organization");
         this.registrationDesignation = $("input#input-registration-designation");
         this.registrationOrganizationCategory = $("input#input-registration-organization-category");
-        
+
         this.registrationGender = $("select#input-registration-gender");
         this.registrationReason = $("input#input-registration-reason");
         this.registrationPassword = $("input#input-registration-password");
@@ -72,7 +72,7 @@ class Index {
     init = () => {
         this.openLoginModal();
         this.getSummary();
-        
+
         this.filterCountry.on("change", () => {
             this.countryId = this.filterCountry.val();
             document.cookie = `countryId=${this.countryId}`;
@@ -85,14 +85,14 @@ class Index {
             this.initialCountryId
                 ? (
                     this.userRoleId != 1
-                    ? this.userCountryIcon.attr("src", `./assets/flag_icons/${this.initialCountryId}.png`).show()
-                    : this.userCountryIcon.attr("src", null).hide()
+                        ? this.userCountryIcon.attr("src", `./assets/flag_icons/${this.initialCountryId}.png`).show()
+                        : this.userCountryIcon.attr("src", null).hide()
                 ) : this.userCountryIcon.attr("src", null).hide();
-            
+
             if (this.userRoleId == 1) {
                 // this.filterCountry.attr("disabled", false);
                 document.cookie = `initialCountryId=${this.initialCountryId}`;
-                this.filterCountry.val(this.countryId).trigger("change");                
+                this.filterCountry.val(this.countryId).trigger("change");
             } else {
                 // this.filterCountry.attr("disabled", true);
                 document.cookie = `initialCountryId=${this.initialCountryId}`;
@@ -123,7 +123,7 @@ class Index {
             .finally(this.stopWaiting)
     }
 
-    
+
 
     openLoginModal = () => {
 
@@ -270,7 +270,7 @@ class Index {
 
     pageAlert = (text, success) => {
         let alertIcon = success !== null || success !== undefined
-            ? (success 
+            ? (success
                 ? `<img src="assets/images/success.png"><h5 class="success-text-popup my-2">SUCCESS!</h5>`
                 : `<img src="assets/images/success-false.png"><h5 class="success-text-popup my-2">ERROR!</h5>`)
             : "";

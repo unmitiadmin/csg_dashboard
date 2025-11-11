@@ -117,7 +117,7 @@ window.addEventListener("load", (event) => {
                     <div id="google_translate_element" class="mt-1 notranslate" style="z-index: 1000;"></div>
                 </li>
                 ${cookies.jwt ? userProfileArea : loginArea}
-               
+              
                 <li class="nav-item">
                     <a href="http://65.0.242.164/aiagent/#/home" class="btn btn-explore" style="white-space: nowrap;">Explore CSG AI Agent</a>
                 </li>
@@ -644,6 +644,10 @@ window.addEventListener("load", (event) => {
     if (isAuthPage && !cookies.jwt) {
         const loginModal = $("div#login-modal");
         loginModal.modal("show");
+    }
+    const filterCountrySelect = document.querySelector('select#filter-country');
+    if (filterCountrySelect) {
+        filterCountrySelect.value = cookies.countryId || '4';
     }
     // Google Translate integration
     const style = document.createElement("style");
