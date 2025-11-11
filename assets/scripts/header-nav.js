@@ -574,7 +574,7 @@ window.addEventListener("load", (event) => {
     const handleOperation = () => {
         if (cookies.jwt) {
             document.querySelector("#link-logout").addEventListener('click', () => {
-                const countryVal = document.querySelector('select#filter-country').value;
+                const countryVal = document.querySelector('select#filter-country')?.value || '';
                 document.cookie = `countryId=${countryVal}`;
                 document.cookie = `jwt=null`;
                 document.cookie = `userEmail=null`;
@@ -594,7 +594,7 @@ window.addEventListener("load", (event) => {
                     "email": $("input#input-login-email").val() || null,
                     "password": $("input#input-login-password").val() || null,
                 };
-                let countryId = document.querySelector('select#filter-country').value;
+                let countryId = document.querySelector('select#filter-country')?.value || '';
                 startWaiting();
                 fetch(`${apiUrl}/auth/login`, {
                     method: 'POST',
