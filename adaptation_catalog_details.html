@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Climate Smart Governance</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="./assets/images/adapt-logo.png" sizes="32x32" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" />
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/newStyle1.css" />
+  <!-- <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!--Plugin CSS file with desired skin-->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
+
+  <!-- Bootstrap Datepicker CSS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" />
+
+  <!-- Bootstrap Datepicker JavaScript -->
+
+  <!-- js -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+  <script type="text/javascript" src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+  <!-- Highcharts and Highmaps JavaScript -->
+  <script src="https://www.amcharts.com/lib/4/core.js"></script>
+  <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+  <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+  <script src="https://www.amcharts.com/lib/4/geodata/worldIndiaLow.js"></script>
+  <script src="https://www.amcharts.com/lib/4/geodata/continentsLow.js"></script>
+  <script src="https://www.amcharts.com/lib/4/plugins/bullets.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DXGH9K238E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-DXGH9K238E");
+  </script>
+</head>
+
+<body>
+  <!-- header: navigation ribbon -->
+  <header>
+    <div id="headerContainer"></div>
+    <script src="./assets/scripts/header-nav.js"></script>
+  </header>
+  
+  <div class="wrapper">
+    <section class="content-height plr-100px" style="
+          background-image: url(./assets/images/details-page-banner.svg);
+          background-repeat: no-repeat;
+          width: 100%;
+          min-height: 300px;
+          background-size: cover;
+        ">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="dropdown dropTop">
+              <button class="btn btn-secondary bg-details" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Adaptation Catalog Project Details
+              </button>
+            </div>
+            <!-- <div class="dropdown dropTop">
+                <button
+                  class="btn btn-secondary dropdown-toggle bg-details"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Adaptation Catalog Project Details
+                </button>
+                <ul class="dropdown-menu bg-data mt-3">
+                  <li>
+                    <a class="dropdown-item active" href="#"
+                      >Adaptation-catalog-details</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Adaptation-catalog-details</a
+                    >
+                  </li>
+                </ul>
+              </div> -->
+          </div>
+          <!-- <div class="col-sm-12 col-md-6 col-lg-6">
+              <div class="d-flex justify-content-end">
+                <a class="btn btn-addmores mr-3" href="#"
+                  >Add Project
+                  <span><img src="./assets/images/add-more.svg" /></span
+                ></a>
+                <a class="btn btn-addmores mr-3" href="#"
+                  >Edit Project
+                  <span
+                    ><img src="./assets/images/edit.svg" height="20px" /></span
+                ></a>
+              </div>
+            </div> -->
+        </div>
+        <a class="text-white" href="./adaptation_catalog.html" id="back-button">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i> Back to
+          Adaptation Catalog
+        </a>
+      </div>
+    </section>
+
+    <section class="pxpse-3rem" style="background-color: #f4faf7">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <h4 class="title pb-0 mb-18px" id="project_title">
+              Social Protection Expansion Programme Phase II
+            </h4>
+            <div class="card border-0 adaptation-filter h-100vh">
+              <div class="card-body p-40px">
+                <div class="row">
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card border-0 innerCard_shadow mb-3">
+                      <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="details_card">
+                            <p>Budget (USD)</p>
+                            <h5 id="project_budget">42.13 Million</h5>
+                          </div>
+                          <div><img src="./assets/images/dollor.png" /></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card border-0 innerCard_shadow mb-3">
+                      <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="details_card">
+                            <p>Countries Implemented</p>
+                            <h5 id="countries">India, bhutan</h5>
+                          </div>
+                          <div>
+                            <div class="circle-color one">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
+                                fill="none">
+                                <g clip-path="url(#clip0_673_2089)">
+                                  <path
+                                    d="M9.42773 5.0625C10.8236 5.0625 11.959 3.92681 11.959 2.53125C11.959 1.13569 10.8236 0 9.42773 0C8.03189 0 6.89648 1.13569 6.89648 2.53125C6.89648 3.92681 8.03189 5.0625 9.42773 5.0625ZM9.42773 0.5625C10.5131 0.5625 11.3965 1.44563 11.3965 2.53125C11.3965 3.61687 10.5131 4.5 9.42773 4.5C8.34239 4.5 7.45898 3.61687 7.45898 2.53125C7.45898 1.44563 8.34239 0.5625 9.42773 0.5625Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M6.2955 14.4857C6.34612 14.3994 6.34697 14.2928 6.29775 14.2059L3.7665 9.70589C3.66693 9.5287 3.37584 9.5287 3.27656 9.70589L0.74531 14.2059C0.696091 14.2931 0.696935 14.3994 0.74756 14.4857C0.798185 14.5721 0.890435 14.625 0.990279 14.625H6.05278C6.1529 14.625 6.24515 14.5721 6.2955 14.4857ZM1.47122 14.0625L3.52153 10.4175L5.57184 14.0625H1.47122Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M18.4277 9.84375C18.4277 9.6885 18.3017 9.5625 18.1465 9.5625H13.6465C13.4912 9.5625 13.3652 9.6885 13.3652 9.84375V14.3438C13.3652 14.499 13.4912 14.625 13.6465 14.625H18.1465C18.3017 14.625 18.4277 14.499 18.4277 14.3438V9.84375ZM17.8652 14.0625H13.9277V10.125H17.8652V14.0625Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M9.42827 16.0313C8.12242 16.0313 6.85595 15.6578 5.76498 14.9516L5.45898 15.4238C6.64136 16.1894 8.01386 16.5938 9.42827 16.5938C10.8964 16.5938 12.3125 16.1604 13.5235 15.3403L13.2083 14.8745C12.0906 15.6314 10.7836 16.0313 9.42827 16.0313Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M16.1737 9.01092L16.7356 8.98898C16.6301 6.30361 15.063 3.89892 12.6462 2.71289L12.3984 3.21802C14.6293 4.31264 16.0761 6.53255 16.1737 9.01092Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M2.69911 9.82148C2.68505 9.64402 2.67773 9.46233 2.67773 9.2812C2.67773 6.68555 4.12617 4.36214 6.45773 3.21802L6.21023 2.71289C3.68433 3.95264 2.11523 6.46927 2.11523 9.2812C2.11523 9.47723 2.12283 9.67383 2.1383 9.8662L2.69911 9.82148Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M5.29139 2.05115L5.68908 2.44883L6.53283 1.60508C6.6428 1.49512 6.6428 1.31737 6.53283 1.2074L5.68908 0.363647L5.29139 0.761335L5.65505 1.12499H3.80273V1.68749H5.65505L5.29139 2.05115Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M17.3024 6.46875C17.3744 6.46875 17.4464 6.44119 17.5012 6.38634L18.345 5.54259L17.9473 5.14491L17.5836 5.50856V3.65625H17.0211V5.50856L16.6575 5.14491L16.2598 5.54259L17.1035 6.38634C17.1584 6.44119 17.2304 6.46875 17.3024 6.46875Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M3.32227 15.2699L2.47852 16.1136L2.8762 16.5113L3.23986 16.1476V17.9999H3.80236V16.1476L4.16602 16.5113L4.5637 16.1136L3.71995 15.2699C3.61027 15.1599 3.43223 15.1599 3.32227 15.2699Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M11.9588 8.99996C11.9588 8.09912 11.4739 7.25902 10.6935 6.80762L10.4116 7.29446C11.0189 7.64574 11.3963 8.29909 11.3963 8.99996C11.3963 9.91712 10.7646 10.6877 9.91439 10.9054L10.2418 10.251L9.73861 9.99924L9.17611 11.1242C9.12211 11.2325 9.1432 11.3633 9.22899 11.4488L10.0727 12.2926L10.4704 11.8949L10.0311 11.4556C11.1359 11.1839 11.9588 10.1874 11.9588 8.99996Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M8.16267 11.1929L8.44392 10.7061C7.83642 10.3548 7.45898 9.70115 7.45898 8.99999C7.45898 8.08284 8.09067 7.31221 8.94089 7.09452L8.61352 7.74899L9.11667 8.00071L9.67917 6.87571C9.73317 6.76743 9.71208 6.63665 9.6263 6.55115L8.78255 5.7074L8.38486 6.10509L8.82417 6.5444C7.7197 6.81608 6.89648 7.81255 6.89648 8.99999C6.89648 9.9014 7.38164 10.7415 8.16267 11.1929Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_673_2089">
+                                    <rect width="18" height="18" fill="white" transform="translate(0.708984)" />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="card border-0 innerCard_shadow mb-3">
+                      <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="details_card">
+                            <p>Themes</p>
+                            <h5 id="themes">Water</h5>
+                          </div>
+                          <div>
+                            <div class="circle-color one">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
+                                fill="none">
+                                <g clip-path="url(#clip0_673_2089)">
+                                  <path
+                                    d="M9.42773 5.0625C10.8236 5.0625 11.959 3.92681 11.959 2.53125C11.959 1.13569 10.8236 0 9.42773 0C8.03189 0 6.89648 1.13569 6.89648 2.53125C6.89648 3.92681 8.03189 5.0625 9.42773 5.0625ZM9.42773 0.5625C10.5131 0.5625 11.3965 1.44563 11.3965 2.53125C11.3965 3.61687 10.5131 4.5 9.42773 4.5C8.34239 4.5 7.45898 3.61687 7.45898 2.53125C7.45898 1.44563 8.34239 0.5625 9.42773 0.5625Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M6.2955 14.4857C6.34612 14.3994 6.34697 14.2928 6.29775 14.2059L3.7665 9.70589C3.66693 9.5287 3.37584 9.5287 3.27656 9.70589L0.74531 14.2059C0.696091 14.2931 0.696935 14.3994 0.74756 14.4857C0.798185 14.5721 0.890435 14.625 0.990279 14.625H6.05278C6.1529 14.625 6.24515 14.5721 6.2955 14.4857ZM1.47122 14.0625L3.52153 10.4175L5.57184 14.0625H1.47122Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M18.4277 9.84375C18.4277 9.6885 18.3017 9.5625 18.1465 9.5625H13.6465C13.4912 9.5625 13.3652 9.6885 13.3652 9.84375V14.3438C13.3652 14.499 13.4912 14.625 13.6465 14.625H18.1465C18.3017 14.625 18.4277 14.499 18.4277 14.3438V9.84375ZM17.8652 14.0625H13.9277V10.125H17.8652V14.0625Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M9.42827 16.0313C8.12242 16.0313 6.85595 15.6578 5.76498 14.9516L5.45898 15.4238C6.64136 16.1894 8.01386 16.5938 9.42827 16.5938C10.8964 16.5938 12.3125 16.1604 13.5235 15.3403L13.2083 14.8745C12.0906 15.6314 10.7836 16.0313 9.42827 16.0313Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M16.1737 9.01092L16.7356 8.98898C16.6301 6.30361 15.063 3.89892 12.6462 2.71289L12.3984 3.21802C14.6293 4.31264 16.0761 6.53255 16.1737 9.01092Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M2.69911 9.82148C2.68505 9.64402 2.67773 9.46233 2.67773 9.2812C2.67773 6.68555 4.12617 4.36214 6.45773 3.21802L6.21023 2.71289C3.68433 3.95264 2.11523 6.46927 2.11523 9.2812C2.11523 9.47723 2.12283 9.67383 2.1383 9.8662L2.69911 9.82148Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M5.29139 2.05115L5.68908 2.44883L6.53283 1.60508C6.6428 1.49512 6.6428 1.31737 6.53283 1.2074L5.68908 0.363647L5.29139 0.761335L5.65505 1.12499H3.80273V1.68749H5.65505L5.29139 2.05115Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M17.3024 6.46875C17.3744 6.46875 17.4464 6.44119 17.5012 6.38634L18.345 5.54259L17.9473 5.14491L17.5836 5.50856V3.65625H17.0211V5.50856L16.6575 5.14491L16.2598 5.54259L17.1035 6.38634C17.1584 6.44119 17.2304 6.46875 17.3024 6.46875Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M3.32227 15.2699L2.47852 16.1136L2.8762 16.5113L3.23986 16.1476V17.9999H3.80236V16.1476L4.16602 16.5113L4.5637 16.1136L3.71995 15.2699C3.61027 15.1599 3.43223 15.1599 3.32227 15.2699Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M11.9588 8.99996C11.9588 8.09912 11.4739 7.25902 10.6935 6.80762L10.4116 7.29446C11.0189 7.64574 11.3963 8.29909 11.3963 8.99996C11.3963 9.91712 10.7646 10.6877 9.91439 10.9054L10.2418 10.251L9.73861 9.99924L9.17611 11.1242C9.12211 11.2325 9.1432 11.3633 9.22899 11.4488L10.0727 12.2926L10.4704 11.8949L10.0311 11.4556C11.1359 11.1839 11.9588 10.1874 11.9588 8.99996Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M8.16267 11.1929L8.44392 10.7061C7.83642 10.3548 7.45898 9.70115 7.45898 8.99999C7.45898 8.08284 8.09067 7.31221 8.94089 7.09452L8.61352 7.74899L9.11667 8.00071L9.67917 6.87571C9.73317 6.76743 9.71208 6.63665 9.6263 6.55115L8.78255 5.7074L8.38486 6.10509L8.82417 6.5444C7.7197 6.81608 6.89648 7.81255 6.89648 8.99999C6.89648 9.9014 7.38164 10.7415 8.16267 11.1929Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_673_2089">
+                                    <rect width="18" height="18" fill="white" transform="translate(0.708984)" />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <!-- <div class="col-sm-12 col-md-4 col-lg-4">
+                      <div class="card border-0 innerCard_shadow mb-3">
+                        <div class="card-body p-4">
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div class="details_card">
+                              <h5>N/A</h5>
+                              <p>Sector</p>
+                            </div>
+                            <div class="circle-color two">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="21"
+                                height="21"
+                                viewBox="0 0 21 21"
+                                fill="none"
+                              >
+                                <path
+                                  d="M4.87565 3.32361H3.20898V4.99028H4.87565V3.32361ZM8.20898 3.32361H6.54232V4.99028H8.20898V3.32361ZM6.54232 16.6569H8.20898V18.3236H6.54232V16.6569ZM4.87565 6.65694H3.20898V8.32361H4.87565V6.65694ZM16.5423 6.65694H18.209V8.32361H16.5423V6.65694ZM4.87565 9.99027H3.20898V11.6569H4.87565V9.99027ZM16.5423 9.99027H18.209V11.6569H16.5423V9.99027ZM4.87565 13.3236H3.20898V14.9903H4.87565V13.3236ZM16.5423 13.3236H18.209V14.9903H16.5423V13.3236ZM4.87565 16.6569H3.20898V18.3236H4.87565V16.6569ZM9.87565 3.32361H11.5423V4.99028H9.87565V3.32361ZM11.5423 16.6569H9.87565V18.3236H11.5423V16.6569ZM13.209 3.32361H14.8757V4.99028H13.209V3.32361ZM14.8757 16.6569H13.209V18.3236H14.8757V16.6569ZM16.5423 3.32361H18.209V4.99028H16.5423V3.32361ZM18.209 16.6569H16.5423V18.3236H18.209V16.6569Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card border-0 innerCard_shadow mb-3">
+                      <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="details_card">
+                            <p>Duration</p>
+                            <h5 id="project_duration">2016 - 2023</h5>
+                          </div>
+                          <div class="circle-color three">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"
+                              fill="none">
+                              <path
+                                d="M8.96942 10.3439C8.98123 10.3585 8.99754 10.3709 9.01048 10.3849C9.17586 10.5897 9.42504 10.7236 9.70854 10.7236C10.2052 10.7236 10.608 10.3214 10.608 9.82412C10.608 9.55975 10.4921 9.32518 10.3115 9.16037C10.2879 9.13393 10.2665 9.10693 10.2317 9.0805L6.59623 6.31412C6.49048 6.23256 6.33804 6.22862 6.22723 6.31412C6.09504 6.41593 6.07029 6.60606 6.17211 6.73825L8.96942 10.3439Z"
+                                fill="white" />
+                              <path
+                                d="M9.70906 2.32715C9.61062 2.32715 9.51444 2.3384 9.41712 2.34177V2.65284H9.40869V5.92434H10.0083V2.94196C13.6724 3.10059 16.6059 6.12177 16.6059 9.82359C16.6059 13.6266 13.5121 16.7204 9.7085 16.7204C5.90487 16.7204 2.81112 13.6266 2.81112 9.82359C2.81112 7.92177 3.58456 6.19771 4.83388 4.94896L4.4075 4.52259C3.05019 5.87877 2.21094 7.75359 2.21094 9.82359C2.21094 13.9641 5.56681 17.32 9.70794 17.32C13.8491 17.32 17.2049 13.9641 17.2049 9.82359C17.2049 5.68302 13.8491 2.32715 9.70794 2.32715H9.70906Z"
+                                fill="white" stroke="white" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="col-sm-12 col-md-4 col-lg-4">
+                      <div class="card border-0 innerCard_shadow mb-3">
+                        <div class="card-body pl-4 pr-4 pt-3pb-3">
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div class="details_card">
+                              <div
+                                class="d-flex justify-content-start align-items-center"
+                              >
+                                <div class="sdgGoals-box-3">
+                                  <div class="sdgGoalImgBox">
+                                    <img
+                                      src="./assets/images/E_01.png"
+                                      alt="1"
+                                      class="sdgGoal-img mt-1"
+                                      style="height: 54px; width: 54px"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="sdgGoals-box-3">
+                                  <div class="sdgGoalImgBox">
+                                    <img
+                                      src="./assets/images/E_13.png"
+                                      alt="1"
+                                      class="sdgGoal-img mt-1"
+                                      style="height: 54px; width: 54px"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="pt-2 mb-0">Target SDGs</p>
+                            </div>
+                            <div class="circle-color four">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="25"
+                                height="24"
+                                viewBox="0 0 25 24"
+                                fill="none"
+                              >
+                                <path
+                                  d="M20.629 11.37H19.459C19.129 8.21998 16.639 5.69998 13.489 5.39998V4.22998C13.489 3.86998 13.219 3.59998 12.859 3.59998C12.499 3.59998 12.229 3.86998 12.229 4.22998V5.39998C9.07898 5.69998 6.55898 8.21998 6.25898 11.37H5.08898C4.72898 11.37 4.45898 11.64 4.45898 12C4.45898 12.36 4.72898 12.63 5.08898 12.63H6.25898C6.55898 15.78 9.07898 18.3 12.229 18.6V19.77C12.229 20.13 12.499 20.4 12.859 20.4C13.219 20.4 13.489 20.13 13.489 19.77V18.6C16.639 18.3 19.159 15.78 19.459 12.63H20.629C20.989 12.63 21.259 12.36 21.259 12C21.259 11.64 20.959 11.37 20.629 11.37ZM17.059 12.63H18.169C17.869 15.09 15.919 17.04 13.489 17.31V16.2C13.489 15.84 13.219 15.57 12.859 15.57C12.499 15.57 12.229 15.84 12.229 16.2V17.31C9.76898 17.01 7.81898 15.06 7.54898 12.63H8.65898C9.01898 12.63 9.28898 12.36 9.28898 12C9.28898 11.64 9.01898 11.37 8.65898 11.37H7.54898C7.84898 8.90998 9.79898 6.95998 12.229 6.68998V7.79998C12.229 8.15998 12.499 8.42998 12.859 8.42998C13.219 8.42998 13.489 8.15998 13.489 7.79998V6.68998C15.949 6.98998 17.899 8.93998 18.169 11.37H17.059C16.699 11.37 16.429 11.64 16.429 12C16.429 12.36 16.729 12.63 17.059 12.63Z"
+                                  fill="white"
+                                />
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+
+                  <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="card border-0 innerCard_shadow mb-3">
+                      <div class="card-body pl-4 pr-4 pt-3pb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="details_card">
+                            <p class="pt-2 mb-0">Donors</p>
+                            <h5 id="donors">CCAFS</h5>
+                          </div>
+                          <div class="circle-color four">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                              fill="none">
+                              <path
+                                d="M20.629 11.37H19.459C19.129 8.21998 16.639 5.69998 13.489 5.39998V4.22998C13.489 3.86998 13.219 3.59998 12.859 3.59998C12.499 3.59998 12.229 3.86998 12.229 4.22998V5.39998C9.07898 5.69998 6.55898 8.21998 6.25898 11.37H5.08898C4.72898 11.37 4.45898 11.64 4.45898 12C4.45898 12.36 4.72898 12.63 5.08898 12.63H6.25898C6.55898 15.78 9.07898 18.3 12.229 18.6V19.77C12.229 20.13 12.499 20.4 12.859 20.4C13.219 20.4 13.489 20.13 13.489 19.77V18.6C16.639 18.3 19.159 15.78 19.459 12.63H20.629C20.989 12.63 21.259 12.36 21.259 12C21.259 11.64 20.959 11.37 20.629 11.37ZM17.059 12.63H18.169C17.869 15.09 15.919 17.04 13.489 17.31V16.2C13.489 15.84 13.219 15.57 12.859 15.57C12.499 15.57 12.229 15.84 12.229 16.2V17.31C9.76898 17.01 7.81898 15.06 7.54898 12.63H8.65898C9.01898 12.63 9.28898 12.36 9.28898 12C9.28898 11.64 9.01898 11.37 8.65898 11.37H7.54898C7.84898 8.90998 9.79898 6.95998 12.229 6.68998V7.79998C12.229 8.15998 12.499 8.42998 12.859 8.42998C13.219 8.42998 13.489 8.15998 13.489 7.79998V6.68998C15.949 6.98998 17.899 8.93998 18.169 11.37H17.059C16.699 11.37 16.429 11.64 16.429 12C16.429 12.36 16.729 12.63 17.059 12.63Z"
+                                fill="white" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="card border-0 innerCard_shadow mb-3">
+                      <div class="card-body p-4">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="details_card">
+                            <p>Climate Hazards</p>
+                            <h5 id="hazards">Landslide</h5>
+                          </div>
+                          <div>
+                            <div class="circle-color one">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
+                                fill="none">
+                                <g clip-path="url(#clip0_673_2089)">
+                                  <path
+                                    d="M9.42773 5.0625C10.8236 5.0625 11.959 3.92681 11.959 2.53125C11.959 1.13569 10.8236 0 9.42773 0C8.03189 0 6.89648 1.13569 6.89648 2.53125C6.89648 3.92681 8.03189 5.0625 9.42773 5.0625ZM9.42773 0.5625C10.5131 0.5625 11.3965 1.44563 11.3965 2.53125C11.3965 3.61687 10.5131 4.5 9.42773 4.5C8.34239 4.5 7.45898 3.61687 7.45898 2.53125C7.45898 1.44563 8.34239 0.5625 9.42773 0.5625Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M6.2955 14.4857C6.34612 14.3994 6.34697 14.2928 6.29775 14.2059L3.7665 9.70589C3.66693 9.5287 3.37584 9.5287 3.27656 9.70589L0.74531 14.2059C0.696091 14.2931 0.696935 14.3994 0.74756 14.4857C0.798185 14.5721 0.890435 14.625 0.990279 14.625H6.05278C6.1529 14.625 6.24515 14.5721 6.2955 14.4857ZM1.47122 14.0625L3.52153 10.4175L5.57184 14.0625H1.47122Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M18.4277 9.84375C18.4277 9.6885 18.3017 9.5625 18.1465 9.5625H13.6465C13.4912 9.5625 13.3652 9.6885 13.3652 9.84375V14.3438C13.3652 14.499 13.4912 14.625 13.6465 14.625H18.1465C18.3017 14.625 18.4277 14.499 18.4277 14.3438V9.84375ZM17.8652 14.0625H13.9277V10.125H17.8652V14.0625Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M9.42827 16.0313C8.12242 16.0313 6.85595 15.6578 5.76498 14.9516L5.45898 15.4238C6.64136 16.1894 8.01386 16.5938 9.42827 16.5938C10.8964 16.5938 12.3125 16.1604 13.5235 15.3403L13.2083 14.8745C12.0906 15.6314 10.7836 16.0313 9.42827 16.0313Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M16.1737 9.01092L16.7356 8.98898C16.6301 6.30361 15.063 3.89892 12.6462 2.71289L12.3984 3.21802C14.6293 4.31264 16.0761 6.53255 16.1737 9.01092Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M2.69911 9.82148C2.68505 9.64402 2.67773 9.46233 2.67773 9.2812C2.67773 6.68555 4.12617 4.36214 6.45773 3.21802L6.21023 2.71289C3.68433 3.95264 2.11523 6.46927 2.11523 9.2812C2.11523 9.47723 2.12283 9.67383 2.1383 9.8662L2.69911 9.82148Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M5.29139 2.05115L5.68908 2.44883L6.53283 1.60508C6.6428 1.49512 6.6428 1.31737 6.53283 1.2074L5.68908 0.363647L5.29139 0.761335L5.65505 1.12499H3.80273V1.68749H5.65505L5.29139 2.05115Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M17.3024 6.46875C17.3744 6.46875 17.4464 6.44119 17.5012 6.38634L18.345 5.54259L17.9473 5.14491L17.5836 5.50856V3.65625H17.0211V5.50856L16.6575 5.14491L16.2598 5.54259L17.1035 6.38634C17.1584 6.44119 17.2304 6.46875 17.3024 6.46875Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M3.32227 15.2699L2.47852 16.1136L2.8762 16.5113L3.23986 16.1476V17.9999H3.80236V16.1476L4.16602 16.5113L4.5637 16.1136L3.71995 15.2699C3.61027 15.1599 3.43223 15.1599 3.32227 15.2699Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M11.9588 8.99996C11.9588 8.09912 11.4739 7.25902 10.6935 6.80762L10.4116 7.29446C11.0189 7.64574 11.3963 8.29909 11.3963 8.99996C11.3963 9.91712 10.7646 10.6877 9.91439 10.9054L10.2418 10.251L9.73861 9.99924L9.17611 11.1242C9.12211 11.2325 9.1432 11.3633 9.22899 11.4488L10.0727 12.2926L10.4704 11.8949L10.0311 11.4556C11.1359 11.1839 11.9588 10.1874 11.9588 8.99996Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                  <path
+                                    d="M8.16267 11.1929L8.44392 10.7061C7.83642 10.3548 7.45898 9.70115 7.45898 8.99999C7.45898 8.08284 8.09067 7.31221 8.94089 7.09452L8.61352 7.74899L9.11667 8.00071L9.67917 6.87571C9.73317 6.76743 9.71208 6.63665 9.6263 6.55115L8.78255 5.7074L8.38486 6.10509L8.82417 6.5444C7.7197 6.81608 6.89648 7.81255 6.89648 8.99999C6.89648 9.9014 7.38164 10.7415 8.16267 11.1929Z"
+                                    fill="white" stroke="white" stroke-width="0.5" />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_673_2089">
+                                    <rect width="18" height="18" fill="white" transform="translate(0.708984)" />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="col-sm-12 col-md-4 col-lg-4">
+                      <div class="card border-0 innerCard_shadow mb-3">
+                        <div class="card-body p-4">
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div class="details_card">
+                              <h5>29</h5>
+                              <p>Funding Organizations</p>
+                            </div>
+                            <div class="circle-color five">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="19"
+                                height="18"
+                                viewBox="0 0 19 18"
+                                fill="none"
+                              >
+                                <g clip-path="url(#clip0_673_2673)">
+                                  <path
+                                    d="M14.2441 8.38828C14.8965 8.38828 15.4254 8.91717 15.4254 9.56953C15.4254 10.2219 14.8965 10.7508 14.2441 10.7508C13.5918 10.7508 13.0629 10.2219 13.0629 9.56953C13.0629 8.91717 13.5918 8.38828 14.2441 8.38828ZM12.7887 11.3273C13.441 11.3273 13.9699 11.8562 13.9699 12.5086C13.9699 13.161 13.441 13.6898 12.7887 13.6898C12.1363 13.6898 11.6074 13.161 11.6074 12.5086C11.6074 11.8562 12.1363 11.3273 12.7887 11.3273ZM10.9043 13.9078H9.57539H8.24648C7.43789 13.9078 6.93164 14.5758 6.93164 15.4125V17.4727H7.83867V15.6516C7.83867 15.5672 7.90898 15.5109 7.9793 15.5109C8.06367 15.5109 8.11992 15.5672 8.11992 15.6516V17.4656H11.0379V15.6516C11.0379 15.5672 11.1082 15.5109 11.1785 15.5109C11.2629 15.5109 11.3191 15.5813 11.3191 15.6516V17.4656H12.2262V15.4195C12.2402 14.5758 11.727 13.9078 10.9043 13.9078ZM11.2348 8.38828C11.8871 8.38828 12.416 8.91717 12.416 9.56953C12.416 10.2219 11.8871 10.7508 11.2348 10.7508C10.5824 10.7508 10.0535 10.2219 10.0535 9.56953C10.0535 8.91717 10.5824 8.38828 11.2348 8.38828ZM14.7082 12.5086C14.7082 13.1625 15.2355 13.6898 15.8895 13.6898C16.5434 13.6898 17.0707 13.1625 17.0707 12.5086C17.0707 11.8547 16.5434 11.3273 15.8895 11.3273C15.2355 11.3273 14.7082 11.8547 14.7082 12.5086ZM14.5887 13.9078C13.7801 13.9078 13.2738 14.5758 13.2738 15.4125V17.4727H14.1809V15.6516C14.1809 15.5672 14.2512 15.5109 14.3215 15.5109C14.4059 15.5109 14.4621 15.5672 14.4621 15.6516V17.4656H17.3801V15.6516C17.3801 15.5672 17.4504 15.5109 17.5207 15.5109C17.6051 15.5109 17.6613 15.5813 17.6613 15.6516V17.4656H18.5684V15.4195C18.5824 14.5688 18.0691 13.9008 17.2535 13.9008H15.9246H14.5887V13.9078ZM3.50742 11.3273C4.15978 11.3273 4.68867 11.8562 4.68867 12.5086C4.68867 13.161 4.15978 13.6898 3.50742 13.6898C2.85506 13.6898 2.32617 13.161 2.32617 12.5086C2.32617 11.8562 2.85506 11.3273 3.50742 11.3273ZM1.74961 17.4656V15.6516C1.74961 15.5672 1.81992 15.5109 1.89023 15.5109C1.97461 15.5109 2.03086 15.5672 2.03086 15.6516V17.4656H4.94883V15.6516C4.94883 15.5672 5.01914 15.5109 5.08945 15.5109C5.17383 15.5109 5.23008 15.5813 5.23008 15.6516V17.4656H6.13711V15.4195C6.15117 14.5688 5.63789 13.9008 4.82227 13.9008H3.49336H2.16445C1.35586 13.9008 0.849609 14.5688 0.849609 15.4055V17.4656H1.74961ZM8.39414 12.5086C8.39414 13.1625 8.92148 13.6898 9.57539 13.6898C10.2293 13.6898 10.7566 13.1625 10.7566 12.5086C10.7566 11.8547 10.2293 11.3273 9.57539 11.3273C8.92148 11.3273 8.39414 11.8547 8.39414 12.5086ZM5.01914 8.38828C5.6715 8.38828 6.20039 8.91717 6.20039 9.56953C6.20039 10.2219 5.6715 10.7508 5.01914 10.7508C4.36678 10.7508 3.83789 10.2219 3.83789 9.56953C3.83789 8.91717 4.36678 8.38828 5.01914 8.38828ZM8.21133 8.38828C8.86369 8.38828 9.39258 8.91717 9.39258 9.56953C9.39258 10.2219 8.86369 10.7508 8.21133 10.7508C7.55897 10.7508 7.03008 10.2219 7.03008 9.56953C7.03008 8.91717 7.55897 8.38828 8.21133 8.38828ZM6.62227 11.3273C7.27462 11.3273 7.80352 11.8562 7.80352 12.5086C7.80352 13.161 7.27462 13.6898 6.62227 13.6898C5.96991 13.6898 5.44102 13.161 5.44102 12.5086C5.44102 11.8562 5.96991 11.3273 6.62227 11.3273ZM9.70441 6.92578C11.4649 6.92578 12.9036 5.49654 12.9036 3.72656C12.9036 1.95659 11.4744 0.527344 9.70441 0.527344C7.93444 0.527344 6.51462 1.96608 6.51462 3.73605C6.51462 5.49654 7.94386 6.92578 9.70441 6.92578ZM9.52772 3.9979C8.94089 3.7928 8.57491 3.49622 8.57491 2.96937C8.57491 2.48351 8.89673 2.10171 9.48673 1.98183V1.45491H9.92843V1.95659C10.2944 1.95659 10.5594 2.03231 10.755 2.13645L10.5752 2.76743C10.43 2.70745 10.1934 2.60655 9.86845 2.60655C9.54347 2.60655 9.36677 2.76743 9.36677 2.92838C9.36677 3.14923 9.57187 3.23445 10.0136 3.41423C10.6162 3.63509 10.897 3.94116 10.897 4.44277C10.897 4.94438 10.5909 5.32617 9.94418 5.4713V5.97298H9.50248V5.48712C9.12075 5.48712 8.73579 5.38615 8.54967 5.28202L8.71055 4.63521C8.91565 4.73618 9.23747 4.85606 9.5782 4.85606C9.94418 4.85606 10.124 4.69519 10.124 4.47434C10.124 4.25348 9.95051 4.16194 9.52772 3.9979Z"
+                                    fill="white"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_673_2673">
+                                    <rect
+                                      width="18"
+                                      height="18"
+                                      fill="white"
+                                      transform="translate(0.708984)"
+                                    />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <section class="footer bg-black p-60px pb-0 plr-100px">
+      <div class="container-fluid">
+        <div class="row plr-100px" style="margin-top: 30px">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+              <div class="">
+                <div>
+                  <a href="https://www.iwmi.cgiar.org/" target="_blank">
+                    <div class="d-flex">
+                      <span><img src="./assets/images/iwmi.png" height="120px" /></span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class=""></div>
+              <div class="">
+                <div>
+                  <a href="https://www.cgiar.org/initiative/climate-resilience/" target="_blank">
+                    <div class="d-flex">
+                      <span><img src="./assets/images/cgiar-new-1.svg" height="100px" /></span>
+                      <span class="line" style="
+                            height: 82px;
+                            width: 1px;
+                            background: #fff;
+                            margin-top: 6px;
+                          "></span>
+                      <div class="" style="margin-top: 13px">
+                        <span class="logo-text-small">initiative on</span>
+                        <span class="logo-text-bold">Climate Resilience</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- <div class="">
+                      <div>
+                        <a href="https://www.cgiar.org/" target="_blank">
+                          <div class="d-flex">
+                            <span
+                              ><img
+                                src="./assets/images/cgiar-new.svg"
+                                height="120px"
+                            /></span>
+                          </div>
+                        </a>
+                      </div>
+                    </div> -->
+              <div>
+                <ul class="list-unstyled pl-0 ml-0 footer_ul">
+                  <li class="d-flex follow-link flex-wrap text-start">
+                    <div class="pr-3">
+                      <a href="https://www.facebook.com/IWMIonFB" target="_blank" class="facebook-link">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </div>
+
+                    <div class="pr-3">
+                      <a href="https://www.flickr.com/photos/iwmi" target="_blank" class="facebook-link">
+                        <i class="fa fa-flickr"></i>
+                      </a>
+                    </div>
+
+                    <div class="pr-3">
+                      <a href="https://www.instagram.com/iwmi_water/" target="_blank" class="facebook-link">
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </div>
+
+                    <div class="pr-3">
+                      <a href="https://www.linkedin.com/checkpoint/lg/login?session_redirect=%2Fauthwall&fromSignIn=true&trk=seo-authwall-base_google-one-tap-submit"
+                        target="_blank" class="facebook-link">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                    </div>
+
+                    <div class="pr-3">
+                      <a href="mailto:iwmi@cgiar.org" target="_blank" class="facebook-link">
+                        <i class="fa fa-envelope"></i>
+                      </a>
+                    </div>
+
+                    <div class="pr-3">
+                      <a href="https://www.iwmi.cgiar.org/news/rss-feeds/" target="_blank" class="facebook-link">
+                        <i class="fa fa-wifi"></i>
+                      </a>
+                    </div>
+
+                    <div class="pr-3">
+                      <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIWMI_" target="_blank"
+                        class="facebook-link">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </div>
+
+                    <div class="pr-3">
+                      <a href="https://www.youtube.com/iwmimedia" target="_blank" class="facebook-link">
+                        <i class="fa fa-youtube-play"></i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="mb-0" style="background: #fff" />
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <p class="text-copyright text-center py-3">
+              Copyright © 2024. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">...</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- waiting spinner -->
+  <!-- <div id="loading-modal" class="modal hide" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-3 text-white" style="background-color: transparent !important; border: 0px !important;">
+                    <div id="loading-modal-container"></div>
+                </div>
+            </div>
+        </div> -->
+
+  <!-- page scripts -->
+  <script type="text/javascript" src="./assets/scripts/utils.js"></script>
+  <!--jQuery-->
+  <!--jQuery-->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  <!--Plugin JavaScript file-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <!-- <script type="text/javascript" src="./assets/scripts/project_details.js"></script> -->
+  <script>
+    $(document).ready(function () {
+      $("#example-slider").ionRangeSlider({
+        // Options and settings go here
+        min: 0,
+        max: 100000,
+        from: 20000,
+        to: 30000,
+        prefix: "$ ",
+        type: "double", // You can use 'single' or 'double' type
+        step: 5,
+      });
+      $("#example-slider1").ionRangeSlider({
+        // Options and settings go here
+        min: 2000,
+        max: 2050,
+        from: 2010,
+        to: 2023,
+        type: "double", // You can use 'single' or 'double' type
+        // step: 5,
+      });
+
+      $(".date-own").datepicker({
+        minViewMode: 2,
+        format: "yyyy",
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $("#year-datepicker, #year-datepicker-1").datepicker({
+        format: "yyyy", // Show only the year
+        viewMode: "years",
+        minViewMode: "years",
+        autoclose: true,
+        startDate: "2000-01-01", // Start date
+        endDate: "2050-12-31", // End date
+      });
+    });
+  </script>
+
+  <script>
+    let cookieObject = getCookies(document.cookie);
+    const authToken = cookieObject.jwt;
+    let lookup_data = JSON.parse(localStorage.getItem("lookup_data"));
+    let countries = lookup_data["data"][1]["lookup_data"];
+    let donors = lookup_data["data"][2]["lookup_data"];
+    let themes = lookup_data["data"][4]["lookup_data"];
+    let climate_hazards = lookup_data["data"][5]["lookup_data"];
+
+    let catalog_projects = [];
+    catalog_projects = JSON.parse(localStorage.getItem("catalog_projects"));
+    const currentUrl = window.location.href;
+    const paramIndex = currentUrl.indexOf("?id=");
+
+    if (paramIndex !== -1) {
+      const hashIndex = currentUrl.indexOf("#");
+      const idValue =
+        hashIndex !== -1
+          ? currentUrl.substring(paramIndex + 4, hashIndex) // Extract id before the hash
+          : currentUrl.substring(paramIndex + 4);
+      let project = catalog_projects.filter((item) => item.id == idValue);
+
+      $("#project_title").html(
+        `<h4 class="title pb-0 mb-18px" id="project_title"><strong>${project[0].project_name}</strong>
+        </h4>`
+      );
+
+      $("#project_budget").html(
+        `<h5 id="project_budget">${number_conversion(project[0].budget)}</h5>`
+      );
+
+      $("#countries").html(
+        `<h5 id="countries">${get_countries(project[0].country_ids)}</h5>`
+      );
+
+      $("#donors").html(
+        `<h5 id="donors">${get_donors(project[0].donor_ids)}</h5>`
+      );
+
+      $("#themes").html(
+        `<h5 id="themes">${get_themes(project[0].theme_ids)}</h5>`
+      );
+
+      $("#hazards").html(
+        `<h5 id="hazards">${get_hazards(project[0].hazard_ids)}</h5>`
+      );
+
+      $("#project_duration").html(
+        `<h5 id="project_duration">${year_extractor(
+          project[0].start_date
+        )} - ${year_extractor(project[0].end_date)}</h5>`
+      );
+      // const get_data = {
+      //   method: "GET",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //     Authorization: `${authToken}`,
+      //   },
+      // };
+
+      // const lookup_url = `${apiUrl}/catalog/manage?project_id=${idValue}`;
+
+      // fetch(lookup_url, get_data)
+      //   .then((response) => {
+      //     if (!response.ok) {
+      //       throw new Error(`HTTP error! Status: ${response.status}`);
+      //     }
+      //     return response.json();
+      //   })
+      //   .then((data) => {
+      //     // console.log(data);
+      //   })
+      //   .catch((error) => {
+      //     console.error("Error:", error.message);
+      //   });
+    } else {
+      console.log("ID parameter not found");
+    }
+
+    function year_extractor(date) {
+      const dateString = date;
+      const year = dateString.split("-")[0];
+      return year;
+    }
+
+    function number_conversion(labelValue) {
+      // Nine Zeroes for Billions
+      return Math.abs(Number(labelValue)) >= 1.0e9
+        ? (Math.abs(Number(labelValue)) / 1.0e9)
+          .toFixed(2)
+          .replace(/\.0+$/, "") + "B"
+        : // Six Zeroes for Millions
+        Math.abs(Number(labelValue)) >= 1.0e6
+          ? (Math.abs(Number(labelValue)) / 1.0e6)
+            .toFixed(2)
+            .replace(/\.0+$/, "") + "M"
+          : // Three Zeroes for Thousands
+          Math.abs(Number(labelValue)) >= 1.0e3
+            ? (Math.abs(Number(labelValue)) / 1.0e3)
+              .toFixed(2)
+              .replace(/\.0+$/, "") + "K"
+            : Math.abs(Number(labelValue));
+    }
+
+    function get_countries(ids) {
+      const filtered = countries.filter((item) => {
+        return ids.includes(item.id);
+      });
+      return filtered.map((item) => item.country).join(", ");
+    }
+
+    function get_donors(ids) {
+      const filtered = donors.filter((item) => {
+        return ids.includes(item.id);
+      });
+      return filtered.map((item) => item.donor).join(", ");
+    }
+
+    function get_themes(ids) {
+      const filtered = themes.filter((item) => {
+        return ids.includes(item.id);
+      });
+      return filtered.map((item) => item.theme).join(", ");
+    }
+
+    function get_hazards(ids) {
+      const filtered = climate_hazards.filter((item) => {
+        return ids.includes(item.id);
+      });
+      return filtered.map((item) => item.climate_hazard).join(", ");
+    }
+
+    $("#back-button").on("click", () => window.close());
+
+    // Create a map chart
+    var chart = am4core.create("map-container", am4maps.MapChart);
+
+    // Set the map definition
+    chart.geodata = am4geodata_worldLow;
+
+    // Set the projection
+    chart.projection = new am4maps.projections.Miller();
+
+    // Create map polygon series
+    var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+    polygonSeries.useGeodata = true;
+
+    // Configure polygon appearance and tooltips
+    var polygonTemplate = polygonSeries.mapPolygons.template;
+    polygonTemplate.fill = am4core.color("#74B266");
+    polygonTemplate.stroke = am4core.color("#ffffff");
+
+    // Create custom tooltip content
+    var customTooltip = polygonTemplate.createChild(am4core.Container);
+    customTooltip.background.fill = am4core.color("#ffffff");
+    customTooltip.width = 200;
+    customTooltip.height = 100;
+    customTooltip.cornerRadius(5, 5, 5, 5);
+    customTooltip.hidden = true;
+
+    var tooltipText = customTooltip.createChild(am4core.Label);
+    tooltipText.text = "{name}: {value}%";
+    tooltipText.fontSize = 16;
+    tooltipText.align = "center";
+    tooltipText.wrap = true;
+
+    // Show the custom tooltip on hover
+    polygonTemplate.events.on("over", function (event) {
+      var countryData = event.target.dataItem.dataContext;
+      customTooltip.link = countryData.url;
+      tooltipText.text = `${countryData.name}: ${countryData.value}%`;
+      customTooltip.show();
+    });
+
+    // Hide the custom tooltip when not hovering over a country
+    polygonTemplate.events.on("out", function () {
+      customTooltip.hide();
+    });
+
+    // Sample data for countries (replace with your own data)
+    polygonSeries.data = [
+      {
+        id: "US",
+        value: 20,
+        url: "https://www.example.com/us",
+      },
+      {
+        id: "CA",
+        value: 15,
+        url: "https://www.example.com/ca",
+      },
+      // Add more country data here
+    ];
+  </script>
+  <!-- <script>
+    // Create map instance
+    var chart = am4core.create("main-map", am4maps.MapChart);
+
+    // Set map definition
+    chart.geodata = am4geodata_worldIndiaLow;
+
+    // Set projection
+    chart.projection = new am4maps.projections.Miller();
+    // Colors
+    var color1 = chart.colors.getIndex(0);
+    // var color2 = chart.colors.getIndex(1);
+
+    chart.homeGeoPoint = {
+        latitude: 40,
+        longitude: 0
+    }
+
+    // Create map polygon series
+    var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+    polygonSeries.useGeodata = true;
+
+    // Configure series
+    var polygonTemplate = polygonSeries.mapPolygons.template;
+    polygonTemplate.fill = am4core.color("#f8f8f8");
+
+
+
+    // Make map load polygon (like country names) data from GeoJSON
+    polygonSeries.useGeodata = true;
+
+    polygonSeries.data = [{
+        "id": "GT",
+        "selected": true
+    }, {
+        "id": "SN",
+        "selected": true
+    }, {
+        "id": "MA",
+        "selected": true
+    }, {
+        "id": "ZM",
+        "selected": true
+    }, {
+        "id": "KE",
+        "selected": true
+    }, {
+        "id": "PH",
+        "selected": true
+    }]
+
+
+    // Pins
+    var imageSeries = chart.series.push(new am4maps.MapImageSeries());
+    var imageTemplate = imageSeries.mapImages.template;
+    imageTemplate.propertyFields.longitude = "longitude";
+    imageTemplate.propertyFields.latitude = "latitude";
+    imageTemplate.nonScaling = true;
+
+    // Creating a pin bullet
+    var pin = imageTemplate.createChild(am4plugins_bullets.PinBullet);
+
+    // Configuring pin appearance
+    pin.background.fill = "#fff";
+    pin.background.opacity = 1;
+    pin.background.pointerBaseWidth = 2;
+    pin.background.pointerLength = 350;
+    pin.background.propertyFields.pointerLength = "length";
+    pin.background.propertyFields.strokeWidth = 0.1;
+    pin.valign = "middle";
+    pin.align = "center";
+    pin.strokeWidth = 0.5;
+    pin.fill = am4core.color("#fff");
+    pin.stroke = am4core.color("#793B3B");
+    // pin.circle.fill = pin.background.fill;
+    // pin.circle.fill = color2;;
+    // pin.circle.strokeOpacity = 1;
+    // pin.circle.strokeWidth = 1;
+    pin.label = new am4core.Label();
+    pin.label.html = `
+    <div class="map-circle">
+            <div class="top-title">
+                <span>SDG Ranks</span>
+                <span>10</span>
+            </div>
+            <div class="">
+                <span class="">Emission Percentage</span>
+                <span class="">65%</span>
+            </div>
+     </div>
+    `;
+    // pin.label.fill = color1.alternate;
+    // debugger
+
+    var label = pin.createChild(am4core.Label);
+    label.html = "<span class='country-title'>{title}</span>";
+    label.fontWeight = "bold";
+    label.propertyFields.dy = "length";
+    label.verticalCenter = "middle";
+    label.fill = color1;
+    label.adapter.add("dy", function (dy) {
+        return (130 + dy) * -1;
+    });
+
+    label.events.on("hit", function (ev) {
+        window.location.href = "#";
+    });
+
+    // Creating a "heat rule" to modify "radius" of the bullet based
+    // on value in data
+    imageSeries.heatRules.push({
+        "target": pin.background,
+        "property": "radius",
+        "min": 20,
+        "max": 90,
+        "dataField": "value"
+    });
+
+    imageSeries.heatRules.push({
+        "target": label,
+        "property": "dx",
+        "min": 30,
+        "max": -100,
+        "dataField": "value"
+    });
+
+    imageSeries.heatRules.push({
+        "target": label,
+        "property": "paddingBottom",
+        "min": 0,
+        "max": 10,
+        "dataField": "value"
+    });
+
+    // Pin data
+    imageSeries.data = [{
+        "latitude": 14.628434,
+        "longitude": -90.522713,
+        "value": 100,
+        "title": "Guatemala",
+        "cursor": "pointer",
+        "length": 150
+    }, {
+        "latitude": 14.716677,
+        "longitude": -17.467686,
+        "value": 100,
+        "title": "Senegal",
+        "length": 40
+    }, {
+        "latitude": 31.628674,
+        "longitude": -7.992047,
+        "value": 100,
+        "title": "Morocco",
+        "length": 100
+    }, {
+        "latitude": -15.416667,
+        "longitude": 28.283333,
+        "value": 100,
+        "title": "Zambia",
+        "length": 80
+    }, {
+        "latitude": -1.286389,
+        "longitude": 36.817223,
+        "value": 100,
+        "title": "Kenya",
+        "length": 80
+    }, {
+        "latitude": 14.599512,
+        "longitude": 121.262634,
+        "value": 100,
+        "title": "Phillippines",
+        "length": 80
+    }];
+
+    polygonSeries.exclude = ["AQ"];
+
+    // Configure series
+    var polygonTemplate = polygonSeries.mapPolygons.template;
+    polygonTemplate.tooltipText = "{name}";
+    polygonTemplate.fill = am4core.color("lightgray");
+
+    // Create hover state and set alternative fill color
+    // var hs = polygonTemplate.states.create("hover");
+    // hs.properties.fill = am4core.color("#367B25");
+
+    polygonTemplate.adapter.add("fill", function (fill, target) {
+        if (target.dataItem.dataContext && target.dataItem.dataContext.selected) {
+            var pattern = new am4core.LinePattern();
+            pattern.width = 10;
+            pattern.height = 10;
+            pattern.stroke = am4core.color("#000");
+            pattern.strokeWidth = 0;
+            pattern.rotation = 45;
+            return pattern;
+        }
+        return fill;
+    });
+
+    polygonTemplate.adapter.add("fill", function (fill, target) {
+        if (target.dataItem.dataContext && target.dataItem.dataContext.selected) {
+            return am4core.color("#3f0b5e");
+        }
+        return fill;
+    });
+</script> -->
+
+  <style>
+    @media only screen and (max-width: 500px) {
+      .pxpse-3rem {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  </style>
+</body>
+
+</html>
