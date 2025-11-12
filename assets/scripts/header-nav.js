@@ -107,7 +107,7 @@ window.addEventListener("load", (event) => {
                         <a class="dropdown-item" href="ndc.html"> Nationally Determined Contributions</a>
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
             </ul>
             <ul class="navbar-nav ml-auto align-items-center">
                 <li class="nav-item">
