@@ -105,6 +105,7 @@ window.addEventListener("load", (event) => {
                         <a class="dropdown-item" href="adaptation_catalog.html"> Adaptation Catalog</a>
                         <a class="dropdown-item" href="investment_portfolio.html"> Investment Portfolio Planning</a>
                         <a class="dropdown-item" href="ndc.html"> Nationally Determined Contributions</a>
+                        <a class="dropdown-item" href="ccs.html"> Project Submission Form</a>
                     </div>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>

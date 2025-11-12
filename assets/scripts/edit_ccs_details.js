@@ -7,7 +7,7 @@ $(window).on("load", () => {
 
 
 class CCSFormEdit {
-    constructor(dataId){
+    constructor(dataId) {
         // api url
         this.dataId = dataId;
         this.apiUrl = apiUrl;
@@ -45,10 +45,10 @@ class CCSFormEdit {
             ]
         }; // Initially fill these, for lower levels call APIs by their parent location IDs
         this.lkpCountryData = [
-            {"value": 5, "label": "Kenya"},
-            {"value": 7, "label": "Senegal"},
-            {"value": 4, "label": "Sri Lanka"},
-            {"value": 2, "label": "Zambia"},
+            { "value": 5, "label": "Kenya" },
+            { "value": 7, "label": "Senegal" },
+            { "value": 4, "label": "Sri Lanka" },
+            { "value": 2, "label": "Zambia" },
         ];
         // Location Lookup Options
         this.lkpProvinceData = [];
@@ -93,7 +93,7 @@ class CCSFormEdit {
         // datepicker common options
         this.monthYearOptions = {
             format: "mm/yyyy",
-            startView: "months", 
+            startView: "months",
             minViewMode: "months",
             autoclose: true,
             clearBtn: true,
@@ -110,7 +110,7 @@ class CCSFormEdit {
     }
 
     init = () => {
-        if(this.isLoggedIn){
+        if (this.isLoggedIn) {
             this.execute();
             // do auth/self and then execute in later stages
         } else {
@@ -129,84 +129,84 @@ class CCSFormEdit {
             this.postApi(this.ccsLkpReqBody, this.authHeader, "ccs/lookups"),
             this.getApi(this.authHeader, `ccs/submit?data_id=${this.dataId}`)
         ])
-        .then(response => {
-            let [
-                formFieldsResponse, 
-                fieldOptionsResponse, 
-                lkpResponse,
-                lkpSdgGoalResponse,
-                lkpSdgTargetResponse,
-                lkpCCSResponse,
-                recordResponse,
-            ] = response;
-            this.formFieldData = formFieldsResponse.data;
-            this.fieldOptionsData = fieldOptionsResponse.data;
-            // LOCATION LOOKUPS
-            // Ignore country filter here temporarily -- its only for Sri Lanka (country_id=4)
-            this.lkpProvinceData = lkpResponse.data
-                .find(b => b.table == "province").lookup_data
-                .map(b => {return {"value": b.province_id, "label": b.province, "country_id": b.country_id};});
-            this.lkpDistrictData = lkpResponse.data
-                .find(b => b.table == "district").lookup_data
-                .map(b => {return {"value": b.district_id, "label": b.district, "province_id": b.province_id};});
-            // SDG LOOKUPS
-            this.lkpSdgGoalData = lkpSdgGoalResponse.data.map(b => {
-                 return {"value": b.id, "label": b.goal};
-            });
-            this.lkpSdgTargetData = lkpSdgTargetResponse.data.map(b => {
-                return {"value": b.id, "label": b.target, "goal_id": b.sdg_id}
-            });
-            // OTHER LOOKUPS
-            this.lkpOutcomeData = lkpCCSResponse.data
-                .find(b => b.table == "outcomes").lookup_data
-                .map(b => {return {"value": b.outcome_id, "label": b.outcome}});
-            this.lkpOutputData = lkpCCSResponse.data
-                .find(b => b.table == "outputs").lookup_data
-                .map(b => {return {"value": b.output_id, "label": b.output, "outcome_id": b.outcome_id}});
-            // RECORD RESPONSE
-            this.recordData = recordResponse.data;
-        })
-        .then(this.loadContent)
-        .then(this.enableTabNavigation)
-        .then(this.initializeGroupHandlers)
-        .then(this.triggerGroupToggle)
-        .then(() => $("select").selectpicker(this.spOptions))
-        .then(() => $("input[data-subtype='month_year']").datepicker(this.monthYearOptions))
-        .then(() => {
-            // initially load the countries, there after fill the below levels
-            $(`select[data-type="lkp_country"]`).on("change", e => {
-                let countryIdList = $(e.currentTarget).val().map(b => Number(b));
-                this.fillUnderlyingLocations("lkp_state", countryIdList);
-            });
-        })
-        .then(() => {
-            // load both sdg goals and targets; based on selected goals, apply targets too 
-            $(`select[data-type="lkp_sdg_goals"]`).on("change", e => {
-                let goalIdsList = $(e.currentTarget).val().map(b => Number(b));
-                let groupId = $(e.currentTarget).data("group-id");
-                let groupIndex = $(e.currentTarget).data("group-index");
-                let filteredTargets = this.lkpSdgTargetData.filter(b => goalIdsList.includes(b.goal_id)).map(b => b.value);
-                $(`select[data-type="lkp_sdg_indicators"][data-group-id="${groupId}"][data-group-index="${groupIndex}"]`).selectpicker("val", filteredTargets);
-                $(`select[data-type="lkp_sdg_indicators"][data-group-id="${groupId}"][data-group-index="${groupIndex}"]`).selectpicker("refresh");
-            });
-        })
-        .then(() => {
-            $("input[type='radio'][data-has-dependents='true']").on("click", e => {
-                let currentTarget = $(e.currentTarget)
-                let fieldId = currentTarget.attr("data-field-id");
-                let checkedValue = currentTarget.val();
-                $(`div.row[data-parent-id="${fieldId}"]`).each((_, element) => {
-                    let childToggleValue = $(element).attr("data-child-toggle-value");
-                    childToggleValue == checkedValue  ? $(element).show() : $(element).hide(); 
+            .then(response => {
+                let [
+                    formFieldsResponse,
+                    fieldOptionsResponse,
+                    lkpResponse,
+                    lkpSdgGoalResponse,
+                    lkpSdgTargetResponse,
+                    lkpCCSResponse,
+                    recordResponse,
+                ] = response;
+                this.formFieldData = formFieldsResponse.data;
+                this.fieldOptionsData = fieldOptionsResponse.data;
+                // LOCATION LOOKUPS
+                // Ignore country filter here temporarily -- its only for Sri Lanka (country_id=4)
+                this.lkpProvinceData = lkpResponse.data
+                    .find(b => b.table == "province").lookup_data
+                    .map(b => { return { "value": b.province_id, "label": b.province, "country_id": b.country_id }; });
+                this.lkpDistrictData = lkpResponse.data
+                    .find(b => b.table == "district").lookup_data
+                    .map(b => { return { "value": b.district_id, "label": b.district, "province_id": b.province_id }; });
+                // SDG LOOKUPS
+                this.lkpSdgGoalData = lkpSdgGoalResponse.data.map(b => {
+                    return { "value": b.id, "label": b.goal };
                 });
-            });
-        })
-        .then(this.fillRecordData)
-        .catch(err => {
-            console.error(err);
-            this.pageAlert("Unable to build CCS form", 0)
-        })
-        .finally(this.stopWaiting);
+                this.lkpSdgTargetData = lkpSdgTargetResponse.data.map(b => {
+                    return { "value": b.id, "label": b.target, "goal_id": b.sdg_id }
+                });
+                // OTHER LOOKUPS
+                this.lkpOutcomeData = lkpCCSResponse.data
+                    .find(b => b.table == "outcomes").lookup_data
+                    .map(b => { return { "value": b.outcome_id, "label": b.outcome } });
+                this.lkpOutputData = lkpCCSResponse.data
+                    .find(b => b.table == "outputs").lookup_data
+                    .map(b => { return { "value": b.output_id, "label": b.output, "outcome_id": b.outcome_id } });
+                // RECORD RESPONSE
+                this.recordData = recordResponse.data;
+            })
+            .then(this.loadContent)
+            .then(this.enableTabNavigation)
+            .then(this.initializeGroupHandlers)
+            .then(this.triggerGroupToggle)
+            .then(() => $("select").selectpicker(this.spOptions))
+            .then(() => $("input[data-subtype='month_year']").datepicker(this.monthYearOptions))
+            .then(() => {
+                // initially load the countries, there after fill the below levels
+                $(`select[data-type="lkp_country"]`).on("change", e => {
+                    let countryIdList = $(e.currentTarget).val().map(b => Number(b));
+                    this.fillUnderlyingLocations("lkp_state", countryIdList);
+                });
+            })
+            .then(() => {
+                // load both sdg goals and targets; based on selected goals, apply targets too 
+                $(`select[data-type="lkp_sdg_goals"]`).on("change", e => {
+                    let goalIdsList = $(e.currentTarget).val().map(b => Number(b));
+                    let groupId = $(e.currentTarget).data("group-id");
+                    let groupIndex = $(e.currentTarget).data("group-index");
+                    let filteredTargets = this.lkpSdgTargetData.filter(b => goalIdsList.includes(b.goal_id)).map(b => b.value);
+                    $(`select[data-type="lkp_sdg_indicators"][data-group-id="${groupId}"][data-group-index="${groupIndex}"]`).selectpicker("val", filteredTargets);
+                    $(`select[data-type="lkp_sdg_indicators"][data-group-id="${groupId}"][data-group-index="${groupIndex}"]`).selectpicker("refresh");
+                });
+            })
+            .then(() => {
+                $("input[type='radio'][data-has-dependents='true']").on("click", e => {
+                    let currentTarget = $(e.currentTarget)
+                    let fieldId = currentTarget.attr("data-field-id");
+                    let checkedValue = currentTarget.val();
+                    $(`div.row[data-parent-id="${fieldId}"]`).each((_, element) => {
+                        let childToggleValue = $(element).attr("data-child-toggle-value");
+                        childToggleValue == checkedValue ? $(element).show() : $(element).hide();
+                    });
+                });
+            })
+            .then(this.fillRecordData)
+            .catch(err => {
+                console.error(err);
+                this.pageAlert("Unable to build CCS form", 0)
+            })
+            .finally(this.stopWaiting);
     }
 
     loadContent = () => {
@@ -216,11 +216,11 @@ class CCSFormEdit {
         this.tabIdList = tabs.map(a => a.field_id);
         this.groupIdList = this.uqArray(this.formFieldData.filter(a => a.group_id).map(a => a.group_id));
         // Left Hand Side tabs
-        let tabsHtml =  tabs.map((a, i) => {
+        let tabsHtml = tabs.map((a, i) => {
             let initialActive = i == 0 ? "active" : "";
             return `<li class="nav-item">
                 <a class="nav-link ${initialActive} form-tabs" id="tab-${a.field_id}" 
-                    data-tab-id="${a.field_id}" data-tab-index="${i} "
+                    data-tab-id="${a.field_id}" data-tab-index="${i}"
                     data-toggle="tab" href="#ccs${a.field_id}" role="tab">
                   <div class="d-flex justify-content-between align-items-center">
                     <div>  ${a.label} </div>
@@ -245,8 +245,8 @@ class CCSFormEdit {
     prepareTabFields = (tabFieldContent, formTabId) => {
         // iterate the content and fill it inside the formTabContainer
         let formFieldItems = tabFieldContent.map((a, i) => {
-            let spanDescription = a.description? `<span>${a.description}</span>`: "";
-            if(a.type == "header"){
+            let spanDescription = a.description ? `<span>${a.description}</span>` : "";
+            if (a.type == "header") {
                 return `<div class="row">
                     <div class="col-sm-12 col-md-5 col-lg-4">
                         <div class="form-group">
@@ -254,15 +254,15 @@ class CCSFormEdit {
                         </div>
                     </div>
                 </div>`;
-            } else{
+            } else {
                 let fieldElement = this.chooseFormElement(a, null);
                 let initialHide = a.initial_hide ? ` style="display:none;"` : "";
                 let parentId = a.parent_id ? ` data-parent-id="${a.parent_id}"` : "";
                 let childToggleValue = a.child_toggle_value ? ` data-child-toggle-value="${a.child_toggle_value}"` : "";
-                if(a.is_group_child || a.type == "group"){
+                if (a.is_group_child || a.type == "group") {
                     // if its group, then keep the ids separate along with add-more button
-                    if(a.type == "group") return this.placeGroup(a);
-                } else{
+                    if (a.type == "group") return this.placeGroup(a);
+                } else {
                     // regular fields, that do not require add more option
                     return `<div class="row" data-field-row="${a.field_id}" data-tab-id="${a.tab_id}"
                                 ${parentId} ${initialHide} ${childToggleValue}>
@@ -303,7 +303,7 @@ class CCSFormEdit {
             let currentTarget = $(e.currentTarget);
             let tabIndex = Number(currentTarget.data("tab-index"));
             this.btnSaveDraft.attr("data-tab-id", this.tabIdList[tabIndex]);
-            switch(true){
+            switch (true) {
                 case tabIndex == 0:
                     this.btnPrevious
                         .attr("disabled", true)
@@ -347,7 +347,7 @@ class CCSFormEdit {
                         .on("click", this.handleFormData)
                         .show();
                     break;
-                default: 
+                default:
                     break;
             }
         });
@@ -424,29 +424,29 @@ class CCSFormEdit {
     handleFormData = () => {
         let { formData, formDataObj } = this.collectFormData();
         let requiredFieldsFilled = this.reqFieldIds.map(fieldId => {
-                if(Array.isArray(formDataObj[`field_${fieldId}`])){
-                    return formDataObj[`field_${fieldId}`].length;
-                } else return formDataObj[`field_${fieldId}`];
-            }).every(Boolean);
-        if(requiredFieldsFilled){
+            if (Array.isArray(formDataObj[`field_${fieldId}`])) {
+                return formDataObj[`field_${fieldId}`].length;
+            } else return formDataObj[`field_${fieldId}`];
+        }).every(Boolean);
+        if (requiredFieldsFilled) {
             this.patchWithFile(this.authHeader, formData, "ccs/submit")
-            .then(response => {
-                this.pageAlert(response.message, 1);
-                setTimeout(() => window.location.replace("ccs.html"), 2500);
-            })
-            .catch(err => {
-                console.error(err);
-                let errMsg = err?.responseJSON?.message || "";
-                this.pageAlert(`Unable to update details\n${errMsg}`, 0);
-            })
-            .finally(this.stopWaiting);
+                .then(response => {
+                    this.pageAlert(response.message, 1);
+                    setTimeout(() => window.location.replace("ccs.html"), 2500);
+                })
+                .catch(err => {
+                    console.error(err);
+                    let errMsg = err?.responseJSON?.message || "";
+                    this.pageAlert(`Unable to update details\n${errMsg}`, 0);
+                })
+                .finally(this.stopWaiting);
         } else this.pageAlert("Please enter the title and select a province", 0);
     }
 
     triggerGroupToggle = () => {
         let groupIndexCounts = this.recordData.group_index_counts;
         Object.keys(groupIndexCounts).forEach(a => {
-            if(groupIndexCounts[a] > 1){
+            if (groupIndexCounts[a] > 1) {
                 let addMoreBtn = $(`button.btn-add-group[data-group-id="${a}"]`);
                 for (let i = 1; i < groupIndexCounts[a]; i++) {
                     addMoreBtn.trigger("click");
@@ -455,7 +455,7 @@ class CCSFormEdit {
         });
     }
 
- 
+
     fillRecordData = () => {
         let ungroupedData = this.recordData.ungrouped;
         let groupedData = this.recordData.grouped;
@@ -526,12 +526,12 @@ class CCSFormEdit {
             case "jpg": case "jpeg": case "png": case "gif": return "fa-file-image-o text-default";
             case "zip": case "rar": return "fa-file-archive-o text-danger";
             case "txt": return "fa-file-text-o text-default";
-            default: return "fa-file-o"; 
+            default: return "fa-file-o";
         }
     }
-    
+
     chooseFormElement = (a, groupIndex) => {
-        switch(true){
+        switch (true) {
             case Object.keys(this.locationLookups).includes(a.type):
                 return this.placeLocationSelect(a, groupIndex);
             case Object.keys(this.sdgLookups).includes(a.type):
@@ -563,11 +563,11 @@ class CCSFormEdit {
 
     placeLocationSelect = (a, groupIndex) => {
         let optionsHtml = ``;
-        switch(true){
+        switch (true) {
             case a.type == "lkp_country":
                 optionsHtml = this.lkpCountryData.map(b => `<option value="${b.value}">${b.label}</option>`).join("\n");
                 break;
-            default: 
+            default:
                 break;
         };
         let dataGroupId = a.group_id ? ` data-group-id="${a.group_id}"` : "";
@@ -587,7 +587,7 @@ class CCSFormEdit {
 
     placeSDGSelect = (a, groupIndex) => {
         let optionsHtml = ``;
-        switch(true){
+        switch (true) {
             case a.type == "lkp_sdg_goals":
                 optionsHtml = this.lkpSdgGoalData.map(b => `<option value="${b.value}">${b.label}</option>`).join("\n");
                 break;
@@ -618,7 +618,7 @@ class CCSFormEdit {
 
     placeCCSSelect = (a, groupIndex) => {
         let optionsHtml = ``;
-        switch(true){
+        switch (true) {
             case a.type == "lkp_project_outcomes":
                 optionsHtml = this.lkpOutcomeData.map(b => `<option value="${b.value}>${a.label}</option>`).join("\n");
                 break;
@@ -681,7 +681,7 @@ class CCSFormEdit {
         />`;
     }
 
-    placeMonthYearInput = (a, groupIndex) => {     
+    placeMonthYearInput = (a, groupIndex) => {
         let dataGroupId = a.group_id ? ` data-group-id="${a.group_id}"` : "";
         let dataGroupIndex = ![null, undefined].includes(groupIndex) ? ` data-group-index="${groupIndex}"` : "";
         let dataSubType = a.subtype ? ` data-subtype="${a.subtype}"` : "";
@@ -702,7 +702,7 @@ class CCSFormEdit {
     placeDateInput = (a, groupIndex) => {
         let dataGroupId = a.group_id ? ` data-group-id="${a.group_id}"` : "";
         let dataGroupIndex = ![null, undefined].includes(groupIndex) ? ` data-group-index="${groupIndex}"` : "";
-        let dataSubType = a.subtype ? ` data-subtype="${a.subtype}"` : "";  
+        let dataSubType = a.subtype ? ` data-subtype="${a.subtype}"` : "";
         return `<input 
             type="date" 
             class="form-control input-ccs mt-2"  
@@ -717,8 +717,8 @@ class CCSFormEdit {
 
     placeTextArea = (a, groupIndex) => {
         let dataGroupId = a.group_id ? ` data-group-id="${a.group_id}"` : "";
-        let dataGroupIndex = ![null, undefined].includes(groupIndex) ? ` data-group-index="${groupIndex}"` : ""; 
-        let dataSubType = a.subtype ? ` data-subtype="${a.subtype}"` : "";  
+        let dataGroupIndex = ![null, undefined].includes(groupIndex) ? ` data-group-index="${groupIndex}"` : "";
+        let dataSubType = a.subtype ? ` data-subtype="${a.subtype}"` : "";
         return `<textarea 
             class="form-control input-ccs mt-2"
             data-type="${a.type}"
@@ -734,7 +734,7 @@ class CCSFormEdit {
     placeNumberInput = (a, groupIndex) => {
         let subtype = a.subtype == "phone" ? "phone" : "number";
         let dataGroupId = a.group_id ? ` data-group-id="${a.group_id}"` : "";
-        let dataGroupIndex = ![null, undefined].includes(groupIndex) ? ` data-group-index="${groupIndex}"` : "";  
+        let dataGroupIndex = ![null, undefined].includes(groupIndex) ? ` data-group-index="${groupIndex}"` : "";
         let dataSubType = a.subtype ? ` data-subtype="${a.subtype}"` : "";
         return `<input 
             type="${subtype}" 
@@ -753,7 +753,7 @@ class CCSFormEdit {
         let dataGroupId = a.group_id ? ` data-group-id="${a.group_id}"` : "";
         let dataGroupIndex = ![null, undefined].includes(groupIndex) ? ` data-group-index="${groupIndex}"` : "";
         let dataSubType = a.subtype ? ` data-subtype="${a.subtype}"` : "";
-        let dataToggleValue = a.child_toggle_value ? ` data-toggle-value="${a.child_toggle_value}"`: "";
+        let dataToggleValue = a.child_toggle_value ? ` data-toggle-value="${a.child_toggle_value}"` : "";
 
         let optionsListHtml = optionsList.map(b => {
             let nameAttr = dataGroupIndex ? `name="${b.field_id}_${a.group_id}_${groupIndex}"` : `name="${b.field_id}"`;
@@ -839,7 +839,7 @@ class CCSFormEdit {
                             </div>
                         </div>`;
             }).join("\n");
-    
+
             let newRowHtml = `<div class="row my-2 group-row" data-group-id="${groupId}" data-group-index="${currentIndex}">
                 <div class="col-sm-11 col-md-11 col-lg-11 border-right border-top mt-2 pt-1">
                     <div class="row">
@@ -873,7 +873,7 @@ class CCSFormEdit {
 
     handleGroupRemove = (groupId, groupIndex) => {
         let groupRows = $(`div.row[data-group-id='${groupId}']`);
-        if (groupRows.length > 1 && groupIndex > 0) { 
+        if (groupRows.length > 1 && groupIndex > 0) {
             // Prevent removing the first (index 0) group
             $(`div.row[data-group-id='${groupId}'][data-group-index='${groupIndex}']`).remove();
             // Update remaining indices after removal
@@ -901,9 +901,9 @@ class CCSFormEdit {
 
 
     fillUnderlyingLocations = (type, idList) => {
-        switch(true){
+        switch (true) {
             case type == "lkp_state":
-                if(idList.length){
+                if (idList.length) {
                     // provinces
                     let provincesHtml = idList.map(a => {
                         let filteredStates = this.lkpProvinceData.filter(b => b.country_id == a);
@@ -919,13 +919,13 @@ class CCSFormEdit {
                         $(`select[data-type="lkp_state"]`).selectpicker("refresh");
                     });
                     $(`select[data-type="lkp_district"]`).empty().selectpicker(this.spOptions).selectpicker("refresh");
-                } else{
+                } else {
                     $(`select[data-type="lkp_state"]`).empty().selectpicker(this.spOptions).selectpicker("refresh");
                     $(`select[data-type="lkp_district"]`).empty().selectpicker(this.spOptions).selectpicker("refresh");
                 }
                 break;
             case type == "lkp_district": // District -- idList == provinceIdList | API CALL FOR DS
-                if(idList.length){
+                if (idList.length) {
                     let districtsHtml = idList.map(a => {
                         let filteredDistricts = this.lkpDistrictData.filter(b => idList.includes(b.province_id));
                         let provinceName = this.lkpProvinceData.find(b => b.value == a).label;
@@ -946,7 +946,7 @@ class CCSFormEdit {
                 break;
         }
     }
-    
+
     getApi = (reqHead, path) => {
         return new Promise((resolve, reject) => {
             $.ajax({
@@ -988,7 +988,7 @@ class CCSFormEdit {
             });
         });
     }
-    
+
     patchWithFile = (reqHead, reqBody, path) => {
         return new Promise((resolve, reject) => {
             $.ajax({
@@ -1022,7 +1022,7 @@ class CCSFormEdit {
 
     pageAlert = (text, success) => {
         let alertIcon = success !== null || success !== undefined
-            ? (success 
+            ? (success
                 ? `<img src="assets/images/success.png"><h5 class="success-text-popup my-2">SUCCESS!</h5>`
                 : `<img src="assets/images/success-false.png"><h5 class="success-text-popup my-2">ERROR!</h5>`)
             : "";
