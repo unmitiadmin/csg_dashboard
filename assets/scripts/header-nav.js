@@ -119,7 +119,7 @@ window.addEventListener("load", (event) => {
                 ${cookies.jwt ? userProfileArea : loginArea}
               
                 <li class="nav-item">
-                    <a href="https://csg.iwmi.org/aiagent/#/home" class="btn btn-explore" style="white-space: nowrap;">Explore CSG AI Agent</a>
+                    <a href="https://csg.iwmi.org/aiagent/#/home" target="_blank" class="btn btn-explore" style="white-space: nowrap;">Explore CSG AI Agent</a>
                 </li>
             </ul>
         </div>
