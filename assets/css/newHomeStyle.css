@@ -4348,3 +4348,254 @@ line-height: normal;
          margin-bottom: 10px;
      }
  }
+ 
+
+.ndc-title {
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  /* 100% */
+  text-transform: capitalize;
+}
+
+.ndc-input {
+  border-radius: 8px !important;
+  background: #F9F9F9 !important;
+  height: 45px !important;
+  text-align: left !important;
+  font-weight: 400 !important;
+  border: 1px solid #ced4da !important;
+  line-height: 1.5 !important;
+  color: #495057 !important;
+  font-size: 16px !important;
+}
+
+.form-control.ndc-search {
+  border-radius: 8px !important;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  background: #F9F9F9 !important;
+  height: 45px;
+  text-align: left !important;
+  font-weight: 400;
+  border: 1px solid #ced4da !important;
+  line-height: 1.5;
+  color: #495057 !important;
+  font-size: 12px !important;
+  width: 95%;
+}
+
+.scroll_horizontal {
+  overflow-y: scroll;
+  height: 370px;
+}
+
+.low-range {
+  color: #E20000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.high-range {
+  color: #00BA54;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.list-group.ndc-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: 8px;
+}
+
+.ndc-list .list-group-item {
+  position: relative;
+  display: block;
+  padding: 5px 18px;
+  background: #f9f9f9;
+  text-align: left !important;
+  font-weight: 400;
+  border: 1px solid #ced4da !important;
+  border-radius: 8px;
+  line-height: 1.5;
+  color: #495057 !important;
+  font-size: 14px !important;
+  margin-bottom: 6px !important;
+}
+
+.icon-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.icon-list li.p0 {
+  width: 16px;
+  height: 16px;
+  background-color: #E6E6E6;
+  border-radius: 20px;
+}
+
+.icon-list li.p1 {
+  width: 16px;
+  height: 16px;
+  background-color: #eb1729;
+  border-radius: 20px;
+}
+
+.icon-list li.p2 {
+  width: 16px;
+  height: 16px;
+  background-color: #DDA63A;
+  border-radius: 20px;
+}
+
+.icon-list li.p3 {
+  width: 16px;
+  height: 16px;
+  background-color: #299b45;
+  border-radius: 20px;
+}
+
+.icon-list li.p4 {
+  width: 16px;
+  height: 16px;
+  background-color: #c31a30;
+  border-radius: 20px;
+}
+
+.icon-list li.p5 {
+  width: 16px;
+  height: 16px;
+  background-color: #ef412a;
+  border-radius: 20px;
+}
+
+.icon-list li.p6 {
+  width: 16px;
+  height: 16px;
+  background-color: #00afd9;
+  border-radius: 20px;
+}
+
+.icon-list li.p7 {
+  width: 16px;
+  height: 16px;
+  background-color: #fdb80c;
+  border-radius: 20px;
+}
+
+.icon-list li.p8 {
+  width: 16px;
+  height: 16px;
+  background-color: #901135;
+  border-radius: 20px;
+}
+
+.icon-list li.p9 {
+  width: 16px;
+  height: 16px;
+  background-color: #f36e1f;
+  border-radius: 20px;
+}
+
+.icon-list li.p10 {
+  width: 16px;
+  height: 16px;
+  background-color: #e11384;
+  border-radius: 20px;
+}
+
+.icon-list li.p11 {
+  width: 16px;
+  height: 16px;
+  background-color: #f99e20;
+  border-radius: 20px;
+}
+
+.icon-list li.p12 {
+  width: 16px;
+  height: 16px;
+  background-color: #ce8c25;
+  border-radius: 20px;
+}
+
+.icon-list li.p13 {
+  width: 16px;
+  height: 16px;
+  background-color: #3F7E44;
+  border-radius: 20px;
+}
+
+.icon-list li.p14 {
+  width: 16px;
+  height: 16px;
+  background-color: #007ebc;
+  border-radius: 20px;
+}
+
+.icon-list li.p15 {
+  width: 16px;
+  height: 16px;
+  background-color: #3eb047;
+  border-radius: 20px;
+}
+
+.icon-list li.p16 {
+  width: 16px;
+  height: 16px;
+  background-color: #00548b;
+  border-radius: 20px;
+}
+
+.icon-list li.p17 {
+  width: 16px;
+  height: 16px;
+  background-color: #133368;
+  border-radius: 20px;
+}
+
+.progress-slider {
+  width: 100%;
+}
+
+.tbl_sdg tbody td {
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal;
+  padding: 30px;
+  letter-spacing: -0.154px;
+}
+
+.table.tbl_sdg thead tr th,
+tbody td {
+  border-top: 1px solid lightblue !important;
+  border-bottom: 1px solid lightblue !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+}
+
+.icon-list li {
+  margin: 9px 9px;
+}

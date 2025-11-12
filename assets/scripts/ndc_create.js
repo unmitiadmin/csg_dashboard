@@ -70,12 +70,40 @@ class NDC {
                 value: $('#demo_0').val() // between 0 and 100
             };
 
+            this.startWaiting();
+
             if (this.selected_ndc_id) {
                 // Update existing activity
-                this.serverPostApi(req_body, this.authHeader, `/ndc/activity?activity_id=${this.selected_ndc_id}`);
+                this.serverPostApi(req_body, this.authHeader, `/ndc/activity?activity_id=${this.selected_ndc_id}`)
+                    .then(response => {
+                        if (response.success) {
+                            this.pageAlert(response.data || "NDC activity updated successfully", 1);
+                            this.resetForm();
+                        } else {
+                            this.pageAlert("Failed to update NDC activity", 0);
+                        }
+                    })
+                    .catch(err => {
+                        console.error(err);
+                        this.pageAlert("Error updating NDC activity", 0);
+                    })
+                    .finally(() => this.stopWaiting());
             } else {
                 // Create a new activity
-                this.serverPostApi(req_body, this.authHeader, `/ndc/activity`);
+                this.serverPostApi(req_body, this.authHeader, `/ndc/activity`)
+                    .then(response => {
+                        if (response.success) {
+                            this.pageAlert(response.data || "Added new NDC activity", 1);
+                            this.resetForm();
+                        } else {
+                            this.pageAlert("Failed to add new NDC activity", 0);
+                        }
+                    })
+                    .catch(err => {
+                        console.error(err);
+                        this.pageAlert("Error adding new NDC activity", 0);
+                    })
+                    .finally(() => this.stopWaiting());
             }
 
         });
@@ -85,6 +113,22 @@ class NDC {
             window.close(); // Close the current window
         });
         this.logoutLink.on("click", this.onLogoutClick);
+    }
+
+    resetForm = () => {
+        $('#activity_name').val('');
+        $('#mainCategoryDropdown input[type="radio"]').prop('checked', false);
+        $('#dropdown-main-category').text('Nothing Selected');
+        $('#categoryDropdownMenu input[type="radio"]').prop('checked', false);
+        $('#dropdown-category').text('Nothing Selected');
+        $('#sdgDropdownMenu input[type="checkbox"]').prop('checked', false);
+        $('#dropdown-sdg').text('Nothing Selected');
+        $('.ndc-list').empty();
+        $('.icon-list li').removeClass('gray');
+        const slider = $("#demo_0").data("ionRangeSlider");
+        if (slider) {
+            slider.update({ from: 0 });
+        }
     }
 
     onLogoutClick = () => {
@@ -576,5 +620,3 @@ class NDC {
 
 
 }
-
-
