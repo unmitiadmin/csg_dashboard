@@ -12,6 +12,7 @@ class RolesCapabilities{
         this.isLoggedIn = this.cookieObject.isLoggedIn;
         this.authHeader = {"Authorization": this.jwt};
         this.userRoleId = this.cookieObject.userRoleId;
+        this.initialCountryId = this.cookieObject.initialCountryId;
         this.editShortcut = $("a#shortcut_edit");
         this.logoutLink = $("a#link-logout");
         this.userMgmtLink = $("li#user-management-link");
@@ -32,14 +33,15 @@ class RolesCapabilities{
     init = () => {
         this.loggedInUserEmailLabel.empty().html(`<div class='mx-3'>${this.userEmail}</div>`);
         this.userRoleId == 1 ? this.userMgmtLink.show() : this.userMgmtLink.hide();
-        this.userRoleId == 1 ? this.userCountryIcon.hide() : this.userCountryIcon.show();
         this.logoutLink.on("click", this.onLogoutClick);
-        this.userRoleId != 1
-            ? this.userCountryIcon.attr("src", `./assets/flag_icons/${this.initialCountryId}.png`).attr("title", this.flagIndex[this.initialCountryId]).show()
-            : this.userCountryIcon.attr("src", null).attr("title", null).hide();
+        if(this.userRoleId != 1){
+            this.userCountryIcon.attr("src", `./assets/flag_icons/${this.initialCountryId}.png`).show();
+        } else {
+            this.userCountryIcon.attr("src", null).hide();
+        }
         if(this.userRoleId != 1){
             this.pageAlert("You are unauthorized to view this page", 0);
-            setTimeout(() => window.location.replace("index.html"));
+            setTimeout(() => window.location.replace("index.html"), 3000);
         } else this.getRoleMatrix();
     }
 
@@ -48,7 +50,7 @@ class RolesCapabilities{
         .then(response => {
             if(response.success){
                 response.data.forEach(item => {
-                    ["productadmin", "country_admin", "province_admin", "district_admin", ["department_admin"]]
+                    ["productadmin", "country_admin", "province_admin", "district_admin", "department_admin"]
                     .forEach(role => {
                         let value = item[role];
                         let checkbox = $(`input[type="checkbox"][data-capability="${item.capability}"][data-role="${role}"]`);

@@ -58,10 +58,10 @@ window.addEventListener("load", (event) => {
             <ul class="dropdown-menu login-user mt-3" aria-labelledby="dropdownMenuButton1">
             <li id="user-email-label"></li>
             <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-            <li id="user-management-link">
+            ${cookies.userRoleId == 1 ? `<li id="user-management-link">
                 <a class="dropdown-item" href="user_management.html">User Management</a>
                 <a class="dropdown-item" href="roles_capabilities.html">Roles and Capabilities</a>
-            </li>
+            </li>` : ''}
             <li><a class="dropdown-item" id="link-logout" href="index.html">Log Out</a></li>
             </ul>
         </div>
@@ -547,7 +547,7 @@ window.addEventListener("load", (event) => {
                     document.querySelector("input#input-registration-phone").value = ""
                     document.querySelector("select#input-registration-gender").value = ""
                     document.querySelector("input#input-registration-reason").value = ""
-                    $("button.nav-link#login-tab").trigger("click");
+                    $('#login-modal').modal('hide');
                 } else {
                     pageNavAlert(response.message, 0)
                 }
@@ -615,6 +615,22 @@ window.addEventListener("load", (event) => {
                     })
                     .finally(() => stopWaiting());
             });
+            const loginEmailInput = document.querySelector('#input-login-email');
+            const loginPasswordInput = document.querySelector('#input-login-password');
+            if (loginEmailInput) {
+                loginEmailInput.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') {
+                        document.querySelector('#submit-login').click();
+                    }
+                });
+            }
+            if (loginPasswordInput) {
+                loginPasswordInput.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') {
+                        document.querySelector('#submit-login').click();
+                    }
+                });
+            }
             // for step wise methods
             $(document).ready(function () {
                 let currentStep = 1;
