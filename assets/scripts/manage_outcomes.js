@@ -79,7 +79,7 @@ class ManageOutcomes {
             .then(() => this.enableDeletion())
             .then(() => this.enableBulkActions())
             .then(() => {
-                if(this.userActionAllowed){
+                if (this.userActionAllowed) {
                     $("input[type='checkbox'][name='check_outcome_id']").on("click", () => {
                         let checkedBoxes = $("input[type='checkbox'][name='check_outcome_id']:checked");
                         this.selectedOutcomeIds = checkedBoxes.map((_, checkbox) => Number($(checkbox).val())).get();
@@ -107,7 +107,7 @@ class ManageOutcomes {
     }
 
     displayCounts = (counts) => {
-        if(counts.Total){
+        if (counts.Total) {
             let countsHtml = `<div class="d-flex mt-2 mb-2 align-items-center">
                 <div class="upload-text" id="total_surveys">
                     <h4>Total Submissions: ${counts.Total}</h4>
@@ -130,7 +130,7 @@ class ManageOutcomes {
     }
 
     togglePopupActionButtons = () => {
-        if(this.userActionAllowed && this.selectedOutcomeIds.length){
+        if (this.userActionAllowed && this.selectedOutcomeIds.length) {
             this.divButtonActions.empty().html(`
                 <div class="d-flex mt-2 mb-2 align-items-center justify-content-end AllBtns">
                     <button type="button" class="btn btn-sm btn-success verify ml-2" data-toggle="modal" data-target="#myModalApprove">Approve</button>
@@ -156,12 +156,12 @@ class ManageOutcomes {
         $("thead#thead-outcome").empty().html(tHead);
 
         let tBody = mainList.map((a, i) => {
-            let bodyChildCheckbox = this.userActionAllowed 
+            let bodyChildCheckbox = this.userActionAllowed
                 ? `<td><input type="checkbox" class="ShowHide" value="${a.outcome_id}" name="check_outcome_id"></td>`
                 : "";
             return `<tr>
                 ${bodyChildCheckbox}
-                <td>${i+1}</td>
+                <td>${i + 1}</td>
                 <td title="${a.approval_status}">${this.statusIcons[a.approval_status]}</td>
                 <td>${a.outcome}</td>
                 <td>${a.description ?? "N/A"}</td>
@@ -243,19 +243,19 @@ class ManageOutcomes {
                 "reason": null,
             }
             this.patchApi(reqBody, this.authHeader, `projects/approval`)
-            .then(response => {
-                console.log(response);
-                this.pageAlert(response.message, 1);
-                setTimeout(() => window.location.reload(), 1000);
-            })
-            .catch(err => {
-                console.log(err)
-                this.pageAlert("Unable to approve the outcomes", 0)
-            })
-            .finally(() => {
-                $("#myModalApprove").modal("hide");
-                this.stopWaiting();
-            });
+                .then(response => {
+                    console.log(response);
+                    this.pageAlert(response.message, 1);
+                    setTimeout(() => window.location.reload(), 1000);
+                })
+                .catch(err => {
+                    console.log(err)
+                    this.pageAlert("Unable to approve the outcomes", 0)
+                })
+                .finally(() => {
+                    $("#myModalApprove").modal("hide");
+                    this.stopWaiting();
+                });
         })
     }
 
@@ -269,19 +269,19 @@ class ManageOutcomes {
                 "reason": $("textarea#text-bulk-reject").val(),
             }
             this.patchApi(reqBody, this.authHeader, `projects/approval`)
-            .then(response => {
-                console.log(response)
-                this.pageAlert(response.message, 1);
-                setTimeout(() => window.location.reload(), 1000);
-            })
-            .catch(err => {
-                console.log(err);
-                this.pageAlert("Unable to reject the outcomes", 0)
-            })
-            .finally(() => {
-                $("#myModalReject").modal("hide");
-                this.stopWaiting();
-            });
+                .then(response => {
+                    console.log(response)
+                    this.pageAlert(response.message, 1);
+                    setTimeout(() => window.location.reload(), 1000);
+                })
+                .catch(err => {
+                    console.log(err);
+                    this.pageAlert("Unable to reject the outcomes", 0)
+                })
+                .finally(() => {
+                    $("#myModalReject").modal("hide");
+                    this.stopWaiting();
+                });
         });
     }
 
@@ -294,19 +294,19 @@ class ManageOutcomes {
                 "reason": $("textarea#text-bulk-delete").val(),
             }
             this.patchApi(reqBody, this.authHeader, `projects/approval`)
-            .then(response => {
-                console.log(response);
-                this.pageAlert(response.message, 1);
-                setTimeout(() => window.location.reload(), 1000);
-            })
-            .catch(err => {
-                console.log(err);
-                this.pageAlert("Unable to delete the outcomes", 0)
-            })
-            .finally(() => {
-                $("#myModalDelete").modal("hide");
-                this.stopWaiting();
-            });
+                .then(response => {
+                    console.log(response);
+                    this.pageAlert(response.message, 1);
+                    setTimeout(() => window.location.reload(), 1000);
+                })
+                .catch(err => {
+                    console.log(err);
+                    this.pageAlert("Unable to delete the outcomes", 0)
+                })
+                .finally(() => {
+                    $("#myModalDelete").modal("hide");
+                    this.stopWaiting();
+                });
         })
     }
 
@@ -363,7 +363,7 @@ class ManageOutcomes {
         return new Promise((resolve, reject) => {
             $.ajax({
                 "type": "PATCH",
-                "headers": {...reqHead},
+                "headers": { ...reqHead },
                 "data": reqBody,
                 "beforeSend": () => this.startWaiting(),
                 "url": `${this.apiUrl}/${path}`,
@@ -386,7 +386,7 @@ class ManageOutcomes {
 
     pageAlert = (text, success) => {
         let alertIcon = success !== null || success !== undefined
-            ? (success 
+            ? (success
                 ? `<img src="assets/images/success.png"><h5 class="success-text-popup my-2">SUCCESS!</h5>`
                 : `<img src="assets/images/success-false.png"><h5 class="success-text-popup my-2">ERROR!</h5>`)
             : "";

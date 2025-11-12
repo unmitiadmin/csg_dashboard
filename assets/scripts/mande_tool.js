@@ -141,8 +141,8 @@ class MandETool {
             }).join("");
             let reportsListShortcut = a.count_outputs && (
                 this.userRoleId == 1 || (this.userRoleId <= 3 && this.initialCountryId == this.selectedCountryId && this.emailVerified)
-            )? ` <a href="view_reports.html?project_id=${a.project_id}">
-                    <button class="btn btn btn-mande">
+            ) ? ` <a href="view_reports.html?project_id=${a.project_id}">
+                    <button class="btn btn-white-rounded btn-mande mr-3 mb-2">
                         Progress/View Report
                         <span><img src="./assets/images/view-report.svg"></span>
                     </button>
@@ -171,12 +171,12 @@ class MandETool {
                         </button>
                     </a>
                 `: "";
-                
+
             let outcomeShortcut =
                 this.userRoleId == 1
                     || (this.userRoleId <= 3 && this.initialCountryId == this.selectedCountryId && this.emailVerified)
                     ? `    <a href="manage_outcomes.html?project_id=${a.project_id}">
-                    <button class="btn btn-white-rounded btn-mande">
+                    <button class="btn btn-white-rounded btn-mande mr-3 mb-2">
                     Add or modify Project Outcomes 
                         <span><img src="./assets/images/view-report.svg"></span>
                     </button>
@@ -211,6 +211,7 @@ class MandETool {
                         <div class="d-flex justify-content-start align-items-center flex-wrap mt-1">
                             ${projectOptions}
                             ${outcomeShortcut}
+                            ${reportsListShortcut}
                         </div>
                         <div class="mt-1">${reportCounts}</div>
                     </div>
@@ -420,5 +421,3 @@ class MandETool {
         $("div.modal#alertModal").modal("show");
     }
 }
-
-
