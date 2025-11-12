@@ -10,8 +10,8 @@ $(window).on("load", () => {
 });
 
 
-class ProjectDetails{
-    constructor(params){
+class ProjectDetails {
+    constructor(params) {
         this.apiUrl = apiUrl;
         this.projectId = params.projectId;
 
@@ -19,15 +19,16 @@ class ProjectDetails{
         this.jwt = this.cookieObject.jwt;
         this.userEmail = this.cookieObject.userEmail;
         this.isLoggedIn = this.cookieObject.isLoggedIn;
-        this.authHeader = {"Authorization": this.jwt};
+        this.authHeader = { "Authorization": this.jwt };
         this.userRoleId = this.cookieObject.userRoleId;
+        this.initialCountryId = this.cookieObject.initialCountryId;
         this.editShortcut = $("a#shortcut_edit");
         this.logoutLink = $("a#link-logout");
         this.userMgmtLink = $("li#user-management-link");
         this.loggedInUserEmailLabel = $("li#user-email-label");
         this.userCountryIcon = $("img#user-country-icon");
 
-        this.categoryCatalog = {1: "adaptatation", 2: "mitigation", 3: "crosscutting"};
+        this.categoryCatalog = { 1: "adaptation", 2: "mitigation", 3: "crosscutting" };
         this.flagIndex = {
             2: "Zambia",
             4: "Sri Lanka",
@@ -60,18 +61,18 @@ class ProjectDetails{
             this.postApi(lookupsReqBody, {}, `projects/lookups`),
             this.getApi(`projects/details/${this.projectId}`),
         ])
-        .then(response => {
-            let [lookups, details] = response;
-            this.fillDetails(lookups.data, details.data);
-        })
-        .catch(err => {
-            console.error(err);
-            this.pageAlert(err.responseJSON.message, 0);
-            if(err.status == 401) {
-                this.onLogoutClick();
-            }
-        })
-        .finally(() => this.stopWaiting());
+            .then(response => {
+                let [lookups, details] = response;
+                this.fillDetails(lookups.data, details.data);
+            })
+            .catch(err => {
+                console.error(err);
+                this.pageAlert(err.responseJSON.message, 0);
+                if (err.status == 401) {
+                    this.onLogoutClick();
+                }
+            })
+            .finally(() => this.stopWaiting());
     }
 
     fillDetails = (lookups, details) => {
@@ -85,8 +86,8 @@ class ProjectDetails{
         $("h4#text-budget").html(details.funding_amount ? strNum(details.funding_amount) : "N/A");
         $("h4#text-category").html(catName || "N/A");
         let sectorLookups = lookups.find(a => a.table == "sector").lookup_data;
-        let sectorNames = details.sector_ids 
-            ?   details.sector_ids.map(b => sectorLookups.find(c => c.id == b).sector || null).filter(Boolean).join(", ")
+        let sectorNames = details.sector_ids
+            ? details.sector_ids.map(b => sectorLookups.find(c => c.id == b).sector || null).filter(Boolean).join(", ")
             : "N/A"
         $("h4#text-sector").html(sectorNames);
         let startYear = details.start_year || "N/A";
@@ -97,7 +98,7 @@ class ProjectDetails{
             ? details.sdg_goal_ids.filter(Boolean).map(b => {
                 return `<div class="sdgGoals-box-3">
                     <div class="sdgGoalImgBox">
-                        <img src="./assets/images/E_${this.zfill(b, 2)}.png" alt="1" class="sdgGoal-img mt-1" style="height: 60px; width: 60px;">
+                        <img src="./assets/images/E_${b}.png" alt="E_${b}" class="sdgGoal-img mt-1" style="height: 60px; width: 60px;">
                     </div>
                     <!-- div class="sdgGoalIconBox">
                         <i class="fa fa-arrow-down text-danger"></i>
@@ -109,17 +110,17 @@ class ProjectDetails{
 
         let fundOrgHtml = details.funding_organizations
             ? details.funding_organizations.map(a => fundingOrgLookups.find(b => b.id == a)?.funding_organization || null).filter(Boolean).join(",")
-            : null
-        debugger;
-        $("div#text-funding-organizations").html(`<h4>${fundOrgHtml}</h4>` || "N/A");
+            : null;
+        $("div#text-funding-organizations").html(fundOrgHtml ? `<h4>${fundOrgHtml}</h4>` : "N/A");
 
-        
+
     }
 
     getApi = (path) => {
         return new Promise((resolve, reject) => {
             $.ajax({
                 "type": "GET",
+                "headers": this.authHeader,
                 "beforeSend": () => this.startWaiting(),
                 "url": `${this.apiUrl}/${path}`,
                 "success": response => resolve(response),
@@ -162,7 +163,7 @@ class ProjectDetails{
 
     pageAlert = (text, success) => {
         let alertIcon = success !== null || success !== undefined
-            ? (success 
+            ? (success
                 ? `<img src="assets/images/success.png"><h5 class="success-text-popup my-2">SUCCESS!</h5>`
                 : `<img src="assets/images/success-false.png"><h5 class="success-text-popup my-2">ERROR!</h5>`)
             : "";
